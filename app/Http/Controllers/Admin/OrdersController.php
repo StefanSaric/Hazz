@@ -1,0 +1,51 @@
+<?php
+
+namespace App\Http\Controllers\Admin;
+
+use App\Cart;
+use App\Http\Controllers\Controller;
+use App\Order;
+use App\Products;
+use App\Sizes;
+use Illuminate\Http\Request;
+
+class OrdersController extends Controller
+{
+    public function create()
+    {
+        $orders = Order::all();
+        return view('front.cart',['orders' => $orders]);
+    }
+
+    public function store(Request $request)
+    {
+        //dd($request->all());
+        $total = 0;
+        $carts = session()->get('cart');
+        if($carts != null)
+            foreach($carts as $cart)
+                $total += $cart["price"]*$cart["quantity"];
+        $order = Order::create([
+            'first_name' => $request->firstname, 'last_name' => $request->lastname, 'email' => $request->email, 'address' => $request->address,
+            'num_of_house' => $request->num, 'num_of_apartment' => $request->apartment, 'city' => $request->city, 'total' => $total]);
+
+        foreach ($carts as $one_cart)
+            $cart = Cart::create(['product_id' => $one_cart["product_id"], 'price' => $one_cart["price"], 'quantity' => $one_cart["quantity"], 'order_id' => $order->id]);
+
+        $in_carts = [];
+        if(session()->get('cart') != null) {
+            $in_carts = session()->get('cart');
+        }
+        foreach($in_carts as $key => $cart) {
+            $size = Sizes::where('id', $key)->first();
+            $left = $size->stock - $cart["quantity"];
+            if ($size != null) {
+                $size->update([
+                    'stock' => $left
+                ]);
+            }
+        }
+
+        return redirect('/');
+    }
+}

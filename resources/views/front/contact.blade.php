@@ -1,0 +1,458 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Organica Contact Us</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset("/assets/img/index/favicon.png")}}">
+    <!-- Place favicon.ico in the root directory -->
+    <!-- all css here -->
+    <!-- bootstrap v3.3.7 css -->
+    <link rel="stylesheet" href="{{ asset("/assets/css/index/bootstrap.min.css")}}">
+    <!-- animate css -->
+    <link rel="stylesheet" href="{{ asset("/assets/css/index/animate.css")}}">
+    <!-- jquery-ui.min css -->
+    <link rel="stylesheet" href="{{ asset("/assets/css/index/jquery-ui.min.css")}}">
+    <!-- meanmenu css -->
+    <link rel="stylesheet" href="{{ asset("/assets/css/index/meanmenu.css")}}">
+    <!-- nivo-slider css -->
+    <link rel="stylesheet" href="{{ asset("/assets/css/index/nivo-slider.css")}}">
+    <!-- owl.carousel.2.0.0-beta.2.4 css -->
+    <link rel="stylesheet" href="{{ asset("/assets/css/index/owl.carousel.css")}}">
+    <!-- magnific-popup -->
+    <link rel="stylesheet" href="{{ asset("/assets/css/index/magnific-popup.css")}}">
+    <!-- font-awesome v4.6.3 css -->
+    <link rel="stylesheet" href="{{ asset("/assets/css/index/font-awesome.min.css")}}">
+    <!-- style css -->
+    <link rel="stylesheet" href="{{ asset("/assets/css/index/style.css")}}">
+    <!-- responsive css -->
+    <link rel="stylesheet" href="{{ asset("/assets/css/index/responsive.css")}}">
+    <!-- modernizr css -->
+    <script src="{{ asset("/assets/js/libs/index/modernizr-2.8.3.min.js")}}"></script>
+</head>
+<body>
+
+<body>
+<!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+<!-- header start -->
+<header class="header-area ptb-30">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="logo">
+                    <a href="{{url('/')}}">
+                        <img src="{{ asset("/assets/img/index/logo.png")}}" alt="" />
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-7 col-10">
+                <div class="mainmenu-area">
+                    <div class="top-bar clear">
+                        <div class="top-bar-left pull-left">
+                            <div class="hotline pull-left d-none d-lg-block">
+                                <p>Order online or call us : +0123 456 789</p>
+                            </div>
+                            <div class="language-USD pull-left dropdown d-none d-md-block">
+                                <ul>
+                                    <li><span>$<i class="fa fa-caret-down"> </i></span>
+                                        <ul>
+                                            <li><a href="#">US Dollar</a></li>
+                                            <li><a href="#">US Dollar</a></li>
+                                            <li><a href="#">US Dollar</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><span><img src="img/lg/1.png" alt="" /><i class="fa fa-caret-down"></i></span>
+                                        <ul>
+                                            <li><a href="#">Bangla</a></li>
+                                            <li><a href="#">Bangla</a></li>
+                                            <li><a href="#">Bangla</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="top-bar-right pull-right">
+                            <div class="search-box">
+                                <form action="#">
+                                    <input type="search" placeholder="Search here ....." />
+                                    <button><i class="fa fa-search"></i></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mainmenu dropdown d-none d-lg-block">
+                        <nav>
+                            <ul>
+                                <li class="active"><a href="{{url('/')}}">Home </a></li>
+                                <li><a href="{{url('/shop')}}">Shop </a></li>
+                                <li><a href="{{url('/blog')}}">Blog </a></li>
+                                <li><a href="{{url('/cart')}}">Cart </a></li>
+                                <li><a href="{{url('/checkout')}}">checkout</a></li>
+                                <li><a href="{{url('/contact')}}">Contact Us</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-1 col-2">
+                <div class="cart-area">
+                    <div class="maincart-wrap">
+                        <a href="javascript:void(0);"><i class="fa fa-shopping-basket"></i>
+                            <span>3</span>
+                        </a>
+                    </div>
+                    <div class="cart">
+                        <div class="total-items pb-20 border-bottom mb-15">
+                            <div class="sub-total clear">
+                                <strong>3</strong>
+                                <span>items</span>
+                                <span class="pull-right total">
+										<span>Cart Subtotal :</span>
+										<strong>$95.00</strong>
+									</span>
+                            </div>
+                            <div class="cart-btn mt-15">
+                                <button>Go to Checkout</button>
+                            </div>
+                        </div>
+                        <div class="cart-items clear mb-15">
+                            <div class="cart-item ptb-20 border-bottom">
+                                <div class="cart-img pull-left">
+                                    <a href="#">
+                                        <img src="img/cart/1.jpg" alt="" />
+                                    </a>
+                                </div>
+                                <div class="cart-item-details clear">
+                                    <a href="#">Crown Summit Backpack</a>
+                                    <span class="price">$35.00</span>
+                                    <div class="details-qty pull-left">
+                                        <span>Qty :</span>
+                                        <input type="number" value="1" />
+                                    </div>
+                                    <div class="remove-edit">
+                                        <ul>
+                                            <li><a href="#"><i class="fa fa-cog"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-trash-o"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart-item ptb-20 border-bottom">
+                                <div class="cart-img pull-left">
+                                    <a href="#">
+                                        <img src="img/cart/2.jpg" alt="" />
+                                    </a>
+                                </div>
+                                <div class="cart-item-details clear">
+                                    <a href="#">Joust Duffle Bag1</a>
+                                    <span class="price">$30.00</span>
+                                    <div class="details-qty pull-left">
+                                        <span>Qty :</span>
+                                        <input type="number" value="1" />
+                                    </div>
+                                    <div class="remove-edit">
+                                        <ul>
+                                            <li><a href="#"><i class="fa fa-cog"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-trash-o"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart-item ptb-20">
+                                <div class="cart-img pull-left">
+                                    <a href="#">
+                                        <img src="img/cart/3.jpg" alt="" />
+                                    </a>
+                                </div>
+                                <div class="cart-item-details clear">
+                                    <a href="#">Strive Shoulder Pack</a>
+                                    <span class="price">$35.00</span>
+                                    <div class="details-qty pull-left">
+                                        <span>Qty :</span>
+                                        <input type="number" value="1" />
+                                    </div>
+                                    <div class="remove-edit">
+                                        <ul>
+                                            <li><a href="#"><i class="fa fa-cog"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-trash-o"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="organic-btn pt-20 text-center border-top">
+                            <a href="#">View and edit cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- mobail-menu -->
+    <div class="mobail-menu-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 d-none d-sm-block d-md-none">
+                    <div class="mobail-menu-active">
+                        <nav>
+                            <ul>
+                                <li class="active"><a href="{{url('/')}}">Home </a></li>
+                                <li><a href="{{url('/shop')}}">Shop </a></li>
+                                <li><a href="{{url('/blog')}}">Blog </a></li>
+                                <li><a href="{{url('/cart')}}">Cart </a></li>
+                                <li><a href="{{url('/checkout')}}">checkout</a></li>
+                                <li><a href="{{url('/contact')}}">Contact Us</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- header end -->
+<!-- contuct-area start -->
+<div class="google-map-area mb-50">
+    <div id="googleMap"></div>
+</div>
+<div class="contact-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div class="contact mb-50 bg-2 p-20">
+                    <div class="contact-title">
+                        <h2>Contact Us</h2>
+                    </div>
+                    <div class="contact-form form-style">
+                        <form id="contact-form" action="mail.php" method="post">
+                            <span>Your Name (required)</span>
+                            <input name="name" type="text" />
+                            <span>Your Email (required)</span>
+                            <input name="email" type="email" />
+                            <span>Subject</span>
+                            <input name="subject" type="text" />
+                            <span>Your Message</span>
+                            <textarea name="message" id="#" cols="30" rows="10"></textarea>
+                            <button type="submit">send</button>
+                        </form>
+                        <p class="form-messege"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div class="contact-detail mb-50 p-20 bg-2">
+                    <div class="contact-title">
+                        <h2>Contact detail</h2>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris convallis sed neque vitae bibendum. Nunc auctor dictum risus, a finibus eros iaculis nec. Sed et euismod felis, non euismod est. Maecenas quis nulla ullamcorper, imperdiet lacus et, porta sem.</p>
+                    <h5>OFFICE ADDRESS</h5>
+                    <p>Maecenas quis nulla ullamcorper</p>
+                    <h5>EMAIL</h5>
+                    <p>lion-themes@gmail.com</p>
+                    <h5>PHONE NUMBER</h5>
+                    <p>025 1234 5678 - 025 1234 5779</p>
+                    <h5>TIME HOURS</h5>
+                    <p>Monday to Friday: 10am to 7pm</p>
+                    <p>Saturday: 10am to 4pm</p>
+                    <p>Sunday: 12am to 4pm</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- contuct-area end -->
+<!-- footer area start -->
+<footer>
+    <!-- contuct area start -->
+    <div class="top-footer ptb-50 bg-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="contact clear">
+                        <div class="icon">
+                            <i class="fa fa-phone"></i>
+                            <span>Do you have </span>
+                            <span> a question?</span>
+                        </div>
+                        <div class="text">
+                            +0123 456 789
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 ">
+                    <div class="contact clear">
+                        <div class="icon">
+                            <i class="fa fa-envelope-o"></i>
+                            <span>offer </span>
+                            <span> question?</span>
+                        </div>
+                        <div class="text">
+                            <p>Contact@organica.com </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 d-md-none d-lg-block d-sm-block">
+                    <div class="contact clear res">
+                        <div class="icon">
+                            <i class="fa fa-life-saver"></i>
+                            <span> SUpport </span>
+                            <span>question?</span>
+                        </div>
+                        <div class="text">
+                            <p>support@organica.com </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- contuct area end -->
+    <!-- footer menu area start -->
+    <div class="footer-medil-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 border-right">
+                    <div class="footer-wrap pb-50">
+                        <div class="footer-static-title  text-uppercase  mt-50 mb-30">
+                            <h3>Information</h3>
+                        </div>
+                        <div class="footer-menu  text-uppercase">
+                            <ul>
+                                <li><a href="about.html">About us</a></li>
+                                <li><a href="#">Delivery Information</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Terms & Conditions </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 border-right">
+                    <div class="footer-wrap pb-50">
+                        <div class="footer-static-title  text-uppercase  mt-50 mb-30">
+                            <h3>My Account</h3>
+                        </div>
+                        <div class="footer-menu  text-uppercase">
+                            <ul>
+                                <li><a href="account.html">My Account</a></li>
+                                <li><a href="#">Order History</a></li>
+                                <li><a href="#">Returns</a></li>
+                                <li><a href="#">Site Map </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3  border-right">
+                    <div class="footer-wrap pb-50">
+                        <div class="footer-static-title  text-uppercase  mt-50 mb-30">
+                            <h3>Customer Service</h3>
+                        </div>
+                        <div class="footer-menu  text-uppercase">
+                            <ul>
+                                <li><a href="#">Site Map</a></li>
+                                <li><a href="#">Site Map</a></li>
+                                <li><a href="#">Order History</a></li>
+                                <li><a href="account.html"> My Account </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-wrap pb-50">
+                        <div class="footer-static-title  text-uppercase  mt-50 mb-30">
+                            <h3>Extras</h3>
+                        </div>
+                        <div class="footer-menu  text-uppercase">
+                            <ul>
+                                <li><a href="wishlist.html">Wish List</a></li>
+                                <li><a href="#">compare</a></li>
+                                <li><a href="contact.html">Contact Us</a></li>
+                                <li><a href="#">Custom Service</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer menu area end -->
+    <!-- copy right area start -->
+    <div class="footer-bottom ptb-20">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="copyright">
+                        <span>Copyright &copy; 2019 <a href="http://hastech.company/" target="_blank">HasTech</a> All Rights Reserved.</span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="mayment text-sm-center text-md-right">
+                        <a href="#">
+                            <img src="img/p14.png" alt="" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- copy right area end -->
+
+</footer>
+<!-- footer area end -->
+<!-- all js here -->
+<!-- jquery latest version -->
+<script src="{{ asset("/assets/js/libs/index/jquery-v3.4.1.min.js")}}"></script>
+<!-- bootstrap js -->
+<script src="{{ asset("/assets/js/libs/index/bootstrap.min.js")}}"></script>
+<!-- owl.carousel.2.0.0-beta.2.4 css -->
+<script src="{{ asset("/assets/js/libs/index/owl.carousel.min.js")}}"></script>
+<!-- meanmenu js -->
+<script src="{{ asset("/assets/js/libs/index/jquery.meanmenu.js")}}"></script>
+<!-- jquery-ui js -->
+<script src="{{ asset("/assets/js/libs/index/jquery-ui.min.js")}}"></script>
+<!-- nivo-slider js -->
+<script src="{{ asset("/assets/js/libs/index/jquery.nivo.slider.pack.js")}}"></script>
+<!-- jquery countdown js -->
+<script src="{{ asset("/assets/js/libs/index/jquery.countdown.min.js")}}"></script>
+<!-- wow js -->
+<script src="{{ asset("/assets/js/libs/index/wow.min.js")}}"></script>
+<!-- plugins js -->
+<script src="{{ asset("/assets/js/libs/index/plugins.js")}}"></script>
+<!-- main js -->
+<script src="{{ asset("/assets/js/libs/index/main.js")}}"></script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD1cZtqidvg0m-f8Hd3S6RHx1mY-omuLS4 "></script>
+<script>
+    function initialize() {
+        var mapOptions = {
+            zoom: 15,
+            scrollwheel: false,
+            center: new google.maps.LatLng(23.810332, 90.412518)
+        };
+
+        var map = new google.maps.Map(document.getElementById('googleMap'),
+            mapOptions);
+
+
+        var marker = new google.maps.Marker({
+            position: map.getCenter(),
+            animation: google.maps.Animation.BOUNCE,
+            icon: 'img/map.png',
+            map: map
+        });
+
+    }
+
+    google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+<!-- Main js file that contents all jQuery plugins activation. -->
+<script src="js/main.js"></script>
+</body>
+
+</html>
