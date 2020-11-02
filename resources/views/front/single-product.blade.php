@@ -203,24 +203,32 @@
                 <div class="symple-product mb-35">
                     <div class="single-product-tab border">
                         <div class="tab-content">
-                            @foreach($size->product->materials as $materials)
-                            <div role="tabpanel" class="tab-pane active" id="one">
+                            @foreach($size->product->materials as $num=>$materials)
+                                @if(++$num==1)
+                                    <div role="tabpanel" class="tab-pane active" id="{{$num}}">
                                 <a class="popup" href="{{asset($materials->url)}}">
                                     <img src="{{asset($materials->url)}}" alt="" />
                                 </a>
                             </div>
+                                @else
+                                    <div role="tabpanel" class="tab-pane" id="{{$num}}">
+                                        <a class="popup" href="{{asset($materials->url)}}">
+                                            <img src="{{asset($materials->url)}}" alt="" />
+                                        </a>
+                                    </div>
+                                @endif
                             @endforeach
                         </div>
                     </div>
                     <div class="single-product-menu mb-30 border">
                         <div class="single-product-active owl-carousel clear next-prev-style">
+                            @foreach($size->product->materials as $num=>$materials)
                             <div class="single-img floatleft">
-                                <a href="#one" data-toggle="tab">
-                                    @foreach($size->product->materials as $materials)
+                                <a href="{{$num}}" data-toggle="tab">
                                     <img src="{{asset($materials->url)}}" alt="" />
-                                    @endforeach
                                 </a>
                             </div>
+                            @endforeach
                         </div>
                     </div>
                 </div>
