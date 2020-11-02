@@ -18,7 +18,6 @@ class HomeController extends Controller
 
     public function index()
     {
-
         //session()->forget('cart');
         $products = Sizes::with('product', 'product.materials','product.categories','product.tags','product.sizes')->orderBy('product_id')->get();
         $in_carts = [];
@@ -39,9 +38,11 @@ class HomeController extends Controller
     {
         if($request->id) {
             $size = Sizes::find($request->id);
+
             $cart = session()->get('cart');
+
             $cart[$request->id]["product_id"] = $size->product_id;
-            if ($request->quantity <> 1) {
+            if ($request->quantity <> null) {
                 $cart[$request->id]["quantity"] = $request->quantity;
             } else {
                 $cart[$request->id]["quantity"] = 1;

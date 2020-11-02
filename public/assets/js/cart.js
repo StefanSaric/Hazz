@@ -15,22 +15,24 @@ $(document).on('click', ".cartBtn",  function(e) {
     }
     });
 });
-$(document).on('click', ".update-cart-Btn",  function(e) {
-    e.preventDefault();
-    var ele = $(this);
-    var id = ele.attr("data-id");
-    //var quantity = "?quantity=";
-    console.log(ele);
-    $.ajax({
-        url: base() + '/addtocart/' + ele.attr("data-id"),
-        method: "get",
-        success: function (response) {
-            console.log(response);
-            if(response == "true") {
-            }
-        }
-    });
-});
+
+// $(document).on('click', ".update-cart-Btn",  function(e) {
+//     e.preventDefault();
+//     var ele = $(this);
+//     var id = ele.attr("data-id");
+//     //var quantity = "?quantity=";
+//     console.log(ele);
+//     $.ajax({
+//         url: base() + '/addtocart/' + ele.attr("data-id"),
+//         method: "get",
+//         success: function (response) {
+//             console.log(response);
+//             if(response == "true") {
+//             }
+//         }
+//     });
+// });
+
 $(document).on('click', ".remove-from-cart",  function(e) {
     e.preventDefault();
     var ele = $(this);

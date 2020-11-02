@@ -28,8 +28,6 @@
     <link rel="stylesheet" href="{{ asset("/assets/css/index/magnific-popup.css")}}">
     <!-- font-awesome v4.6.3 css -->
     <link rel="stylesheet" href="{{ asset("/assets/css/index/font-awesome.min.css")}}">
-    <!-- font-awesome v4.6.3 css -->
-{{--    <link rel="stylesheet" href="{{ asset("/assets/css/theme-3/font-awesome.css/font-awesome.min.css")}}">--}}
     <!-- style css -->
     <link rel="stylesheet" href="{{ asset("/assets/css/index/style.css")}}">
     <!-- responsive css -->
@@ -108,9 +106,9 @@
                             @foreach($products as $size)
                                 @if(array_key_exists($size->id, $in_carts))
                                     <div class="cart-item ptb-20 border-bottom" >
-                                        <div class="cart-img pull-left">
+                                        <div class="cart-img pull-left" >
                                             <a href="{{url('/single-product/'.$size->id)}}">
-                                                <img src="{{asset($size->product->materials->first()->url)}}" alt="" />
+                                                <img src="{{asset($size->product->materials->first()->url)}}"  alt="" />
                                             </a>
                                         </div>
                                         <div class="cart-item-details clear">
@@ -265,7 +263,7 @@
                     @foreach($products as $size)
                         <div class="single-product">
                             <div class="product-img">
-                                <a href="{{url('/single-product/'.$size->id)}}"><img src="{{asset($size->product->materials->first()->url)}}" border="4px"  alt="" /></a>
+                                <a href="{{url('/single-product/'.$size->id)}}"><img src="{{asset($size->product->materials->first()->url)}}" border="10px" class="center"  alt="" /></a>
                             </div>
                             <div class="product-item-details text-center">
                                 <div class="product-name-review tab-product-name-review">

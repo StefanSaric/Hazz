@@ -224,7 +224,7 @@
                                     @if(array_key_exists($size->id, $in_carts))
                                     <tr class="cart-item">
                                         <td class="product-remove">
-                                            <a href="#" class="delete-from-cart" title="Remove this item">x</a>
+                                            <a href="#" class="delete-from-cart" data-id="{{ $size->id }}" title="Remove this item">x</a>
                                         </td>
                                         <td class="product-thumbnail">
                                             <a href="{{url('/single-product/'.$size->id)}}">
@@ -251,10 +251,10 @@
                                     @endif
                                 @endforeach
                                 <tr>
-                                    <td colspan="6" class="actions clear">
+                                    <td colspan="7" class="actions clear">
                                         <div class="floatright mb-10">
                                             <button class="cart-Btn"  name="quantity_{{ $size->id }}" id="quantity_{{ $size->id }}" class="quantity"
-                                                    value="{{ $carts[$size->id]["quantity"] }}" >Update Cart</button>
+                                                    value="1" >Update Cart</button>
                                         </div>
                                     </td>
                                 </tr>

@@ -502,13 +502,6 @@
                                             <div class="product-name ">
                                                 <strong><a href="{{url('/single-product/'.$size->id)}}">{{$size->product->name}}</a></strong>
                                             </div>
-                                            <div class="product-review">
-                                                <span class="special-price">Cena: {{$size->price}} RSD</span>
-                                            </div>
-                                            <div class="product-review">
-                                                <span class="product-content">Pakovanje: {{$size->quantity}} {{$size->unit}}</span>
-                                            </div>
-                                            <br>
                                                 <p>{{$size->product->text}}</p>
                                                 <div class="readmore-btn">
                                                     <a href="{{url('/single-product/'.$size->id)}}">Learn More<i class="fa fa-long-arrow-right"></i></a>
@@ -557,7 +550,6 @@
             </div>
         </div>
     </div>
-</div>
 <!-- footer area start -->
 <footer>
     <!-- contuct area start -->
@@ -715,5 +707,7 @@
 <script src="{{ asset("/assets/js/libs/index/plugins.js")}}"></script>
 <!-- main js -->
 <script src="{{ asset("/assets/js/libs/index/main.js")}}"></script>
+<!-- cart js -->
+<script src="{{ asset("/assets/js/cart.js")}}"></script>
 </body>
 </html>

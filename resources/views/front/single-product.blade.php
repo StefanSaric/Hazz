@@ -203,13 +203,13 @@
                 <div class="symple-product mb-35">
                     <div class="single-product-tab border">
                         <div class="tab-content">
+                            @foreach($size->product->materials as $materials)
                             <div role="tabpanel" class="tab-pane active" id="one">
-                                @foreach($size->product->materials as $materials)
                                 <a class="popup" href="{{asset($materials->url)}}">
                                     <img src="{{asset($materials->url)}}" alt="" />
                                 </a>
-                                @endforeach
                             </div>
+                            @endforeach
                         </div>
                     </div>
                     <div class="single-product-menu mb-30 border">
@@ -233,19 +233,27 @@
                     </div>
                     <p>{{$size->product->description}}</p>
                     <div class="select-area mb-20 clear">
-                        <div class="select-title floatleft"><strong>Size</strong></div>
+                        <div class="select-title floatleft"><strong>Pakovanje:</strong></div>
                         <div class="select-option floatright">
                             <select name="select">
-                                <option value="">Choose an option</option>
-                                @foreach($size->product->sizes as $s)
-                                <option value="l"  selected="selected">{{$s->quantity}} {{$s->unit}}</option>
-                                @endforeach
+                                @if(array_key_exists($size->id, $in_carts))
+                                    <option value="">{{$size->quantity}} {{$size->unit}}</option>
+                                @else
+                                    @foreach($size->product->sizes as $s)
+                                    <option value="l"  selected="selected">{{$s->quantity}} {{$s->unit}}</option>
+                                    @endforeach
+                                @endif
                             </select>
                         </div>
                     </div>
                     <div class="simple-product-form mtb-20 add-to-cart">
                         <form action="#">
-                            <input min="1" max="{{$size->stock}}" name="quantity" value="" type="number">
+                            @if(array_key_exists($size->id, $in_carts))
+                                <input type="number" min="1" max="{{$size->stock}}" name="quantity_{{ $size->id }}" id="quantity_{{ $size->id }}" class="quantity"  value="{{$carts[$size->id]["quantity"]}}"/>
+                            @else
+                                <input type="number" min="1" max="{{$size->stock}}" name="quantity_{{ $size->id }}" id="quantity_{{ $size->id }}" class="quantity"  value="0"/>
+                            @endif
+
                             @if(array_key_exists($size->id, $in_carts))
                                 <button type="button " class=" btn-danger" data-id="{{ $size->id }}" >Dodato</button>
                             @else
@@ -283,15 +291,6 @@
                         <div class="tab-pane active" id="description">
                             <div class="product-description p-20 bt">
                                 <p>{{$size->product->text}}</p>
-{{--                                <ul>--}}
-{{--                                    <li>Durable nylon construction.</li>--}}
-{{--                                    <li>2 main zippered compartments.</li>--}}
-{{--                                    <li>1 exterior zippered pocket.</li>--}}
-{{--                                    <li>Mesh side pouches.</li>--}}
-{{--                                    <li>Padded, adjustable straps.</li>--}}
-{{--                                    <li>Top carry handle.</li>--}}
-{{--                                    <li>Dimensions: 18" x 10" x 6".</li>--}}
-{{--                                </ul>--}}
                             </div>
                         </div>
                     </div>
