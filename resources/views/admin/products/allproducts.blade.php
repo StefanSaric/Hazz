@@ -15,7 +15,7 @@
 
     <section>
         <ol class="breadcrumb">
-            <li><a href="<?php echo url('admin/home'); ?>">Admin</a></li>
+            <li><a href="<?php echo url('admin'); ?>">Admin</a></li>
             <li class="active">Products</li>
         </ol>
         <div class="section-header">

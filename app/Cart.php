@@ -13,6 +13,6 @@ class Cart extends Model
 
     public function product()
     {
-        return $this->hasOne('App\Size','id','product_id');
+        return $this->hasOne('App\Sizes','id','product_id');
     }
 }

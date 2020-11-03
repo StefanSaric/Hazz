@@ -10,7 +10,7 @@
 @section('content')
     <section>
         <ol class="breadcrumb">
-            <li><a href="<?php echo url('admin/home'); ?>">Admin</a></li>
+            <li><a href="<?php echo url('admin'); ?>">Admin</a></li>
             <li class="active">Editovanje Proizvoda</li>
         </ol>
         <div class="section-header">

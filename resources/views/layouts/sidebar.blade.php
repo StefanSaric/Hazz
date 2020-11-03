@@ -52,7 +52,15 @@
                         <li><a href="<?php echo url('admin\products'); ?>" <?php if($active == 'allProducts'){ echo "class='active'";}?> >All Products</a></li>
                         <li><a href="<?php echo url('admin\products\create'); ?>" <?php if($active == 'addProduct'){ echo "class='active'";}?> >Create Product</a></li>
                     </ul>
-                    <!--end /submenu -->
+                </li>
+                <li>
+                    <a href="javascript:void(0);">
+                        <i class="fa fa-user fa-fw"></i><span class="title">Orders</span> <span class="expand-sign">+</span>
+                    </a>
+                    <!--start submenu -->
+                    <ul>
+                        <li><a href="<?php echo url('admin\orders'); ?>" <?php if($active == 'allOrders'){ echo "class='active'";}?> >All Orders</a></li>
+                    </ul>
                 </li>
             <!--end /menu-item -->
             <!-- Menu Pages -->

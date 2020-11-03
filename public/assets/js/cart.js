@@ -7,31 +7,40 @@ $(document).on('click', ".cartBtn",  function(e) {
         method: "get",
         success: function (response) {
             console.log(response);
-            if(response == "true") {
+            if (response != null) {
+                console.log(response);
+                console.log(response.price, response.product);
                 ele.removeClass('cartBtn');
                 ele.addClass('btn-danger');
                 ele.text("Dodato");
+                $("#cart_div").append(`
+                    <div class="cart-item ptb-20 border-bottom" >
+                        <div class="cart-img pull-left">
+                            <a href="` + base() + `/single-product/` + response.id + `">
+                                <img src="` + base() + "/" + response.product.materials[0].url + `" alt="" />
+                            </a>
+                        </div>
+                        <div class="cart-item-details clear">
+                            <a href="` + base() + `/single-product/` + ele.attr("data-id") + `">` + response.product.name + `</a>
+                            <span class="price" >Cena: ` + response.price + ` RSD</span>
+                            <span class="price">Pakovanje:` + response.quantity + response.unit + `</span>
+                        </div>
+                        <div class="details-qty pull-left">
+                            <span>Kolicina: </span>
+                            <input type="number" min="1" max=`+response.stock +` name="quantity_" `+response.id +`  id="quantity_" `+response.id +` class="quantity"  value="1"/>
+                        </div>
+                        <div class="remove-edit">
+                            <a href="#" class="remove-from-cart" data-id= `+response.id +`><i class="fa fa-trash-o"></i></a>
+                        </div>
+                    </div>
+                `);
+                $("#sizeof_cart").html(response.sizeOf);
+                $("#subtotal").html(response.total);
             }
-    }
+        }
     });
 });
 
-// $(document).on('click', ".update-cart-Btn",  function(e) {
-//     e.preventDefault();
-//     var ele = $(this);
-//     var id = ele.attr("data-id");
-//     //var quantity = "?quantity=";
-//     console.log(ele);
-//     $.ajax({
-//         url: base() + '/addtocart/' + ele.attr("data-id"),
-//         method: "get",
-//         success: function (response) {
-//             console.log(response);
-//             if(response == "true") {
-//             }
-//         }
-//     });
-// });
 
 $(document).on('click', ".remove-from-cart",  function(e) {
     e.preventDefault();

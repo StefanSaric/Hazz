@@ -5,7 +5,7 @@
     <link rel="stylesheet" type="text/css" href="{{asset('assets/css/theme-default/bootstrap.css')}}"/>
     <link rel="stylesheet" type="text/css" href="{{asset('assets/css/theme-default/libs/jquery-ui/jquery-ui-boostbox.css')}}"/>
     <link rel="stylesheet" type="text/css" href="{{asset('assets/css/theme-1/libs/fullcalendar/fullcalendar.css')}}"/>
-
+    <link rel="stylesheet" type="text/css" href="{{asset('assets/css/theme-default/libs/font-awesome.min.css')}}"/>
 @stop
 
 @section('content')
@@ -15,7 +15,7 @@
 
     <section>
         <ol class="breadcrumb">
-            <li>AdamAll</li><li>Dashboard</li>
+            <li>Lesnik</li><li>Dashboard</li>
         </ol>
         <div class="section-header">
             <h3 class="text-standard"><i class="fa fa-fw fa-arrow-circle-right text-gray-light"></i>Dashboard</h3>

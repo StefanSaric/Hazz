@@ -45,7 +45,22 @@ class OrdersController extends Controller
                 ]);
             }
         }
+        session()->forget('cart');
 
         return redirect('/');
+    }
+
+    public function index(){
+
+        $orders = Order::all()->sortByDesc('created_at');
+
+        return view('admin.orders.allorders',['active' => 'allOrders', 'orders' => $orders]);
+    }
+
+    public function details($id){
+
+        $order = Order::with('cart','cart.product')->find($id);
+
+        return view('admin.orders.details',['active' => 'allOrders', 'order' => $order]);
     }
 }

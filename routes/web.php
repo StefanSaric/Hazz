@@ -31,6 +31,10 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::resource('admin/products', 'Admin\ProductController');
 Route::get('admin/products/delete/{id}', 'Admin\ProductController@delete');
+Route::resource('admin/orders', 'Admin\OrdersController');
+Route::get('admin/orders/details/{id}', 'Admin\OrdersController@details');
+
+
 
 Route::get('/', 'HomeController@index');
 

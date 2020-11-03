@@ -36,8 +36,9 @@ class HomeController extends Controller
 
     public function addtocart(Request $request)
     {
+        $size = null;
         if($request->id) {
-            $size = Sizes::find($request->id);
+            $size = Sizes::with('product', 'product.materials')->find($request->id);
 
             $cart = session()->get('cart');
 
@@ -56,13 +57,18 @@ class HomeController extends Controller
             foreach ($cart as $one_cart) {
                 $total += $one_cart["price"] * $one_cart["quantity"];
             }
+
+            $size["total"] = $total;
+
+            $size["sizeOf"] = sizeof(session()->get('cart'));
         }
-        return "true";
+        return $size;
     }
 
 
     public function deletecart(Request $request)
     {
+
         if($request->id) {
             $cart = session()->get('cart');
             if(isset($cart[$request->id])) {
@@ -72,6 +78,7 @@ class HomeController extends Controller
             session()->flash('success', 'Product removed successfully');
         }
         return "true";
+
     }
 
 }
