@@ -47,46 +47,63 @@
     <div id="size-boxes">
         <div class = "form-group" id="divcopy_0" >
             <div class="col-md-2">
-
                 <button type="button" class="glyphicon glyphicon-plus" id="sizeBtn" ></button>
                 <label class="control-label">Pakovanje:</label>
             </div>
+            @if(isset($product->sizes))
+                @foreach($product->sizes as $num=>$size)
+                <div class = "form-group">
+                    @if($num>0)
+                        <div class="col-md-2"></div>
+                    @endif
+                        <div class="col-md-2">
+                            <label class="control-label">Kolicina:</label>
+                            <input type="number" name="quantity" id = "quantity" class="form-control" @error('quantity') is-invalid @enderror placeholder="kolicina" value="{{ $size->quantity }}" required />
+                        </div>
+                        <div class="col-md-2">
+                            <label class="control-label">Jedinica mere:</label>
+                            <input type="text" name="sizes[0][unit]" id = "unit" class="form-control" @error('unit') is-invalid @enderror placeholder="jedinica" value="{{ $size->unit }}" required />
+                        </div>
+                        <div class="col-md-2">
+                            <label class="control-label">Na stajanju:</label>
+                            <input type="number" name="sizes[0][stock]" id = "stock" class="form-control" @error('stock') is-invalid @enderror placeholder="Paketa na stajanju" value="{{ $size->stock }}" required />
+                        </div>
+                        <div class="col-md-2">
+                            <label class="control-label">Cena:</label>
+                            <input type="text" name="sizes[0][price]" id = "price" class="form-control" @error('price') is-invalid @enderror placeholder="Cena" value="{{ $size->price }}" required />
+                        </div>
+                </div>
+                @endforeach
+            @else
             <div class="col-md-2">
                 <label class="control-label">Kolicina:</label>
-                @if(isset($size)) <input type="number" name="sizes[0][quantity]" id = "quantity" class="form-control" @error('quantity') is-invalid @enderror placeholder="kolicina" value="{{ $size->quantity }}" required />
-                @else <input type="number" name="sizes[0][quantity]" id ="quantity" class="form-control form-validate" @error('quantity') is-invalid @enderror placeholder="kolicina" value="{{ old('quantity') }}" required />
-                @endif
+                <input type="number" name="sizes[0][quantity]" id ="quantity" class="form-control form-validate" @error('quantity') is-invalid @enderror placeholder="kolicina" value="{{ old('quantity') }}" required />
                 @error('quantity')
                 <div class="alert alert-danger">{{ $message }}</div>
                 @enderror
             </div>
             <div class="col-md-2">
                 <label class="control-label">Jedinica mere:</label>
-                @if(isset($size)) <input type="text" name="sizes[0][unit]" id = "unit" class="form-control" @error('unit') is-invalid @enderror placeholder="jedinica" value="{{ $size->unit }}" required />
-                @else <input type="text" name="sizes[0][unit]" id ="unit" class="form-control form-validate" @error('unit') is-invalid @enderror placeholder="jedinica" value="{{ old('unit') }}" required />
-                @endif
+                <input type="text" name="sizes[0][unit]" id ="unit" class="form-control form-validate" @error('unit') is-invalid @enderror placeholder="jedinica" value="{{ old('unit') }}" required />
                 @error('unit')
                 <div class="alert alert-danger">{{ $message }}</div>
                 @enderror
             </div>
             <div class="col-md-2">
                 <label class="control-label">Na stajanju:</label>
-                @if(isset($size)) <input type="number" name="sizes[0][stock]" id = "stock" class="form-control" @error('stock') is-invalid @enderror placeholder="Paketa na stajanju" value="{{ $size->stock }}" required />
-                @else <input type="number" name="sizes[0][stock]" id ="stock" class="form-control form-validate" @error('stock') is-invalid @enderror placeholder="Paketa na stajanju" value="{{ old('stock') }}" required />
-                @endif
+                <input type="number" name="sizes[0][stock]" id ="stock" class="form-control form-validate" @error('stock') is-invalid @enderror placeholder="Paketa na stajanju" value="{{ old('stock') }}" required />
                 @error('stock')
                 <div class="alert alert-danger">{{ $message }}</div>
                 @enderror
             </div>
             <div class="col-md-2">
                 <label class="control-label">Cena:</label>
-                @if(isset($size)) <input type="text" name="sizes[0][price]" id = "price" class="form-control" @error('price') is-invalid @enderror placeholder="Cena" value="{{ $size->price }}" required />
-                @else <input type="text" name="sizes[0][price]" id ="price" class="form-control form-validate" @error('price') is-invalid @enderror placeholder="Cena" value="{{ old('price') }}" required />
-                @endif
+                <input type="text" name="sizes[0][price]" id ="price" class="form-control form-validate" @error('price') is-invalid @enderror placeholder="Cena" value="{{ old('price') }}" required />
                 @error('price')
                 <div class="alert alert-danger">{{ $message }}</div>
                 @enderror
             </div>
+            @endif
         </div>
     </div>
     <div class = "form-group">
@@ -94,10 +111,22 @@
             <label class="control-label">Tagovi:</label>
         </div>
         <div class="col-md-10">
-            @if(isset($tag)) <input id="tags" name="tags" type="text" value="{{ $tag->name }}" class='form-control' multiple data-role="tagsinput" style="display: none;">
-            @else <input type="text" name="tags" id ="tags" class="form-control form-validate" @error('name') is-invalid @enderror placeholder="Tagovi..." value="{{ old('name') }}" required />
+            @if(isset($product->tags))
+                <?php
+                    $tag_string = "";
+                    foreach($product->tags as $num=>$tag) {
+                        if($num > 0) {
+                            $tag_string .= ",";
+                        }
+                        $tag_string .= $tag->name;
+                        $num++;
+                    }
+                ?>
+                <input id="tags" name="tags" type="text" value="{{ $tag_string }}"  class='form-control' multiple data-role="tagsinput" style="display: none;" >
+            @else
+                <input type="text" name="tags" id ="tags" class="form-control form-validate" @error('tags') is-invalid @enderror placeholder="Tagovi..." value="{{ old('tags') }}" required />
             @endif
-            @error('name')
+            @error('tags')
             <div class="alert alert-danger">{{ $message }}</div>
             @enderror
         </div>
@@ -107,10 +136,21 @@
             <label class="control-label">Kategorije:</label>
         </div>
         <div class="col-md-10">
-            @if(isset($category)) <input id="category" name="category" type="text" value="{{ $category->name }}" class='form-control' multiple data-role="tagsinput" style="display: none;">
-            @else <input type="text" name="category" id ="category" class="form-control form-validate" @error('name') is-invalid @enderror placeholder="Kategorije..." value="{{ old('name') }}" required />
+            @if(isset($product->categories))
+                <?php
+                $category_string = "";
+                foreach($product->categories as $num=>$category) {
+                    if($num > 0) {
+                        $category_string .= ",";
+                    }
+                    $category_string .= $category->name;
+                    $num++;
+                }
+                ?>
+            <input id="category" name="category" type="text" value="{{ $category_string }}"  class='form-control' multiple data-role="tagsinput" style="display: none;" >
+            @else <input type="text" name="category" id ="category" class="form-control form-validate" @error('category') is-invalid @enderror placeholder="Kategorije..." value="{{ old('category') }}" required />
             @endif
-            @error('name')
+            @error('category')
             <div class="alert alert-danger">{{ $message }}</div>
             @enderror
         </div>
@@ -130,12 +170,48 @@
     </div>
     <div class="form-group">
         <div class="col-md-2">
-            <label class="control-label">Slika:</label>
+            <label class="control-label">Slike:</label>
         </div>
         <div class="col-md-10">
-            <input type="file" name="photos[]" id="uploadPhotoFiles" class="uploadPhotoFiles" accept="image/jpg, image/jpeg, image/png" multiple />
+                <input type="file" name="photos[]" id="uploadPhotoFiles" class="uploadPhotoFiles" accept="image/jpg, image/jpeg, image/png" multiple />
         </div>
     </div>
+    @if(isset($product))
+        <div class="form-group">
+            <div class="col-md-2"></div>
+            <div class="col-md-10">
+                <div id="gallery">
+                    <div id="image-container">
+                        <ul id="image-list">
+                            @foreach($product->materials as $material)
+                                <li style="list-style-type: none;" id="image_{{$material->id}}">
+                                    <div class="row">
+                                        <div class="col-md-2" id="imagediv_{{$material->id}}">
+                                            <div class="box-head">
+                                                <header>
+                                                </header>
+                                                <div class="tools">
+                                                    <div class="btn-group btn-group-transparent">
+                                                        <div class="btn-group">
+                                                            <button type="button" class="btn btn-equal btn-sm removeImageDiv" id="remove_{{$material->id}}"><i class="fa fa-times"></i></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <img class="thumbnail img-responsive img" src="{{asset($material->url)}}"  style="background-color: #f7f7f7; width:100%">
+                                        </div>
+                                        <div class="col-md-10"></div>
+                                    </div>
+                                </li>
+                            @endforeach
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <input type="hidden" id="removematerials" name="removematerials" value="[]">
+        <input type="hidden" id="sortImages" name="sortImages" value="[]">
+    @endif
     <div class="form-group">
         <div class="form-footer col-lg-offset-1 col-md-offset-1 col-sm-9">
             <button type="button" class="btn btn-primary" id="addBuilding" data-toggle="modal" data-target="#simpleModal">{{$submit}} Proizvod</button>

@@ -23,7 +23,7 @@
                 <div class="col-lg-12">
                     <div class="box box-outlined">
                         <div class="box-head">
-                            <header><h4 class="text-light"></h4></header>
+                            <header><h4 class="text-light">Izmeni Proizvod:</h4></header>
                         </div>
                         <div class="box-body no-padding">
                             {!! Form::model($product, array('method' => 'PATCH', 'url' => 'admin/products/'.$product->id, 'class' => 'form-horizontal form-bordered form-validate', 'role' => 'form', 'novalidate' => 'novalidate', 'files' => true)) !!}
@@ -49,4 +49,6 @@
     <script src="{{ asset('assets/js/libs/select2/select2.min.js') }}"></script>
     <script src="{{ asset('assets/js/libs/bootstrap-tagsinput/bootstrap-tagsinput.min.js') }}"></script>
     <script src="{{ asset('assets/js/tags.js') }}"></script>
+    <script src="{{ asset('assets/js/image.js') }}"></script>
+    <script src="{{ asset('assets/js/delete-image.js') }}"></script>
 @stop

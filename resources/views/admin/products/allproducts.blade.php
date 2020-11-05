@@ -57,7 +57,7 @@
                                         <td>{{ $product->key}}</td>
                                         <td>{{ $product->description}}</td>
                                         <td>@foreach($product->tags as $tag)#{{ $tag->name }}<br/>@endforeach</td>
-                                        <td>@foreach($product->categories as $category){{ $category->name }}@endforeach</td>
+                                        <td>@foreach($product->categories as $category)#{{ $category->name }}<br/>@endforeach</td>
                                         <td><img src="{{asset($product->materials->first()->url)}}" height="150" width="150"></td>
                                         <td>
                                             <a href="{{ url('admin\products\\'.$product->id.'\edit') }}" class="btn btn-xs btn-success editPost" data-toggle="tooltip" data-placement="top" data-original-title="Uredi Proizvod"><i class="fa fa-pencil"></i></a>

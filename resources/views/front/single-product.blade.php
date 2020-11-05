@@ -106,24 +106,24 @@
                 <div class="cart-area">
                     <div class="maincart-wrap">
                         <a href="javascript:void(0);"><i class="fa fa-shopping-cart"></i>
-                            <span>{{ sizeof($in_carts) }}</span>
+                            <span id="sizeof_cart">{{ sizeof($in_carts) }}</span>
                         </a>
                     </div>
                     <div class="cart">
                         <div class="total-items pb-20 border-bottom mb-15">
                             <div class="sub-total clear">
-                                <strong>{{ sizeof($in_carts) }}</strong>
+                                <strong id="sizeof_cart">{{ sizeof($in_carts) }}</strong>
                                 <span>items</span>
                                 <span class="pull-right total">
 											<span>Cart Subtotal :</span>
-											<strong>{{$total}} RSD</strong>
+											<strong id="subtotal">{{$total}} RSD</strong>
 										</span>
                             </div>
                             <div class="cart-btn mt-15">
                                 <button>Go to Checkout</button>
                             </div>
                         </div>
-                        <div class="cart-items clear mb-15">
+                        <div class="cart-items clear mb-15" id="cart_div">
                             @foreach($products as $one_size)
                                 @if(array_key_exists($one_size->id, $in_carts))
                                     <div class="cart-item ptb-20 border-bottom" >

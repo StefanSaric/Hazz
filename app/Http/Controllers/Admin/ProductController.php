@@ -10,6 +10,7 @@ use App\Tags;
 use App\Sizes;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
+use Illuminate\Support\Facades\Validator;
 use Intervention\Image\ImageManagerStatic as Image;
 
 class ProductController extends Controller
@@ -35,7 +36,15 @@ class ProductController extends Controller
 
     public function store(Request $request)
     {
-        //dd($request->all());
+        $validator = Validator::make($request->all(), [
+            'photos' => 'required','tags' => 'required','category' => 'required'
+        ]);
+        if ($validator->fails()) {
+            return redirect()->back()
+                ->withErrors($validator)
+                ->withInput($request->input());
+        }
+
         $now = time();
         $product = Products::create($request->except('photos'));
 
@@ -100,6 +109,7 @@ class ProductController extends Controller
         $categories = Categories::all();
         $tags = Tags::all();
         $sizes = Sizes::all();
+
 
         return view('admin.products.edit', ['active' => 'addProduct', 'product' => $product, 'categories' => $categories, 'tags' => $tags, 'sizes' => $sizes]);
 
