@@ -17,34 +17,33 @@ Route::get('/', function () {
     return view('front.site');
 });
 
+//Logovanje
 Auth::routes(['register' => false, 'logout' => false]);
 Route::get('logout', 'Auth\LoginController@logout')->name('logout');
-
 Route::get('admin/login', function () { return view('login'); });
 Route::get('login', function () { return view('login'); })->name('login');
-Route::get('/blog', function () { return view('front.blog'); });
-Route::get('/contact', function () { return view('front.contact'); });
+Route::post('postlogin', 'Auth\LoginController@postLogin');
 
+//Admin panel
+Route::group(['prefix' => 'admin', 'middleware' => 'role'], function () {
+    Route::get('/','Admin\AdminController@index');
+    Route::resource('/products', 'Admin\ProductController');
+    Route::get('/products/delete/{id}', 'Admin\ProductController@delete');
+    Route::resource('/orders', 'Admin\OrdersController');
+    Route::get('/orders/details/{id}', 'Admin\OrdersController@details');
+});
 
-Route::get('/admin','Admin\AdminController@index');
-Route::get('/home', 'HomeController@index')->name('home');
-
-Route::resource('admin/products', 'Admin\ProductController');
-Route::get('admin/products/delete/{id}', 'Admin\ProductController@delete');
-Route::resource('admin/orders', 'Admin\OrdersController');
-Route::get('admin/orders/details/{id}', 'Admin\OrdersController@details');
-
-
-
+//Front
 Route::get('/', 'HomeController@index');
-
 Route::get('/shop', 'Admin\CartController@shop');
+Route::get('/blog', function () { return view('front.blog'); });
 Route::get('/cart', 'Admin\CartController@cart');
 Route::get('/checkout', 'Admin\CartController@checkout');
+Route::get('/contact', function () { return view('front.contact'); });
 Route::get('/single-product/{id}', 'Admin\ProductController@page');
 Route::post('/test111', 'Admin\OrdersController@store');
 
-
+//JavaScript
 Route::get('/addtocart/{id}', 'HomeController@addtocart');
 //Route::get('/updatecart/{id}', 'HomeController@updatecart');
 Route::get('/deletecart/{id}', 'HomeController@deletecart');

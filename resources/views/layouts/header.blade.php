@@ -21,7 +21,7 @@
             </ul><!--end .nav -->
             <ul class="nav navbar-nav navbar-right">
                 <li class="dropdown">
-{{--                    <a href="javascript:void(0);" class="navbar-profile dropdown-toggle text-bold" data-toggle="dropdown">{{ Auth::user()->name }} <i class="fa fa-fw fa-angle-down"></i> </a>--}}
+                    <a href="javascript:void(0);" class="navbar-profile dropdown-toggle text-bold" data-toggle="dropdown">{{ Auth::user()->name }} <i class="fa fa-fw fa-angle-down"></i> </a>
                     <ul class="dropdown-menu animation-slide">
                         <li><a class="dropdown-item" href="{{ route('logout') }}"
                                onclick="event.preventDefault();
