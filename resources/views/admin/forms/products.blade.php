@@ -58,7 +58,7 @@
                     @endif
                         <div class="col-md-2">
                             <label class="control-label">Kolicina:</label>
-                            <input type="number" name="quantity" id = "quantity" class="form-control" @error('quantity') is-invalid @enderror placeholder="kolicina" value="{{ $size->quantity }}" required />
+                            <input type="number" name="sizes[0][quantity]" id = "quantity" class="form-control" @error('quantity') is-invalid @enderror placeholder="kolicina" value="{{ $size->quantity }}" required />
                         </div>
                         <div class="col-md-2">
                             <label class="control-label">Jedinica mere:</label>
@@ -72,37 +72,41 @@
                             <label class="control-label">Cena:</label>
                             <input type="text" name="sizes[0][price]" id = "price" class="form-control" @error('price') is-invalid @enderror placeholder="Cena" value="{{ $size->price }}" required />
                         </div>
+                        @if($num>0)
+                        <button type="button" class="obrisiSize" id="{{ $size->id }}"><i class="fa fa-times"></i></button>
+                        @endif
                 </div>
                 @endforeach
-            @else
-            <div class="col-md-2">
-                <label class="control-label">Kolicina:</label>
-                <input type="number" name="sizes[0][quantity]" id ="quantity" class="form-control form-validate" @error('quantity') is-invalid @enderror placeholder="kolicina" value="{{ old('quantity') }}" required />
-                @error('quantity')
-                <div class="alert alert-danger">{{ $message }}</div>
-                @enderror
-            </div>
-            <div class="col-md-2">
-                <label class="control-label">Jedinica mere:</label>
-                <input type="text" name="sizes[0][unit]" id ="unit" class="form-control form-validate" @error('unit') is-invalid @enderror placeholder="jedinica" value="{{ old('unit') }}" required />
-                @error('unit')
-                <div class="alert alert-danger">{{ $message }}</div>
-                @enderror
-            </div>
-            <div class="col-md-2">
-                <label class="control-label">Na stajanju:</label>
-                <input type="number" name="sizes[0][stock]" id ="stock" class="form-control form-validate" @error('stock') is-invalid @enderror placeholder="Paketa na stajanju" value="{{ old('stock') }}" required />
-                @error('stock')
-                <div class="alert alert-danger">{{ $message }}</div>
-                @enderror
-            </div>
-            <div class="col-md-2">
-                <label class="control-label">Cena:</label>
-                <input type="text" name="sizes[0][price]" id ="price" class="form-control form-validate" @error('price') is-invalid @enderror placeholder="Cena" value="{{ old('price') }}" required />
-                @error('price')
-                <div class="alert alert-danger">{{ $message }}</div>
-                @enderror
-            </div>
+                    <input type="hidden" id="removesize" name="removesize" value="[]">
+            @elseif(!isset($product->sizes))
+                <div class="col-md-2">
+                    <label class="control-label">Kolicina:</label>
+                    <input type="number" name="sizes[0][quantity]" id ="quantity" class="form-control form-validate" @error('sizes'[0].'[quantity]') is-invalid @enderror placeholder="kolicina" value="{{ old('sizes')[0]["quantity"] }}" required />
+                    @error('sizes[0][quantity]')
+                    <div class="alert alert-danger">{{ $message }}</div>
+                    @enderror
+                </div>
+                <div class="col-md-2">
+                    <label class="control-label">Jedinica mere:</label>
+                    <input type="text" name="sizes[0][unit]" id ="unit" class="form-control form-validate" @error('sizes'[0].'[unit]') is-invalid @enderror placeholder="jedinica" value="{{  old('sizes')[0]["unit"] }}" required />
+                    @error('sizes[0][unit]')
+                    <div class="alert alert-danger">{{ $message }}</div>
+                    @enderror
+                </div>
+                <div class="col-md-2">
+                    <label class="control-label">Na stajanju:</label>
+                    <input type="number" name="sizes[0][stock]" id ="stock" class="form-control form-validate" @error('sizes'[0].'[stock]') is-invalid @enderror placeholder="Paketa na stajanju" value="{{ old('sizes')[0]["stock"] }}" required />
+                    @error('sizes[0][stock]')
+                    <div class="alert alert-danger">{{ $message }}</div>
+                    @enderror
+                </div>
+                <div class="col-md-2">
+                    <label class="control-label">Cena:</label>
+                    <input type="text" name="sizes[0][price]" id ="price" class="form-control form-validate" @error('sizes[0][price]') is-invalid @enderror placeholder="Cena" value="{{ old('sizes')[0]["price"] }}" required />
+                    @error('sizes[0][price]')
+                    <div class="alert alert-danger">{{ $message }}</div>
+                    @enderror
+                </div>
             @endif
         </div>
     </div>

@@ -16,7 +16,7 @@ class CreateSizesTable extends Migration
         Schema::create('sizes', function (Blueprint $table) {
             $table->id();
             $table->integer('product_id');
-            $table->integer('quantity');
+            $table->float('quantity');
             $table->string('unit');
             $table->double('price');
             $table->integer('stock');

@@ -49,6 +49,10 @@
     <script src="{{ asset('assets/js/libs/select2/select2.min.js') }}"></script>
     <script src="{{ asset('assets/js/libs/bootstrap-tagsinput/bootstrap-tagsinput.min.js') }}"></script>
     <script src="{{ asset('assets/js/tags.js') }}"></script>
+    <script src="{{ asset('assets/js/category.js') }}"></script>
+    <script src="{{ asset('assets/js/size.js') }}"></script>
+    <script src="{{ asset('assets/js/size-delete.js') }}"></script>
+    <script src="{{ asset('assets/js/size-edit-delete.js') }}"></script>
     <script src="{{ asset('assets/js/image.js') }}"></script>
     <script src="{{ asset('assets/js/delete-image.js') }}"></script>
 @stop

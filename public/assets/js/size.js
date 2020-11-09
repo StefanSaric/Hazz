@@ -6,7 +6,7 @@ $(document).on('click', "#sizeBtn", function() {
 		<div class="col-md-2">
 		</div>
 		<div class="col-md-2">
-			<input type="number" name="sizes[`+counter+`][quantity]" id = "sizes[`+counter+`][quantity]" class="form-control" placeholder="kolicina" value="" required />
+			<input type="number" name="sizes[`+counter+`][quantity]" id = "sizes[`+counter+`][quantity]" class="form-control"  placeholder="kolicina" value="" required />
 		</div>
 		<div class="col-md-2">
 			<input type="text" name="sizes[`+counter+`][unit]" id ="sizes[`+counter+`][unit]" class="form-control form-validate" placeholder="jedinica" value="" required />

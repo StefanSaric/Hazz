@@ -10,6 +10,7 @@ $(document).on('click', '.removeImageDiv', function() {
     $("#image_" + id).remove();
     sortImages();
 });
+
 var dropIndex;
 $(document).ready(function () {
     $("#image-list").sortable({
