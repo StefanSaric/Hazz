@@ -2,7 +2,7 @@
 
 @section('pageCss')
     <link rel="stylesheet" type="text/css" href="{{asset('assets/css/theme-default/libs/wysihtml5/wysihtml5.css')}}"/>
-    <link rel="stylesheet" type="text/css" href="{{asset('assets/css/jquery-ui.css')}}"/>
+{{--    <link rel="stylesheet" type="text/css" href="{{asset('assets/css/jquery-ui.css')}}"/>--}}
     <link rel="stylesheet" type="text/css" href="{{asset('assets/css/theme-5/libs/select2/select2.css')}}"/>
     <link rel="stylesheet" type="text/css" href="{{asset('assets/css/theme-5/libs/bootstrap-tagsinput/bootstrap-tagsinput.css')}}"/>
 @stop
@@ -48,11 +48,11 @@
     <script src="{{ asset('assets/js/libs/wysihtml5/wysihtml5-0.3.0.js') }}"></script>
     <script src="{{ asset('assets/js/libs/select2/select2.min.js') }}"></script>
     <script src="{{ asset('assets/js/libs/bootstrap-tagsinput/bootstrap-tagsinput.min.js') }}"></script>
-    <script src="{{ asset('assets/js/tags.js') }}"></script>
+    <script src="{{ asset('assets/js/image.js') }}"></script>
     <script src="{{ asset('assets/js/category.js') }}"></script>
     <script src="{{ asset('assets/js/size.js') }}"></script>
     <script src="{{ asset('assets/js/size-delete.js') }}"></script>
     <script src="{{ asset('assets/js/size-edit-delete.js') }}"></script>
-    <script src="{{ asset('assets/js/image.js') }}"></script>
-    <script src="{{ asset('assets/js/delete-image.js') }}"></script>
+    <script src="{{ asset('assets/js/tags.js') }}"></script>
+{{--    <script src="{{ asset('assets/js/delete-image.js') }}"></script>--}}
 @stop

@@ -151,7 +151,7 @@
                     <div class="menu">
                         <ul>
                             <li><a href="index.html">Home</a></li>
-                            <li class="active"><a href="javascript:void(0);">Login-Register</a></li>
+                            <li class="active"><a href="javascript:void(0);">Login</a></li>
                         </ul>
                     </div>
                 </div>
@@ -188,15 +188,18 @@
                             @enderror
                         </div>
                         <div class="row">
-                            <div class="col-xs-6 text-left">
+                            <div class="col-xs-6 col-md-6 col-lg-6 text-left">
                                 <div data-toggle="buttons">
                                     <label class="btn checkbox-inline btn-checkbox-primary-inverse">
                                         <input type="checkbox" value="default-inverse1"> Remember me
                                     </label>
                                 </div>
                             </div>
-                            <div class="login-button">
-                                <button class="btn-primary">{{ __('Login') }}</button>
+                            <div class="col-xs-6 col-md-6 col-lg-6 text-right" >
+                                <button type="submit" class="btn btn-primary pull-right">
+                                    {{ __('Login') }}
+                                </button>
+
                             </div>
                         </div>
                     </form>

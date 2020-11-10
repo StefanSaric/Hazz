@@ -110,7 +110,6 @@ class ProductController extends Controller
         $tags = Tags::all();
         $sizes = Sizes::all();
 
-
         return view('admin.products.edit', ['active' => 'addProduct', 'product' => $product, 'categories' => $categories, 'tags' => $tags, 'sizes' => $sizes]);
 
     }
@@ -246,7 +245,6 @@ class ProductController extends Controller
             }
         }
 
-
         //sortiranje slike
         $sortImages = $request->get('sortImages');
         if ($sortImages != null) {
@@ -290,8 +288,6 @@ class ProductController extends Controller
         if($carts != null)
             foreach($carts as $cart)
                 $total += $cart["price"]*$cart["quantity"];
-
-
 
 
         return view('front.single-product', ['size' => $size,

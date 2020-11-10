@@ -73,7 +73,7 @@
                             <input type="text" name="sizes[0][price]" id = "price" class="form-control" @error('price') is-invalid @enderror placeholder="Cena" value="{{ $size->price }}" required />
                         </div>
                         @if($num>0)
-                        <button type="button" class="obrisiSize" id="{{ $size->id }}"><i class="fa fa-times"></i></button>
+                            <button type="button" class="obrisiSize" id="{{ $size->id }}"><i class="fa fa-times"></i></button>
                         @endif
                 </div>
                 @endforeach
