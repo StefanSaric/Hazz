@@ -15,22 +15,24 @@ $(document).on('click', ".cartBtn",  function(e) {
                 ele.text("Dodato");
                 $("#cart_div").append(`
                     <div class="cart-item ptb-20 border-bottom" >
-                        <div class="cart-img pull-left">
-                            <a href="` + base() + `/single-product/` + response.id + `">
-                                <img src="` + base() + "/" + response.product.materials[0].url + `" alt="" />
-                            </a>
-                        </div>
-                        <div class="cart-item-details clear">
+                        <div class="cart-item-details text-center">
                             <a href="` + base() + `/single-product/` + ele.attr("data-id") + `">` + response.product.name + `</a>
-                            <span class="price" >Cena: ` + response.price + ` RSD</span>
-                            <span class="price">Pakovanje:` + response.quantity + response.unit + `</span>
-                        </div>
-                        <div class="details-qty pull-left">
+                        </div><br>
+                        <div class="cart-item-details text-center">
+                            <div class="cart-img pull-left col-md-auto-12" >
+                                <a href="` + base() + `/single-product/` + response.id + `">
+                                    <img src="` + base() + "/" + response.product.materials[0].url + `" alt="" />
+                                </a>
+                            </div>
+                            <div class="cart-item-details clear">
+                                <h6>Cena: ` + response.price + ` RSD</h6>
+                                <h6>Pakovanje:` + response.quantity + response.unit + `</h6>
+                            </div>
+                        </div><br>
+                        <div class="details-qty col-md-auto-12">
                             <span>Kolicina: </span>
                             <input type="number" min="1" max=`+response.stock +` name="quantity_" `+response.id +`  id="quantity_" `+response.id +` class="quantity"  value="1"/>
-                        </div>
-                        <div class="remove-edit">
-                            <a href="#" class="remove-from-cart" data-id= `+response.id +`><i class="fa fa-trash-o"></i></a>
+                            <a href="#" class="delete-from-cart" data-id= `+response.id +`><i class="fa fa-trash-o" style="font-size:24px"></i></a>
                         </div>
                     </div>
                 `);
