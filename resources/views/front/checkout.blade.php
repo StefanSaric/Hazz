@@ -186,7 +186,7 @@
                 <div class="woocommerce-breadcrumb mtb-15">
                     <div class="menu">
                         <ul>
-                            <li><a href="index.html">Home</a></li>
+                            <li><a  href="{{url('/')}}">Home</a></li>
                             <li class="active"><a href="javascript:void(0);">Checkout</a></li>
                         </ul>
                     </div>
@@ -222,27 +222,23 @@
                                     <b>Prezime <span class="required">*</span></b>
                                     <input type="text" name="lastname" id ="lastname" placeholder="Prezime" required/>
                                 </span>
-                                <span class="form-row-first">
-                                    <b>Email Addresa <span class="required">*</span></b>
-                                    <input type="text" name="email" id ="email" placeholder="email" required/>
-                                </span>
-{{--                                <span class="form-row-last">--}}
-{{--                                    <b>Email Addresa <span class="required">*</span></b>--}}
-{{--                                    <input type="email" />--}}
-{{--                                </span>--}}
-                                <span class="form-row-first">
-                                    <b>Addresa <span class="required">*</span></b>
-                                    <input type="text" name="address" id ="address" placeholder="Adresa"  required/>
-                                </span>
                                 <span>
-                                    <input type="text" name="num" id ="num" placeholder="Broj"  required/>
-                                </span>
-                                <span>
-                                    <input type="text" name="apartment" id ="apartment" placeholder="Stan"  required/>
+                                    <b>Email <span class="required">*</span></b>
+                                    <input type="text" name="email" id ="email" placeholder="Email" required/>
                                 </span>
                                 <span>
                                     <b>Grad <span class="required">*</span></b>
                                     <input type="text" name="city" id ="city" placeholder="Grad"   required/>
+                                </span>
+                                <span>
+                                    <b>Addresa <span class="required">*</span></b>
+                                    <input type="text" name="address" id ="address" placeholder="Adresa"  required/>
+                                </span>
+                                <span class="form-row-first">
+                                    <input type="text" name="num" id ="num" placeholder="Broj"  required/>
+                                </span>
+                                <span class="form-row-last">
+                                    <input type="text" name="apartment" id ="apartment" placeholder="Stan"  required/>
                                 </span>
                             </form>
                         </div>

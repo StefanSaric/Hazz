@@ -168,7 +168,7 @@
                 <div class="woocommerce-breadcrumb mtb-15">
                     <div class="menu">
                         <ul>
-                            <li><a href="index.html">Home</a></li>
+                            <li><a  href="{{url('/')}}">Home</a></li>
                             <li class="active"><a href="javascript:void(0);">Shop</a></li>
                         </ul>
                     </div>
@@ -511,7 +511,7 @@
                                         <div class="add-to-cart text-uppercase ptb-35">
                                             <ul>
                                                 @if(array_key_exists($size->id, $in_carts))
-                                                    <button type="button " class=" btn-danger" data-id="{{ $size->id }}" >Dodato</button>
+                                                    <button type="button" class=" btn-danger"  data-id="{{ $size->id }}" >Dodato</button>
                                                 @else
                                                     <button type="button" class="cartBtn" data-id="{{ $size->id }}" >add to cart</button>
                                                 @endif
@@ -524,7 +524,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
             <!-- woocommerce-pagination-area -->
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -550,6 +549,7 @@
             </div>
         </div>
     </div>
+</div>
 <!-- footer area start -->
 <footer>
     <!-- contuct area start -->

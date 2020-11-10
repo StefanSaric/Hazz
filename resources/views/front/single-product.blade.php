@@ -29,7 +29,7 @@
     <!-- font-awesome v4.6.3 css -->
     <link rel="stylesheet" href="{{ asset("/assets/css/index/font-awesome.min.css")}}">
     <!-- font-awesome v4.6.3 css -->
-{{--    <link rel="stylesheet" href="{{ asset("/assets/css/theme-3/font-awesome.css/font-awesome.min.css")}}">--}}
+    <link rel="stylesheet" href="{{ asset("/assets/css/theme-3/font-awesome.css/font-awesome.min.css")}}">
 <!-- style css -->
     <link rel="stylesheet" href="{{ asset("/assets/css/index/style.css")}}">
     <!-- responsive css -->
@@ -187,7 +187,7 @@
                 <div class="woocommerce-breadcrumb mtb-15">
                     <div class="menu">
                         <ul>
-                            <li><a href="index.html">Home</a></li>
+                            <li><a  href="{{url('/')}}">Home</a></li>
                             <li class="active"><a href="javascript:void(0);">Shop</a></li>
                         </ul>
                     </div>
@@ -204,14 +204,14 @@
                     <div class="single-product-tab border">
                         <div class="tab-content">
                             @foreach($size->product->materials as $num=>$materials)
-                                @if(++$num==1)
-                                    <div role="tabpanel" class="tab-pane active" id="{{$num}}">
+                                @if($num==0)
+                                    <div role="tabpanel" class="tab-pane active" id="tab_{{0}}">
                                 <a class="popup" href="{{asset($materials->url)}}">
                                     <img src="{{asset($materials->url)}}" alt="" />
                                 </a>
                             </div>
                                 @else
-                                    <div role="tabpanel" class="tab-pane" id="{{$num}}">
+                                    <div role="tabpanel" class="tab-pane" id="tab_{{$num}}">
                                         <a class="popup" href="{{asset($materials->url)}}">
                                             <img src="{{asset($materials->url)}}" alt="" />
                                         </a>
@@ -224,7 +224,7 @@
                         <div class="single-product-active owl-carousel clear next-prev-style">
                             @foreach($size->product->materials as $num=>$materials)
                             <div class="single-img floatleft">
-                                <a href="{{$num}}" data-toggle="tab">
+                                <a id="{{$num}}" class="add-active-pane" data-toggle="tab">
                                     <img src="{{asset($materials->url)}}" alt="" />
                                 </a>
                             </div>
@@ -575,5 +575,7 @@
 <script src="{{ asset("/assets/js/libs/index/main.js")}}"></script>
 <!-- cart js -->
 <script src="{{ asset("/assets/js/cart.js")}}"></script>
+<!-- single-product js -->
+<script src="{{ asset("/assets/js/single-product.js")}}"></script>
 </body>
 </html>

@@ -186,7 +186,7 @@
                 <div class="woocommerce-breadcrumb mtb-15">
                     <div class="menu">
                         <ul>
-                            <li><a href="index.html">Home</a></li>
+                            <li><a  href="{{url('/')}}">Home</a></li>
                             <li class="active"><a href="javascript:void(0);">Cart</a></li>
                         </ul>
                     </div>
