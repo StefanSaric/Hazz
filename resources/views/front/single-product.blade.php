@@ -124,24 +124,28 @@
                             </div>
                         </div>
                         <div class="cart-items clear mb-15" id="cart_div">
-                            @foreach($products as $one_size)
-                                @if(array_key_exists($one_size->id, $in_carts))
+                            @foreach($products as $size)
+                                @if(array_key_exists($size->id, $in_carts))
                                     <div class="cart-item ptb-20 border-bottom" >
-                                        <div class="cart-img pull-left">
-                                            <a href="{{url('/single-product/'.$one_size->id)}}">
-                                                <img src="{{asset($one_size->product->materials->first()->url)}}" alt="" />
-                                            </a>
-                                        </div>
-                                        <div class="cart-item-details clear">
-                                            <a href="{{url('/single-product/'.$one_size->id)}}">{{$one_size->product->name}}</a>
-                                            <span class="price" >Cena: {{$one_size->price}} RSD</span>
-                                            <span class="price">Pakovanje: {{$one_size->quantity}} {{$one_size->unit}}</span>
-                                            <div class="details-qty pull-left">
-                                                <span>Kolicina: </span>
-                                                <input type="number" min="1" max="{{$one_size->stock}}" name="quantity_{{ $one_size->id }}" id="quantity_{{ $one_size->id }}" class="quantity"  value="{{$carts[$one_size->id]["quantity"]}}"/>
+                                        <div class="cart-item-details text-center">
+                                            <a href="{{url('/single-product/'.$size->id)}}">{{$size->product->name}}</a>
+                                        </div><br>
+                                        <div class="cart-item-details text-center">
+                                            <div class="cart-img pull-left col-md-auto-12" >
+                                                <a href="{{url('/single-product/'.$size->id)}}">
+                                                    <img src="{{asset($size->product->materials->first()->url)}}"  alt="" />
+                                                </a>
                                             </div>
-                                            <div class="remove-edit">
-                                                <a href="#" class="remove-from-cart" data-id="{{ $one_size->id }}"><i class="fa fa-trash-o"></i></a>
+                                            <div class="cart-item-details clear">
+                                                <h6 >Cena: {{$size->price}} RSD</h6>
+                                                <h6 >Pakovanje: {{$size->quantity}} {{$size->unit}}</h6>
+                                            </div>
+                                        </div><br>
+                                        <div>
+                                            <div class="details-qty col-md-auto-12">
+                                                <span>Kolicina: </span>
+                                                <input type="number" min="1" max="{{$size->stock}}" name="quantity_{{ $size->id }}" id="quantity_{{ $size->id }}" class="quantity"  value="{{$carts[$size->id]["quantity"]}}"/>
+                                                <a href="#" class="remove-from-cart"  data-id="{{ $size->id }}"><i class="fa fa-trash-o"  style="font-size:24px"></i></a>
                                             </div>
                                         </div>
                                     </div>
@@ -259,7 +263,7 @@
                             @if(array_key_exists($size->id, $in_carts))
                                 <input type="number" min="1" max="{{$size->stock}}" name="quantity_{{ $size->id }}" id="quantity_{{ $size->id }}" class="quantity"  value="{{$carts[$size->id]["quantity"]}}"/>
                             @else
-                                <input type="number" min="1" max="{{$size->stock}}" name="quantity_{{ $size->id }}" id="quantity_{{ $size->id }}" class="quantity"  value="0"/>
+                                <input type="number" min="1" max="{{$size->stock}}" name="quantity_{{ $size->id }}" id="quantity_{{ $size->id }}" class="quantity"  value="1"/>
                             @endif
 
                             @if(array_key_exists($size->id, $in_carts))
