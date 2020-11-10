@@ -36,7 +36,8 @@ $(document).on('click', ".cartBtn",  function(e) {
                         </div>
                     </div>
                 `);
-                $("#sizeof_cart").html(response.sizeOf);
+                $("#sizeof_cart1").html(response.sizeOf);
+                $("#sizeof_cart2").html(response.sizeOf);
                 $("#subtotal").html(response.total);
             }
         }
