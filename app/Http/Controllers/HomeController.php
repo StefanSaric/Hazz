@@ -77,7 +77,15 @@ class HomeController extends Controller
             }
             session()->flash('success', 'Product removed successfully');
         }
-        return "true";
+        $cart = session()->get('cart');
+        $total =0;
+        foreach ($cart as $one_cart) {
+            $total += $one_cart["price"] * $one_cart["quantity"];
+        }
+        $size["total"] = $total;
+        $size["sizeOf"] = sizeof(session()->get('cart'));
+
+        return $size;
 
     }
 

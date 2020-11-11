@@ -54,5 +54,5 @@
     <script src="{{ asset('assets/js/size-delete.js') }}"></script>
     <script src="{{ asset('assets/js/size-edit-delete.js') }}"></script>
     <script src="{{ asset('assets/js/tags.js') }}"></script>
-{{--    <script src="{{ asset('assets/js/delete-image.js') }}"></script>--}}
+{{--    <script src="{{ asset('assets/js/image-delete.js') }}"></script>--}}
 @stop
