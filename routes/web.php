@@ -36,10 +36,10 @@ Route::group(['prefix' => 'admin', 'middleware' => 'role'], function () {
 //Front
 Route::get('/', 'HomeController@index');
 Route::get('/shop', 'Admin\CartController@shop');
-Route::get('/blog', function () { return view('front.blog'); });
+Route::get('/blog', 'Admin\CartController@blog');
 Route::get('/cart', 'Admin\CartController@cart');
 Route::get('/checkout', 'Admin\CartController@checkout');
-Route::get('/contact', function () { return view('front.contact'); });
+Route::get('/contact', 'Admin\CartController@contact');
 Route::get('/single-product/{id}', 'Admin\ProductController@page');
 Route::post('/test111', 'Admin\OrdersController@store');
 

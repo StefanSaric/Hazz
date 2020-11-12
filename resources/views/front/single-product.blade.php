@@ -28,9 +28,7 @@
     <link rel="stylesheet" href="{{ asset("/assets/css/index/magnific-popup.css")}}">
     <!-- font-awesome v4.6.3 css -->
     <link rel="stylesheet" href="{{ asset("/assets/css/index/font-awesome.min.css")}}">
-    <!-- font-awesome v4.6.3 css -->
-    <link rel="stylesheet" href="{{ asset("/assets/css/theme-3/font-awesome.css/font-awesome.min.css")}}">
-<!-- style css -->
+    <!-- style css -->
     <link rel="stylesheet" href="{{ asset("/assets/css/index/style.css")}}">
     <!-- responsive css -->
     <link rel="stylesheet" href="{{ asset("/assets/css/index/responsive.css")}}">
@@ -59,24 +57,6 @@
                         <div class="top-bar-left pull-left">
                             <div class="hotline pull-left d-none d-lg-block">
                                 <p>Order online or call us : +0123 456 789</p>
-                            </div>
-                            <div class="language-USD pull-left dropdown d-none d-md-block">
-                                <ul>
-                                    <li><span>$<i class="fa fa-caret-down"> </i></span>
-                                        <ul>
-                                            <li><a href="#">US Dollar</a></li>
-                                            <li><a href="#">US Dollar</a></li>
-                                            <li><a href="#">US Dollar</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><span><img src="img/lg/1.png" alt="" /><i class="fa fa-caret-down"></i></span>
-                                        <ul>
-                                            <li><a href="#">Bangla</a></li>
-                                            <li><a href="#">Bangla</a></li>
-                                            <li><a href="#">Bangla</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
                             </div>
                         </div>
                         <div class="top-bar-right pull-right">
@@ -546,7 +526,7 @@
                 <div class="col-md-6">
                     <div class="mayment text-sm-center text-md-right">
                         <a href="#">
-                            <img src="img/p14.png" alt="" />
+                            <img src="{{asset("assets/img/index/p14.png")}}" alt="" />
                         </a>
                     </div>
                 </div>

@@ -684,7 +684,7 @@
                 <div class="col-md-6">
                     <div class="mayment text-sm-center text-md-right">
                         <a href="#">
-                            <img src="img/p14.png" alt="" />
+                            <img src="{{asset("assets/img/index/p14.png")}}" alt="" />
                         </a>
                     </div>
                 </div>

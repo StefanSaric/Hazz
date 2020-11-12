@@ -58,24 +58,6 @@
                             <div class="hotline pull-left d-none d-lg-block">
                                 <p>Order online or call us : +0123 456 789</p>
                             </div>
-                            <div class="language-USD pull-left dropdown d-none d-md-block">
-                                <ul>
-                                    <li><span>$<i class="fa fa-caret-down"> </i></span>
-                                        <ul>
-                                            <li><a href="#">US Dollar</a></li>
-                                            <li><a href="#">US Dollar</a></li>
-                                            <li><a href="#">US Dollar</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><span><img src="img/lg/1.png" alt="" /><i class="fa fa-caret-down"></i></span>
-                                        <ul>
-                                            <li><a href="#">Bangla</a></li>
-                                            <li><a href="#">Bangla</a></li>
-                                            <li><a href="#">Bangla</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </div>
                         </div>
                         <div class="top-bar-right pull-right">
                             <div class="search-box">
@@ -103,91 +85,55 @@
             <div class="col-lg-1 col-2">
                 <div class="cart-area">
                     <div class="maincart-wrap">
-                        <a href="javascript:void(0);"><i class="fa fa-shopping-basket"></i>
-                            <span>3</span>
+                        <a href="javascript:void(0);"><i class="fa fa-shopping-cart"></i>
+                            <span>{{ sizeof($in_carts) }}</span>
                         </a>
                     </div>
                     <div class="cart">
                         <div class="total-items pb-20 border-bottom mb-15">
                             <div class="sub-total clear">
-                                <strong>3</strong>
+                                <strong>{{ sizeof($in_carts) }}</strong>
                                 <span>items</span>
                                 <span class="pull-right total">
 										<span>Cart Subtotal :</span>
-										<strong>$95.00</strong>
+										<strong>{{$total}} RSD</strong>
 									</span>
                             </div>
-                            <div class="cart-btn mt-15">
-                                <button>Go to Checkout</button>
+                            <div class="organic-btn pt-20 text-center border-top">
+                                <a href="{{url('/checkout')}}">Go to Checkout</a>
                             </div>
                         </div>
-                        <div class="cart-items clear mb-15">
-                            <div class="cart-item ptb-20 border-bottom">
-                                <div class="cart-img pull-left">
-                                    <a href="#">
-                                        <img src="img/cart/1.jpg" alt="" />
-                                    </a>
-                                </div>
-                                <div class="cart-item-details clear">
-                                    <a href="#">Crown Summit Backpack</a>
-                                    <span class="price">$35.00</span>
-                                    <div class="details-qty pull-left">
-                                        <span>Qty :</span>
-                                        <input type="number" value="1" />
+                        <div class="cart-items clear mb-15" id="cart_div">
+                            @foreach($products as $size)
+                                @if(array_key_exists($size->id, $in_carts))
+                                    <div class="cart-item ptb-20 border-bottom" >
+                                        <div class="cart-item-details text-center">
+                                            <a href="{{url('/single-product/'.$size->id)}}">{{$size->product->name}}</a>
+                                        </div><br>
+                                        <div class="cart-item-details text-center">
+                                            <div class="cart-img pull-left col-md-auto-12" >
+                                                <a href="{{url('/single-product/'.$size->id)}}">
+                                                    <img src="{{asset($size->product->materials->first()->url)}}"  alt="" />
+                                                </a>
+                                            </div>
+                                            <div class="cart-item-details clear">
+                                                <h6 >Cena: {{$size->price}} RSD</h6>
+                                                <h6 >Pakovanje: {{$size->quantity}} {{$size->unit}}</h6>
+                                            </div>
+                                        </div><br>
+                                        <div>
+                                            <div class="details-qty col-md-auto-12">
+                                                <span>Kolicina: </span>
+                                                <input type="number" min="1" max="{{$size->stock}}" name="quantity_{{ $size->id }}" id="quantity_{{ $size->id }}" class="quantity"  value="{{$carts[$size->id]["quantity"]}}"/>
+                                                <a href="#" class="remove-from-cart"  data-id="{{ $size->id }}"><i class="fa fa-trash-o"  style="font-size:24px"></i></a>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="remove-edit">
-                                        <ul>
-                                            <li><a href="#"><i class="fa fa-cog"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-trash-o"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="cart-item ptb-20 border-bottom">
-                                <div class="cart-img pull-left">
-                                    <a href="#">
-                                        <img src="img/cart/2.jpg" alt="" />
-                                    </a>
-                                </div>
-                                <div class="cart-item-details clear">
-                                    <a href="#">Joust Duffle Bag1</a>
-                                    <span class="price">$30.00</span>
-                                    <div class="details-qty pull-left">
-                                        <span>Qty :</span>
-                                        <input type="number" value="1" />
-                                    </div>
-                                    <div class="remove-edit">
-                                        <ul>
-                                            <li><a href="#"><i class="fa fa-cog"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-trash-o"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="cart-item ptb-20">
-                                <div class="cart-img pull-left">
-                                    <a href="#">
-                                        <img src="img/cart/3.jpg" alt="" />
-                                    </a>
-                                </div>
-                                <div class="cart-item-details clear">
-                                    <a href="#">Strive Shoulder Pack</a>
-                                    <span class="price">$35.00</span>
-                                    <div class="details-qty pull-left">
-                                        <span>Qty :</span>
-                                        <input type="number" value="1" />
-                                    </div>
-                                    <div class="remove-edit">
-                                        <ul>
-                                            <li><a href="#"><i class="fa fa-cog"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-trash-o"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
+                                @endif
+                            @endforeach
                         </div>
                         <div class="organic-btn pt-20 text-center border-top">
-                            <a href="#">View and edit cart</a>
+                            <a href="{{url('/cart')}}">View and edit cart</a>
                         </div>
                     </div>
                 </div>
@@ -226,7 +172,7 @@
                     <div class="menu">
                         <ul>
                             <li><a  href="{{url('/')}}">Home</a></li>
-                            <li class="active"><a href="blog.html">Blog</a></li>
+                            <li class="active"><a href="{{url('/blog')}}">Blog</a></li>
                         </ul>
                     </div>
                 </div>
@@ -773,7 +719,7 @@
                 <div class="col-md-6">
                     <div class="mayment text-sm-center text-md-right">
                         <a href="#">
-                            <img src="img/p14.png" alt="" />
+                            <img src="{{asset("assets/img/index/p14.png")}}" alt="" />
                         </a>
                     </div>
                 </div>
