@@ -12,6 +12,6 @@ class Sizes extends Model
     public $timestamps = true;
 
     public function product() {
-        return $this->hasOne('App\Products', 'id', 'product_id');
+        return $this->hasOne('App\Products', 'id', 'product_id')->where('show',1);
     }
 }

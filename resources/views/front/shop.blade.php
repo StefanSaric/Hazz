@@ -460,70 +460,74 @@
                 <div class="tab-content">
                     <div role="tabpanel" class="tab-pane active" id="tab1">
                         <div class="row">
-                            @foreach($products as $size)
-                            <div class="col-xl-4 col-md-6 col-sm-6">
-                                <div class="single-product mb-30">
-                                    <div class="product-img">
-                                        <a href="{{url('/single-product/'.$size->id)}}"><img src="{{asset($size->product->materials->first()->url)}}"  alt="" /></a>
-                                    </div>
-                                    <div class="product-item-details text-center">
-                                        <div class="product-name-review tab-product-name-review">
-                                            <div class="product-name mt-30 ">
-                                                <strong><a href="{{url('/single-product/'.$size->id)}}">{{$size->product->name}}</a></strong>
+                            @foreach($products as $num=>$size)
+                                @if($size->product != null)
+                                    <div class="col-xl-4 col-md-6 col-sm-6">
+                                        <div class="single-product mb-30">
+                                            <div class="product-img">
+                                                <a href="{{url('/single-product/'.$size->id)}}"><img src="{{asset($size->product->materials->first()->url)}}"  alt="" /></a>
                                             </div>
-                                            <div class="product-review">
-                                                <span class="special-price">Cena: {{$size->price}} RSD</span>
-                                            </div>
-                                            <div class="product-review">
-                                                <span class="product-content">Pakovanje: {{$size->quantity}} {{$size->unit}}</span>
-                                            </div>
-                                        </div>
-                                        <div class="add-to-cart-area clear ptb-35">
-                                            <div class="add-to-cart text-uppercase">
-                                                @if(array_key_exists($size->id, $in_carts))
-                                                    <button type="button " class=" btn-danger" data-id="{{ $size->id }}" >Dodato</button>
-                                                @else
-                                                    <button type="button" class="cartBtn" data-id="{{ $size->id }}" >add to cart</button>
-                                                @endif
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            @endforeach
-                        </div>
-                    </div>
-                    <div role="tabpanel" class="tab-pane fade" id="tab2">
-                        <div class="row">
-                            @foreach($products as $size)
-                            <div class="col-sm-12">
-                                <div class="product-wrapper clear border-bottom mb-30">
-                                    <div class="product-img shop-product-img">
-                                        <a href="{{url('/single-product/'.$size->id)}}"><img src="{{asset($size->product->materials->first()->url)}}" width="150" height="150" alt="" /></a>
-                                    </div>
-                                    <div class="product-item-details shop-product-item-details">
-                                        <div class="product-name-review">
-                                            <div class="product-name ">
-                                                <strong><a href="{{url('/single-product/'.$size->id)}}">{{$size->product->name}}</a></strong>
-                                            </div>
-                                                <p>{{$size->product->text}}</p>
-                                                <div class="readmore-btn">
-                                                    <a href="{{url('/single-product/'.$size->id)}}">Learn More<i class="fa fa-long-arrow-right"></i></a>
+                                            <div class="product-item-details text-center">
+                                                <div class="product-name-review tab-product-name-review">
+                                                    <div class="product-name mt-30 ">
+                                                        <strong><a href="{{url('/single-product/'.$size->id)}}">{{$size->product->name}}</a></strong>
+                                                    </div>
+                                                    <div class="product-review">
+                                                        <span class="special-price">Cena: {{$size->price}} RSD</span>
+                                                    </div>
+                                                    <div class="product-review">
+                                                        <span class="product-content">Pakovanje: {{$size->quantity}} {{$size->unit}}</span>
+                                                    </div>
+                                                </div>
+                                                <div class="add-to-cart-area clear ptb-35">
+                                                    <div class="add-to-cart text-uppercase">
+                                                        @if(array_key_exists($size->id, $in_carts))
+                                                            <button type="button " class=" btn-danger" data-id="{{ $size->id }}" >Dodato</button>
+                                                        @else
+                                                            <button type="button" class="cartBtn" data-id="{{ $size->id }}" >add to cart</button>
+                                                        @endif
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="add-to-cart text-uppercase ptb-35">
-                                            <ul>
-                                                @if(array_key_exists($size->id, $in_carts))
-                                                    <button type="button" class=" btn-danger"  data-id="{{ $size->id }}" >Dodato</button>
-                                                @else
-                                                    <button type="button" class="cartBtn" data-id="{{ $size->id }}" >add to cart</button>
-                                                @endif
-                                            </ul>
+                                    </div>
+                                @endif
+                            @endforeach
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade"  id="tab2">
+                        <div class="row">
+                            @foreach($products as $size)
+                                @if($size->product != null)
+                                    <div class="col-sm-12">
+                                        <div class="product-wrapper clear border-bottom mb-30">
+                                            <div class="product-img shop-product-img">
+                                                <a href="{{url('/single-product/'.$size->id)}}"><img src="{{asset($size->product->materials->first()->url)}}" width="150" height="150" alt="" /></a>
+                                            </div>
+                                            <div class="product-item-details shop-product-item-details">
+                                                <div class="product-name-review">
+                                                    <div class="product-name ">
+                                                        <strong><a href="{{url('/single-product/'.$size->id)}}">{{$size->product->name}}</a></strong>
+                                                    </div>
+                                                        <p>{{$size->product->text}}</p>
+                                                        <div class="readmore-btn">
+                                                            <a href="{{url('/single-product/'.$size->id)}}">Learn More<i class="fa fa-long-arrow-right"></i></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="add-to-cart text-uppercase ptb-35">
+                                                    <ul>
+                                                        @if(array_key_exists($size->id, $in_carts))
+                                                            <button type="button" class=" btn-danger"  data-id="{{ $size->id }}" >Dodato</button>
+                                                        @else
+                                                            <button type="button" class="cartBtn" data-id="{{ $size->id }}" >add to cart</button>
+                                                        @endif
+                                                    </ul>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
+                                @endif
                             @endforeach
                         </div>
                     </div>

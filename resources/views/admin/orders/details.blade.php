@@ -20,7 +20,7 @@
             <li class="active">Details</li>
         </ol>
         <div class="section-header">
-            <h3 class="text-standard"><i class="fa fa-fw fa-arrow-circle-right text-gray-light"></i> Porudzbine <small></small></h3>
+            <h3 class="text-standard"><i class="fa fa-fw fa-arrow-circle-o-left text-gray-light"></i> Porudzbine <small></small></h3>
         </div>
         <div class="section-body">
             <div class="row">
