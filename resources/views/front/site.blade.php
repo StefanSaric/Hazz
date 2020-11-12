@@ -228,6 +228,52 @@
     </div>
 </div>
 <!-- banner area  end-->
+<!-- product area start -->
+<div class="product-area bg-1 ptb-100">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-title text-center mb-50">
+                    <h2>new products</h2>
+                </div>
+            </div>
+        </div>
+        <div class="product-active owl-carousel next-prev-style">
+            @foreach($products as $size)
+                @if($size->product != null)
+                    <div class="single-product">
+                        <div class="product-img">
+                            <a href="{{url('/single-product/'.$size->id)}}"><img src="{{asset($size->product->materials->first()->url)}}" border="10px" class="center"  alt="" /></a>
+                        </div>
+                        <div class="product-item-details text-center">
+                            <div class="product-name-review tab-product-name-review">
+                                <div class="product-name mt-30 ">
+                                    <strong><a href="{{url('/single-product/'.$size->id)}}">{{$size->product->name}}</a></strong>
+                                </div>
+                                <div class="product-review">
+                                    <span class="special-price">{{$size->price}} RSD</span>
+                                </div>
+                                <div class="product-review">
+                                    <span class="product-quantity">Pakovanje: {{$size->quantity}} {{$size->unit}}</span>
+                                </div>
+                            </div>
+                            <div class="add-to-cart-area clear pt-35">
+                                <div class="add-to-cart text-uppercase">
+                                    @if(array_key_exists($size->id, $in_carts))
+                                        <button type="button " class=" btn-danger" data-id="{{ $size->id }}" >Dodato</button>
+                                    @else
+                                        <button type="button" class="cartBtn" data-id="{{ $size->id }}" >add to cart</button>
+                                    @endif
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                @endif
+            @endforeach
+        </div>
+    </div>
+</div>
+<!-- product area end -->
 <!-- New arrivals area start -->
 <div class="new-arrivals-area bg-img-1">
     <div class="container">
@@ -247,136 +293,6 @@
     </div>
 </div>
 <!-- New arrivals area end -->
-<!-- tab area start  -->
-<div class="tab-area mtb-100">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="tab-menu  text-center mb-30">
-                    <ul class="nav">
-                        <li><a class="active" href="#new-products" data-toggle="tab">New Products</a></li>
-                        <li><a href="#onsale" data-toggle="tab"> OnSale</a></li>
-                        <li><a href="#featured" data-toggle="tab">Featured</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="tab-content">
-            <div role="tabpanel" class="tab-pane active" id="new-products">
-                <div class="tab-active owl-carousel next-prev-style">
-                    @foreach($products as $size)
-                        @if($size->product != null)
-                            <div class="single-product">
-                                <div class="product-img">
-                                    <a href="{{url('/single-product/'.$size->id)}}"><img src="{{asset($size->product->materials->first()->url)}}" border="10px" class="center"  alt="" /></a>
-                                </div>
-                                <div class="product-item-details text-center">
-                                    <div class="product-name-review tab-product-name-review">
-                                        <div class="product-name mt-30 ">
-                                            <strong><a href="{{url('/single-product/'.$size->id)}}">{{$size->product->name}}</a></strong>
-                                        </div>
-                                        <div class="product-review">
-                                            <span class="special-price">{{$size->price}} RSD</span>
-                                        </div>
-                                        <div class="product-review">
-                                            <span class="product-quantity">Pakovanje: {{$size->quantity}} {{$size->unit}}</span>
-                                        </div>
-                                    </div>
-                                    <div class="add-to-cart-area clear pt-35">
-                                        <div class="add-to-cart text-uppercase">
-                                            @if(array_key_exists($size->id, $in_carts))
-                                                <button type="button " class=" btn-danger" data-id="{{ $size->id }}" >Dodato</button>
-                                            @else
-                                                <button type="button" class="cartBtn" data-id="{{ $size->id }}" >add to cart</button>
-                                            @endif
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        @endif
-                    @endforeach
-                </div>
-            </div>
-            <div role="tabpanel" class="tab-pane fade" id="onsale">
-                <div class="tab-active owl-carousel next-prev-style">
-                    @foreach($products as $size)
-                        @if($size->product != null)
-                            <div class="single-product">
-                                <div class="product-img">
-                                    <a href="{{url('/single-product/'.$size->id)}}"><img src="{{asset($size->product->materials->first()->url)}}" width="200" height="200" alt="" /></a>
-                                </div>
-                                <div class="product-item-details text-center">
-                                    <div class="product-name-review tab-product-name-review">
-                                        <div class="product-name mt-30 ">
-                                            @foreach($size->product->categories as $category)
-                                                <span>{{$category->name}}</span>
-                                            @endforeach
-                                            <strong><a href="{{url('/single-product/'.$size->id)}}">{{$size->product->name}}</a></strong>
-                                        </div>
-                                        <div class="product-review">
-                                            <span class="special-price">{{$size->price}} RSD</span>
-                                        </div>
-                                        <div class="product-review">
-                                            <span class="product-quantity">Pakovanje: {{$size->quantity}} {{$size->unit}}</span>
-                                        </div>
-                                    </div>
-                                    <div class="add-to-cart-area clear pt-35">
-                                        <div class="add-to-cart text-uppercase">
-                                            @if(array_key_exists($size->id, $in_carts))
-                                                <button type="button " class=" btn-danger" data-id="{{ $size->id }}" >Dodato</button>
-                                            @else
-                                                <button type="button" class="cartBtn" data-id="{{ $size->id }}" >add to cart</button>
-                                            @endif
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        @endif
-                    @endforeach
-                </div>
-            </div>
-            <div role="tabpanel" class="tab-pane owl-carousel fade" id="featured">
-                <div class="tab-active next-prev-style">
-                    @foreach($products as $size)
-                        @if($size->product != null)
-                            <div class="single-product">
-                                <div class="product-img">
-                                    <a href="{{url('/single-product/'.$size->id)}}"><img src="{{asset($size->product->materials->first()->url)}}" width="200" height="200" alt="" /></a>
-                                </div>
-                                <div class="product-item-details text-center">
-                                    <div class="product-name-review tab-product-name-review">
-                                        <div class="product-name mt-30 ">
-                                            @foreach($size->product->categories as $category)
-                                                <span>{{$category->name}}</span>
-                                            @endforeach
-                                            <strong><a href="{{url('/single-product/'.$size->id)}}">{{$size->product->name}}</a></strong>
-                                        </div>
-                                        <div class="product-review">
-                                            <span class="special-price">{{$size->price}} RSD</span>
-                                        </div>
-                                        <div class="product-review">
-                                            <span class="product-quantity">Pakovanje: {{$size->quantity}} {{$size->unit}}</span>
-                                        </div>
-                                    </div>
-                                    <div class="add-to-cart-area clear pt-35">
-                                        <div class="add-to-cart text-uppercase">
-                                            @if(array_key_exists($size->id, $in_carts))
-                                                <button type="button " class=" btn-danger" data-id="{{ $size->id }}" >Dodato</button>
-                                            @else
-                                                <button type="button" class="cartBtn" data-id="{{ $size->id }}" >add to cart</button>
-                                            @endif
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        @endif
-                    @endforeach
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- tab area end  -->
 <!-- blog area start -->
 <div class="blog-area mtb-60">
     <div class="container">
@@ -643,7 +559,7 @@
                 <div class="col-md-6">
                     <div class="mayment text-sm-center text-md-right">
                         <a href="#">
-                            <img src="img/p14.png" alt="" />
+                            <img src="{{asset("assets/img/index/p14.png")}}" alt="" />
                         </a>
                     </div>
                 </div>

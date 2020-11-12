@@ -1,20 +1,20 @@
 /*-----------------------------------------------------------------------------------
 
-    Template Name: Your template name 
+    Template Name: Your template name
     Template URI: http://bootexperts.com
     Description: This is html5 template
     Author: BootExperts
     Author URI: http://bootexperts.com
     Version: 1.2
-    
+
 -----------------------------------------------------------------------------------*/
 
 /*----------------------------------------
-    
+
     CSS INDEX
     ===================
-    
-    
+
+
   1.  Theme default CSS
 	2. header start
 	3. slider-area start
@@ -25,7 +25,7 @@
 	8. testmonial area start
 	9. Newsletter-area start
 	10. blog-area start
-	11. footer--area start	
+	11. footer--area start
 	12. new-product-area start
 	13.home3 header area start
 	14. static-home3-top-area start
@@ -46,10 +46,10 @@
 	30. contact style here
 	31. 404 style here
 	32. about-area start
-	33. my account style here 
+	33. my account style here
 	34. chechout style here
-	35. cart style here 
-  36. wishlist style here 
+	35. cart style here
+  36. wishlist style here
   37. compare style here
 --------------------------------------*/
 
@@ -443,7 +443,7 @@ ul {
 }
 
 .bg-img-1 {
-	background: url(img/bg/1.jpg)no-repeat scroll 50% 50%;
+	background: url(../../img/index/bg1.jpg)no-repeat scroll 50% 50%;
 }
 
 .bg-img-2 {
@@ -1215,7 +1215,7 @@ a#scrollUp:hover {
 	font-size: 18px;
 	height: 80px;
 	left: 10px;
-	line-height: 80px; 
+	line-height: 80px;
 	opacity: 0;
 	padding: 0 10px !important;
 	position: absolute;
@@ -1695,7 +1695,7 @@ a#scrollUp:hover {
 /*---------- footer menu area end --------------*/
 /* --------------------footer--area end --------------------*/
 /*----------------------------------------
-			home page two style here 
+			home page two style here
  -------------------------------------------*/
 .nivo-caption {
 	height: auto;
@@ -1783,7 +1783,7 @@ a#scrollUp:hover {
 /*---------- new-product-area end ----------*/
 
 /*----------------------------------------
-			home page Three style here 
+			home page Three style here
  -------------------------------------------*/
 /*-------------------13.home3 header area start ----------------------------*/
 .top-sale p {
@@ -2162,7 +2162,7 @@ a#scrollUp:hover {
 /*-------------------  home3-blog-area area end ----------------------------*/
 
 /*----------------------------------------
-			home page five style here 
+			home page five style here
  -------------------------------------------*/
 /*-------------------- 19. Exclusive Brands area start -----------------*/
 .home6-cart-area .cart {
@@ -2349,7 +2349,7 @@ a#scrollUp:hover {
 /*--------------------  home5 product-catagoris-area  end -----------------*/
 
 /*----------------------------------------
-			home page six style here 
+			home page six style here
  -------------------------------------------*/
 /*------------------ 22. home6 header area start --------------*/
 .home6-header-bottom-area {
@@ -2537,8 +2537,8 @@ a#scrollUp:hover {
 	text-transform: capitalize;
 }
 
-/*----------------------------- 
-		shop page style here 
+/*-----------------------------
+		shop page style here
 ------------------------------*/
 /*------------ 26. categories-area ------------*/
 .menu ul li {
@@ -2817,7 +2817,7 @@ html .ui-button.ui-state-disabled:active {
 }
 
 /* -------------------------------------------
-		27.	simple product style here 
+		27.	simple product style here
 ------------------------------------------------*/
 .symple-product h3 {
 	margin-bottom: 10px;
@@ -2909,7 +2909,7 @@ html .ui-button.ui-state-disabled:active {
 }
 
 /*---------------------------------------------
-			28.	blog style here 
+			28.	blog style here
  ------------------------------------------*/
 .search form {
 	position: relative;
@@ -3101,7 +3101,7 @@ html .ui-button.ui-state-disabled:active {
 }
 
 /*-----------------------------------
-		30. contact style here 
+		30. contact style here
  -------------------------------*/
 #googleMap {
 	height: 450px;
@@ -3162,7 +3162,7 @@ html .ui-button.ui-state-disabled:active {
 }
 
 /*----------------------------------------
-			31. 404 style here 
+			31. 404 style here
  ----------------------------------------*/
 .page-not-found h1 {
 	color: #fff;
@@ -3315,7 +3315,7 @@ html .ui-button.ui-state-disabled:active {
 
 /*---------------------------- about-area end----------------*/
 /*-----------------------------------
-		33. my account style here 
+		33. my account style here
 ---------------------------------------*/
 .account {
 	border: 1px solid #d3ced2;
@@ -3341,7 +3341,7 @@ html .ui-button.ui-state-disabled:active {
 }
 
 /*--------------------------------------
-			34. chechout style here 
+			34. chechout style here
  ----------------------------------------*/
 .returning-customer-area {
 	border-top: 3px solid #A0C03C;
@@ -3562,7 +3562,7 @@ html .ui-button.ui-state-disabled:active {
 }
 
 /*------------------------------------------
-			35. cart style here 
+			35. cart style here
  ------------------------------------------*/
 .table-content table {
 	background: #ffffff;
@@ -3629,7 +3629,7 @@ html .ui-button.ui-state-disabled:active {
 }
 
 /*-----------------------------
-		36. wishlist style here 
+		36. wishlist style here
  ------------------------------*/
 .product-thumbnail.product-thumbnail-img {
 	width: 100px;

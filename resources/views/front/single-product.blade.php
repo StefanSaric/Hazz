@@ -120,7 +120,7 @@
 										</span>
                             </div>
                             <div class="cart-btn mt-15">
-                                <button>Go to Checkout</button>
+                                <a href="{{url('/checkout')}}">Go to Checkout</a>
                             </div>
                         </div>
                         <div class="cart-items clear mb-15" id="cart_div">
