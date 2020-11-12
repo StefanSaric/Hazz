@@ -5,7 +5,7 @@
 <!-- END META -->
 
 <!-- BEGIN STYLESHEETS -->
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,300,400,600,700,800' rel='stylesheet' type='text/css'/>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,300,400,600,700,800' rel='stylesheet' type='text/css'/>
 <link type="text/css" rel="stylesheet" href="{{ asset("/assets/css/theme-default/bootstrap.css?1403937764")}}" />
 <link type="text/css" rel="stylesheet" href="{{ asset("/assets/css/theme-default/boostbox.css?1403937765")}}" />
 <link type="text/css" rel="stylesheet" href="{{ asset("/assets/css/theme-default/boostbox_responsive.css?1403937765")}}" />
