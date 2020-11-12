@@ -5,7 +5,6 @@
     <link rel="stylesheet" type="text/css" href="{{asset('assets/css/theme-default/bootstrap.css')}}"/>
     <link rel="stylesheet" type="text/css" href="{{asset('assets/css/theme-default/libs/jquery-ui/jquery-ui-boostbox.css')}}"/>
     <link rel="stylesheet" type="text/css" href="{{asset('assets/css/theme-1/libs/fullcalendar/fullcalendar.css')}}"/>
-    <link rel="stylesheet" type="text/css" href="{{asset('assets/css/theme-default/libs/font-awesome.min.css')}}"/>
 @stop
 
 @section('content')

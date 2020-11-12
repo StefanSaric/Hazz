@@ -389,7 +389,7 @@
         var marker = new google.maps.Marker({
             position: map.getCenter(),
             animation: google.maps.Animation.BOUNCE,
-            icon: 'img/map.png',
+            icon: '{{ asset("/assets/img/index/map.png")}}',
             map: map
         });
 
@@ -398,7 +398,7 @@
     google.maps.event.addDomListener(window, 'load', initialize);
 </script>
 <!-- Main js file that contents all jQuery plugins activation. -->
-<script src="js/main.js"></script>
+<script src="{{ asset("/assets/js/libs/index/main.js")}}"></script>
 </body>
 
 </html>
