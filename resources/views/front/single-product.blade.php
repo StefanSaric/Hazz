@@ -71,12 +71,12 @@
                     <div class="mainmenu dropdown d-none d-lg-block">
                         <nav>
                             <ul>
-                                <li class="active"><a href="{{url('/')}}">Home </a></li>
-                                <li><a href="{{url('/shop')}}">Shop </a></li>
+                                <li class="active"><a href="{{url('/')}}">Početna </a></li>
+                                <li><a href="{{url('/shop')}}">Prodavnica </a></li>
                                 <li><a href="{{url('/blog')}}">Blog </a></li>
-                                <li><a href="{{url('/cart')}}">Cart </a></li>
-                                <li><a href="{{url('/checkout')}}">checkout</a></li>
-                                <li><a href="{{url('/contact')}}">Contact Us</a></li>
+                                <li><a href="{{url('/cart')}}">Korpa </a></li>
+                                <li><a href="{{url('/checkout')}}">Porudžbina</a></li>
+                                <li><a href="{{url('/contact')}}">Kontakt</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -171,8 +171,8 @@
                 <div class="woocommerce-breadcrumb mtb-15">
                     <div class="menu">
                         <ul>
-                            <li><a  href="{{url('/')}}">Home</a></li>
-                            <li class="active"><a href="javascript:void(0);">Shop</a></li>
+                            <li><a  href="{{url('/')}}">Početna</a></li>
+                            <li class="active"><a href="javascript:void(0);">Prodavnica</a></li>
                         </ul>
                     </div>
                 </div>
@@ -226,7 +226,7 @@
                     <p>{{$size->product->description}}</p>
                     <div class="select-area mb-20 clear">
                         <div class="select-title floatleft"><strong>Pakovanje:</strong></div>
-                        <div class="select-option floatright">
+                        <div class="select-option floatleft" style="width: 20%">
                             <select name="select">
                                 @if(array_key_exists($size->id, $in_carts))
                                     <option value="">{{$size->quantity}} {{$size->unit}}</option>
@@ -249,7 +249,7 @@
                             @if(array_key_exists($size->id, $in_carts))
                                 <button type="button " class=" btn-danger" data-id="{{ $size->id }}" >Dodato</button>
                             @else
-                                <button type="button" class="cartBtn" data-id="{{ $size->id }}" >add to cart</button>
+                                <button type="button" class="cartBtn" data-id="{{ $size->id }}" >Dodaj u korpu</button>
                             @endif
                         </form>
                     </div>
@@ -262,7 +262,7 @@
                             @endforeach
                         </div>
                         <div class="single-blog-tag category bb pb-10">
-                            <b>Tags:</b>
+                            <b>Tagovi:</b>
                             @foreach($size->product->tags as $tag)
                                 <a href="#">{{$tag->name}}, </a>
                             @endforeach
@@ -276,7 +276,7 @@
                 <div class="simple-product-tab bg-2">
                     <div class="simple-product-tab-menu clear">
                         <ul class="nav">
-                            <li><a class="active" href="#description" data-toggle="tab">Description</a></li>
+                            <li><a class="active" href="#description" data-toggle="tab">Opis</a></li>
                         </ul>
                     </div>
                     <div class="tab-content bg-1">

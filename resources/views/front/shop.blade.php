@@ -72,12 +72,12 @@
                     <div class="mainmenu dropdown d-none d-lg-block">
                         <nav>
                             <ul>
-                                <li class="active"><a href="{{url('/')}}">Home </a></li>
-                                <li><a href="{{url('/shop')}}">Shop </a></li>
+                                <li class="active"><a href="{{url('/')}}">Početna </a></li>
+                                <li><a href="{{url('/shop')}}">Prodavnica </a></li>
                                 <li><a href="{{url('/blog')}}">Blog </a></li>
-                                <li><a href="{{url('/cart')}}">Cart </a></li>
-                                <li><a href="{{url('/checkout')}}">checkout</a></li>
-                                <li><a href="{{url('/contact')}}">Contact Us</a></li>
+                                <li><a href="{{url('/cart')}}">Korpa </a></li>
+                                <li><a href="{{url('/checkout')}}">Kasa</a></li>
+                                <li><a href="{{url('/contact')}}">Kontakt</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -149,12 +149,12 @@
                     <div class="mobail-menu-active">
                         <nav>
                             <ul>
-                                <li class="active"><a href="{{url('/')}}">Home </a></li>
-                                <li><a href="{{url('/shop')}}">Shop </a></li>
+                                <li class="active"><a href="{{url('/')}}">Početna </a></li>
+                                <li><a href="{{url('/shop')}}">Prodavnica </a></li>
                                 <li><a href="{{url('/blog')}}">Blog </a></li>
-                                <li><a href="{{url('/cart')}}">Cart </a></li>
-                                <li><a href="{{url('/checkout')}}">checkout</a></li>
-                                <li><a href="{{url('/contact')}}">Contact Us</a></li>
+                                <li><a href="{{url('/cart')}}">Korpa </a></li>
+                                <li><a href="{{url('/checkout')}}">Kasa</a></li>
+                                <li><a href="{{url('/contact')}}">Kontakt</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -172,8 +172,8 @@
                 <div class="woocommerce-breadcrumb mtb-15">
                     <div class="menu">
                         <ul>
-                            <li><a  href="{{url('/')}}">Home</a></li>
-                            <li class="active"><a href="javascript:void(0);">Shop</a></li>
+                            <li><a  href="{{url('/')}}">Početna</a></li>
+                            <li class="active"><a href="javascript:void(0);">Prodavnica</a></li>
                         </ul>
                     </div>
                 </div>
@@ -431,7 +431,7 @@
             </div>
             <div class="tab-area shop-tab-area">
                 <div class="shop-taitle mb-20">
-                    <h2>Shop</h2>
+                    <h2>Prodavnica</h2>
                 </div>
                 <div class="tab-menu-area border-bottom mb-30">
                     <div class="row">
@@ -484,7 +484,7 @@
                                                         @if(array_key_exists($size->id, $in_carts))
                                                             <button type="button " class=" btn-danger" data-id="{{ $size->id }}" >Dodato</button>
                                                         @else
-                                                            <button type="button" class="cartBtn" data-id="{{ $size->id }}" >add to cart</button>
+                                                            <button type="button" class="cartBtn" data-id="{{ $size->id }}" >Dodaj u korpu</button>
                                                         @endif
                                                     </div>
                                                 </div>
@@ -509,6 +509,7 @@
                                                     <div class="product-name ">
                                                         <strong><a href="{{url('/single-product/'.$size->id)}}">{{$size->product->name}}</a></strong>
                                                     </div>
+                                                    <div class="product-review">
                                                         <p>{{$size->product->text}}</p>
                                                         <div class="readmore-btn">
                                                             <a href="{{url('/single-product/'.$size->id)}}">Learn More<i class="fa fa-long-arrow-right"></i></a>

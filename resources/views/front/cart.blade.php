@@ -72,12 +72,12 @@
                     <div class="mainmenu dropdown d-none d-lg-block">
                         <nav>
                             <ul>
-                                <li class="active"><a href="{{url('/')}}">Home </a></li>
-                                <li><a href="{{url('/shop')}}">Shop </a></li>
+                                <li class="active"><a href="{{url('/')}}">Početna </a></li>
+                                <li><a href="{{url('/shop')}}">Prodavnica </a></li>
                                 <li><a href="{{url('/blog')}}">Blog </a></li>
-                                <li><a href="{{url('/cart')}}">Cart </a></li>
-                                <li><a href="{{url('/checkout')}}">checkout</a></li>
-                                <li><a href="{{url('/contact')}}">Contact Us</a></li>
+                                <li><a href="{{url('/cart')}}">Korpa </a></li>
+                                <li><a href="{{url('/checkout')}}">Kasa</a></li>
+                                <li><a href="{{url('/contact')}}">Kontakt</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -172,8 +172,8 @@
                 <div class="woocommerce-breadcrumb mtb-15">
                     <div class="menu">
                         <ul>
-                            <li><a  href="{{url('/')}}">Home</a></li>
-                            <li class="active"><a href="javascript:void(0);">Cart</a></li>
+                            <li><a  href="{{url('/')}}">Početna</a></li>
+                            <li class="active"><a href="javascript:void(0);">Korpa</a></li>
                         </ul>
                     </div>
                 </div>
@@ -186,7 +186,7 @@
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="account-title mb-50 text-center">
-                    <h1>Cart</h1>
+                    <h1>Korpa</h1>
                 </div>
             </div>
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -198,11 +198,11 @@
                                 <tr>
                                     <th class="product-remove"></th>
                                     <th class="product-thumbnail"></th>
-                                    <th class="product-name">Product</th>
-                                    <th class="product-size">Size</th>
-                                    <th class="product-price">Price</th>
-                                    <th class="product-quantity">Quantity</th>
-                                    <th class="product-subtotal">Total</th>
+                                    <th class="product-name">Proizvod</th>
+                                    <th class="product-size">Veličina</th>
+                                    <th class="product-price">Cena</th>
+                                    <th class="product-quantity">Količina</th>
+                                    <th class="product-subtotal">Ukupno</th>
                                 </tr>
                                 </thead>
                                 <tbody>
@@ -240,7 +240,7 @@
                                     <td colspan="7" class="actions clear">
                                         <div class="floatright mb-10">
                                             <button class="cart-Btn"  name="quantity_{{ $size->id }}" id="quantity_{{ $size->id }}" class="quantity"
-                                                    value="1" >Update Cart</button>
+                                                    value="1" >Uredi Korpu</button>
                                         </div>
                                     </td>
                                 </tr>

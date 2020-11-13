@@ -70,12 +70,12 @@
                     <div class="mainmenu dropdown d-none d-lg-block">
                         <nav>
                             <ul>
-                                <li class="active"><a href="{{url('/')}}">Home </a></li>
-                                <li><a href="{{url('/shop')}}">Shop </a></li>
+                                <li class="active"><a href="{{url('/')}}">Početna </a></li>
+                                <li><a href="{{url('/shop')}}">Prodavnica </a></li>
                                 <li><a href="{{url('/blog')}}">Blog </a></li>
-                                <li><a href="{{url('/cart')}}">Cart </a></li>
-                                <li><a href="{{url('/checkout')}}">checkout</a></li>
-                                <li><a href="{{url('/contact')}}">Contact Us</a></li>
+                                <li><a href="{{url('/cart')}}">Korpa </a></li>
+                                <li><a href="{{url('/checkout')}}">Kasa</a></li>
+                                <li><a href="{{url('/contact')}}">Kontakt</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -92,14 +92,14 @@
                         <div class="total-items pb-20 border-bottom mb-15">
                             <div class="sub-total clear">
                                 <strong id="sizeof_cart2">{{ sizeof($in_carts) }}</strong>
-                                <span>items</span>
+                                <span>proizvod</span>
                                 <span class="pull-right total">
-                                    <span>Cart Subtotal :</span>
+                                    <span>Ukupno :</span>
                                         <strong id="subtotal">{{$total}} RSD</strong>
                                 </span>
                             </div>
                             <div class="organic-btn pt-20 text-center border-top">
-                                <a href="{{url('/checkout')}}">Go to Checkout</a>
+                                <a href="{{url('/checkout')}}">Idi na kasu</a>
                             </div>
                         </div>
                         <div class="cart-items clear mb-15" id="cart_div">
@@ -132,7 +132,7 @@
                             @endforeach
                         </div>
                         <div class="organic-btn pt-20 text-center border-top">
-                            <a href="{{url('/cart')}}">View and edit cart</a>
+                            <a href="{{url('/cart')}}">Pogledaj Korpu</a>
                         </div>
                     </div>
                 </div>
@@ -234,7 +234,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="section-title text-center mb-50">
-                    <h2>new products</h2>
+                    <h2>Najtrazeniji proizvodi</h2>
                 </div>
             </div>
         </div>
@@ -262,7 +262,7 @@
                                     @if(array_key_exists($size->id, $in_carts))
                                         <button type="button " class=" btn-danger" data-id="{{ $size->id }}" >Dodato</button>
                                     @else
-                                        <button type="button" class="cartBtn" data-id="{{ $size->id }}" >add to cart</button>
+                                        <button type="button" class="cartBtn" data-id="{{ $size->id }}" >Dodaj u korpu</button>
                                     @endif
                                 </div>
                             </div>
