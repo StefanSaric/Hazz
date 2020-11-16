@@ -87,21 +87,21 @@
                 <div class="cart-area">
                     <div class="maincart-wrap">
                         <a href="javascript:void(0);"><i class="fa fa-shopping-cart"></i>
-                            <span id="sizeof_cart">{{ sizeof($in_carts) }}</span>
+                            <span id="sizeof_cart1">{{ sizeof($in_carts) }}</span>
                         </a>
                     </div>
                     <div class="cart">
                         <div class="total-items pb-20 border-bottom mb-15">
                             <div class="sub-total clear">
-                                <strong id="sizeof_cart">{{ sizeof($in_carts) }}</strong>
-                                <span>items</span>
+                                <strong id="sizeof_cart2">{{ sizeof($in_carts) }}</strong>
+                                <span>proizvoda</span>
                                 <span class="pull-right total">
-                                    <span>Cart Subtotal :</span>
+                                    <span>Ukupno :</span>
                                         <strong id="subtotal">{{$total}} RSD</strong>
                                 </span>
                             </div>
                             <div class="organic-btn pt-20 text-center border-top">
-                                <a href="{{url('/checkout')}}">Go to Checkout</a>
+                                <a href="{{url('/checkout')}}">Idi na kasu</a>
                             </div>
                         </div>
                         <div class="cart-items clear mb-15" id="cart_div">
@@ -126,7 +126,7 @@
                                             <div class="details-qty col-md-auto-12">
                                                 <span>Kolicina: </span>
                                                 <input type="number" min="1" max="{{$size->stock}}" name="quantity_{{ $size->id }}" id="quantity_{{ $size->id }}" class="quantity"  value="{{$carts[$size->id]["quantity"]}}"/>
-                                                <a href="#" class="remove-from-cart"  data-id="{{ $size->id }}"><i class="fa fa-trash-o"  style="font-size:24px"></i></a>
+                                                <a href="#" class="delete-from-cart"  data-id="{{ $size->id }}"><i class="fa fa-trash-o"  style="font-size:24px"></i></a>
                                             </div>
                                         </div>
                                     </div>
@@ -134,7 +134,7 @@
                             @endforeach
                         </div>
                         <div class="organic-btn pt-20 text-center border-top">
-                            <a href="{{url('/cart')}}">View and edit cart</a>
+                            <a href="{{url('/cart')}}">Pogledaj Korpu</a>
                         </div>
                     </div>
                 </div>
@@ -516,12 +516,12 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="add-to-cart text-uppercase ptb-35">
+                                                <div class="add-to-cart text-uppercase ptb-35 pull-left" style="right: 315px;bottom: 60px;">
                                                     <ul>
                                                         @if(array_key_exists($size->id, $in_carts))
-                                                            <button type="button" class=" btn-danger"  data-id="{{ $size->id }}" >Dodato</button>
+                                                            <button type="button" class=" btn-danger" style="margin-left: 35px;" data-id="{{ $size->id }}" >Dodato</button>
                                                         @else
-                                                            <button type="button" class="cartBtn" data-id="{{ $size->id }}" >add to cart</button>
+                                                            <button type="button" class="cartBtn" data-id="{{ $size->id }}" >Dodaj u karticu</button>
                                                         @endif
                                                     </ul>
                                                 </div>

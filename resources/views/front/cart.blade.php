@@ -94,14 +94,14 @@
                         <div class="total-items pb-20 border-bottom mb-15">
                             <div class="sub-total clear">
                                 <strong id="sizeof_cart">{{ sizeof($in_carts) }}</strong>
-                                <span>items</span>
+                                <span>proizvoda</span>
                                 <span class="pull-right total">
-										<span>Cart Subtotal :</span>
+										<span>Ukupno :</span>
 										<strong id="subtotal">{{$total}} RSD</strong>
 									</span>
                             </div>
                             <div class="organic-btn pt-20 text-center border-top">
-                                <a href="{{url('/checkout')}}">Go to Checkout</a>
+                                <a href="{{url('/checkout')}}">Idi na kasu</a>
                             </div>
                         </div>
                         <div class="cart-items clear mb-15" id="cart_div">
@@ -126,7 +126,7 @@
                                             <div class="details-qty col-md-auto-12">
                                                 <span>Kolicina: </span>
                                                 <input type="number" min="1" max="{{$size->stock}}" name="quantity_{{ $size->id }}" id="quantity_{{ $size->id }}" class="quantity"  value="{{$carts[$size->id]["quantity"]}}"/>
-                                                <a href="#" class="remove-from-cart"  data-id="{{ $size->id }}"><i class="fa fa-trash-o"  style="font-size:24px"></i></a>
+                                                <a href="#" class="delete-from-cart"  data-id="{{ $size->id }}"><i class="fa fa-trash-o"  style="font-size:24px"></i></a>
                                             </div>
                                         </div>
                                     </div>
@@ -134,7 +134,7 @@
                             @endforeach
                         </div>
                         <div class="organic-btn pt-20 text-center border-top">
-                            <a href="{{url('/cart')}}">View and edit cart</a>
+                            <a href="{{url('/cart')}}">Pogledaj korpu</a>
                         </div>
                     </div>
                 </div>
@@ -322,7 +322,7 @@
                 </div>
                 <div class="login-button mb-30">
                     <form action="{{url('/checkout')}}">
-                        <button>Proceed to Checkout</button>
+                        <button>Dovrši porudžbinu</button>
                     </form>
                 </div>
             </div>

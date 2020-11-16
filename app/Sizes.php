@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Sizes extends Model
 {
     protected $fillable = [
-        'product_id','quantity','unit','price','stock'
+        'product_id','quantity','unit','price','old_price','stock'
     ];
     public $timestamps = true;
 

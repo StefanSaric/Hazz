@@ -19,6 +19,7 @@ class CreateSizesTable extends Migration
             $table->float('quantity');
             $table->string('unit');
             $table->double('price');
+            $table->double('old_price');
             $table->integer('stock');
             $table->timestamps();
         });

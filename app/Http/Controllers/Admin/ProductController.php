@@ -81,7 +81,8 @@ class ProductController extends Controller
             'quantity' =>$one_size['quantity'],
             'unit' => $one_size['unit'],
             'stock' => $one_size['stock'],
-            'price' => $one_size['price']
+            'price' => $one_size['price'],
+            'old_price' => $one_size['old_price']
         ]);
 
         $photo_id = 0;
@@ -163,7 +164,6 @@ class ProductController extends Controller
 
         //editovanje sizova
         $sizes= $request->get('sizes');
-        //dd($sizes);
         foreach ($sizes as $one_size) {
             $sizeExist = Sizes::where('product_id', $product->id)
                 ->where('quantity', $one_size["quantity"])
@@ -174,7 +174,8 @@ class ProductController extends Controller
                     'quantity' =>$one_size['quantity'],
                     'unit' => $one_size['unit'],
                     'stock' => $one_size['stock'],
-                    'price' => $one_size['price']
+                    'price' => $one_size['price'],
+                    'old_price' => $one_size['old_price']
                 ]);
             }
         }

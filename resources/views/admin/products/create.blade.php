@@ -3,6 +3,8 @@
     <link rel="stylesheet" type="text/css" href="{{asset('assets/css/theme-default/libs/wysihtml5/wysihtml5.css')}}"/>
     <link rel="stylesheet" type="text/css" href="{{asset('assets/css/theme-5/libs/select2/select2.css')}}"/>
     <link rel="stylesheet" type="text/css" href="{{asset('assets/css/theme-5/libs/bootstrap-tagsinput/bootstrap-tagsinput.css')}}"/>
+    <link rel="stylesheet" type="text/css" href="{{asset('assets/css/page/products-page.css')}}"/>
+
 @stop
 @section('content')
     <section>

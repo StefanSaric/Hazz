@@ -72,8 +72,12 @@
                             <label class="control-label">Cena:</label>
                             <input type="text" name="sizes[0][price]" id = "price" class="form-control" @error('price') is-invalid @enderror placeholder="Cena" value="{{ $size->price }}" required />
                         </div>
+                        <div class="col-md-2">
+                            <label class="control-label">Stara Cena:</label>
+                            <input type="text" name="sizes[0][old_price]" id = "old_price" class="form-control" @error('old_price') is-invalid @enderror placeholder="Stara Cena" value="{{ $size->old_price }}" required />
+                        </div>
                         @if($num>0)
-                            <button type="button" class="obrisiSize" id="{{ $size->id }}"><i class="fa fa-times"></i></button>
+                            <button type="button" class="obrisiSize" id="{{ $size->id }}" style="margin-top: 28px;"><i class="fa fa-times"></i></button>
                         @endif
                 </div>
                 @endforeach
@@ -104,6 +108,13 @@
                     <label class="control-label">Cena:</label>
                     <input type="text" name="sizes[0][price]" id ="price" class="form-control form-validate" @error('sizes[0][price]') is-invalid @enderror placeholder="Cena" value="{{ old('sizes')[0]["price"] }}" required />
                     @error('sizes[0][price]')
+                    <div class="alert alert-danger">{{ $message }}</div>
+                    @enderror
+                </div>
+                <div class="col-md-2">
+                    <label class="control-label">Stara Cena:</label>
+                    <input type="text" name="sizes[0][old_price]" id ="old_price" class="form-control form-validate" @error('sizes[0][old_price]') is-invalid @enderror placeholder="Stara Cena" value="{{ old('sizes')[0]["old_price"] }}" required />
+                    @error('sizes[0][old_price]')
                     <div class="alert alert-danger">{{ $message }}</div>
                     @enderror
                 </div>

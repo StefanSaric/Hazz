@@ -86,21 +86,21 @@
                 <div class="cart-area">
                     <div class="maincart-wrap">
                         <a href="javascript:void(0);"><i class="fa fa-shopping-cart"></i>
-                            <span id="sizeof_cart">{{ sizeof($in_carts) }}</span>
+                            <span id="sizeof_cart1">{{ sizeof($in_carts) }}</span>
                         </a>
                     </div>
                     <div class="cart">
                         <div class="total-items pb-20 border-bottom mb-15">
                             <div class="sub-total clear">
-                                <strong id="sizeof_cart">{{ sizeof($in_carts) }}</strong>
-                                <span>items</span>
+                                <strong id="sizeof_cart2">{{ sizeof($in_carts) }}</strong>
+                                <span>proizvoda</span>
                                 <span class="pull-right total">
-											<span>Cart Subtotal :</span>
+											<span>Ukupno :</span>
 											<strong id="subtotal">{{$total}} RSD</strong>
 										</span>
                             </div>
-                            <div class="cart-btn mt-15">
-                                <a href="{{url('/checkout')}}">Go to Checkout</a>
+                            <div class="organic-btn pt-20 text-center border-top">
+                                <a href="{{url('/checkout')}}">Idi na kasu</a>
                             </div>
                         </div>
                         <div class="cart-items clear mb-15" id="cart_div">
@@ -125,7 +125,7 @@
                                             <div class="details-qty col-md-auto-12">
                                                 <span>Kolicina: </span>
                                                 <input type="number" min="1" max="{{$one_size->stock}}" name="quantity_{{ $one_size->id }}" id="quantity_{{ $one_size->id }}" class="quantity"  value="{{$carts[$one_size->id]["quantity"]}}"/>
-                                                <a href="#" class="remove-from-cart"  data-id="{{ $one_size->id }}"><i class="fa fa-trash-o"  style="font-size:24px"></i></a>
+                                                <a href="#" class="delete-from-cart"  data-id="{{ $one_size->id }}"><i class="fa fa-trash-o"  style="font-size:24px"></i></a>
                                             </div>
                                         </div>
                                     </div>
@@ -133,7 +133,7 @@
                             @endforeach
                         </div>
                         <div class="organic-btn pt-20 text-center border-top">
-                            <a href="{{url('/cart')}}">View and edit cart</a>
+                            <a href="{{url('/cart')}}">Pogledaj Korpu</a>
                         </div>
                     </div>
                 </div>
@@ -222,9 +222,12 @@
                     <h3>{{$size->product->name}}</h3>
                     <div class="product-review simple-product-review">
                         <span class="special-price">{{$size->price}} RSD</span>
+                        <span class="old-price">
+									<del>{{$size->old_price}} RSD</del>
+								</span>
                     </div>
                     <p>{{$size->product->description}}</p>
-                    <div class="select-area mb-20 clear">
+                    <div class="select-area mb-20 clear" style="margin-bottom: 10px;">
                         <div class="select-title floatleft"><strong>Pakovanje:</strong></div>
                         <div class="select-option floatleft" style="width: 20%">
                             <select name="select">
@@ -238,7 +241,7 @@
                             </select>
                         </div>
                     </div>
-                    <div class="simple-product-form mtb-20 add-to-cart">
+                    <div class="simple-product-form mtb-20 add-to-cart" style="margin-top: 10px;">
                         <form action="#">
                             @if(array_key_exists($size->id, $in_carts))
                                 <input type="number" min="1" max="{{$size->stock}}" name="quantity_{{ $size->id }}" id="quantity_{{ $size->id }}" class="quantity"  value="{{$carts[$size->id]["quantity"]}}"/>
@@ -297,61 +300,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="section-title home5-section-title text-center mb-40">
-                    <h2>Related Products</h2>
-                </div>
-            </div>
-        </div>
-        <div class="featureproduct-slider-active owl-carousel next-prev-style">
-            <div class="single-product">
-                <div class="product-img">
-                    <a href="#"><img src="img/product/home3/1.jpg" alt="" /></a>
-                    <span class="sale">Sale</span>
-                </div>
-                <div class="product-item-details text-center">
-                    <div class="product-name-review tab-product-name-review">
-                        <div class="product-name mt-30 ">
-                            <span>Sample Category</span>
-                            <strong><a href="#">Chaz Kangeroo Hoodie1</a></strong>
-                        </div>
-                        <div class="product-review">
-                            <ul>
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                            </ul>
-                            <span class="special-price">$ 50.00</span>
-                        </div>
-                    </div>
-                    <div class="add-to-cart-area clear pt-35">
-                        <div class="add-to-cart text-uppercase">
-                            <button>add to cart</button>
-                        </div>
-                        <div class="add-to-links">
-                            <ul>
-                                <li class="left">
-                                    <a href="#"><i class="fa fa-adjust"></i></a>
-                                </li>
-                                <li class="right">
-                                    <a href="#"><i class="fa fa-heart-o"></i></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- featureproduct-slider-area end-->
-<!-- featureproduct-slider-area start-->
-<div class="featureproduct-slider-area mt-80 mb-65 tab-area">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="section-title home5-section-title text-center mb-40">
-                    <h2>upsell products</h2>
+                    <h2>Slicni proizvodi</h2>
                 </div>
             </div>
         </div>

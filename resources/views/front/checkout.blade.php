@@ -94,14 +94,14 @@
                         <div class="total-items pb-20 border-bottom mb-15">
                             <div class="sub-total clear">
                                 <strong>{{ sizeof($in_carts) }}</strong>
-                                <span>items</span>
+                                <span>proizvoda</span>
                                 <span class="pull-right total">
-										<span>Cart Subtotal :</span>
+										<span>Ukupno :</span>
 										<strong>{{$total}} RSD</strong>
 									</span>
                             </div>
                             <div class="organic-btn pt-20 text-center border-top">
-                                <a href="{{url('/checkout')}}">Go to Checkout</a>
+                                <a href="{{url('/checkout')}}">Idi na kasu</a>
                             </div>
                         </div>
                             <div class="cart-items clear mb-15">
@@ -134,7 +134,7 @@
                                 @endforeach
                                 </div>
                         <div class="organic-btn pt-20 text-center border-top">
-                            <a href="{{url('/cart')}}">View and edit cart</a>
+                            <a href="{{url('/cart')}}">Pogledaj korpu</a>
                         </div>
                     </div>
                 </div>

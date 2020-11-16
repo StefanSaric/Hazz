@@ -17,6 +17,9 @@ $(document).on('click', "#sizeBtn", function() {
 		<div class="col-md-2">
             <input type="text" name="sizes[`+counter+`][price]" id ="sizes[`+counter+`][price]" class="form-control form-validate" placeholder="Cena" value="" required />
         </div>
+        <div class="col-md-2">
+            <input type="text" name="sizes[`+counter+`][old_price]" id ="sizes[`+counter+`][old_price]" class="form-control form-validate" placeholder="Stara Cena" value="" required />
+        </div>
         <button type="button" class="btn btn-equal btn-sm btn-close obrisiRed"><i class="fa fa-times"></i></button>
 	</div>`;
     counter++;
