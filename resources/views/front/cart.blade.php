@@ -87,13 +87,13 @@
                 <div class="cart-area">
                     <div class="maincart-wrap">
                         <a href="javascript:void(0);"><i class="fa fa-shopping-cart"></i>
-                            <span id="sizeof_cart">{{ sizeof($in_carts) }}</span>
+                            <span id="sizeof_cart1">{{ sizeof($in_carts) }}</span>
                         </a>
                     </div>
                     <div class="cart">
                         <div class="total-items pb-20 border-bottom mb-15">
                             <div class="sub-total clear">
-                                <strong id="sizeof_cart">{{ sizeof($in_carts) }}</strong>
+                                <strong id="sizeof_cart2">{{ sizeof($in_carts) }}</strong>
                                 <span>proizvoda</span>
                                 <span class="pull-right total">
 										<span>Ukupno :</span>
@@ -489,6 +489,6 @@
 <!-- cart js -->
 <script src="{{ asset("/assets/js/cart.js")}}"></script>
 <!-- deletecart js -->
-<script src="{{ asset("/assets/js/cart-delete.js")}}"></script>
+<script src="{{ asset("/assets/js/cart-delete2.js")}}"></script>
 </body>
 </html>

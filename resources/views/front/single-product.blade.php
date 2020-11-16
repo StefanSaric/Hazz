@@ -90,7 +90,7 @@
                         </a>
                     </div>
                     <div class="cart">
-                        <div class="total-items pb-20 border-bottom mb-15">
+                        <div class="total-items pb-20 border-bottom mb-15" >
                             <div class="sub-total clear">
                                 <strong id="sizeof_cart2">{{ sizeof($in_carts) }}</strong>
                                 <span>proizvoda</span>
@@ -305,45 +305,41 @@
             </div>
         </div>
         <div class="featureproduct-slider-active owl-carousel next-prev-style">
-            <div class="single-product">
-                <div class="product-img">
-                    <a href="#"><img src="img/product/home3/1.jpg" alt="" /></a>
-                    <span class="sale">Sale</span>
-                </div>
-                <div class="product-item-details text-center">
-                    <div class="product-name-review tab-product-name-review">
-                        <div class="product-name mt-30 ">
-                            <span>Sample Category</span>
-                            <strong><a href="#">Chaz Kangeroo Hoodie1</a></strong>
-                        </div>
-                        <div class="product-review">
-                            <ul>
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                            </ul>
-                            <span class="special-price">$ 50.00</span>
-                        </div>
-                    </div>
-                    <div class="add-to-cart-area clear pt-35">
-                        <div class="add-to-cart text-uppercase">
-                            <button>add to cart</button>
-                        </div>
-                        <div class="add-to-links">
-                            <ul>
-                                <li class="left">
-                                    <a href="#"><i class="fa fa-adjust"></i></a>
-                                </li>
-                                <li class="right">
-                                    <a href="#"><i class="fa fa-heart-o"></i></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            @foreach($size->product->categories as $category)
+                @foreach($products as $one_product)
+                    @foreach($one_product->product->categories as $one_category)
+                        @if($category->name == $one_category->name)
+                            <div class="single-product">
+                                <div class="product-img">
+                                    <a href="{{url('/single-product/'.$one_product->id)}}"><img src="{{asset($one_product->product->materials->first()->url)}}" border="10px"  alt="" /></a>
+                                </div>
+                                <div class="product-item-details text-center">
+                                    <div class="product-name-review tab-product-name-review">
+                                        <div class="product-name mt-30 ">
+                                            <strong><a href="{{url('/single-product/'.$one_product)}}">{{$one_product->product->name}}</a></strong>
+                                        </div>
+                                        <div class="product-review">
+                                            <span class="special-price">{{$one_product->price}} RSD</span>
+                                        </div>
+                                        <div class="product-review">
+                                            <span class="product-quantity">Pakovanje: {{$one_product->quantity}} {{$one_product->unit}}</span>
+                                        </div>
+                                    </div>
+                                    <div class="add-to-cart-area clear pt-35">
+                                        <div class="add-to-cart text-uppercase">
+                                            @if(array_key_exists($one_product->id, $in_carts))
+                                                <button type="button " class=" btn-danger" data-id="{{ $one_product->id }}" >Dodato</button>
+                                            @else
+                                                <button type="button" class="cartBtn" data-id="{{ $one_product->id }}" >Dodaj u korpu</button>
+                                            @endif
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        @endif
+                    @endforeach
+                @endforeach
+            @endforeach
         </div>
     </div>
 </div>
@@ -509,7 +505,7 @@
 <!-- cart js -->
 <script src="{{ asset("/assets/js/cart.js")}}"></script>
 <!-- deletecart js -->
-<script src="{{ asset("/assets/js/cart-delete.js")}}"></script>
+<script src="{{ asset("/assets/js/cart-delete2.js")}}"></script>
 <!-- single-product js -->
 <script src="{{ asset("/assets/js/single-product.js")}}"></script>
 </body>

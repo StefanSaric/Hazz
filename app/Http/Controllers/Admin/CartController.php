@@ -48,6 +48,36 @@ class CartController extends Controller
         return view('front.shop', ['products' => $products, 'in_carts' => $in_carts,'carts' => $carts,'total' => $total]);
     }
 
+    public function food()
+    {
+        $products = Sizes::with('product', 'product.materials','product.categories','product.tags','product.sizes')->orderBy('product_id')->get();
+        $in_carts = [];
+        if(session()->get('cart') != null) {
+            $in_carts = session()->get('cart');
+        }
+        $total = 0;
+        $carts = session()->get('cart');
+        if($carts != 0)
+            foreach($carts as $cart)
+                $total += $cart["price"]*$cart["quantity"];
+        return view('front.food', ['products' => $products, 'in_carts' => $in_carts,'carts' => $carts,'total' => $total]);
+    }
+
+    public function cosmetics()
+    {
+        $products = Sizes::with('product', 'product.materials','product.categories','product.tags','product.sizes')->orderBy('product_id')->get();
+        $in_carts = [];
+        if(session()->get('cart') != null) {
+            $in_carts = session()->get('cart');
+        }
+        $total = 0;
+        $carts = session()->get('cart');
+        if($carts != 0)
+            foreach($carts as $cart)
+                $total += $cart["price"]*$cart["quantity"];
+        return view('front.cosmetics', ['products' => $products, 'in_carts' => $in_carts,'carts' => $carts,'total' => $total]);
+    }
+
     public function blog()
     {
         $products = Sizes::with('product', 'product.materials','product.categories','product.tags','product.sizes')->orderBy('product_id')->get();

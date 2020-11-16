@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Organica Checkout</title>
+    <title>Organica Blog</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -15,7 +15,7 @@
     <!-- bootstrap v3.3.7 css -->
     <link rel="stylesheet" href="{{ asset("/assets/css/index/bootstrap.min.css")}}">
     <!-- animate css -->
-    <link rel="stylesheet"href="{{ asset("/assets/css/index/animate.css")}}">
+    <link rel="stylesheet" href="{{ asset("/assets/css/index/animate.css")}}">
     <!-- jquery-ui.min css -->
     <link rel="stylesheet" href="{{ asset("/assets/css/index/jquery-ui.min.css")}}">
     <!-- meanmenu css -->
@@ -76,7 +76,7 @@
                                 <li><a href="{{url('/shop')}}">Prodavnica </a></li>
                                 <li><a href="{{url('/blog')}}">Blog </a></li>
                                 <li><a href="{{url('/cart')}}">Korpa </a></li>
-                                <li><a href="{{url('/checkout')}}">Kasa</a></li>
+                                <li><a href="{{url('/checkout')}}">Porudžbina</a></li>
                                 <li><a href="{{url('/contact')}}">Kontakt</a></li>
                             </ul>
                         </nav>
@@ -96,45 +96,45 @@
                                 <strong id="sizeof_cart2">{{ sizeof($in_carts) }}</strong>
                                 <span>proizvoda</span>
                                 <span class="pull-right total">
-										<span>Ukupno :</span>
-										<strong id="subtotal">{{$total}} RSD</strong>
-									</span>
+                                    <span>Ukupno :</span>
+                                        <strong id="subtotal">{{$total}} RSD</strong>
+                                </span>
                             </div>
                             <div class="organic-btn pt-20 text-center border-top">
                                 <a href="{{url('/checkout')}}">Idi na kasu</a>
                             </div>
                         </div>
-                            <div class="cart-items clear mb-15" id="cart_div">
-                                @foreach($products as $size)
-                                    @if(array_key_exists($size->id, $in_carts))
-                                        <div class="cart-item ptb-20 border-bottom" >
-                                            <div class="cart-item-details text-center">
-                                                <a href="{{url('/single-product/'.$size->id)}}">{{$size->product->name}}</a>
-                                            </div><br>
-                                            <div class="cart-item-details text-center">
-                                                <div class="cart-img pull-left col-md-auto-12" >
-                                                    <a href="{{url('/single-product/'.$size->id)}}">
-                                                        <img src="{{asset($size->product->materials->first()->url)}}"  alt="" />
-                                                    </a>
-                                                </div>
-                                                <div class="cart-item-details clear">
-                                                    <h6 >Cena: {{$size->price}} RSD</h6>
-                                                    <h6 >Pakovanje: {{$size->quantity}} {{$size->unit}}</h6>
-                                                </div>
-                                            </div><br>
-                                            <div>
-                                                <div class="details-qty col-md-auto-12">
-                                                    <span>Kolicina: </span>
-                                                    <input type="number" min="1" max="{{$size->stock}}" name="quantity_{{ $size->id }}" id="quantity_{{ $size->id }}" class="quantity"  value="{{$carts[$size->id]["quantity"]}}"/>
-                                                    <a href="#" class="delete-from-cart"  data-id="{{ $size->id }}"><i class="fa fa-trash-o"  style="font-size:24px"></i></a>
-                                                </div>
+                        <div class="cart-items clear mb-15" id="cart_div">
+                            @foreach($products as $size)
+                                @if(array_key_exists($size->id, $in_carts))
+                                    <div class="cart-item ptb-20 border-bottom" >
+                                        <div class="cart-item-details text-center">
+                                            <a href="{{url('/single-product/'.$size->id)}}">{{$size->product->name}}</a>
+                                        </div><br>
+                                        <div class="cart-item-details text-center">
+                                            <div class="cart-img pull-left col-md-auto-12" >
+                                                <a href="{{url('/single-product/'.$size->id)}}">
+                                                    <img src="{{asset($size->product->materials->first()->url)}}"  alt="" />
+                                                </a>
+                                            </div>
+                                            <div class="cart-item-details clear">
+                                                <h6 >Cena: {{$size->price}} RSD</h6>
+                                                <h6 >Pakovanje: {{$size->quantity}} {{$size->unit}}</h6>
+                                            </div>
+                                        </div><br>
+                                        <div>
+                                            <div class="details-qty col-md-auto-12">
+                                                <span>Kolicina: </span>
+                                                <input type="number" min="1" max="{{$size->stock}}" name="quantity_{{ $size->id }}" id="quantity_{{ $size->id }}" class="quantity"  value="{{$carts[$size->id]["quantity"]}}"/>
+                                                <a href="#" class="delete-from-cart"  data-id="{{ $size->id }}"><i class="fa fa-trash-o"  style="font-size:24px"></i></a>
                                             </div>
                                         </div>
-                                    @endif
-                                @endforeach
-                                </div>
+                                    </div>
+                                @endif
+                            @endforeach
+                        </div>
                         <div class="organic-btn pt-20 text-center border-top">
-                            <a href="{{url('/cart')}}">Pogledaj korpu</a>
+                            <a href="{{url('/cart')}}">Pogledaj Korpu</a>
                         </div>
                     </div>
                 </div>
@@ -164,8 +164,7 @@
     </div>
 </header>
 <!-- header end -->
-<!-- start checkout -->
-<div class="breadcrumbs-area ptb-10 bg-4 mb-50">
+<div class="breadcrumbs-area ptb-10 bg-4 mb-30">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -173,7 +172,7 @@
                     <div class="menu">
                         <ul>
                             <li><a  href="{{url('/')}}">Početna</a></li>
-                            <li class="active"><a href="javascript:void(0);">Kasa</a></li>
+                            <li class="active"><a href="javascript:void(0);">Prehranbeni Proizvodi</a></li>
                         </ul>
                     </div>
                 </div>
@@ -181,159 +180,78 @@
         </div>
     </div>
 </div>
-<div class="main-container mb-50">
+<div class="blog-details">
     <div class="container">
         <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <div class="checkout-title text-center mb-50">
-                    <h1>Završi porudžbinu</h1>
+            <!-- single-blog-start -->
+            <div class="col-lg-12">
+                <div class="blog-wrapper bg-2">
+                    <div class="blog-img single-blog-img">
+                        <img src="img/blog/2.jpg" alt="" />
+                        </div>
+                    </div>
+                    <div class="blog-content single-blog-content">
+                        <h3 class="text-uppercase">Magični plod sreće i radosti</h3>
+                        <div class="blog-meta">
+                        </div>
+                        <p>Kroz istoriju čovečanstva i na raznim meridijanima lešniku su se pripisivala brojna lekovita svojstva. U antičkom Rimu verovalo se da lešnik donosi sreću dok u Francuskoj simboliše plodnost. Čak i u starim spisima grčkog filozofa Teofastusa i u Bibliji navodi se da lešnik ima veliku nutritivnu vrednost ali i isceliteljske moći. Vodi poreklo iz Male Azije i smatra se jednom od najstarijih kultura koje se i dalje gaje.</p>
+                        <p>Koštunjavo voće lešnik je plod drveta leska koji može da rađa i do 80 godina starosti. Na svetu postoji oko 15 vrsta drveta leske i svi daju jestive plodove. Drvo može da izraste od 3 do 35 metara u visinu. Leska je vrlo izdržljiv i prilagodljiv grm jer je otporan na zimsku hladnoću, uspeva na raznim vrstama zemljišta i na visokim nadmorskim visinama. Ima listove koji su zaobljeni i duguljasti, plodovi se grupišu u grozdove. Drvo ima savitljive grane koje su u vremenu praistorije često korišćeni za pravljenje raznog oružja i oruđa. Jezgro lešnika u sebi sadrži ulje čak 70%. Može se jesti sirov ili pečen, ali i kao puter je značajan jer je hranljiviji i od kikiriki putera.
+                            Ima i veliki ekološki značaj jer izvor polena za pčele i ostale oprašivače. Takođe je hrana za veverice, deliće i divlje golubove.
+                        </p>
+                        <p>U narodnoj medicini se pravi čaj od usitnjenih listova leske koji se stavlja kao obloga na rane od proširenih vena. </p>
+                        <p>100g lešnika sadrži 628 kalorija, predstavlja izvor energije jer sadrži visok nivo masti, proteina i ugljenih hidrata. Preko 800 hiljada tona ovog slatkastog orašastog ploda se proda godišnje.
+                        </p>
+                    </div>
+                </div>
+                <!-- comments-area -->
+            </div>
+        </div>
+    </div>
+<div class="product-area bg-1 ptb-100">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-title text-center mb-50">
+                    <h2>Prehrambeni proizvodi</h2>
                 </div>
             </div>
         </div>
-        <div class="customer-details-area mb-35">
-            {!! Form::open(array('method' => 'POST', 'url' => '/test111', 'id' => 'fileupload', 'role' => 'form', 'files' => true, 'enctype' => 'multipart/form-data')) !!}
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="customer-details mb-50">
-                        <div class="section-title mb-10">
-                            <h2>Podaci o poručiocu</h2>
-                        </div>
-                        <div class="customer-details-form account-form p-20 clear bg-1">
-                            <form action="#">
-                                <span class="form-row-first">
-                                    <b>Ime <span class="required">*</span></b>
-                                    <input type="text" name="firstname" id ="firstname" placeholder="Ime" required />
-                                </span>
-                                <span class="form-row-last">
-                                    <b>Prezime <span class="required">*</span></b>
-                                    <input type="text" name="lastname" id ="lastname" placeholder="Prezime" required/>
-                                </span>
-                                <span>
-                                    <b>Email <span class="required">*</span></b>
-                                    <input type="text" name="email" id ="email" placeholder="Email" required/>
-                                </span>
-                                <span>
-                                    <b>Grad <span class="required">*</span></b>
-                                    <input type="text" name="city" id ="city" placeholder="Grad"   required/>
-                                </span>
-                                <span>
-                                    <b>Addresa <span class="required">*</span></b>
-                                    <input type="text" name="address" id ="address" placeholder="Adresa"  required/>
-                                </span>
-                                <span class="form-row-first">
-                                    <input type="text" name="num" id ="num" placeholder="Broj"  required/>
-                                </span>
-                                <span class="form-row-last">
-                                    <input type="text" name="apartment" id ="apartment" placeholder="Stan"  required/>
-                                </span>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="section-title">
-                        <h2>Porudžbina</h2>
-                    </div>
-                    <div class="your-order bg-1">
-                        <div class="your-order-table table-responsive">
-                            <table>
-                                <thead>
-                                <tr>
-                                    <th class="product-name">Proizvod</th>
-                                    <th class="product-total">Total</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                @foreach($products as $size)
-                                    @if(array_key_exists($size->id, $in_carts))
-                                    <tr class="cart_item">
-                                        <td class="product-name">
-                                            {{$size->product->name}} <strong class="product-quantity"> x{{$carts[$size->id]["quantity"]}} </strong>
-                                        </td>
-                                        <td class="product-total">
-                                            <span class="amount">{{$carts[$size->id]["quantity"]*$size->price}} RSD</span>
-                                        </td>
-                                    </tr>
-                                    @endif
-                                @endforeach
-                                </tbody>
-                                <tfoot>
-                                <tr class="cart-subtotal">
-                                    <th>Cart Subtotal</th>
-                                    <td><span class="amount" >{{$total}} RSD</span></td>
-                                </tr>
-                                <tr class="order-total">
-                                    <th>Order Total</th>
-                                    <td><strong><span class="amount">{{$total}} RSD</span></strong>
-                                    </td>
-                                </tr>
-                                </tfoot>
-                            </table>
-                        </div>
-                        <div class="payment-method mt-0">
-                            <div class="order-button-payment">
-                                <input type="submit" value="Potvrdi porudžbinu" />
+        <div class="product-active owl-carousel next-prev-style">
+            @foreach($products as $size)
+                @if($size->product != null)
+                    @foreach($size->product->categories as $category)
+                        @if($category->name == "hrana")
+                        <div class="single-product">
+                            <div class="product-img">
+                                <a href="{{url('/single-product/'.$size->id)}}"><img src="{{asset($size->product->materials->first()->url)}}" border="10px" class="center"  alt="" /></a>
+                            </div>
+                            <div class="product-item-details text-center">
+                                <div class="product-name-review tab-product-name-review">
+                                    <div class="product-name mt-30 ">
+                                        <strong><a href="{{url('/single-product/'.$size->id)}}">{{$size->product->name}}</a></strong>
+                                    </div>
+                                    <div class="product-review">
+                                        <span class="special-price">{{$size->price}} RSD</span>
+                                    </div>
+                                    <div class="product-review">
+                                        <span class="product-quantity">Pakovanje: {{$size->quantity}} {{$size->unit}}</span>
+                                    </div>
+                                </div>
+                                <div class="add-to-cart-area clear pt-35">
+                                    <div class="add-to-cart text-uppercase">
+                                        @if(array_key_exists($size->id, $in_carts))
+                                            <button type="button " class=" btn-danger" data-id="{{ $size->id }}" >Dodato</button>
+                                        @else
+                                            <button type="button" class="cartBtn" data-id="{{ $size->id }}" >Dodaj u korpu</button>
+                                        @endif
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-            {!! Form::close() !!}
-        </div>
-        <div class="checkout-order-area">
-            <div class="order-title pb-10 mb-20 text-uppercase">
-                <h3>Your order</h3>
-            </div>
-            <div class="order_review table-responsive">
-                <table>
-                    <tr>
-                        <th class="product-name">Product</th>
-                        <th class="product-total">Total</th>
-                    </tr>
-                    <tbody>
-                    <tr class="cart_item">
-                        <td class="product-name">
-                            Lorem nec augue
-                            <strong class="product-quantity">x 1</strong>
-                        </td>
-                        <td class="product-total">
-                            <span>$ 220.00</span>
-                        </td>
-                    </tr>
-                    <tr class="cart_item">
-                        <td class="product-name">
-                            Adipiscing cursus eu
-                            <strong class="product-quantity">x 1</strong>
-                        </td>
-                        <td class="product-total">
-                            <span>$300.00</span>
-                        </td>
-                    </tr>
-                    <tr class="cart_item">
-                        <td class="product-name">
-                            Cras nec nisl ut erat
-                            <strong class="product-quantity">x 48</strong></td>
-                        <td class="product-total">
-                            <span>$ 9,600.00</span>
-                        </td>
-                    </tr>
-                    </tbody>
-                    <tfoot>
-                    <tr class="cart-subtotal">
-                        <th>Subtotal</th>
-                        <td>
-                            <strong><span>$ 10,120.00</span></strong>
-                        </td>
-                    </tr>
-                    <tr class="order-total">
-                        <th>Total</th>
-                        <td>
-                            <strong><span>$ 10,120.00</span></strong>
-                        </td>
-                    </tr>
-                    </tfoot>
-                </table>
-            </div>
+                            @endif
+                    @endforeach
+                @endif
+            @endforeach
         </div>
     </div>
 </div>
@@ -497,6 +415,8 @@
 <!-- cart js -->
 <script src="{{ asset("/assets/js/cart.js")}}"></script>
 <!-- deletecart js -->
-<script src="{{ asset("/assets/js/cart-delete2.js")}}"></script>
+<script src="{{ asset("/assets/js/cart-delete.js")}}"></script>
+<!-- single-product js -->
+<script src="{{ asset("/assets/js/single-product.js")}}"></script>
 </body>
 </html>

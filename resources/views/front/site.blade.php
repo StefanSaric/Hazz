@@ -221,10 +221,10 @@
 <!-- banner area  start-->
 <div class="banner-area fix">
     <div class="single-banner pull-left">
-        <a href="#"><img src="{{ asset("/assets/img/index/banner/1.jpg")}}" alt="" /></a>
+        <a href="{{url('/food')}}"><img src="{{ asset("/assets/img/index/banner/1.jpg")}}" alt="" /></a>
     </div>
     <div class="single-banner pull-right">
-        <a href="#"><img src="{{ asset("/assets/img/index/banner/2.jpg")}}" alt="" /></a>
+        <a href="{{url('/cosmetics')}}"><img src="{{ asset("/assets/img/index/banner/2.jpg")}}" alt="" /></a>
     </div>
 </div>
 <!-- banner area  end-->

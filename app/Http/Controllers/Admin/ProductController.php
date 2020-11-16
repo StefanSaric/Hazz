@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Product_Categories;
 use App\Products;
 use App\Materials;
 use App\Categories;
@@ -289,6 +290,7 @@ class ProductController extends Controller
         if($carts != null)
             foreach($carts as $cart)
                 $total += $cart["price"]*$cart["quantity"];
+
 
 
         return view('front.single-product', ['size' => $size,

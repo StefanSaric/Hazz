@@ -86,17 +86,17 @@
                 <div class="cart-area">
                     <div class="maincart-wrap">
                         <a href="javascript:void(0);"><i class="fa fa-shopping-cart"></i>
-                            <span>{{ sizeof($in_carts) }}</span>
+                            <span id="sizeof_cart1">{{ sizeof($in_carts) }}</span>
                         </a>
                     </div>
                     <div class="cart">
                         <div class="total-items pb-20 border-bottom mb-15">
                             <div class="sub-total clear">
-                                <strong>{{ sizeof($in_carts) }}</strong>
+                                <strong id="sizeof_cart2">{{ sizeof($in_carts) }}</strong>
                                 <span>items</span>
                                 <span class="pull-right total">
 										<span>Cart Subtotal :</span>
-										<strong>{{$total}} RSD</strong>
+										<strong id="subtotal">{{$total}} RSD</strong>
 									</span>
                             </div>
                             <div class="organic-btn pt-20 text-center border-top">
@@ -125,7 +125,7 @@
                                             <div class="details-qty col-md-auto-12">
                                                 <span>Kolicina: </span>
                                                 <input type="number" min="1" max="{{$size->stock}}" name="quantity_{{ $size->id }}" id="quantity_{{ $size->id }}" class="quantity"  value="{{$carts[$size->id]["quantity"]}}"/>
-                                                <a href="#" class="remove-from-cart"  data-id="{{ $size->id }}"><i class="fa fa-trash-o"  style="font-size:24px"></i></a>
+                                                <a href="#" class="delete-from-cart"  data-id="{{ $size->id }}"><i class="fa fa-trash-o"  style="font-size:24px"></i></a>
                                             </div>
                                         </div>
                                     </div>
@@ -750,5 +750,9 @@
 <script src="{{ asset("/assets/js/libs/index/plugins.js")}}"></script>
 <!-- main js -->
 <script src="{{ asset("/assets/js/libs/index/main.js")}}"></script>
+<!-- cart js -->
+<script src="{{ asset("/assets/js/cart.js")}}"></script>
+<!-- deletecart js -->
+<script src="{{ asset("/assets/js/cart-delete2.js")}}"></script>
 </body>
 </html>

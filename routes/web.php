@@ -42,6 +42,9 @@ Route::get('/checkout', 'Admin\CartController@checkout');
 Route::get('/contact', 'Admin\CartController@contact');
 Route::get('/single-product/{id}', 'Admin\ProductController@page');
 Route::post('/test111', 'Admin\OrdersController@store');
+Route::get('/food', 'Admin\CartController@food');
+Route::get('/cosmetics', 'Admin\CartController@cosmetics');
+
 
 //JavaScript
 Route::get('/addtocart/{id}', 'HomeController@addtocart');
