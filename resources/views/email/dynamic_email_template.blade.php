@@ -1,3 +1,3 @@
-<p>{{ $data['name'] }}</p>
-<p>{{ $data['message'] }}.</p>
+<p>{{ $data['message'] }}</p>
+<p>{{ $data['name'] }},</p>
 

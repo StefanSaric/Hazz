@@ -210,7 +210,7 @@
                                     @if(array_key_exists($size->id, $in_carts))
                                     <tr class="cart-item">
                                         <td class="product-remove">
-                                            <a href="#" class="delete-from-cart" data-id="{{ $size->id }}" title="Remove this item">x</a>
+                                            <a href="#" class="delete-from-cart-2" data-id="{{ $size->id }}" title="Remove this item">x</a>
                                         </td>
                                         <td class="product-thumbnail">
                                             <a href="{{url('/single-product/'.$size->id)}}">
@@ -489,6 +489,8 @@
 <!-- cart js -->
 <script src="{{ asset("/assets/js/cart.js")}}"></script>
 <!-- deletecart js -->
+<script src="{{ asset("/assets/js/cart-delete.js")}}"></script>
+<!-- deletecart2 js -->
 <script src="{{ asset("/assets/js/cart-delete2.js")}}"></script>
 </body>
 </html>

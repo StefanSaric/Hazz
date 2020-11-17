@@ -753,6 +753,6 @@
 <!-- cart js -->
 <script src="{{ asset("/assets/js/cart.js")}}"></script>
 <!-- deletecart js -->
-<script src="{{ asset("/assets/js/cart-delete2.js")}}"></script>
+<script src="{{ asset("/assets/js/cart-delete.js")}}"></script>
 </body>
 </html>

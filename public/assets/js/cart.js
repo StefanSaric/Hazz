@@ -32,7 +32,7 @@ $(document).on('click', ".cartBtn",  function(e) {
                         <div class="details-qty col-md-auto-12">
                             <span>Kolicina: </span>
                             <input type="number" min="1" max=`+response.stock +` name="quantity_" `+response.id +`  id="quantity_" `+response.id +` class="quantity"  value="1"/>
-                            <a href="#" class="delete-from-cart" data-id= `+response.id +`><i class="fa fa-trash-o" style="font-size:24px"></i></a>
+                            <a href="#" class="delete-from-cart-2" data-id= `+response.id +`><i class="fa fa-trash-o" style="font-size:24px"></i></a>
                         </div>
                     </div>
                 `);

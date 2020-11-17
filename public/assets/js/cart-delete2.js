@@ -1,4 +1,4 @@
-$(document).on('click', ".delete-from-cart",  function(e) {
+$(document).on('click', ".delete-from-cart-2",  function(e) {
     e.preventDefault();
     var ele = $(this);
     console.log(ele);
@@ -8,7 +8,7 @@ $(document).on('click', ".delete-from-cart",  function(e) {
         success: function (response) {
             console.log(response);
             if(response != null) {
-                ele.parent().parent().parent().remove();
+                ele.parent().parent().remove();
                 $("#sizeof_cart1").html(response.sizeOf);
                 $("#sizeof_cart2").html(response.sizeOf);
                 $("#subtotal").html(response.total);
