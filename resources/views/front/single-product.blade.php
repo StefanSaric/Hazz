@@ -75,7 +75,7 @@
                                 <li><a href="{{url('/shop')}}">Prodavnica </a></li>
                                 <li><a href="{{url('/blog')}}">Blog </a></li>
                                 <li><a href="{{url('/cart')}}">Korpa </a></li>
-                                <li><a href="{{url('/checkout')}}">Porudžbina</a></li>
+                                <li><a href="{{url('/checkout')}}">Kasa</a></li>
                                 <li><a href="{{url('/contact')}}">Kontakt</a></li>
                             </ul>
                         </nav>
@@ -305,40 +305,38 @@
             </div>
         </div>
         <div class="featureproduct-slider-active owl-carousel next-prev-style">
-            @foreach($size->product->categories as $category)
-                @foreach($products as $one_product)
-                    @foreach($one_product->product->categories as $one_category)
-                        @if($category->name == $one_category->name)
-                            <div class="single-product">
-                                <div class="product-img">
-                                    <a href="{{url('/single-product/'.$one_product->id)}}"><img src="{{asset($one_product->product->materials->first()->url)}}" border="10px"  alt="" /></a>
-                                </div>
-                                <div class="product-item-details text-center">
-                                    <div class="product-name-review tab-product-name-review">
-                                        <div class="product-name mt-30 ">
-                                            <strong><a href="{{url('/single-product/'.$one_product)}}">{{$one_product->product->name}}</a></strong>
-                                        </div>
-                                        <div class="product-review">
-                                            <span class="special-price">{{$one_product->price}} RSD</span>
-                                        </div>
-                                        <div class="product-review">
-                                            <span class="product-quantity">Pakovanje: {{$one_product->quantity}} {{$one_product->unit}}</span>
-                                        </div>
+            @foreach($products as $one_product)
+                @if($one_product->id != $size->id)
+                    @if(in_array($one_product->id, $samecategory))
+                        <div class="single-product">
+                            <div class="product-img">
+                                <a href="{{url('/single-product/'.$one_product->id)}}"><img src="{{asset($one_product->product->materials->first()->url)}}" border="10px"  alt="" /></a>
+                            </div>
+                            <div class="product-item-details text-center">
+                                <div class="product-name-review tab-product-name-review">
+                                    <div class="product-name mt-30 ">
+                                        <strong><a href="{{url('/single-product/'.$one_product)}}">{{$one_product->product->name}}</a></strong>
                                     </div>
-                                    <div class="add-to-cart-area clear pt-35">
-                                        <div class="add-to-cart text-uppercase">
-                                            @if(array_key_exists($one_product->id, $in_carts))
-                                                <button type="button " class=" btn-danger" data-id="{{ $one_product->id }}" >Dodato</button>
-                                            @else
-                                                <button type="button" class="cartBtn" data-id="{{ $one_product->id }}" >Dodaj u korpu</button>
-                                            @endif
-                                        </div>
+                                    <div class="product-review">
+                                        <span class="special-price">{{$one_product->price}} RSD</span>
+                                    </div>
+                                    <div class="product-review">
+                                        <span class="product-quantity">Pakovanje: {{$one_product->quantity}} {{$one_product->unit}}</span>
+                                    </div>
+                                </div>
+                                <div class="add-to-cart-area clear pt-35">
+                                    <div class="add-to-cart text-uppercase">
+                                        @if(array_key_exists($one_product->id, $in_carts))
+                                            <button type="button " class=" btn-danger" data-id="{{ $one_product->id }}" >Dodato</button>
+                                        @else
+                                            <button type="button" class="cartBtn" data-id="{{ $one_product->id }}" >Dodaj u korpu</button>
+                                        @endif
                                     </div>
                                 </div>
                             </div>
-                        @endif
-                    @endforeach
-                @endforeach
+                        </div>
+                    @endif
+                @endif
             @endforeach
         </div>
     </div>

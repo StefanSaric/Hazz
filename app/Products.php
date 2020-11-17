@@ -27,6 +27,18 @@ class Products extends Model
         return $this->belongsToMany('App\Categories','product_categories','product_id','category_id');
     }
 
+    public function hasCategory($categoryName)
+    {
+        foreach ($this->categories()->get() as $category)
+        {
+            if ($category->name == $categoryName)
+            {
+                return true;
+            }
+        }
+        return false;
+    }
+
     public function tags()
     {
         return $this->belongsToMany('App\Tags','product_tags','product_id','tag_id');

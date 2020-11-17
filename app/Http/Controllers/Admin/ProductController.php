@@ -287,15 +287,25 @@ class ProductController extends Controller
         }
         $total = 0;
         $carts = session()->get('cart');
-        if($carts != null)
-            foreach($carts as $cart)
-                $total += $cart["price"]*$cart["quantity"];
+        if($carts != null) {
+            foreach ($carts as $cart) {
+                $total += $cart["price"] * $cart["quantity"];
+            }
+        }
 
+        $SameCategory = [];
+        foreach ($size->product->categories as $category) {
+            foreach ($products as $one_product){
+                if($one_product->product->hascategory($category->name)){
+                    array_push($SameCategory,$one_product->id);
+                }
+            }
+        }
+        $samecategoryarray = array_unique($SameCategory);
 
-
-        return view('front.single-product', ['size' => $size,
-                    'products' => $products, 'carts' => $carts,
-                    'in_carts' => $in_carts, 'total' => $total]);
+        return view('front.single-product',
+            ['size' => $size, 'products' => $products, 'carts' => $carts,
+             'in_carts' => $in_carts, 'total' => $total, 'samecategory' => $samecategoryarray]);
 
     }
 }

@@ -177,16 +177,17 @@
                         <h2>Contact Us</h2>
                     </div>
                     <div class="contact-form form-style">
-                        <form id="contact-form" action="mail.php" method="post">
-                            <span>Your Name (required)</span>
-                            <input name="name" type="text" />
-                            <span>Your Email (required)</span>
-                            <input name="email" type="email" />
+                        <form action="{{url('/sendemail')}}" method="POST" >
+                            @csrf
+                            <span>Your Name </span>
+                            <input name="name" type="text" class="form-control" required/>
+                            <span>Your Email </span>
+                            <input name="email" type="email" class="form-control" required/>
                             <span>Subject</span>
-                            <input name="subject" type="text" />
+                            <input name="subject" type="text" class="form-control" required/>
                             <span>Your Message</span>
-                            <textarea name="message" id="#" cols="30" rows="10"></textarea>
-                            <button type="submit">send</button>
+                            <textarea name="message" class="form-control" id="#" cols="30" rows="10"></textarea>
+                            <input type="submit" name="send" value="Send" class="btn btn-info">
                         </form>
                         <p class="form-messege"></p>
                     </div>
