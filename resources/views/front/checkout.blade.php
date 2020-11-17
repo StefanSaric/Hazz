@@ -34,6 +34,9 @@
     <link rel="stylesheet" href="{{ asset("/assets/css/index/responsive.css")}}">
     <!-- modernizr css -->
     <script src="{{ asset("/assets/js/libs/index/modernizr-2.8.3.min.js")}}"></script>
+    <!-- checkout css -->
+    <link rel="stylesheet" type="text/css" href="{{asset('assets/css/page/checkout-page.css')}}"/>
+
 </head>
 
 <body>

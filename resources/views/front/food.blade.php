@@ -34,6 +34,8 @@
     <link rel="stylesheet" href="{{ asset("/assets/css/index/responsive.css")}}">
     <!-- modernizr css -->
     <script src="{{ asset("/assets/js/libs/index/modernizr-2.8.3.min.js")}}"></script>
+    <!-- food css -->
+    <link rel="stylesheet" type="text/css" href="{{asset('assets/css/page/food-page.css')}}"/>
 </head>
 
 <body>
@@ -191,7 +193,7 @@
                         </div>
                     </div>
                     <div class="blog-content single-blog-content">
-                        <h3 class="text-uppercase" >Magični plod sreće i radosti</h3>
+                        <h3 class="text-uppercase" style="margin-bottom: 80px;">Magični plod sreće i radosti</h3>
                         <div class="blog-meta">
                         </div>
                         <p>Kroz istoriju čovečanstva i na raznim meridijanima lešniku su se pripisivala brojna lekovita svojstva. U antičkom Rimu verovalo se da lešnik donosi sreću dok u Francuskoj simboliše plodnost. Čak i u starim spisima grčkog filozofa Teofastusa i u Bibliji navodi se da lešnik ima veliku nutritivnu vrednost ali i isceliteljske moći. Vodi poreklo iz Male Azije i smatra se jednom od najstarijih kultura koje se i dalje gaje.</p>
