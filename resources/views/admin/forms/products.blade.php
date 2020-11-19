@@ -56,25 +56,26 @@
                     @if($num>0)
                         <div class="col-md-2"></div>
                     @endif
+                        <input type="hidden" name="sizes[{{$num}}][id]" id = "id" value="{{$size->id}}">
                         <div class="col-md-2">
                             <label class="control-label">Kolicina:</label>
-                            <input type="number" name="sizes[0][quantity]" id = "quantity" class="form-control" @error('quantity') is-invalid @enderror placeholder="kolicina" value="{{ $size->quantity }}" required />
+                            <input type="number" name="sizes[{{$num}}][quantity]" id = "quantity" class="form-control" @error('quantity') is-invalid @enderror placeholder="kolicina" value="{{ $size->quantity }}" required />
                         </div>
                         <div class="col-md-2">
                             <label class="control-label">Jedinica mere:</label>
-                            <input type="text" name="sizes[0][unit]" id = "unit" class="form-control" @error('unit') is-invalid @enderror placeholder="jedinica" value="{{ $size->unit }}" required />
+                            <input type="text" name="sizes[{{$num}}][unit]" id = "unit" class="form-control" @error('unit') is-invalid @enderror placeholder="jedinica" value="{{ $size->unit }}" required />
                         </div>
                         <div class="col-md-2">
                             <label class="control-label">Na stajanju:</label>
-                            <input type="number" name="sizes[0][stock]" id = "stock" class="form-control" @error('stock') is-invalid @enderror placeholder="Paketa na stajanju" value="{{ $size->stock }}" required />
+                            <input type="number" name="sizes[{{$num}}][stock]" id = "stock" class="form-control" @error('stock') is-invalid @enderror placeholder="Paketa na stajanju" value="{{ $size->stock }}" required />
                         </div>
                         <div class="col-md-2">
                             <label class="control-label">Cena:</label>
-                            <input type="text" name="sizes[0][price]" id = "price" class="form-control" @error('price') is-invalid @enderror placeholder="Cena" value="{{ $size->price }}" required />
+                            <input type="text" name="sizes[{{$num}}][price]" id = "price" class="form-control" @error('price') is-invalid @enderror placeholder="Cena" value="{{ $size->price }}" required />
                         </div>
                         <div class="col-md-2">
                             <label class="control-label">Stara Cena:</label>
-                            <input type="text" name="sizes[0][old_price]" id = "old_price" class="form-control" @error('old_price') is-invalid @enderror placeholder="Stara Cena" value="{{ $size->old_price }}" required />
+                            <input type="text" name="sizes[{{$num}}][old_price]" id = "old_price" class="form-control" @error('old_price') is-invalid @enderror placeholder="Stara Cena" value="{{ $size->old_price }}" required />
                         </div>
                         @if($num>0)
                             <button type="button" class="obrisiSize" id="{{ $size->id }}" style="margin-top: 28px;"><i class="fa fa-times"></i></button>

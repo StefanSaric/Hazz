@@ -168,16 +168,34 @@ class ProductController extends Controller
         foreach ($sizes as $one_size) {
             $sizeExist = Sizes::where('product_id', $product->id)
                 ->where('quantity', $one_size["quantity"])
+                ->where('unit', $one_size["unit"])
+                ->where('stock', $one_size["stock"])
+                ->where('price', $one_size["price"])
+                ->where('old_price', $one_size["old_price"])
                 ->first();
-            if ($sizeExist == null) {
-                $size = Sizes::create([
+            if ((count($sizes)) == $product->sizes->count()) {
+                if ($sizeExist == null) {
+                    $size = Sizes::where('id', $one_size['id'])->delete();
+                    Sizes::create([
                     'product_id' => $product->id,
-                    'quantity' =>$one_size['quantity'],
-                    'unit' => $one_size['unit'],
-                    'stock' => $one_size['stock'],
-                    'price' => $one_size['price'],
-                    'old_price' => $one_size['old_price']
+                    'quantity' => $one_size["quantity"],
+                    'unit' => $one_size["unit"],
+                    "stock" => $one_size["stock"],
+                    "price" => $one_size["price"],
+                    "old_price" => $one_size["old_price"]
                 ]);
+                }
+            } elseif ((count($sizes)) > $product->sizes->count()) {
+                if ($sizeExist == null) {
+                    $size = Sizes::create([
+                        'product_id' => $product->id,
+                        'quantity' => $one_size['quantity'],
+                        'unit' => $one_size['unit'],
+                        'stock' => $one_size['stock'],
+                        'price' => $one_size['price'],
+                        'old_price' => $one_size['old_price']
+                    ]);
+                }
             }
         }
         if (sizeof($size_removes) > 0) {
