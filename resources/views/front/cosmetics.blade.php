@@ -34,6 +34,8 @@
     <link rel="stylesheet" href="{{ asset("/assets/css/index/responsive.css")}}">
     <!-- modernizr css -->
     <script src="{{ asset("/assets/js/libs/index/modernizr-2.8.3.min.js")}}"></script>
+    <!-- food css -->
+    <link rel="stylesheet" type="text/css" href="{{asset('assets/css/page/food-page.css')}}"/>
 </head>
 
 <body>
@@ -76,7 +78,7 @@
                                 <li><a href="{{url('/shop')}}">Prodavnica </a></li>
                                 <li><a href="{{url('/blog')}}">Blog </a></li>
                                 <li><a href="{{url('/cart')}}">Korpa </a></li>
-                                <li><a href="{{url('/checkout')}}">Porudžbina</a></li>
+                                <li><a href="{{url('/checkout')}}">Kasa</a></li>
                                 <li><a href="{{url('/contact')}}">Kontakt</a></li>
                             </ul>
                         </nav>
@@ -172,7 +174,7 @@
                     <div class="menu">
                         <ul>
                             <li><a  href="{{url('/')}}">Početna</a></li>
-                            <li class="active"><a href="javascript:void(0);">Prehranbeni Proizvodi</a></li>
+                            <li class="active"><a href="javascript:void(0);">Kozmetika</a></li>
                         </ul>
                     </div>
                 </div>
@@ -183,181 +185,69 @@
 <div class="blog-details">
     <div class="container">
         <div class="row">
-            <div class="col-lg-3">
-                <!-- Search-area -->
-                <div class="Search-area border-2">
-                    <div class="product-title text-uppercase bg-5">
-                        <h3>Search</h3>
-                    </div>
-                    <div class="search p-20 mt-20">
-                        <form action="#">
-                            <input type="text" placeholder="Search...." />
-                            <button><i class="fa fa-paper-plane-o"></i></button>
-                        </form>
-                    </div>
-                </div>
-                <!-- categories-area start -->
-                <div class="categories-area border-2 mtb-35">
-                    <div class="product-title text-uppercase bg-5">
-                        <h3>Categories</h3>
-                    </div>
-                    <div class="shop-categories-menu p-20">
-                        <ul>
-                            <li><a href="#">Creative</a></li>
-                            <li><a href="#">Image</a></li>
-                            <li><a href="#">Music</a></li>
-                            <li><a href="#">Photography</a></li>
-                            <li><a href="#">Travel</a></li>
-                            <li><a href="#">Uncategorized</a></li>
-                            <li><a href="#">Videos</a></li>
-                            <li><a href="#">WordPress</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- comment-area -->
-                <div class="recent-comment-area border-2">
-                    <div class="product-title text-uppercase bg-5">
-                        <h3>Recent Comment</h3>
-                    </div>
-                    <div class="comment  p-20-15 ">
-                        <div class="single-comments clear mb-20">
-                            <div class="comment-img floatleft">
-                                <img src="img/comment/1.jpg" alt="" />
-                            </div>
-                            <div class="comment-info">
-                                <h6>admin</h6>
-                                <p>Nunc pulvinar sollicitudin molestie.</p>
-                                <span>on <a href="#"> Post Format:Gallery</a></span>
-                            </div>
-                        </div>
-                        <div class="single-comments clear mb-20">
-                            <div class="comment-img floatleft">
-                                <img src="img/comment/1.jpg" alt="" />
-                            </div>
-                            <div class="comment-info">
-                                <h6>alex</h6>
-                                <p>Aenean et tempor eros, vitae...</p>
-                                <span>on <a href="#">Vivamus gravida</a></span>
-                            </div>
-                        </div>
-                        <div class="single-comments clear mb-20">
-                            <div class="comment-img floatleft">
-                                <img src="img/comment/1.jpg" alt="" />
-                            </div>
-                            <div class="comment-info">
-                                <h6>admin</h6>
-                                <p>Nunc pulvinar sollicitudin molestie.</p>
-                                <span>on <a href="#"> Post Format:Image</a></span>
-                            </div>
-                        </div>
-                        <div class="single-comments clear mb-20">
-                            <div class="comment-img floatleft">
-                                <img src="img/comment/1.jpg" alt="" />
-                            </div>
-                            <div class="comment-info">
-                                <h6>admin</h6>
-                                <p>Etiam varius enim nec quam...</p>
-                                <span>on <a href="#"> Post Format:Image</a></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- comment-area -->
-                <div class="recent-comment-area border-2 mtb-30">
-                    <div class="product-title text-uppercase bg-5">
-                        <h3>Recent post</h3>
-                    </div>
-                    <div class="comment  p-20-15 ">
-                        <div class="single-comments clear mb-20">
-                            <div class="comment-img floatleft">
-                                <a href="#"><img src="img/post/1.jpg" alt="" /></a>
-                            </div>
-                            <div class="comment-info">
-                                <a href="#">Hello world !</a>
-                                <span>January 29, 2016</span>
-                            </div>
-                        </div>
-                        <div class="single-comments clear mb-20">
-                            <div class="comment-img floatleft">
-                                <a href="#"><img src="img/post/2.jpg" alt="" /></a>
-                            </div>
-                            <div class="comment-info">
-                                <a href="#">Curabitur lobortis</a>
-                                <span>January 29, 2016</span>
-                            </div>
-                        </div>
-                        <div class="single-comments clear mb-20">
-                            <div class="comment-img floatleft">
-                                <a href="#"><img src="img/post/3.jpg" alt="" /></a>
-                            </div>
-                            <div class="comment-info">
-                                <a href="#">Vivamus gravida</a>
-                                <span>January 29, 2016</span>
-                            </div>
-                        </div>
-                        <div class="single-comments clear mb-20">
-                            <div class="comment-img floatleft">
-                                <a href="#"><img src="img/post/4.jpg" alt="" /></a>
-                            </div>
-                            <div class="comment-info">
-                                <a href="#">Post Format:Image</a>
-                                <span>January 29, 2016</span>
-                            </div>
-                        </div>
-                        <div class="single-comments clear mb-20">
-                            <div class="comment-img floatleft">
-                                <a href="#"><img src="img/post/5.jpg" alt="" /></a>
-                            </div>
-                            <div class="comment-info">
-                                <a href="#">Post Format: Gallery</a>
-                                <span>January 29, 2016</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Archives-area start -->
-                <div class="Archives-area border-2">
-                    <div class="product-title text-uppercase bg-5">
-                        <h3>Recent post</h3>
-                    </div>
-                    <div class="shop-categories-menu p-20">
-                        <ul>
-                            <li><a href="#">January 2016</a></li>
-                            <li><a href="#">December 2015</a></li>
-                            <li><a href="#">November 2015</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- Meta-area start -->
-                <div class="Meta-area border-2 mtb-30">
-                    <div class="product-title text-uppercase bg-5">
-                        <h3>Recent post</h3>
-                    </div>
-                    <div class="shop-categories-menu p-20">
-                        <ul>
-                            <li><a href="#">Log in</a></li>
-                            <li><a href="#">Entries <span>RSS</span></a></li>
-                            <li><a href="#">Comments <span>RSS</span></a></li>
-                            <li><a href="#">WordPress.org</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
             <!-- single-blog-start -->
-            <div class="col-lg-9">
+            <div class="col-lg-12">
                 <div class="blog-wrapper bg-2">
                     <div class="blog-img single-blog-img">
                         <img src="img/blog/2.jpg" alt="" />
                     </div>
                 </div>
                 <div class="blog-content single-blog-content">
-                    <h3 class="text-uppercase">Zdravlje i lepota</h3>
+                    <h3 class="text-uppercase" style="margin-bottom: 80px;">Zdravlje i lepota</h3>
                     <div class="blog-meta">
                     </div>
                     <p>Neverovatno da jedno ukusno koštunjavo voće ima toliku široku primenu i svestranane benefite. Plod kao i njegovo ulje su dobri i u prevencija mnogih bolesti ali i u ishrani i kozmetici. Odlični rezultati su primećeni po zdravlje čitavog organizma. Pošto lešnik sadrži vitamine, minerale, proteine, vlakna i biljne masti zdravstvene prednosti su mnogostruke. Nezasićene masne kiseline Omega 3,6,9 doprinose snižavanju holesterola u krvi, zdravlju srca, redukuje krvni pritisak, ubrzava metabolizam, dobar je i u prevenciji raka. Takođe povećava kognitivne funkcije i podiže raspoloženje. Štiti od infekcije i povećava broj crvenih krvnih zrnaca. Preporučuje se i u prevenciji dijabetesa. Veoma je bogat vitaminom B, posebno B1 i B6 koji su važni za stvaranje mišićne mase i rada mozga i nervnog sistema. Sadrži vitamine E i K, magnezijum, tiamin, kalcijum i cink. </p>
                     <p>Ulje lešnika se široko koristi u kozmetičkim proizvodima posebno za masni i mešoviti tip kože. Koža ga brzo upija, a bezbedno je  i za osetljivu kožu jer ne izaziva iritacije. Ono hidrira kožu jer sadrži visok nivo E vitamina i masnih kiselina što daje elastičnosti kože.Takođe sadrži tanin koji je moćan antioksidans koji čisti pore i sužava ih. Blistava koža bez bora za samo nekoliko nedelja je moguća uz ovo hladno ceđeno ulje. Možemo ga koristiti i kao sredstvo za sunčanje jer je naučno dokazano da filtrira štetno UV zračenje. Ukoliko imate problema sa suvom i oštećenom kosom i tu ovo zlatno žuto ulje prijatne arome može da  doprinese.</p>
                 </div>
             </div>
+        </div>
+    </div>
+</div>
+<div class="product-area bg-1 ptb-100">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-title text-center mb-50">
+                    <h2>Kozmetika</h2>
+                </div>
+            </div>
+        </div>
+        <div class="product-active owl-carousel next-prev-style">
+            @foreach($products as $size)
+                @if($size->product != null)
+                    @foreach($size->product->categories as $category)
+                        @if($category->name == "kozmetika")
+                            <div class="single-product">
+                                <div class="product-img">
+                                    <a href="{{url('/single-product/'.$size->id)}}"><img src="{{asset($size->product->materials->first()->url)}}" border="10px" class="center"  alt="" /></a>
+                                </div>
+                                <div class="product-item-details text-center">
+                                    <div class="product-name-review tab-product-name-review">
+                                        <div class="product-name mt-30 ">
+                                            <strong><a href="{{url('/single-product/'.$size->id)}}">{{$size->product->name}}</a></strong>
+                                        </div>
+                                        <div class="product-review">
+                                            <span class="special-price">{{$size->price}} RSD</span>
+                                        </div>
+                                        <div class="product-review">
+                                            <span class="product-quantity">Pakovanje: {{$size->quantity}} {{$size->unit}}</span>
+                                        </div>
+                                    </div>
+                                    <div class="add-to-cart-area clear pt-35">
+                                        <div class="add-to-cart text-uppercase">
+                                            @if(array_key_exists($size->id, $in_carts))
+                                                <button type="button " class=" btn-danger" data-id="{{ $size->id }}" >Dodato</button>
+                                            @else
+                                                <button type="button" class="cartBtn" data-id="{{ $size->id }}" >Dodaj u korpu</button>
+                                            @endif
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        @endif
+                    @endforeach
+                @endif
+            @endforeach
         </div>
     </div>
 </div>
@@ -522,6 +412,8 @@
 <script src="{{ asset("/assets/js/cart.js")}}"></script>
 <!-- deletecart js -->
 <script src="{{ asset("/assets/js/cart-delete.js")}}"></script>
+<!-- deletecart2 js -->
+<script src="{{ asset("/assets/js/cart-delete2.js")}}"></script>
 <!-- single-product js -->
 <script src="{{ asset("/assets/js/single-product.js")}}"></script>
 </body>
