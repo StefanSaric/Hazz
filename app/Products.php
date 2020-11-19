@@ -14,7 +14,7 @@ class Products extends Model
 
     public function materials()
     {
-        return $this->hasMany('App\Materials','product_id','id');
+        return $this->hasMany('App\Materials','product_id','id')->orderBy('ordernumber', 'asc');;
     }
 
     public function sizes()
