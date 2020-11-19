@@ -177,13 +177,13 @@ class ProductController extends Controller
                 if ($sizeExist == null) {
                     $size = Sizes::where('id', $one_size['id'])->delete();
                     Sizes::create([
-                    'product_id' => $product->id,
-                    'quantity' => $one_size["quantity"],
-                    'unit' => $one_size["unit"],
-                    "stock" => $one_size["stock"],
-                    "price" => $one_size["price"],
-                    "old_price" => $one_size["old_price"]
-                ]);
+                        'product_id' => $product->id,
+                        'quantity' => $one_size["quantity"],
+                        'unit' => $one_size["unit"],
+                        "stock" => $one_size["stock"],
+                        "price" => $one_size["price"],
+                        "old_price" => $one_size["old_price"]
+                    ]);
                 }
             } elseif ((count($sizes)) > $product->sizes->count()) {
                 if ($sizeExist == null) {
@@ -207,6 +207,7 @@ class ProductController extends Controller
                 }
             }
         }
+
 
         //editovanje tagova
         $tags= $request->get('tags');
@@ -242,15 +243,18 @@ class ProductController extends Controller
                     ->where('categories.name', $line)
                     ->first();
                 if ($categoryExist == null) {
-                    $category = Categories::create([
-                        'name' => $line
-                    ]);
-                    $product->categories()->attach($category->id);
+                    if (Categories::where('name', $line)->count() == 0) {
+                        $category = Categories::create([
+                            'name' => $line
+                        ]);
+                        $product->categories()->attach($category->id);
+                    } elseif (Categories::where('name', $line)->count() > 0)
+                        $product->categories()->attach(Categories::where('name', $line)->get('id'));
                 }
             }
             foreach ($product->categories as $category) {
-                if(!in_array($category->name, $lines))
-                Categories::where('id', $category->id)->delete();
+                if (!in_array($category->name, $lines))
+                    Product_Categories::where('category_id', $category->id)->where('product_id', $product->id)->delete();
             }
         }
 
