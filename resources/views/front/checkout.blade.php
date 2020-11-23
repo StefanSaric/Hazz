@@ -220,7 +220,7 @@
                                     <input type="text" name="city" id ="city" placeholder="Grad"   required/>
                                 </span>
                                 <span>
-                                    <b>Addresa <span class="required">*</span></b>
+                                    <b>Adresa <span class="required">*</span></b>
                                     <input type="text" name="address" id ="address" placeholder="Adresa"  required/>
                                 </span>
                                 <span class="form-row-first">

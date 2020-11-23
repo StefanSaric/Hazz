@@ -189,7 +189,7 @@
             <div class="col-lg-12">
                 <div class="blog-wrapper bg-2">
                     <div class="blog-img single-blog-img">
-                        <img src="img/blog/2.jpg" alt="" />
+                        <img src="{{ asset("/assets/img/index/kozmetika.jpg")}}" alt="" />
                     </div>
                 </div>
                 <div class="new-arrivals-content text-center">
