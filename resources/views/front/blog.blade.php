@@ -62,7 +62,7 @@
                         <div class="top-bar-right pull-right">
                             <div class="search-box">
                                 <form action="#">
-                                    <input type="search" placeholder="Search here ....." />
+                                    <input type="search" placeholder="Pretraga" />
                                     <button><i class="fa fa-search"></i></button>
                                 </form>
                             </div>

@@ -63,7 +63,7 @@
                         <div class="top-bar-right pull-right">
                             <div class="search-box">
                                 <form action="#">
-                                    <input type="search" placeholder="Search here ....." />
+                                    <input type="search" placeholder="Pretraga" />
                                     <button><i class="fa fa-search"></i></button>
                                 </form>
                             </div>
@@ -205,17 +205,6 @@
                     </ul>
                 </div>
             </div>
-            <!-- compare-area start -->
-            <div class="compare-area border-2">
-                <div class="product-title text-uppercase bg-5">
-                    <h3>Compare</h3>
-                </div>
-                <div class="compare-menu p-20">
-                    <p>No products to compare</p>
-                    <a href="#">Clear all</a>
-                    <a href="#" data-toggle="tooltip" title="Compare" class="pull-right compare text-uppercase">Compare </a>
-                </div>
-            </div>
             <!-- filter-by-price-area start -->
             <div class="filter-by-price-area mtb-35 border-2">
                 <div class="product-title text-uppercase bg-5">
@@ -231,15 +220,6 @@
                     </div>
                 </div>
             </div>
-            <!-- compare-area start -->
-            <div class="compare-area border-2">
-                <div class="product-title text-uppercase bg-5">
-                    <h3>My Wishlist</h3>
-                </div>
-                <div class="wishlist p-20">
-                    <p>You have no items in your wish list.</p>
-                </div>
-            </div>
             <!-- banner-area start -->
             <div class="banner-area mtb-35">
                 <div class="single-banner home2-single-banner mb-30">
@@ -249,179 +229,7 @@
                     <a href="#"><img src="img/banner/home2/2.jpg" alt="" /></a>
                 </div>
             </div>
-            <!-- Mostviewed area -->
-            <div class="mostviewed-area mb-35 border-2">
-                <div class="product-title text-uppercase bg-5">
-                    <h3>Mostviewed</h3>
-                </div>
-                <div class="mostviewed-slider-active owl-carousel  next-prev-style">
-                    <div class="new-product-wrap shop-new-product-wrap">
-                        <div class="new-product-item clear ptb-15 border-bottom">
-                            <div class="product-img home2-product-img pull-left">
-                                <a href="shop-single-product.html"><img src="img/product/home5/1.jpg" alt="" /></a>
-                            </div>
-                            <div class="product-item-details  pull-right home2-product-item-details">
-                                <div class="product-name">
-                                    <strong><a href="shop-single-product.html">Udon chicken soup</a></strong>
-                                </div>
-                                <div class="product-review">
-                                    <span class="special-price">$ 45.00</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="new-product-item clear ptb-15 border-bottom">
-                            <div class="product-img home2-product-img pull-left">
-                                <a href="shop-single-product.html"><img src="img/product/home5/2.jpg" alt="" /></a>
-                            </div>
-                            <div class="product-item-details  pull-right home2-product-item-details">
-                                <div class="product-name">
-                                    <strong><a href="shop-single-product.html">Rival Field Messenger</a></strong>
-                                </div>
-                                <div class="product-review">
-                                    <span class="special-price">$ 55.00</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="new-product-item clear ptb-15 border-bottom">
-                            <div class="product-img home2-product-img pull-left">
-                                <a href="shop-single-product.html"><img src="img/product/home5/3.jpg" alt="" /></a>
-                            </div>
-                            <div class="product-item-details  pull-right home2-product-item-details">
-                                <div class="product-name">
-                                    <strong><a href="shop-single-product.html">Miso soup</a></strong>
-                                </div>
-                                <div class="product-review">
-                                    <span class="special-price">$ 55.00</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="new-product-item clear ptb-15">
-                            <div class="product-img home2-product-img pull-left">
-                                <a href="shop-single-product.html"><img src="img/product/home5/1.jpg" alt="" /></a>
-                            </div>
-                            <div class="product-item-details  pull-right home2-product-item-details">
-                                <div class="product-name">
-                                    <strong><a href="shop-single-product.html">Fusion Backpack</a></strong>
-                                </div>
-                                <div class="product-review">
-                                    <span class="special-price">$ 55.00</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="new-product-wrap shop-new-product-wrap">
-                        <div class="new-product-item clear ptb-15 border-bottom">
-                            <div class="product-img home2-product-img pull-left">
-                                <a href="shop-single-product.html"><img src="img/product/home5/6.jpg" alt="" /></a>
-                            </div>
-                            <div class="product-item-details  pull-right home2-product-item-details">
-                                <div class="product-name">
-                                    <strong><a href="shop-single-product.html">Udon chicken soup</a></strong>
-                                </div>
-                                <div class="product-review">
-                                    <span class="special-price">$ 45.00</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="new-product-item clear ptb-15 border-bottom">
-                            <div class="product-img home2-product-img pull-left">
-                                <a href="shop-single-product.html"><img src="img/product/home5/8.jpg" alt="" /></a>
-                            </div>
-                            <div class="product-item-details  pull-right home2-product-item-details">
-                                <div class="product-name">
-                                    <strong><a href="shop-single-product.html">Rival Field Messenger</a></strong>
-                                </div>
-                                <div class="product-review">
-                                    <span class="special-price">$ 55.00</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="new-product-item clear ptb-15 border-bottom">
-                            <div class="product-img home2-product-img pull-left">
-                                <a href="shop-single-product.html"><img src="img/product/home5/3.jpg" alt="" /></a>
-                            </div>
-                            <div class="product-item-details  pull-right home2-product-item-details">
-                                <div class="product-name">
-                                    <strong><a href="shop-single-product.html">Miso soup</a></strong>
-                                </div>
-                                <div class="product-review">
-                                    <span class="special-price">$ 55.00</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="new-product-item clear ptb-15">
-                            <div class="product-img home2-product-img pull-left">
-                                <a href="shop-single-product.html"><img src="img/product/home5/3.jpg" alt="" /></a>
-                            </div>
-                            <div class="product-item-details  pull-right home2-product-item-details">
-                                <div class="product-name">
-                                    <strong><a href="shop-single-product.html">Fusion Backpack</a></strong>
-                                </div>
-                                <div class="product-review">
-                                    <span class="special-price">$ 55.00</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="new-product-wrap shop-new-product-wrap">
-                        <div class="new-product-item  clear ptb-15 border-bottom">
-                            <div class="product-img home2-product-img pull-left">
-                                <a href="shop-single-product.html"><img src="img/product/home5/5.jpg" alt="" /></a>
-                            </div>
-                            <div class="product-item-details  pull-right home2-product-item-details">
-                                <div class="product-name">
-                                    <strong><a href="shop-single-product.html">Spicy soup seafood</a></strong>
-                                </div>
-                                <div class="product-review">
-                                    <span class="special-price">$ 30.00</span>
-                                    <span class="old-price">
-											<del>$ 46.00</del>
-										</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="new-product-item clear ptb-15 border-bottom">
-                            <div class="product-img home2-product-img pull-left">
-                                <a href="shop-single-product.html"><img src="img/product/home5/7.jpg" alt="" /></a>
-                            </div>
-                            <div class="product-item-details  pull-right home2-product-item-details">
-                                <div class="product-name">
-                                    <strong><a href="shop-single-product.html">MH01-Black</a></strong>
-                                </div>
-                                <div class="product-review">
-                                    <span class="special-price">$ 25.00</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="new-product-item clear ptb-15 border-bottom">
-                            <div class="product-img home2-product-img pull-left">
-                                <a href="shop-single-product.html"><img src="img/product/home5/10.jpg" alt="" /></a>
-                            </div>
-                            <div class="product-item-details  pull-right home2-product-item-details">
-                                <div class="product-name">
-                                    <strong><a href="shop-single-product.html">Miso soup with</a></strong>
-                                </div>
-                                <div class="product-review">
-                                    <span class="special-price">$ 25.00</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="new-product-item clear ptb-15">
-                            <div class="product-img home2-product-img pull-left">
-                                <a href="shop-single-product.html"><img src="img/product/home5/1.jpg" alt="" /></a>
-                            </div>
-                            <div class="product-item-details  pull-right home2-product-item-details">
-                                <div class="product-name">
-                                    <strong><a href="shop-single-product.html">Cream soup with</a></strong>
-                                </div>
-                                <div class="product-review">
-                                    <span class="special-price">$ 25.00</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
         </div>
 
         <!-- product-vew area start -->
@@ -431,7 +239,7 @@
             </div>
             <div class="tab-area shop-tab-area">
                 <div class="shop-taitle mb-20">
-                    <h2>Prodavnica</h2>
+                    <h1>Prodavnica</h1>
                 </div>
                 <div class="tab-menu-area border-bottom mb-30">
                     <div class="row">

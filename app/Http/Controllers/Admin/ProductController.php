@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Product_Categories;
+use App\Product_Tags;
 use App\Products;
 use App\Materials;
 use App\Categories;
@@ -213,25 +214,27 @@ class ProductController extends Controller
         $tags= $request->get('tags');
         if ($tags != null) {
             $lines = explode(',', $tags);
-                foreach ($lines as $line) {
-                    $tagExist = Tags::join('product_tags', 'product_tags.tag_id', 'tags.id')
-                        ->where('product_tags.product_id', $product->id)
-                        ->where('tags.name', $line)
-                        ->first();
-                    if ($tagExist == null) {
+            foreach ($lines as $line) {
+                $tagExist = Tags::join('product_tags', 'product_tags.tag_id', 'tags.id')
+                    ->where('product_tags.product_id', $product->id)
+                    ->where('tags.name', $line)
+                    ->first();
+                if ($tagExist == null) {
+                    if (Tags::where('name', $line)->count() == 0) {
                         $tag = Tags::create([
                             'name' => $line
                         ]);
                         $product->tags()->attach($tag->id);
-                    }
+                    } elseif (Tags::where('name', $line)->count() > 0)
+                        $product->tags()->attach(Tags::where('name', $line)->get('id'));
                 }
-                foreach ($product->tags as $tag) {
-                    if(in_array($tag->name, $lines)){
+            }
+            foreach ($product->tags as $tag) {
+                if (!in_array($tag->name, $lines))
+                    Product_Tags::where('tag_id', $tag->id)->where('product_id', $product->id)->delete();
+            }
+        }
 
-                    }
-                        else Tags::where('id', $tag->id)->delete();
-                    }
-                }
 
         //editovanje kategorija
         $categories = $request->get('category');

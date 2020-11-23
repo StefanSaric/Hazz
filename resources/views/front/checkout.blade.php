@@ -66,7 +66,7 @@
                         <div class="top-bar-right pull-right">
                             <div class="search-box">
                                 <form action="#">
-                                    <input type="search" placeholder="Search here ....." />
+                                    <input type="search" placeholder="Pretraga" />
                                     <button><i class="fa fa-search"></i></button>
                                 </form>
                             </div>
@@ -188,8 +188,8 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <div class="checkout-title text-center mb-50">
-                    <h1>Završi porudžbinu</h1>
+                <div class="section-title text-center mb-30">
+                    <h2>Završi porudžbinu</h2>
                 </div>
             </div>
         </div>
@@ -282,61 +282,6 @@
                 </div>
             </div>
             {!! Form::close() !!}
-        </div>
-        <div class="checkout-order-area">
-            <div class="order-title pb-10 mb-20 text-uppercase">
-                <h3>Your order</h3>
-            </div>
-            <div class="order_review table-responsive">
-                <table>
-                    <tr>
-                        <th class="product-name">Product</th>
-                        <th class="product-total">Total</th>
-                    </tr>
-                    <tbody>
-                    <tr class="cart_item">
-                        <td class="product-name">
-                            Lorem nec augue
-                            <strong class="product-quantity">x 1</strong>
-                        </td>
-                        <td class="product-total">
-                            <span>$ 220.00</span>
-                        </td>
-                    </tr>
-                    <tr class="cart_item">
-                        <td class="product-name">
-                            Adipiscing cursus eu
-                            <strong class="product-quantity">x 1</strong>
-                        </td>
-                        <td class="product-total">
-                            <span>$300.00</span>
-                        </td>
-                    </tr>
-                    <tr class="cart_item">
-                        <td class="product-name">
-                            Cras nec nisl ut erat
-                            <strong class="product-quantity">x 48</strong></td>
-                        <td class="product-total">
-                            <span>$ 9,600.00</span>
-                        </td>
-                    </tr>
-                    </tbody>
-                    <tfoot>
-                    <tr class="cart-subtotal">
-                        <th>Subtotal</th>
-                        <td>
-                            <strong><span>$ 10,120.00</span></strong>
-                        </td>
-                    </tr>
-                    <tr class="order-total">
-                        <th>Total</th>
-                        <td>
-                            <strong><span>$ 10,120.00</span></strong>
-                        </td>
-                    </tr>
-                    </tfoot>
-                </table>
-            </div>
         </div>
     </div>
 </div>

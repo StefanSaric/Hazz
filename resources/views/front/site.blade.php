@@ -61,7 +61,7 @@
                         <div class="top-bar-right pull-right">
                             <div class="search-box">
                                 <form action="#">
-                                    <input type="search" placeholder="Search here ....."/>
+                                    <input type="search" placeholder="Pretraga"/>
                                     <button><i class="fa fa-search"></i></button>
                                 </form>
                             </div>
@@ -234,7 +234,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="section-title text-center mb-50">
-                    <h2>Najtrazeniji proizvodi</h2>
+                    <h2>Najtraženiji proizvodi</h2>
                 </div>
             </div>
         </div>

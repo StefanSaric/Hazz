@@ -65,7 +65,7 @@
                         <div class="top-bar-right pull-right">
                             <div class="search-box">
                                 <form action="#">
-                                    <input type="search" placeholder="Search here ....." />
+                                    <input type="search" placeholder="Pretraga" />
                                     <button><i class="fa fa-search"></i></button>
                                 </form>
                             </div>
@@ -192,7 +192,8 @@
                         <img src="img/blog/2.jpg" alt="" />
                         </div>
                     </div>
-                    <div class="blog-content single-blog-content">
+                    <div class="new-arrivals-content text-center">
+                        <h1 style="margin-bottom: 80px;">Direktno iz prirode</h1>
                         <h3 class="text-uppercase" style="margin-bottom: 80px;">Magični plod sreće i radosti</h3>
                         <div class="blog-meta">
                         </div>
@@ -250,7 +251,7 @@
                                 </div>
                             </div>
                         </div>
-                            @endif
+                        @endif
                     @endforeach
                 @endif
             @endforeach

@@ -63,7 +63,7 @@
                         <div class="top-bar-right pull-right">
                             <div class="search-box">
                                 <form action="#">
-                                    <input type="search" placeholder="Search here ....." />
+                                    <input type="search" placeholder="Pretraga" />
                                     <button><i class="fa fa-search"></i></button>
                                 </form>
                             </div>
@@ -174,20 +174,20 @@
             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                 <div class="contact mb-50 bg-2 p-20">
                     <div class="contact-title">
-                        <h2>Contact Us</h2>
+                        <h2>Kontaktirajte Nas</h2>
                     </div>
                     <div class="contact-form form-style">
                         <form action="{{url('/sendemail')}}" method="POST" >
                             @csrf
-                            <span>Your Name </span>
+                            <span>Ime </span>
                             <input name="name" type="text" class="form-control" required/>
-                            <span>Your Email </span>
+                            <span>Email </span>
                             <input name="email" type="email" class="form-control" required/>
-                            <span>Subject</span>
+                            <span>Naslov</span>
                             <input name="subject" type="text" class="form-control" required/>
-                            <span>Your Message</span>
+                            <span>Poruka</span>
                             <textarea name="message" class="form-control" id="#" cols="30" rows="10"></textarea>
-                            <input type="submit" name="send" value="Send" class="btn btn-info">
+                            <input type="submit" name="send" value="Posalji" class="btn btn-info">
                         </form>
                         <p class="form-messege"></p>
                     </div>

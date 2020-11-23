@@ -63,7 +63,7 @@
                         <div class="top-bar-right pull-right">
                             <div class="search-box">
                                 <form action="#">
-                                    <input type="search" placeholder="Search here ....." />
+                                    <input type="search" placeholder="Pretraga" />
                                     <button><i class="fa fa-search"></i></button>
                                 </form>
                             </div>
@@ -252,60 +252,60 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-6">
+            <div class="col-lg-3">
                 <!-- product area start -->
-                <div class="cart-product mb-35 tab-area">
-                    <div class="section-title">
-                        <h2>Cross-Sells </h2>
-                    </div>
-                    <div class="cart-active owl-carousel next-prev-style">
-                        <div class="single-product">
-                            <div class="product-img">
-                                <a href="shop-single-product.html"><img src="img/product/11.jpg" alt="" /></a>
-                                <span class="sale">Sale</span>
-                            </div>
-                            <div class="product-item-details text-center">
-                                <div class="product-name-review tab-product-name-review">
-                                    <div class="product-name mt-30 ">
-                                        <span>Sample Category</span>
-                                        <strong><a href="shop-single-product.html">Chaz Kangeroo Hoodie1</a></strong>
-                                    </div>
-                                    <div class="product-review">
-                                        <ul>
-                                            <li><i class="fa fa-star"></i></li>
-                                            <li><i class="fa fa-star"></i></li>
-                                            <li><i class="fa fa-star"></i></li>
-                                            <li><i class="fa fa-star"></i></li>
-                                            <li><i class="fa fa-star"></i></li>
-                                        </ul>
-                                        <span class="special-price">$ 50.00</span>
-                                    </div>
-                                </div>
-                                <div class="add-to-cart-area clear pt-35">
-                                    <div class="add-to-cart text-uppercase">
-                                        <button>add to cart</button>
-                                    </div>
-                                    <div class="add-to-links">
-                                        <ul>
-                                            <li class="left">
-                                                <a href="#"><i class="fa fa-adjust"></i></a>
-                                            </li>
-                                            <li class="right">
-                                                <a href="#"><i class="fa fa-heart-o"></i></a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+{{--                <div class="cart-product mb-35 tab-area">--}}
+{{--                    <div class="section-title">--}}
+{{--                        <h2>Cross-Sells </h2>--}}
+{{--                    </div>--}}
+{{--                    <div class="cart-active owl-carousel next-prev-style">--}}
+{{--                        <div class="single-product">--}}
+{{--                            <div class="product-img">--}}
+{{--                                <a href="shop-single-product.html"><img src="img/product/11.jpg" alt="" /></a>--}}
+{{--                                <span class="sale">Sale</span>--}}
+{{--                            </div>--}}
+{{--                            <div class="product-item-details text-center">--}}
+{{--                                <div class="product-name-review tab-product-name-review">--}}
+{{--                                    <div class="product-name mt-30 ">--}}
+{{--                                        <span>Sample Category</span>--}}
+{{--                                        <strong><a href="shop-single-product.html">Chaz Kangeroo Hoodie1</a></strong>--}}
+{{--                                    </div>--}}
+{{--                                    <div class="product-review">--}}
+{{--                                        <ul>--}}
+{{--                                            <li><i class="fa fa-star"></i></li>--}}
+{{--                                            <li><i class="fa fa-star"></i></li>--}}
+{{--                                            <li><i class="fa fa-star"></i></li>--}}
+{{--                                            <li><i class="fa fa-star"></i></li>--}}
+{{--                                            <li><i class="fa fa-star"></i></li>--}}
+{{--                                        </ul>--}}
+{{--                                        <span class="special-price">$ 50.00</span>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                                <div class="add-to-cart-area clear pt-35">--}}
+{{--                                    <div class="add-to-cart text-uppercase">--}}
+{{--                                        <button>add to cart</button>--}}
+{{--                                    </div>--}}
+{{--                                    <div class="add-to-links">--}}
+{{--                                        <ul>--}}
+{{--                                            <li class="left">--}}
+{{--                                                <a href="#"><i class="fa fa-adjust"></i></a>--}}
+{{--                                            </li>--}}
+{{--                                            <li class="right">--}}
+{{--                                                <a href="#"><i class="fa fa-heart-o"></i></a>--}}
+{{--                                            </li>--}}
+{{--                                        </ul>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
                 <!-- product area end -->
             </div>
             <div class="col-lg-6">
                 <div class="cart_totals">
                     <div class="section-title mb-30 text-uppercase">
-                        <h2>Cart Totals</h2>
+                        <h2 style="text-align: center;">Cart Totals</h2>
                     </div>
                 </div>
                 <div class="table-content table-responsive mb-30">
@@ -320,7 +320,7 @@
                         </tr>
                     </table>
                 </div>
-                <div class="login-button mb-30">
+                <div class="login-button mb-30 pull-right">
                     <form action="{{url('/checkout')}}">
                         <button>Dovrši porudžbinu</button>
                     </form>

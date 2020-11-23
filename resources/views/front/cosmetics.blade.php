@@ -65,7 +65,7 @@
                         <div class="top-bar-right pull-right">
                             <div class="search-box">
                                 <form action="#">
-                                    <input type="search" placeholder="Search here ....." />
+                                    <input type="search" placeholder="Pretraga" />
                                     <button><i class="fa fa-search"></i></button>
                                 </form>
                             </div>
@@ -192,8 +192,9 @@
                         <img src="img/blog/2.jpg" alt="" />
                     </div>
                 </div>
-                <div class="blog-content single-blog-content">
-                    <h3 class="text-uppercase" style="margin-bottom: 80px;">Zdravlje i lepota</h3>
+                <div class="new-arrivals-content text-center">
+                    <h1 style="margin-bottom: 80px;">Zdravlje i Lepota</h1>
+                    <h3 class="text-uppercase" style="margin-bottom: 80px;">Savršeno ulje za prevenciju i negu kože</h3>
                     <div class="blog-meta">
                     </div>
                     <p>Neverovatno da jedno ukusno koštunjavo voće ima toliku široku primenu i svestranane benefite. Plod kao i njegovo ulje su dobri i u prevencija mnogih bolesti ali i u ishrani i kozmetici. Odlični rezultati su primećeni po zdravlje čitavog organizma. Pošto lešnik sadrži vitamine, minerale, proteine, vlakna i biljne masti zdravstvene prednosti su mnogostruke. Nezasićene masne kiseline Omega 3,6,9 doprinose snižavanju holesterola u krvi, zdravlju srca, redukuje krvni pritisak, ubrzava metabolizam, dobar je i u prevenciji raka. Takođe povećava kognitivne funkcije i podiže raspoloženje. Štiti od infekcije i povećava broj crvenih krvnih zrnaca. Preporučuje se i u prevenciji dijabetesa. Veoma je bogat vitaminom B, posebno B1 i B6 koji su važni za stvaranje mišićne mase i rada mozga i nervnog sistema. Sadrži vitamine E i K, magnezijum, tiamin, kalcijum i cink. </p>

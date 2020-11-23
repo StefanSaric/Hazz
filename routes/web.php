@@ -45,6 +45,7 @@ Route::post('/test111', 'Admin\OrdersController@store');
 Route::get('/food', 'Admin\CartController@food');
 Route::get('/cosmetics', 'Admin\CartController@cosmetics');
 
+
 Route::post('/sendemail','Admin\EmailController@send');
 
 
