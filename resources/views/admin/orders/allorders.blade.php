@@ -44,6 +44,7 @@
                                                 <th>Email</th>
                                                 <th>Adresa</th>
                                                 <th>Racun</th>
+                                                <th>Status</th>
                                             </tr>
                                             </thead>
                                             <tbody>
@@ -57,6 +58,7 @@
                                                     <td>{{$order->email}}</td>
                                                     <td>{{$order->city}}, Ulica: {{$order->address}} {{$order->num_of_house}}/ Stan:{{$order->num_of_apartment}} </td>
                                                     <td>{{$order->total}} RSD</td>
+                                                    @if($order->show == 0)<td>Aktivan</td>@else<td>Isporučeno</td>@endif
                                                 </tr>
                                             @endforeach
                                             </tbody>

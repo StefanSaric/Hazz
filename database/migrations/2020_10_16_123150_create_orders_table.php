@@ -21,6 +21,7 @@ class CreateOrdersTable extends Migration
             $table->string('email');
             $table->string('city');
             $table->string('address');
+            $table->integer('show')->default(1);
             $table->integer('num_of_house');
             $table->integer('num_of_apartment');
             $table->timestamps();
