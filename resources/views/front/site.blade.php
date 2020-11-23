@@ -184,7 +184,7 @@
                                 <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit <br /> esse molestie consequat.</p>
                             </div>
                             <div class="cap-readmore wow flipInX organic-btn d-none d-md-block" data-wow-duration="1.6s" data-wow-delay=".5s">
-                                <a href="#">shop now</a>
+                                <a href="{{url('/shop')}}">shop now</a>
                             </div>
                         </div>
                     </div>

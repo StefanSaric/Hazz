@@ -189,6 +189,7 @@
                     <h1>Korpa</h1>
                 </div>
             </div>
+            @if(!empty($in_carts))
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="cart-table mb-50">
                     <form action="#">
@@ -250,36 +251,39 @@
                     </form>
                 </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-3">
-                <!-- product area start -->
             </div>
-            <div class="col-lg-6">
-                <div class="cart_totals">
-                    <div class="section-title mb-30 text-uppercase">
-                        <h4 style="text-align: center;">Račun</h4>
+            <div class="row">
+                <div class="col-lg-3">
+                    <!-- product area start -->
+                </div>
+                <div class="col-lg-6">
+                    <div class="cart_totals">
+                        <div class="section-title mb-30 text-uppercase">
+                            <h4 style="text-align: center;">Račun</h4>
+                        </div>
+                    </div>
+                    <div class="table-content table-responsive mb-30">
+                        <table>
+                            <tr>
+                                <td style="text-align: center"><strong>Ukupno</strong></td>
+                                <td style="text-align: center"><b>{{$total}} RSD</b></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="login-button mb-30 pull-right">
+                        <form action="{{url('/checkout')}}">
+                            <button>Dovrši porudžbinu</button>
+                        </form>
                     </div>
                 </div>
-                <div class="table-content table-responsive mb-30">
-                    <table>
-{{--                        <tr>--}}
-{{--                            <td><strong>Subtotal</strong></td>--}}
-{{--                            <td><b>{{$total}} RSD</b></td>--}}
-{{--                        </tr>--}}
-                        <tr>
-                            <td style="text-align: center"><strong>Ukupno</strong></td>
-                            <td style="text-align: center"><b>{{$total}} RSD</b></td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="login-button mb-30 pull-right">
-                    <form action="{{url('/checkout')}}">
-                        <button>Dovrši porudžbinu</button>
-                    </form>
+            </div>
+            @else
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="account-title mb-50 text-center">
+                    <h4>Vaša korpa je prazna!</h4>
                 </div>
             </div>
-        </div>
+            @endif
     </div>
 </div>
 <!-- footer area start -->
