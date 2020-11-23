@@ -175,13 +175,13 @@
                     <div class="slide1-text text-left">
                         <div class="middle-text">
                             <div class="cap-dec wow fadeInDown" data-wow-duration="1.2s" data-wow-delay=".5s">
-                                <h1>Face Cleanser</h1>
+                                <h1>Hladno Ceđeno</h1>
                             </div>
                             <div class="cap-title wow fadeInLeft text-uppercase" data-wow-duration="1.2s" data-wow-delay="0.2s">
-                                <h3>Mega - Mushroom Skin Relief</h3>
+                                <h3>ULJE LEŠNIKA - SKROZ PRIRODNO</h3>
                             </div>
                             <div class="cap-title wow flipInX d-none d-md-block" data-wow-duration="1.5s" data-wow-delay="0.2s">
-                                <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit <br /> esse molestie consequat.</p>
+                                <p>Hidrira kožu jer sadrži visok nivo E vitamina i masnih kiselina <br /> što vašoj koži daje elastičnost!</p>
                             </div>
                             <div class="cap-readmore wow flipInX organic-btn d-none d-md-block" data-wow-duration="1.6s" data-wow-delay=".5s">
                                 <a href="{{url('/shop')}}">shop now</a>
@@ -199,16 +199,16 @@
                     <div class="slide1-text text-left">
                         <div class="middle-text">
                             <div class="cap-dec wow fadeInDown" data-wow-duration="1.2s" data-wow-delay=".5s">
-                                <h3>Comes From Healthy.</h3>
+                                <h3>Direktno Iz Prirode</h3>
                             </div>
                             <div class="cap-title wow fadeInLeft text-uppercase" data-wow-duration="1.2s" data-wow-delay="0.2s">
-                                <h1>Rock And Glamour</h1>
+                                <h1>LEŠNIK</h1>
                             </div>
                             <div class="cap-title wow flipInX d-none d-md-block" data-wow-duration="1.5s" data-wow-delay="0.2s">
-                                <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit <br /> esse molestie consequat.</p>
+                                <p>100g lešnika sadrži 628 kalorija, predstavlja izvor energije jer sadrži visok nivo masti, <br /> proteina i ugljenih hidrata!</p>
                             </div>
                             <div class="cap-readmore wow flipInX organic-btn d-none d-md-block" data-wow-duration="1.6s" data-wow-delay=".5s">
-                                <a href="#">shop now</a>
+                                <a href="{{url('/shop')}}">shop now</a>
                             </div>
                         </div>
                     </div>
@@ -280,12 +280,12 @@
         <div class="row">
             <div class="offset-md-5 col-md-7 offset-lg-6 col-lg-6 offset-sm-4 col-sm-8">
                 <div class="new-arrivals-content text-center">
-                    <h3>New arrivals</h3>
-                    <h1>Organic</h1>
-                    <h2>up to 80% off</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                    <h3>Novo u ponudi</h3>
+                    <h1>Organski</h1>
+                    <h2>PROIZVOD IZ SRBIJE</h2>
+                    <p>Plod kao i njegovo ulje su dobri i u prevencija mnogih bolesti ali i u ishrani i kozmetici.</p>
                     <div class="organic-btn new-arrivals-btn mt-35">
-                        <a href="#">Read more <i class="fa fa-long-arrow-right"></i></a>
+                        <a href="#">Vidi više <i class="fa fa-long-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
