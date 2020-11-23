@@ -8,6 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}"/>
 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset("/assets/img/index/favicon.png")}}">
     <!-- Place favicon.ico in the root directory -->
@@ -205,7 +207,7 @@
                                 <h1>LEŠNIK</h1>
                             </div>
                             <div class="cap-title wow flipInX d-none d-md-block" data-wow-duration="1.5s" data-wow-delay="0.2s">
-                                <p>100g lešnika sadrži 628 kalorija, predstavlja izvor energije jer sadrži visok nivo masti, <br /> proteina i ugljenih hidrata!</p>
+                                <p>Predstavlja izvor energije jer sadrži visok<br /> nivo masti, proteina i ugljenih hidrata!</p>
                             </div>
                             <div class="cap-readmore wow flipInX organic-btn d-none d-md-block" data-wow-duration="1.6s" data-wow-delay=".5s">
                                 <a href="{{url('/shop')}}">shop now</a>
@@ -234,7 +236,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="section-title text-center mb-50">
-                    <h1>Najtraženiji proizvodi</h1>
+                    <h2>Najtraženiji proizvodi</h2>
                 </div>
             </div>
         </div>

@@ -8,6 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}"/>
 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset("/assets/img/index/favicon.png")}}">
     <!-- Place favicon.ico in the root directory -->
@@ -300,7 +302,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="section-title home5-section-title text-center mb-40">
-                    <h4>Slični proizvodi</h4>
+                    <h2>Slični proizvodi</h2>
                 </div>
             </div>
         </div>

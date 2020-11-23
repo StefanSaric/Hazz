@@ -8,6 +8,8 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset("/assets/img/index/favicon.png")}}">
     <!-- Place favicon.ico in the root directory -->
@@ -199,7 +201,7 @@
                 <div class="col-lg-6">
                     <div class="customer-details mb-50">
                         <div class="section-title mb-10">
-                            <h4>Podaci o poručiocu</h4>
+                            <h2>Podaci o poručiocu</h2>
                         </div>
                         <div class="customer-details-form account-form p-20 clear bg-1">
                             <form action="#">
@@ -235,7 +237,7 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="section-title">
-                        <h4>Porudžbina</h4>
+                        <h2>Porudžbina</h2>
                     </div>
                     <div class="your-order bg-1">
                         <div class="your-order-table table-responsive">
