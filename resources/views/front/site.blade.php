@@ -234,7 +234,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="section-title text-center mb-50">
-                    <h2>Najtraženiji proizvodi</h2>
+                    <h1>Najtraženiji proizvodi</h1>
                 </div>
             </div>
         </div>

@@ -300,7 +300,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="section-title home5-section-title text-center mb-40">
-                    <h2>Slicni proizvodi</h2>
+                    <h4>Slični proizvodi</h4>
                 </div>
             </div>
         </div>

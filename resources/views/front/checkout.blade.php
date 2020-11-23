@@ -189,7 +189,7 @@
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="section-title text-center mb-30">
-                    <h2>Završi porudžbinu</h2>
+                    <h1 style="margin-bottom: 50px;">Završi porudžbinu</h1>
                 </div>
             </div>
         </div>
@@ -199,7 +199,7 @@
                 <div class="col-lg-6">
                     <div class="customer-details mb-50">
                         <div class="section-title mb-10">
-                            <h2>Podaci o poručiocu</h2>
+                            <h4>Podaci o poručiocu</h4>
                         </div>
                         <div class="customer-details-form account-form p-20 clear bg-1">
                             <form action="#">
@@ -235,7 +235,7 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="section-title">
-                        <h2>Porudžbina</h2>
+                        <h4>Porudžbina</h4>
                     </div>
                     <div class="your-order bg-1">
                         <div class="your-order-table table-responsive">
@@ -261,12 +261,12 @@
                                 @endforeach
                                 </tbody>
                                 <tfoot>
-                                <tr class="cart-subtotal">
-                                    <th>Cart Subtotal</th>
-                                    <td><span class="amount" >{{$total}} RSD</span></td>
-                                </tr>
+{{--                                <tr class="cart-subtotal">--}}
+{{--                                    <th>Cart Subtotal</th>--}}
+{{--                                    <td><span class="amount" >{{$total}} RSD</span></td>--}}
+{{--                                </tr>--}}
                                 <tr class="order-total">
-                                    <th>Order Total</th>
+                                    <th><strong>Ukupno</strong></th>
                                     <td><strong><span class="amount">{{$total}} RSD</span></strong>
                                     </td>
                                 </tr>

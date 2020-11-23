@@ -239,7 +239,7 @@
             </div>
             <div class="tab-area shop-tab-area">
                 <div class="shop-taitle mb-20">
-                    <h1>Prodavnica</h1>
+                    <h1 style="text-align: center">Prodavnica</h1>
                 </div>
                 <div class="tab-menu-area border-bottom mb-30">
                     <div class="row">
@@ -320,7 +320,7 @@
                                                     <div class="product-review">
                                                         <p>{{$size->product->text}}</p>
                                                         <div class="readmore-btn">
-                                                            <a href="{{url('/single-product/'.$size->id)}}">Learn More<i class="fa fa-long-arrow-right"></i></a>
+                                                            <a href="{{url('/single-product/'.$size->id)}}">Saznaj više<i class="fa fa-long-arrow-right"></i></a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -329,7 +329,7 @@
                                                         @if(array_key_exists($size->id, $in_carts))
                                                             <button type="button" class=" btn-danger" style="margin-left: 35px;" data-id="{{ $size->id }}" >Dodato</button>
                                                         @else
-                                                            <button type="button" class="cartBtn" data-id="{{ $size->id }}" >Dodaj u karticu</button>
+                                                            <button type="button" class="cartBtn" data-id="{{ $size->id }}" >Dodaj u korpu</button>
                                                         @endif
                                                     </ul>
                                                 </div>

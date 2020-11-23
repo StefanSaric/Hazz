@@ -196,41 +196,41 @@
                             <table>
                                 <thead>
                                 <tr>
-                                    <th class="product-remove"></th>
-                                    <th class="product-thumbnail"></th>
-                                    <th class="product-name">Proizvod</th>
-                                    <th class="product-size">Veličina</th>
-                                    <th class="product-price">Cena</th>
-                                    <th class="product-quantity">Količina</th>
-                                    <th class="product-subtotal">Ukupno</th>
+                                    <th class="product-remove" style="text-align: center"></th>
+                                    <th class="product-thumbnail" style="text-align: center"></th>
+                                    <th class="product-name" style="text-align: center">Proizvod</th>
+                                    <th class="product-size" style="text-align: center">Veličina</th>
+                                    <th class="product-price" style="text-align: center">Cena</th>
+                                    <th class="product-quantity" style="text-align: center">Količina</th>
+                                    <th class="product-subtotal" style="text-align: center">Ukupno</th>
                                 </tr>
                                 </thead>
                                 <tbody>
                                 @foreach($products as $size)
                                     @if(array_key_exists($size->id, $in_carts))
                                     <tr class="cart-item">
-                                        <td class="product-remove">
+                                        <td class="product-remove" style="text-align: center">
                                             <a href="#" class="delete-from-cart-2" data-id="{{ $size->id }}" title="Remove this item">x</a>
                                         </td>
-                                        <td class="product-thumbnail">
+                                        <td class="product-thumbnail" style="text-align: center">
                                             <a href="{{url('/single-product/'.$size->id)}}">
                                                 <img src="{{asset($size->product->materials->first()->url)}}" alt="" />
                                             </a>
                                         </td>
-                                        <td class="product-name">
+                                        <td class="product-name" style="text-align: center">
                                             <a href="{{url('/single-product/'.$size->id)}}">{{$size->product->name}} </a>
                                         </td>
-                                        <td class="product-size">
+                                        <td class="product-size" style="text-align: center">
                                             <span class="amounte">{{$size->quantity}} {{$size->unit}}</span>
                                         </td>
-                                        <td class="product-price">
+                                        <td class="product-price" style="text-align: center">
                                             <span class="amounte">{{$size->price}} RSD</span>
                                         </td>
-                                        <td class="product-quantity">
+                                        <td class="product-quantity" style="text-align: center">
                                             <input type="number" min="1" max="{{$size->stock}}" name="quantity_{{ $size->id }}" id="quantity_{{ $size->id }}" class="quantity"
                                                    value="{{ $carts[$size->id]["quantity"] }}">
                                         </td>
-                                        <td class="product-subtotal">
+                                        <td class="product-subtotal" style="text-align: center">
                                             <span class="sub-total">{{$size->price*$carts[$size->id]["quantity"]}}</span>
                                         </td>
                                     </tr>
@@ -254,69 +254,22 @@
         <div class="row">
             <div class="col-lg-3">
                 <!-- product area start -->
-{{--                <div class="cart-product mb-35 tab-area">--}}
-{{--                    <div class="section-title">--}}
-{{--                        <h2>Cross-Sells </h2>--}}
-{{--                    </div>--}}
-{{--                    <div class="cart-active owl-carousel next-prev-style">--}}
-{{--                        <div class="single-product">--}}
-{{--                            <div class="product-img">--}}
-{{--                                <a href="shop-single-product.html"><img src="img/product/11.jpg" alt="" /></a>--}}
-{{--                                <span class="sale">Sale</span>--}}
-{{--                            </div>--}}
-{{--                            <div class="product-item-details text-center">--}}
-{{--                                <div class="product-name-review tab-product-name-review">--}}
-{{--                                    <div class="product-name mt-30 ">--}}
-{{--                                        <span>Sample Category</span>--}}
-{{--                                        <strong><a href="shop-single-product.html">Chaz Kangeroo Hoodie1</a></strong>--}}
-{{--                                    </div>--}}
-{{--                                    <div class="product-review">--}}
-{{--                                        <ul>--}}
-{{--                                            <li><i class="fa fa-star"></i></li>--}}
-{{--                                            <li><i class="fa fa-star"></i></li>--}}
-{{--                                            <li><i class="fa fa-star"></i></li>--}}
-{{--                                            <li><i class="fa fa-star"></i></li>--}}
-{{--                                            <li><i class="fa fa-star"></i></li>--}}
-{{--                                        </ul>--}}
-{{--                                        <span class="special-price">$ 50.00</span>--}}
-{{--                                    </div>--}}
-{{--                                </div>--}}
-{{--                                <div class="add-to-cart-area clear pt-35">--}}
-{{--                                    <div class="add-to-cart text-uppercase">--}}
-{{--                                        <button>add to cart</button>--}}
-{{--                                    </div>--}}
-{{--                                    <div class="add-to-links">--}}
-{{--                                        <ul>--}}
-{{--                                            <li class="left">--}}
-{{--                                                <a href="#"><i class="fa fa-adjust"></i></a>--}}
-{{--                                            </li>--}}
-{{--                                            <li class="right">--}}
-{{--                                                <a href="#"><i class="fa fa-heart-o"></i></a>--}}
-{{--                                            </li>--}}
-{{--                                        </ul>--}}
-{{--                                    </div>--}}
-{{--                                </div>--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-                <!-- product area end -->
             </div>
             <div class="col-lg-6">
                 <div class="cart_totals">
                     <div class="section-title mb-30 text-uppercase">
-                        <h2 style="text-align: center;">Cart Totals</h2>
+                        <h4 style="text-align: center;">Račun</h4>
                     </div>
                 </div>
                 <div class="table-content table-responsive mb-30">
                     <table>
+{{--                        <tr>--}}
+{{--                            <td><strong>Subtotal</strong></td>--}}
+{{--                            <td><b>{{$total}} RSD</b></td>--}}
+{{--                        </tr>--}}
                         <tr>
-                            <td><strong>Subtotal</strong></td>
-                            <td><b>{{$total}} RSD</b></td>
-                        </tr>
-                        <tr>
-                            <td><strong>Total</strong></td>
-                            <td><b>{{$total}} RSD</b></td>
+                            <td style="text-align: center"><strong>Ukupno</strong></td>
+                            <td style="text-align: center"><b>{{$total}} RSD</b></td>
                         </tr>
                     </table>
                 </div>
