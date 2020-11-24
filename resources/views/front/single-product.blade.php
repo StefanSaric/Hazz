@@ -118,17 +118,13 @@
                                                     <img src="{{asset($one_size->product->materials->first()->url)}}"  alt="" />
                                                 </a>
                                             </div>
-                                            <div class="cart-item-details clear">
+                                            <div class="cart-item-details clear pull-left">
                                                 <h6 >Cena: {{$one_size->price}} RSD</h6>
                                                 <h6 >Pakovanje: {{$one_size->quantity}} {{$one_size->unit}}</h6>
                                             </div>
                                         </div><br>
-                                        <div>
-                                            <div class="details-qty col-md-auto-12">
-                                                <span>Kolicina: </span>
-                                                <input type="number" min="1" max="{{$one_size->stock}}" name="quantity_{{ $one_size->id }}" id="quantity_{{ $one_size->id }}" class="quantity"  value="{{$carts[$one_size->id]["quantity"]}}"/>
-                                                <a href="#" class="delete-from-cart"  data-id="{{ $one_size->id }}"><i class="fa fa-trash-o"  style="font-size:24px"></i></a>
-                                            </div>
+                                        <div class="details-qty col-md-auto-12 pull-right">
+                                            <a href="#" class="delete-from-cart"  data-id="{{ $one_size->id }}"><i class="fa fa-trash-o"  style="font-size:24px"></i></a>
                                         </div>
                                     </div>
                                 @endif
@@ -225,8 +221,8 @@
                     <div class="product-review simple-product-review">
                         <span class="special-price">{{$size->price}} RSD</span>
                         <span class="old-price">
-									<del>{{$size->old_price}} RSD</del>
-								</span>
+                            <del>{{$size->old_price}} RSD</del>
+                        </span>
                     </div>
                     <p>{{$size->product->description}}</p>
                     <div class="select-area mb-20 clear" style="margin-bottom: 10px;">
@@ -262,14 +258,22 @@
                         <b>Sifra proizvoda:</b> <span>{{$size->product->key}}</span>
                         <div class="category mb-10">
                             <b>Kategorije:</b>
-                            @foreach($size->product->categories as $category)
-                            <a href="#">{{$category->name}}, </a>
+                            @foreach($size->product->categories as $count1=>$category)
+                                @if(++$count1 <> sizeof($size->product->categories))
+                                    <a href="#">{{$category->name}}, </a>
+                                @else
+                                    <a href="#">{{$category->name}} </a>
+                                @endif
                             @endforeach
                         </div>
                         <div class="single-blog-tag category bb pb-10">
                             <b>Tagovi:</b>
-                            @foreach($size->product->tags as $tag)
-                                <a href="#">{{$tag->name}}, </a>
+                            @foreach($size->product->tags as $count2=>$tag)
+                                @if(++$count2 <> sizeof($size->product->tags))
+                                    <a href="#">{{$tag->name}}, </a>
+                                @else
+                                    <a href="#">{{$tag->name}} </a>
+                                @endif
                             @endforeach
                         </div>
                     </div>
