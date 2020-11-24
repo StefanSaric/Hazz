@@ -45,29 +45,45 @@
                                                 <th>Adresa</th>
                                                 <th>Racun</th>
                                                 <th>Status</th>
+                                                <th></th>
                                             </tr>
                                             </thead>
                                             <tbody>
-                                            @foreach($orders as $num=>$order)
-                                                <tr id="{{ $order->id }}" class="gradeX">
-                                                    <td style="text-align: center">
-                                                        <a href="{{url('admin/orders/details/'.$order->id)}}"  title="Pogledaj Porudzbinu" >&#x1F447;</a>
-                                                    </td>
-                                                    <td>{{ $num + 1 }}</td>
-                                                    <td>{{$order->first_name}} {{$order->last_name}}</td>
-                                                    <td>{{$order->email}}</td>
-                                                    <td>{{$order->city}}, Ulica: {{$order->address}} {{$order->num_of_house}}/ Stan:{{$order->num_of_apartment}} </td>
-                                                    <td>{{$order->total}} RSD</td>
-                                                    @if($order->show == 0)<td>Aktivan</td>@else<td>Isporučeno</td>@endif
-                                                </tr>
-                                            @endforeach
+                                                @foreach($orders as $num=>$order)
+                                                    <tr id="{{ $order->id }}" class="gradeX">
+                                                        <td style="text-align: center">
+                                                            <a href="{{url('admin/orders/details/'.$order->id)}}"  title="Pogledaj Porudzbinu" >&#x1F447;</a>
+                                                        </td>
+                                                        <td>{{ $num + 1 }}</td>
+                                                        <td>{{$order->first_name}} {{$order->last_name}}</td>
+                                                        <td>{{$order->email}}</td>
+                                                        <td>{{$order->city}}, Ulica: {{$order->address}} {{$order->num_of_house}}/ Stan:{{$order->num_of_apartment}} </td>
+                                                        <td>{{$order->total}} RSD</td>
+                                                        <td>
+                                                            @if($order->status == 0)
+                                                                <form action="orderstatus-close/{{$order->id}}" method="POST">
+                                                                    @csrf
+                                                                <button class="checkbox" style="background-color: #15ba66; margin-top: 0px;margin-bottom: 0px;">Aktivna</button>
+                                                                </form>
+                                                            @else
+                                                                <form action="orderstatus-open/{{$order->id}}" method="POST">
+                                                                    @csrf
+                                                                    <button class="checkbox" style="background-color: #929e99; margin-top: 0px;margin-bottom: 0px;">Isporučena</button>
+                                                                </form>
+                                                            @endif
+                                                        </td>
+                                                    </tr>
+                                                @endforeach
                                             </tbody>
                                         </table>
-                        </div><!--end .box-body -->
-                    </div><!--end .box -->
-                </div><!--end .col-lg-12 -->
-            </div>
+                                    </div><!--end .box-body -->
+                                </div><!--end .box -->
+                            </div><!--end .col-lg-12 -->
+                        </div>
             <!-- END STRIPED TABLE -->
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 @stop

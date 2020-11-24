@@ -52,7 +52,7 @@ class OrdersController extends Controller
 
     public function index(){
 
-        $orders = Order::all()->sortByDesc('created_at');
+        $orders = Order::all()->sortBy('status',false)->sortBy('update_at',false);
 
         return view('admin.orders.allorders',['active' => 'allOrders', 'orders' => $orders]);
     }
@@ -62,5 +62,23 @@ class OrdersController extends Controller
         $order = Order::with('cart','cart.product')->find($id);
 
         return view('admin.orders.details',['active' => 'allOrders', 'order' => $order]);
+    }
+
+    public function statusdelivered($id){
+
+        $order = Order::find($id);
+        $order->status = 1;
+        $order->save();
+
+        return redirect('admin/orders');
+    }
+
+    public function statusactive($id){
+
+        $order = Order::find($id);
+        $order->status = 0;
+        $order->save();
+
+        return redirect('admin/orders');
     }
 }

@@ -31,6 +31,8 @@ Route::group(['prefix' => 'admin', 'middleware' => 'role'], function () {
     Route::get('/products/delete/{id}', 'Admin\ProductController@delete');
     Route::resource('/orders', 'Admin\OrdersController');
     Route::get('/orders/details/{id}', 'Admin\OrdersController@details');
+    Route::post('/orderstatus-close/{id}','Admin\OrdersController@statusdelivered');
+    Route::post('/orderstatus-open/{id}','Admin\OrdersController@statusactive');
 });
 
 //Front

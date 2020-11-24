@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Order extends Model
 {
     protected $fillable = [
-        'id','total','first_name','last_name','email','city','address','num_of_house', 'num_of_apartment'
+        'id','total','first_name','last_name','email','city','address','num_of_house', 'num_of_apartment','status'
     ];
     public $timestamps = true;
 
