@@ -221,7 +221,7 @@
             @foreach($products as $size)
                 @if($size->product != null)
                     @foreach($size->product->categories as $category)
-                        @if($category->name == "hrana")
+                        @if($category->name == "prehrana")
                         <div class="single-product">
                             <div class="product-img">
                                 <a href="{{url('/single-product/'.$size->id)}}"><img src="{{asset($size->product->materials->first()->url)}}" border="10px" class="center"  alt="" /></a>
