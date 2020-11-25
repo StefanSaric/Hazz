@@ -14,7 +14,7 @@ $(document).on('click', ".cartBtn",  function(e) {
                 ele.addClass('btn-danger');
                 ele.text("Dodato");
                 $("#cart_div").append(`
-                    <div class="cart-item ptb-20 border-bottom" >
+                    <div class="cart-item ptb-30 border-bottom" style="margin-bottom: 0px;padding-top: 10px;padding-bottom: 50px;" >
                         <div class="cart-item-details text-center">
                             <a href="` + base() + `/single-product/` + ele.attr("data-id") + `">` + response.product.name + `</a>
                         </div><br>
@@ -25,12 +25,12 @@ $(document).on('click', ".cartBtn",  function(e) {
                                 </a>
                             </div>
                             <div class="cart-item-details clear pull-left">
-                                <h6>Cena: ` + response.price + ` RSD</h6>
-                                <h6>Pakovanje:` + response.quantity + response.unit + `</h6>
+                                <h6 style="padding-left: 30px;">Cena: ` + response.price + ` RSD</h6>
+                                <h6 style="padding-left: 30px;">Pakovanje:` + response.quantity + response.unit + `</h6>
                             </div>
                         </div><br>
                         <div class="details-qty col-md-auto-12 pull-right">
-                            <a href="#" class="delete-from-cart" data-id= `+response.id +`><i class="fa fa-trash-o" style="font-size:24px"></i></a>
+                            <a href="#" class="delete-from-cart" data-id= `+response.id +`><i class="fa fa-trash-o" style="font-size:24px;padding-right: 20px;"></i></a>
                         </div>
                     </div>
                 `);

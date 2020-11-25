@@ -108,7 +108,7 @@
                         <div class="cart-items clear mb-15" id="cart_div">
                             @foreach($products as $one_size)
                                 @if(array_key_exists($one_size->id, $in_carts))
-                                    <div class="cart-item ptb-20 border-bottom" >
+                                    <div class="cart-item ptb-30 border-bottom" style="margin-bottom: 0px;padding-top: 10px;padding-bottom: 50px;" >
                                         <div class="cart-item-details text-center">
                                             <a href="{{url('/single-product/'.$one_size->id)}}">{{$one_size->product->name}}</a>
                                         </div><br>
@@ -119,12 +119,12 @@
                                                 </a>
                                             </div>
                                             <div class="cart-item-details clear pull-left">
-                                                <h6 >Cena: {{$one_size->price}} RSD</h6>
-                                                <h6 >Pakovanje: {{$one_size->quantity}} {{$one_size->unit}}</h6>
+                                                <h6 style="padding-left: 30px;">Cena: {{$one_size->price}} RSD</h6>
+                                                <h6 style="padding-left: 30px;">Pakovanje: {{$one_size->quantity}} {{$one_size->unit}}</h6>
                                             </div>
                                         </div><br>
                                         <div class="details-qty col-md-auto-12 pull-right">
-                                            <a href="#" class="delete-from-cart"  data-id="{{ $one_size->id }}"><i class="fa fa-trash-o"  style="font-size:24px"></i></a>
+                                            <a href="#" class="delete-from-cart"  data-id="{{ $one_size->id }}"><i class="fa fa-trash-o"  style="font-size:24px;padding-right: 20px;"></i></a>
                                         </div>
                                     </div>
                                 @endif
@@ -163,6 +163,7 @@
 <!-- header end -->
 <!-- simple product area start -->
 <div class="breadcrumbs-area ptb-10 bg-4 mb-30">
+    <input type="hidden" id="baseUrl" value="{{url('/')}}"/>
     <div class="container">
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -228,12 +229,12 @@
                     <div class="select-area mb-20 clear" style="margin-bottom: 10px;">
                         <div class="select-title floatleft"><strong>Pakovanje:</strong></div>
                         <div class="select-option floatleft" style="width: 20%">
-                            <select name="select">
+                            <select name="select" id="sizeSelect">
                                 @if(array_key_exists($size->id, $in_carts))
-                                    <option value="">{{$size->quantity}} {{$size->unit}}</option>
+                                    <option value="" >{{$size->quantity}} {{$size->unit}}</option>
                                 @else
                                     @foreach($size->product->sizes as $s)
-                                    <option value="l"  selected="selected">{{$s->quantity}} {{$s->unit}}</option>
+                                    <option value="{{$s->id}}" @if($s->id == $id)selected="selected"@endif>{{$s->quantity}} {{$s->unit}}</option>
                                     @endforeach
                                 @endif
                             </select>

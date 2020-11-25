@@ -330,7 +330,7 @@ class ProductController extends Controller
 
         return view('front.single-product',
             ['size' => $size, 'products' => $products, 'carts' => $carts,
-             'in_carts' => $in_carts, 'total' => $total, 'samecategory' => $samecategoryarray]);
+             'in_carts' => $in_carts, 'total' => $total, 'samecategory' => $samecategoryarray, 'id' => $id]);
 
     }
 }

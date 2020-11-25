@@ -107,7 +107,7 @@
                         <div class="cart-items clear mb-15" id="cart_div">
                             @foreach($products as $size)
                                 @if(array_key_exists($size->id, $in_carts))
-                                    <div class="cart-item ptb-30 border-bottom" >
+                                    <div class="cart-item ptb-30 border-bottom" style="margin-bottom: 0px;padding-top: 10px;padding-bottom: 50px;" >
                                         <div class="cart-item-details text-center">
                                             <a href="{{url('/single-product/'.$size->id)}}">{{$size->product->name}}</a>
                                         </div><br>
@@ -118,12 +118,12 @@
                                                 </a>
                                             </div>
                                             <div class="cart-item-details clear pull-left">
-                                                <h6 >Cena: {{$size->price}} RSD</h6>
-                                                <h6 >Pakovanje: {{$size->quantity}} {{$size->unit}}</h6>
+                                                <h6 style="padding-left: 30px;">Cena: {{$size->price}} RSD</h6>
+                                                <h6 style="padding-left: 30px;">Pakovanje: {{$size->quantity}} {{$size->unit}}</h6>
                                             </div>
                                         </div><br>
                                         <div class="details-qty col-md-auto-12 pull-right">
-                                            <a href="#" class="delete-from-cart"  data-id="{{ $size->id }}"><i class="fa fa-trash-o"  style="font-size:24px"></i></a>
+                                            <a href="#" class="delete-from-cart"  data-id="{{ $size->id }}"><i class="fa fa-trash-o"  style="font-size:24px;padding-right: 20px;"></i></a>
                                         </div>
                                     </div>
                                 @endif
