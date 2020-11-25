@@ -273,7 +273,7 @@
                         </div>
                         <div class="payment-method mt-0">
                             <div class="order-button-payment">
-                                @if($total <> 0)
+                                @if($total <> 0 || !empty($in_carts))
                                     <input type="submit" value="Potvrdi porudžbinu" />
                                 @else
                                     <input type="submit" value="Potvrdi porudžbinu" disabled/>
