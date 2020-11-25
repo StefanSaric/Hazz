@@ -300,7 +300,7 @@
                         <div class="row">
                             @foreach($products as $size)
                                 @if($size->product != null)
-                                    <div class="col-sm-12">
+                                    <div class="col-sm-12 opsta @foreach ($size->product->categories as $category) {{$category->name.' '}} @endforeach">
                                         <div class="product-wrapper clear border-bottom mb-30">
                                             <div class="product-img shop-product-img">
                                                 <a href="{{url('/single-product/'.$size->id)}}"><img src="{{asset($size->product->materials->first()->url)}}" width="150" height="150" alt="" /></a>
