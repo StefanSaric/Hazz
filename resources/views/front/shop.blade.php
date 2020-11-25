@@ -32,6 +32,11 @@
     <link rel="stylesheet" href="{{ asset("/assets/css/index/style.css")}}">
     <!-- responsive css -->
     <link rel="stylesheet" href="{{ asset("/assets/css/index/responsive.css")}}">
+    <style>
+        .active-category :hover{
+            cursor: pointer;
+        }
+    </style>
     <!-- modernizr css -->
     <script src="{{ asset("/assets/js/libs/index/modernizr-2.8.3.min.js")}}"></script>
 </head>
@@ -182,22 +187,14 @@
         <div class="col-xl-3 col-lg-4">
             <div class="categories-area mb-35 border-2">
                 <div class="product-title text-uppercase bg-5">
-                    <h3>Shop By</h3>
+                    <h3>Proizvodi</h3>
                 </div>
                 <div class="shop-categories-menu p-20">
                     <ul>
-                        <li><strong>Shopping Options</strong></li>
-                        <li><a href="#">Color</a></li>
-                        <li><a href="#">Manufacturer <i class="opener-1 fa fa-angle-right pull-right"></i></a>
-                            <ul class="toggle-1">
-                                <li><a href="#"> Adidas 4 items</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Price <i class="opener-2 fa fa-angle-right pull-right"></i></a>
-                            <ul class="toggle-2">
-                                <li><a href="#"> $0.00 - $9.99 1 items</a></li>
-                            </ul>
-                        </li>
+                        <li><strong>Kategorije:</strong></li>
+                        <li><a class="active-category" id="svi" >Svi <i class="opener-1 fa fa-angle-right pull-right"></i></a></li>
+                        <li><a class="active-category" id="prehrana" >Prehrana <i class="opener-1 fa fa-angle-right pull-right"></i></a></li>
+                        <li><a class="active-category" id="kozmetika" >Kozmetika <i class="opener-2 fa fa-angle-right pull-right"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -217,14 +214,14 @@
                 </div>
             </div>
             <!-- banner-area start -->
-            <div class="banner-area mtb-35">
-                <div class="single-banner home2-single-banner mb-30">
-                    <a href="#"><img src="img/banner/home2/1.jpg" alt="" /></a>
-                </div>
-                <div class="single-banner home2-single-banner">
-                    <a href="#"><img src="img/banner/home2/2.jpg" alt="" /></a>
-                </div>
-            </div>
+{{--            <div class="banner-area mtb-35">--}}
+{{--                <div class="single-banner home2-single-banner mb-30">--}}
+{{--                    <a href="#"><img src="img/banner/home2/1.jpg" alt="" /></a>--}}
+{{--                </div>--}}
+{{--                <div class="single-banner home2-single-banner">--}}
+{{--                    <a href="#"><img src="img/banner/home2/2.jpg" alt="" /></a>--}}
+{{--                </div>--}}
+{{--            </div>--}}
 
         </div>
 
@@ -266,7 +263,7 @@
                         <div class="row">
                             @foreach($products as $num=>$size)
                                 @if($size->product != null)
-                                    <div class="col-xl-4 col-md-6 col-sm-6">
+                                    <div class="col-xl-4 col-md-6 col-sm-6 opsta @foreach ($size->product->categories as $category) {{$category->name.' '}} @endforeach">
                                         <div class="single-product mb-30">
                                             <div class="product-img">
                                                 <a href="{{url('/single-product/'.$size->id)}}"><img src="{{asset($size->product->materials->first()->url)}}"  alt="" /></a>
@@ -286,7 +283,7 @@
                                                 <div class="add-to-cart-area clear ptb-35">
                                                     <div class="add-to-cart text-uppercase">
                                                         @if(array_key_exists($size->id, $in_carts))
-                                                            <button type="button " class=" btn-danger" data-id="{{ $size->id }}" >Dodato</button>
+                                                            <button type="button" class=" btn-danger" data-id="{{ $size->id }}" >Dodato</button>
                                                         @else
                                                             <button type="button" class="cartBtn" data-id="{{ $size->id }}" >Dodaj u korpu</button>
                                                         @endif
@@ -520,6 +517,8 @@
 <script src="{{ asset("/assets/js/libs/index/plugins.js")}}"></script>
 <!-- main js -->
 <script src="{{ asset("/assets/js/libs/index/main.js")}}"></script>
+<!-- shop js -->
+<script src="{{ asset("/assets/js/shop.js")}}"></script>
 <!-- cart js -->
 <script src="{{ asset("/assets/js/cart.js")}}"></script>
 <!-- deletecart js -->

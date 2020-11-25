@@ -1,9 +1,11 @@
 $(document).on('click', ".cartBtn",  function(e) {
     e.preventDefault();
     var ele = $(this);
+    var sizeID = $("#sizeID").val();
+    var quant = $("#quantity_"+sizeID).val();
     console.log(ele);
     $.ajax({
-        url: base() + '/addtocart/' + ele.attr("data-id"),
+        url: base() + '/addtocart/' + ele.attr("data-id")+'?quant='+quant,
         method: "get",
         success: function (response) {
             console.log(response);

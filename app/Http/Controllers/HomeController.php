@@ -7,6 +7,8 @@ use App\Products;
 use App\Sizes;
 use Illuminate\Http\Request;
 use App\Cart;
+use Illuminate\Support\Facades\View;
+
 
 class HomeController extends Controller
 {
@@ -45,9 +47,14 @@ class HomeController extends Controller
             $cart[$request->id]["product_id"] = $size->product_id;
             if ($request->quantity <> null) {
                 $cart[$request->id]["quantity"] = $request->quantity;
-            } else {
+            }
+            elseif($request->quant != null) {
+                $cart[$request->id]["quantity"] = $request->quant;
+            }
+            else{
                 $cart[$request->id]["quantity"] = 1;
             }
+
             $cart[$request->id]["price"] = $size->price;
 
             session()->put('cart', $cart);
@@ -86,7 +93,5 @@ class HomeController extends Controller
         $size["sizeOf"] = sizeof(session()->get('cart'));
 
         return $size;
-
     }
-
 }

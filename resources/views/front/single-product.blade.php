@@ -240,12 +240,13 @@
                             </select>
                         </div>
                     </div>
+                    <input type="hidden" id="sizeID" value="{{$size->id}}">
                     <div class="simple-product-form mtb-20 add-to-cart" style="margin-top: 10px;">
                         <form action="#">
                             @if(array_key_exists($size->id, $in_carts))
                                 <input type="number" min="1" max="{{$size->stock}}" name="quantity_{{ $size->id }}" id="quantity_{{ $size->id }}" class="quantity"  value="{{$carts[$size->id]["quantity"]}}"/>
                             @else
-                                <input type="number" min="1" max="{{$size->stock}}" name="quantity_{{ $size->id }}" id="quantity_{{ $size->id }}" class="quantity"  value="1"/>
+                                <input type="number" min="1" max="{{$size->stock}}" class="cartBtn" name="quantity_{{ $size->id }}" id="quantity_{{ $size->id }}" class="quantity"  value="quantity_{{ $size->id }}"/>
                             @endif
 
                             @if(array_key_exists($size->id, $in_carts))
