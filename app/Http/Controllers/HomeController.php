@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Categories;
+use App\Product_Categories;
 use App\Products;
 //use Gloudemans\Shoppingcart\Facades\Cart;
 use App\Sizes;
@@ -93,5 +95,35 @@ class HomeController extends Controller
         $size["sizeOf"] = sizeof(session()->get('cart'));
 
         return $size;
+    }
+
+    public function shoporder(Request $request){
+
+        $sizes=Sizes::all();
+        $object = [];
+        foreach($sizes as $size) {
+            $product = Products::find($size->product_id);
+//            $object[]['name'] = $product->name;
+//            $object[]['price'] = $size->price;
+            $categories = Product_Categories::where('product_id', '=', $size->product_id)->get();
+            $cat_string = '';
+            foreach ($categories as $category){
+                $cat_name = Categories::find($category->category_id)->name;
+                $cat_string .= ' '.$cat_name;
+            }
+            $object = collect([
+                'name' => $product->name,
+                'price' => $size->price,
+                'categories' => $cat_string
+            ]);
+        }
+
+
+        if($request->order == 'price')
+            $object->orderby('price');
+        elseif($request->order == 'name')
+            $object->product->orderBy('name');
+
+        return json_encode($object);
     }
 }

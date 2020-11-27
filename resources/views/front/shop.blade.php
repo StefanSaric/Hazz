@@ -167,6 +167,7 @@
 <!-- header end -->
 <!-- shop-area start -->
 <div class="breadcrumbs-area ptb-10 bg-4 mb-30">
+    <input type="hidden" id="baseUrl" value="{{url('/')}}"/>
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
@@ -247,11 +248,10 @@
                         </div>
                         <div class=" col-md-5 col-sm-6 hidden-xs">
                             <div class="woocommerce-ordering text-right">
-                                <strong>Sort By </strong>
-                                <select name="orderby">
-                                    <option value="menu_order" selected="selected">Position</option>
-                                    <option value="popularity">Product Name</option>
-                                    <option value="rating">Price</option>
+                                <strong>Sortiraj po: </strong>
+                                <select name="orderby" id="orderBy">
+                                    <option class="order-products" id="ordershop" value="price" selected="selected">Ceni</option>
+                                    <option class="order-products" id="ordershop" value="name">Nazivu</option>
                                 </select>
                                 <a href="#"><i class="fa fa-arrow-up"></i></a>
                             </div>

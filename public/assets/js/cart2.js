@@ -1,9 +1,11 @@
-$(document).on('click', ".cartBtn",  function(e) {
+$(document).on('click', ".cartBtn-2",  function(e) {
     e.preventDefault();
     var ele = $(this);
+    var sizeID = $("#sizeID").val();
+    var quant = $("#quantity_"+sizeID).val();
     console.log(ele);
     $.ajax({
-        url: base() + '/addtocart/' + ele.attr("data-id"),
+        url: base() + '/addtocart/' + ele.attr("data-id")+'?quant='+quant,
         method: "get",
         success: function (response) {
             console.log(response);
@@ -37,23 +39,6 @@ $(document).on('click', ".cartBtn",  function(e) {
                 $("#sizeof_cart1").html(response.sizeOf);
                 $("#sizeof_cart2").html(response.sizeOf);
                 $("#subtotal").html(response.total);
-            }
-        }
-    });
-});
-
-
-$(document).on('click', ".remove-from-cart",  function(e) {
-    e.preventDefault();
-    var ele = $(this);
-    console.log(ele);
-    $.ajax({
-        url: base() + '/deletecart/' + ele.attr("data-id"),
-        method: "get",
-        success: function (response) {
-            console.log(response);
-            if(response == "true") {
-                ele.parent().parent().parent().remove();
             }
         }
     });

@@ -1219,7 +1219,7 @@ a#scrollUp:hover {
 	opacity: 0;
 	padding: 0 10px !important;
 	position: absolute;
-	top: 50%;
+	top: 70%;
 	transform: translateY(-50%);
 	transition: all 0.5s ease 0s;
 }
