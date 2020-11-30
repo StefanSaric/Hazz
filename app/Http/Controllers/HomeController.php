@@ -10,6 +10,7 @@ use App\Sizes;
 use Illuminate\Http\Request;
 use App\Cart;
 use Illuminate\Support\Facades\View;
+use Illuminate\Support\Facades\DB;
 
 
 class HomeController extends Controller
@@ -51,6 +52,9 @@ class HomeController extends Controller
                 $cart[$request->id]["quantity"] = $request->quantity;
             }
             elseif($request->quant != null) {
+//                if($request->quant > $size->stock) {
+//                    return redirect()->back()->with('error', 'Nema dovoljno proizvoda na stajanju!');
+//                }
                 $cart[$request->id]["quantity"] = $request->quant;
             }
             else{
@@ -97,33 +101,21 @@ class HomeController extends Controller
         return $size;
     }
 
-    public function shoporder(Request $request){
-
-        $sizes=Sizes::all();
-        $object = [];
-        foreach($sizes as $size) {
-            $product = Products::find($size->product_id);
-//            $object[]['name'] = $product->name;
-//            $object[]['price'] = $size->price;
-            $categories = Product_Categories::where('product_id', '=', $size->product_id)->get();
-            $cat_string = '';
-            foreach ($categories as $category){
-                $cat_name = Categories::find($category->category_id)->name;
-                $cat_string .= ' '.$cat_name;
-            }
-            $object = collect([
-                'name' => $product->name,
-                'price' => $size->price,
-                'categories' => $cat_string
-            ]);
+    public function shoporder(Request $request)
+    {
+        if($request->order == 'price') {
+            $sizes = DB::table('sizes')
+                ->select('*')
+                ->orderBy('price')
+                ->get();
         }
-
-
-        if($request->order == 'price')
-            $object->orderby('price');
-        elseif($request->order == 'name')
-            $object->product->orderBy('name');
-
-        return json_encode($object);
+        elseif($request->order == 'name'){
+            $sizes = DB::table('sizes')
+                ->join('products', 'sizes.product_id', 'products.id')
+                ->select('*')
+                ->orderBy('products.name')
+                ->get();
+        }
+        return json_encode($sizes);
     }
 }

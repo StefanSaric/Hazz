@@ -73,8 +73,8 @@
                     <div class="mainmenu dropdown d-none d-lg-block">
                         <nav>
                             <ul>
-                                <li class="active"><a href="{{url('/')}}">Početna </a></li>
-                                <li><a href="{{url('/shop')}}">Prodavnica </a></li>
+                                <li><a href="{{url('/')}}">Početna </a></li>
+                                <li class="active"><a href="{{url('/shop')}}">Prodavnica </a></li>
                                 <li><a href="{{url('/blog')}}">Blog </a></li>
                                 <li><a href="{{url('/cart')}}">Korpa </a></li>
                                 <li><a href="{{url('/checkout')}}">Kasa</a></li>
@@ -146,8 +146,8 @@
                     <div class="mobail-menu-active">
                         <nav>
                             <ul>
-                                <li class="active"><a href="{{url('/')}}">Početna </a></li>
-                                <li><a href="{{url('/shop')}}">Prodavnica </a></li>
+                                <li><a href="{{url('/')}}">Početna </a></li>
+                                <li class="active"><a href="{{url('/shop')}}">Prodavnica </a></li>
                                 <li><a href="{{url('/blog')}}">Blog </a></li>
                                 <li><a href="{{url('/cart')}}">Korpa </a></li>
                                 <li><a href="{{url('/checkout')}}">Kasa</a></li>

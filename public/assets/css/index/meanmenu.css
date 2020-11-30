@@ -152,7 +152,7 @@ a.meanmenu-reveal {
 }
 
 /* Fix for box sizing on Foundation Framework etc. */
-/*.mean-container .mean-bar, */
+.mean-container .mean-bar,
 .mean-container .mean-bar * {
 	-webkit-box-sizing: content-box;
 	-moz-box-sizing: content-box;

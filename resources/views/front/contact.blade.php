@@ -35,7 +35,6 @@
     <!-- modernizr css -->
     <script src="{{ asset("/assets/js/libs/index/modernizr-2.8.3.min.js")}}"></script>
 </head>
-<body>
 
 <body>
 <!--[if lt IE 8]>
@@ -72,12 +71,12 @@
                     <div class="mainmenu dropdown d-none d-lg-block">
                         <nav>
                             <ul>
-                                <li class="active"><a href="{{url('/')}}">Početna </a></li>
+                                <li><a href="{{url('/')}}">Početna </a></li>
                                 <li><a href="{{url('/shop')}}">Prodavnica </a></li>
                                 <li><a href="{{url('/blog')}}">Blog </a></li>
                                 <li><a href="{{url('/cart')}}">Korpa </a></li>
                                 <li><a href="{{url('/checkout')}}">Kasa</a></li>
-                                <li><a href="{{url('/contact')}}">Kontakt</a></li>
+                                <li class="active"><a href="{{url('/contact')}}">Kontakt</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -141,7 +140,7 @@
     <div class="mobail-menu-area">
         <div class="container">
             <div class="row">
-                <div class="col-sm-12 d-none d-sm-block d-md-none">
+                <div class="col-12 d-none d-sm-block d-md-none">
                     <div class="mobail-menu-active">
                         <nav>
                             <ul>
@@ -370,7 +369,7 @@
 <!-- main js -->
 <script src="{{ asset("/assets/js/libs/index/main.js")}}"></script>
 
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD1cZtqidvg0m-f8Hd3S6RHx1mY-omuLS4 "></script>
+<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyD1cZtqidvg0m-f8Hd3S6RHx1mY-omuLS4 "></script>
 <script>
     function initialize() {
         var mapOptions = {
@@ -395,7 +394,7 @@
     google.maps.event.addDomListener(window, 'load', initialize);
 </script>
 <!-- Main js file that contents all jQuery plugins activation. -->
-<script src="{{ asset("/assets/js/libs/index/main.js")}}"></script>
+{{--<script src="{{ asset("/assets/js/libs/index/main.js")}}"></script>--}}
 </body>
 
 </html>
