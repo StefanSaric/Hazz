@@ -50,7 +50,7 @@
                                             <tbody>
                                             @foreach($order->cart as $num=>$cart)
                                                     <td>{{ $num + 1 }}</td>
-                                                    <td>{{$cart->product->name}} </td>
+                                                    <td>{{$cart->product->product->name}} </td>
                                                     <td>{{$cart->product->quantity}} {{$cart->product->unit}}</td>
                                                     <td>{{$cart->quantity}}</td>
                                                     <td>{{$cart->price}} RSD</td>
@@ -65,6 +65,9 @@
                         </div>
                         <!-- END STRIPED TABLE -->
                     </div>
+                </div>
+            </div>
+        </div>
     </section>
 @stop
 
