@@ -72,8 +72,8 @@
                         <nav>
                             <ul>
                                 <li><a href="{{url('/')}}">Početna </a></li>
-                                <li class="active"><a href="{{url('/shop')}}">Prodavnica </a></li>
-                                <li><a href="{{url('/blog')}}">Blog </a></li>
+                                <li><a href="{{url('/shop')}}">Prodavnica </a></li>
+                                <li class="active"><a href="{{url('/blog')}}">Blog </a></li>
                                 <li><a href="{{url('/cart')}}">Korpa </a></li>
                                 <li><a href="{{url('/checkout')}}">Kasa</a></li>
                                 <li><a href="{{url('/contact')}}">Kontakt</a></li>

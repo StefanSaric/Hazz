@@ -112,6 +112,8 @@ class HomeController extends Controller
         elseif($request->order == 'name'){
             $sizes = DB::table('sizes')
                 ->join('products', 'sizes.product_id', 'products.id')
+//                ->join('product_categories', 'products.id', 'product_categories.product_id')
+//                ->join('categories', 'product_categories.category_id', 'categories.id')
                 ->select('*')
                 ->orderBy('products.name')
                 ->get();

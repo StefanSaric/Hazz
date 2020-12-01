@@ -214,6 +214,10 @@
                                     <input type="text" name="email" id ="email" placeholder="Email" required/>
                                 </span>
                                 <span>
+                                    <b>Telefon <span class="required">*</span></b>
+                                    <input type="text" name="phone" id ="phone" placeholder="Telefon" required/>
+                                </span>
+                                <span>
                                     <b>Grad <span class="required">*</span></b>
                                     <input type="text" name="city" id ="city" placeholder="Grad"   required/>
                                 </span>

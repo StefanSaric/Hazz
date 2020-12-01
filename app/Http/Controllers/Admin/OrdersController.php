@@ -4,10 +4,12 @@ namespace App\Http\Controllers\Admin;
 
 use App\Cart;
 use App\Http\Controllers\Controller;
+use App\Mail\ConfirmOrder;
 use App\Order;
 use App\Products;
 use App\Sizes;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class OrdersController extends Controller
 {
@@ -26,8 +28,8 @@ class OrdersController extends Controller
             foreach($carts as $cart)
                 $total += $cart["price"]*$cart["quantity"];
         $order = Order::create([
-            'first_name' => $request->firstname, 'last_name' => $request->lastname, 'email' => $request->email, 'address' => $request->address,
-            'num_of_house' => $request->num, 'num_of_apartment' => $request->apartment, 'city' => $request->city, 'total' => $total]);
+            'first_name' => $request->firstname, 'last_name' => $request->lastname, 'email' => $request->email, 'phone' => $request->phone,
+            'address' => $request->address, 'num_of_house' => $request->num, 'num_of_apartment' => $request->apartment, 'city' => $request->city, 'total' => $total]);
 
         foreach ($carts as $one_cart)
             $cart = Cart::create(['product_id' => $one_cart["product_id"], 'price' => $one_cart["price"], 'quantity' => $one_cart["quantity"], 'order_id' => $order->id]);
@@ -46,6 +48,22 @@ class OrdersController extends Controller
             }
         }
         session()->forget('cart');
+
+
+        $data = array(
+            'order_id' => $order->id,
+            'total' => $total,
+            'firstname' => $request->firstname,
+            'lastname' => $request->lastname,
+            'email'=> $request->email,
+            'phone'=> $request->phone,
+            'city' => $request->city,
+            'address' => $request->address,
+            'num' => $request->num,
+            'apartment' => $request->apartment,
+        );
+
+        Mail::to($request->email)->send(new ConfirmOrder($data));
 
         return redirect('/');
     }

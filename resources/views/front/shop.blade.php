@@ -250,7 +250,8 @@
                             <div class="woocommerce-ordering text-right">
                                 <strong>Sortiraj po: </strong>
                                 <select name="orderby" id="orderBy">
-                                    <option class="order-products" id="ordershop" value="price" selected="selected">Ceni</option>
+                                    <option class="" >test</option>
+                                    <option class="order-products" id="ordershop" value="price" data-v="">Ceni</option>
                                     <option class="order-products" id="ordershop" value="name">Nazivu</option>
                                 </select>
                                 <a href="#"><i class="fa fa-arrow-up"></i></a>
@@ -258,43 +259,43 @@
                         </div>
                     </div>
                 </div>
-                <div class="tab-content">
+                <div class="tab-content" id="sort-products">
                     <div role="tabpanel" class="tab-pane active" id="tab1">
-                       <div class="row">
-                           @foreach($products as $num=>$size)
-                            @if($size->product != null)
-                                <div class="col-xl-4 col-md-6 col-sm-6 opsta @foreach ($size->product->categories as $category) {{$category->name.' '}} @endforeach">
-                                    <div class="single-product mb-30">
-                                        <div class="product-img">
-                                            <a href="{{url('/single-product/'.$size->id)}}"><img src="{{asset($size->product->materials->first()->url)}}"  alt="" /></a>
-                                        </div>
-                                        <div class="product-item-details text-center">
-                                            <div class="product-name-review tab-product-name-review">
-                                                <div class="product-name mt-30 ">
-                                                    <strong><a href="{{url('/single-product/'.$size->id)}}">{{$size->product->name}}</a></strong>
-                                                </div>
-                                                <div class="product-review">
-                                                    <span class="special-price">Cena: {{$size->price}} RSD</span>
-                                                </div>
-                                                <div class="product-review">
-                                                    <span class="product-content">Pakovanje: {{$size->quantity}} {{$size->unit}}</span>
-                                                </div>
+                        <div class="row" id="sortDiv1">
+                            @foreach($products as $num=>$size)
+                                @if($size->product != null)
+                                    <div data-price="{{ $size->price }}" data-name="{{ $size->product->name }}" class="col-xl-4 col-md-6 col-sm-6 sortBox opsta @foreach ($size->product->categories as $category) {{$category->name.' '}} @endforeach">
+                                        <div class="single-product mb-30">
+                                            <div class="product-img">
+                                                <a href="{{url('/single-product/'.$size->id)}}"><img src="{{asset($size->product->materials->first()->url)}}"  alt="" /></a>
                                             </div>
-                                            <div class="add-to-cart-area clear ptb-35">
-                                                <div class="add-to-cart text-uppercase">
-                                                    @if(array_key_exists($size->id, $in_carts))
-                                                        <button type="button" class=" btn-danger" data-id="{{ $size->id }}" >Dodato</button>
-                                                    @else
-                                                        <button type="button" class="cartBtn" data-id="{{ $size->id }}" >Dodaj u korpu</button>
-                                                    @endif
+                                            <div class="product-item-details text-center">
+                                                <div class="product-name-review tab-product-name-review">
+                                                    <div class="product-name mt-30 ">
+                                                        <strong><a href="{{url('/single-product/'.$size->id)}}">{{$size->product->name}}</a></strong>
+                                                    </div>
+                                                    <div class="product-review">
+                                                        <span class="special-price">Cena: {{$size->price}} RSD</span>
+                                                    </div>
+                                                    <div class="product-review">
+                                                        <span class="product-content">Pakovanje: {{$size->quantity}} {{$size->unit}}</span>
+                                                    </div>
+                                                </div>
+                                                <div class="add-to-cart-area clear ptb-35">
+                                                    <div class="add-to-cart text-uppercase">
+                                                        @if(array_key_exists($size->id, $in_carts))
+                                                            <button type="button" class=" btn-danger" data-id="{{ $size->id }}" >Dodato</button>
+                                                        @else
+                                                            <button type="button" class="cartBtn" data-id="{{ $size->id }}" >Dodaj u korpu</button>
+                                                        @endif
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                            @endif
-                        @endforeach
-                       </div>
+                                @endif
+                            @endforeach
+                        </div>
                     </div>
                     <div role="tabpanel" class="tab-pane fade"  id="tab2">
                         <div class="row">
