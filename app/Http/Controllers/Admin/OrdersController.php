@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Cart;
 use App\Http\Controllers\Controller;
 use App\Mail\ConfirmOrder;
+use App\Mail\OrderDelivered;
 use App\Order;
 use App\Products;
 use App\Sizes;
@@ -87,6 +88,13 @@ class OrdersController extends Controller
         $order = Order::find($id);
         $order->status = 1;
         $order->save();
+
+        $data = array(
+            'order_id' => $order->id,
+            'email' => $order->email
+        );
+
+        Mail::to($order->email)->send(new OrderDelivered($data));
 
         return redirect('admin/orders');
     }
