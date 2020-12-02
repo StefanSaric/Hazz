@@ -59,21 +59,21 @@ $(document).on('click', ".remove-from-cart",  function(e) {
     });
 });
 
-$(document).on("keyup keydown change", ".quantity",function(event){
-    //code that's working like a charm
-    var quantity = $(this).val();
-    var id = $(this).attr('id').split("_").pop();
-    var url = base() + '/addtocart/' + id + "?quantity=" + quantity;
-    $.ajax({
-        url: url,
-        method: "get",
-        success: function (response) {
-            console.log(response);
-            if(response == "true") {
-            }
-        }
-    });
-});
+// $(document).on("keyup keydown change", ".quantity",function(event){
+//     //code that's working like a charm
+//     var quantity = $(this).val();
+//     var id = $(this).attr('id').split("_").pop();
+//     var url = base() + '/addtocart/' + id + "?quantity=" + quantity;
+//     $.ajax({
+//         url: url,
+//         method: "get",
+//         success: function (response) {
+//             console.log(response);
+//             if(response == "true") {
+//             }
+//         }
+//     });
+// });
 
 /* Get base url */
 function base()
@@ -92,3 +92,4 @@ function base()
 
     return "https://" + urlbase;
 }
+

@@ -52,9 +52,6 @@ class HomeController extends Controller
                 $cart[$request->id]["quantity"] = $request->quantity;
             }
             elseif($request->quant != null) {
-//                if($request->quant > $size->stock) {
-//                    return redirect()->back()->with('error', 'Nema dovoljno proizvoda na stajanju!');
-//                }
                 $cart[$request->id]["quantity"] = $request->quant;
             }
             else{
