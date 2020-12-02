@@ -340,7 +340,7 @@
                                         @if(array_key_exists($one_product->id, $in_carts))
                                             <button type="button " class=" btn-danger" data-id="{{ $one_product->id }}" >Dodato</button>
                                         @else
-                                            <button type="button" class="cartBtn" data-id="{{ $one_product->id }}" >Dodaj u korpu</button>
+                                            <button type="button" class="addcart" data-id="{{ $one_product->id }}" >Dodaj u korpu</button>
                                         @endif
                                     </div>
                                 </div>
@@ -511,8 +511,6 @@
 <script src="{{ asset("/assets/js/libs/index/plugins.js")}}"></script>
 <!-- main js -->
 <script src="{{ asset("/assets/js/libs/index/main.js")}}"></script>
-<!-- cart js -->
-<script src="{{ asset("/assets/js/cart.js")}}"></script>
 <!-- cart2 js -->
 <script src="{{ asset("/assets/js/cart2.js")}}"></script>
 <!-- deletecart js -->
