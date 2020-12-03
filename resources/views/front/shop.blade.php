@@ -206,7 +206,7 @@
                 </div>
                 <div class="filter-by-price p-20-15">
                     <p>
-                        price: <input type="text" id="amount">
+                        Cena: <input type="text" id="amount">
                     </p>
                     <div id="slider-range"></div>
                     <div class="filter">

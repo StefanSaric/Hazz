@@ -1,13 +1,15 @@
 var baseUrl = $('#baseUrl').val();
+var category = 'opsta';
 
 $(document).on('click', '.active-category', function() {
-    var value = $(this).attr('id');
-    console.log(value);
-    if(value == 'svi'){
-        value = 'opsta';
+    category = $(this).attr('id');
+    //console.log(value);
+    if(category == 'svi'){
+        category = 'opsta';
     }
     $('.opsta').hide();
-    $('.'+value).show();
+    $('.'+category).show();
+    $('#amount').change();
 });
 
 
@@ -30,6 +32,23 @@ $(document).on('change', "#orderBy",  function() {
         });
         $("#sortDiv1").html(nameOrderedDivs);
     }
+});
+
+$("#amount").on('change',function(){
+   var values =  $(this).val().split(' - ');
+   if(values.length == 2){
+       $('.opsta').each(function(){
+           var price = $(this).attr('data-price');
+           if(parseInt(values[0]) > parseInt(price) || parseInt(values[1]) < parseInt(price)){
+               $(this).hide();
+           }
+           else{
+                if($(this).hasClass(category)){
+                   $(this).show();
+               }
+           }
+       });
+   }
 });
 
 
@@ -129,3 +148,5 @@ $(document).on('change', "#orderBy",  function() {
 //
 //     $("#sort-products").html(html);
 // }
+
+

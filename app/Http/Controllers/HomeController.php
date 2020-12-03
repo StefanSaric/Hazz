@@ -58,6 +58,10 @@ class HomeController extends Controller
                 $cart[$request->id]["quantity"] = 1;
             }
 
+            if(isset($request->addquantity)){
+                ++$cart[$request->id]["quantity"];
+            }
+
             $cart[$request->id]["price"] = $size->price;
 
             session()->put('cart', $cart);
@@ -72,6 +76,7 @@ class HomeController extends Controller
 
             $size["sizeOf"] = sizeof(session()->get('cart'));
         }
+
         return $size;
     }
 

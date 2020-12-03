@@ -1,26 +1,17 @@
-$(document).on('click', ".cartBtn-2",  function(e) {
+$(document).on('click', ".newcart",  function(e) {
     e.preventDefault();
+    var key = $("#key").val();
+    console.log(key);
     var ele = $(this);
-    var sizeID = $("#sizeID").val();
-    var quant = $("#quantity_"+sizeID).val();
-    var stock = $("#sizestock").val();
-    console.log(quant);
-    console.log(stock);
-    if(quant > stock){
-        alert('Trenutno ne postoji toliki broj proizvoda!');
-        }
-    else {
+    if (key == 0) {
         $.ajax({
-            url: base() + '/addtocart/' + ele.attr("data-id") + '?quant=' + quant,
+            url: base() + '/addtocart/' + ele.attr("data-id"),
             method: "get",
             success: function (response) {
                 console.log(response);
                 if (response != null) {
                     console.log(response);
                     console.log(response.price, response.product);
-                    ele.removeClass('cartBtn');
-                    ele.addClass('btn-danger');
-                    ele.text("Dodato");
                     $("#cart_div").append(`
                     <div class="cart-item ptb-30 border-bottom" style="margin-bottom: 0px;padding-top: 10px;padding-bottom: 50px;" >
                         <div class="cart-item-details text-center">
@@ -49,22 +40,27 @@ $(document).on('click', ".cartBtn-2",  function(e) {
             }
         });
     }
-});
-
-$(document).on("keyup keydown change", ".quantity",function(event){
-    //code that's working like a charm
-    var quantity = $(this).val();
-    var id = $(this).attr('id').split("_").pop();
-    var url = base() + '/addtocart/' + id + "?quantity=" + quantity;
-    $.ajax({
-        url: url,
-        method: "get",
-        success: function (response) {
-            console.log(response);
-            if(response == "true") {
+    else if(key == 1) {
+        var addquantity = 1;
+        var url = base() + '/addtocart/' +  ele.attr("data-id") + "?addquantity=" + addquantity;
+        $.ajax({
+            url: url,
+            method: "get",
+            success: function (response) {
+                console.log(response);
+                if (response == "true") {
+                    $("#subtotal").html(response.total);
+                }
             }
-        }
-    });
+        });
+    }
+    `<input type="hidden" id="key" value="1">`
+    ele.removeClass('newcart');
+    ele.addClass('btn-danger');
+    ele.text("Dodato");
+    setTimeout(function(){ele.removeClass('btn-danger');}, 1000);
+    setTimeout(function(){ele.addClass('newcart');}, 1000);
+    setTimeout(function(){ele.text("Dodaj u korpu");}, 1000);
 });
 
 /* Get base url */
