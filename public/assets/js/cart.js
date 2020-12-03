@@ -63,7 +63,7 @@ $(document).on("keyup keydown change", ".quantity",function(event){
     //code that's working like a charm
     var quantity = $(this).val();
     var id = $(this).attr('id').split("_").pop();
-    var url = base() + '/addtocart/' + id + "?quantity=" + quantity;
+    var url = base() + '/addtocart/' + id + "?action=overwrite&quantity=" + quantity;
     $.ajax({
         url: url,
         method: "get",

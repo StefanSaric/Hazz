@@ -46,23 +46,38 @@ class HomeController extends Controller
             $size = Sizes::with('product', 'product.materials')->find($request->id);
 
             $cart = session()->get('cart');
+            //dd($cart);
+            if(!isset($cart[$request->id])){
+                $cart[$request->id]["product_id"] = $size->product_id;
+                $cart[$request->id]["price"] = $size->price;
+                $cart[$request->id]["quantity"] = 0;
+            }
+            if(!isset($cart[$request->id]["quantity"])){
+                $cart[$request->id]["quantity"] = 0;
+            }
+            if(isset($request->quantity)){
+                if(isset($request->action) && $request->action == 'add'){
+                    $cart[$request->id]["quantity"] += $request->quantity;
+                }
+                if(isset($request->action) && $request->action == 'overwrite'){
+                    $cart[$request->id]["quantity"] = $request->quantity;
+                }
+            }
+//            if ($request->quantity <> null) {
+//                $cart[$request->id]["quantity"] = $request->quantity;
+//            }
+//            elseif($request->quant != null) {
+//                $cart[$request->id]["quantity"] = $request->quant;
+//            }
+//            else{
+//                $cart[$request->id]["quantity"] = 1;
+//            }
+//
+//            if(isset($request->addquantity)){
+//                ++$cart[$request->id]["quantity"];
+//            }
 
-            $cart[$request->id]["product_id"] = $size->product_id;
-            if ($request->quantity <> null) {
-                $cart[$request->id]["quantity"] = $request->quantity;
-            }
-            elseif($request->quant != null) {
-                $cart[$request->id]["quantity"] = $request->quant;
-            }
-            else{
-                $cart[$request->id]["quantity"] = 1;
-            }
-
-            if(isset($request->addquantity)){
-                ++$cart[$request->id]["quantity"];
-            }
-
-            $cart[$request->id]["price"] = $size->price;
+            
 
             session()->put('cart', $cart);
             session()->flash('success', 'Cart updated successfully');
@@ -99,6 +114,7 @@ class HomeController extends Controller
         }
         $size["total"] = $total;
         $size["sizeOf"] = sizeof(session()->get('cart'));
+        $size['id'] = $request->id;
 
         return $size;
     }

@@ -14,7 +14,7 @@ $(document).on('click', ".addcart",  function(e) {
     var ele = $(this);
     console.log(ele);
     $.ajax({
-        url: base() + '/addtocart/' + ele.attr("data-id"),
+        url: base() + '/addtocart/' + ele.attr("data-id") + '?action=add&quantity=1',
         method: "get",
         success: function (response) {
             console.log(response);

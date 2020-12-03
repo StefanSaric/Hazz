@@ -1,11 +1,12 @@
 $(document).on('click', ".newcart",  function(e) {
     e.preventDefault();
-    var key = $("#key").val();
+    var key = $(this).attr('data-incart');
+    var btnId = $(this).attr('id');
     console.log(key);
     var ele = $(this);
     if (key == 0) {
         $.ajax({
-            url: base() + '/addtocart/' + ele.attr("data-id"),
+            url: base() + '/addtocart/' + ele.attr("data-id") +"?action=add&quantity=1",
             method: "get",
             success: function (response) {
                 console.log(response);
@@ -37,12 +38,13 @@ $(document).on('click', ".newcart",  function(e) {
                     $("#sizeof_cart2").html(response.sizeOf);
                     $("#subtotal").html(response.total);
                 }
+                $('#'+btnId).attr('data-incart', 1);
             }
         });
     }
     else if(key == 1) {
         var addquantity = 1;
-        var url = base() + '/addtocart/' +  ele.attr("data-id") + "?addquantity=" + addquantity;
+        var url = base() + '/addtocart/' +  ele.attr("data-id") + "?action=add&quantity=" + addquantity;
         $.ajax({
             url: url,
             method: "get",
@@ -54,7 +56,7 @@ $(document).on('click', ".newcart",  function(e) {
             }
         });
     }
-    `<input type="hidden" id="key" value="1">`
+    
     ele.removeClass('newcart');
     ele.addClass('btn-danger');
     ele.text("Dodato");

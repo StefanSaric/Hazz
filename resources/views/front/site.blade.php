@@ -263,7 +263,7 @@
 {{--                                    @else--}}
 {{--                                        <button type="button" class="cartBtn" data-id="{{ $size->id }}" >Dodaj u korpu</button>--}}
 {{--                                    @endif--}}
-                                    <button type="button" class="newcart" data-id="{{ $size->id }}" >Dodaj u korpu</button>
+                                    <button id="orderButton{{ $size->id }}" type="button" class="newcart" data-id="{{ $size->id }}" data-incart="@if(array_key_exists($size->id, $in_carts)){{'1'}} @else{{'0'}} @endif" >Dodaj u korpu</button>
                                 </div>
                             </div>
                         </div>

@@ -11,7 +11,7 @@ $(document).on('click', ".cartBtn-2",  function(e) {
         }
     else {
         $.ajax({
-            url: base() + '/addtocart/' + ele.attr("data-id") + '?quant=' + quant,
+            url: base() + '/addtocart/' + ele.attr("data-id") + '?action=overwrite&quantity=' + quant,
             method: "get",
             success: function (response) {
                 console.log(response);
@@ -55,7 +55,7 @@ $(document).on("keyup keydown change", ".quantity",function(event){
     //code that's working like a charm
     var quantity = $(this).val();
     var id = $(this).attr('id').split("_").pop();
-    var url = base() + '/addtocart/' + id + "?quantity=" + quantity;
+    var url = base() + '/addtocart/' + id + "?action=overwrite&quantity=" + quantity;
     $.ajax({
         url: url,
         method: "get",
