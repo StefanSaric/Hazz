@@ -249,19 +249,19 @@
                         <div class=" col-md-5 col-sm-6 hidden-xs">
                             <div class="woocommerce-ordering text-right">
                                 <strong>Sortiraj po: </strong>
-                                <select name="orderby" id="orderBy">
-                                    <option class="" >test</option>
-                                    <option class="order-products" id="ordershop" value="price" data-v="">Ceni</option>
-                                    <option class="order-products" id="ordershop" value="name">Nazivu</option>
+                                <select name="orderby" class="orderby" id="orderby">
+                                    <option>Izaberite</option>
+                                    <option value="name">Nazivu</option>
+                                    <option value="price" >Ceni</option>
                                 </select>
-                                <a href="#"><i class="fa fa-arrow-up"></i></a>
+                                <button class="fa fa-arrow-up" id="descending" value="desc"></button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="tab-content" id="sort-products">
+                <div class="tab-content">
                     <div role="tabpanel" class="tab-pane active" id="tab1">
-                        <div class="row" id="sortDiv1">
+                        <div class="row sortDiv1">
                             @foreach($products as $num=>$size)
                                 @if($size->product != null)
                                     <div data-price="{{ $size->price }}" data-name="{{ $size->product->name }}" class="col-xl-4 col-md-6 col-sm-6 sortBox opsta @foreach ($size->product->categories as $category) {{$category->name.' '}} @endforeach">
