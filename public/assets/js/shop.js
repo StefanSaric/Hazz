@@ -12,6 +12,23 @@ $(document).on('click', '.active-category', function() {
     $('#amount').change();
 });
 
+$("#amount").on('change',function(){
+    var values =  $(this).val().split(' - ');
+    if(values.length == 2){
+        $('.opsta').each(function(){
+            var price = $(this).attr('data-price');
+            if(parseInt(values[0]) > parseInt(price) || parseInt(values[1]) < parseInt(price)){
+                $(this).hide();
+            }
+            else{
+                if($(this).hasClass(category)){
+                    $(this).show();
+                }
+            }
+        });
+    }
+});
+
 function sortProductsPrice(){
     var gridItems = $('.grid-item');
     gridItems.sort(function(a, b){
@@ -27,7 +44,6 @@ $(document).on("change", ".orderby", function() {
     if($( "#orderby option:selected" ).val() == "price") {
 
         sortProductsPriceAscending();
-
     }
     else if($( "#orderby option:selected" ).val() == "name"){
 
@@ -38,10 +54,31 @@ $(document).on("change", ".orderby", function() {
 $("#descending").on('click',function() {
     if($( "#orderby option:selected" ).val() == "price"){
         sortProductsPriceDescending();
+        $('.descending').hide();
+        $('.ascending').show();
+
     }
     else if($( "#orderby option:selected" ).val() == "name") {
 
         sortProductsNameDescending();
+        $('.descending').hide();
+        $('.ascending').show();
+    }
+});
+
+
+$("#ascending").on('click',function() {
+    if($( "#orderby option:selected" ).val() == "price"){
+        sortProductsPriceAscending();
+        $('.ascending').hide();
+        $('.descending').show();
+
+    }
+    else if($( "#orderby option:selected" ).val() == "name") {
+
+        sortProductsNameAscending();
+        $('.ascending').hide();
+        $('.descending').show();
     }
 });
 
@@ -78,21 +115,5 @@ function sortProductsNameDescending() {
 }
 
 
-$("#amount").on('change',function(){
-   var values =  $(this).val().split(' - ');
-   if(values.length == 2){
-       $('.opsta').each(function(){
-           var price = $(this).attr('data-price');
-           if(parseInt(values[0]) > parseInt(price) || parseInt(values[1]) < parseInt(price)){
-               $(this).hide();
-           }
-           else{
-                if($(this).hasClass(category)){
-                   $(this).show();
-               }
-           }
-       });
-   }
-});
 
 

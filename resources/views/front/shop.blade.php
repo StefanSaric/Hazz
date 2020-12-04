@@ -243,7 +243,6 @@
                                     <li><a class="active" href="#tab1" data-toggle="tab"><i class="fa fa-th-list"></i></a></li>
                                     <li><a href="#tab2" data-toggle="tab"><i class="fa fa-th-list"></i></a></li>
                                 </ul>
-                                <span> Items 1-9 of 13</span>
                             </div>
                         </div>
                         <div class=" col-md-5 col-sm-6 hidden-xs">
@@ -254,7 +253,8 @@
                                     <option value="name">Nazivu</option>
                                     <option value="price" >Ceni</option>
                                 </select>
-                                <div class="btn fa fa-arrow-up" id="descending" value="desc"></div>
+                                <div class="btn fa fa-arrow-up descending" id="descending" value="desc"></div>
+                                <div class="btn fa fa-arrow-down ascending" id="ascending" style="display: none" value="asc"></div>
                             </div>
                         </div>
                     </div>
@@ -298,7 +298,7 @@
                         <div class="row">
                             @foreach($products as $size)
                                 @if($size->product != null)
-                                    <div data-price="{{ $size->price }}" class="col-sm-12 opsta @foreach ($size->product->categories as $category) {{$category->name.' '}} @endforeach">
+                                    <div data-price="{{ $size->price }}" data-name="{{ $size->product->name }}" class="col-sm-12 opsta @foreach ($size->product->categories as $category) {{$category->name.' '}} @endforeach">
                                         <div class="product-wrapper clear border-bottom mb-30">
                                             <div class="product-img shop-product-img">
                                                 <a href="{{url('/single-product/'.$size->id)}}"><img src="{{asset($size->product->materials->first()->url)}}" width="150" height="150" alt="" /></a>
@@ -330,28 +330,6 @@
                     </div>
                 </div>
             <!-- woocommerce-pagination-area -->
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div class="woocommerce-pagination-area pb-40 mb-100 border-bottom fix">
-                        <div class="woocommerce-pagination pull-left">
-                            <ul>
-                                <li class="active"><a href="#">1</a></li>
-                                <li><a href="#">2</a></li>
-                                <li><a href="#"><i class="fa fa-chevron-right"></i></a></li>
-                            </ul>
-                        </div>
-                        <div class="woocommerce-ordering pull-right">
-                            <strong>Show</strong>
-                            <select name="orderby">
-                                <option value="menu_order" selected="selected">1</option>
-                                <option value="popularity">2</option>
-                                <option value="rating">3</option>
-                            </select>
-                            <span> per page</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
 </div>
