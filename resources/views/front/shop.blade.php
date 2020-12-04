@@ -283,11 +283,8 @@
                                                 </div>
                                                 <div class="add-to-cart-area clear ptb-35">
                                                     <div class="add-to-cart text-uppercase">
-                                                        @if(array_key_exists($size->id, $in_carts))
-                                                            <button type="button" class=" btn-danger" data-id="{{ $size->id }}" >Dodato</button>
-                                                        @else
-                                                            <button type="button" class="cartBtn" data-id="{{ $size->id }}" >Dodaj u korpu</button>
-                                                        @endif
+                                                        <button id="orderButton{{ $size->id }}" type="button" class="newcart" data-id="{{ $size->id }}"
+                                                        data-incart="@if(array_key_exists($size->id, $in_carts)){{'1'}} @else{{'0'}} @endif" >Dodaj u korpu</button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -301,7 +298,7 @@
                         <div class="row">
                             @foreach($products as $size)
                                 @if($size->product != null)
-                                    <div class="col-sm-12 opsta @foreach ($size->product->categories as $category) {{$category->name.' '}} @endforeach">
+                                    <div data-price="{{ $size->price }}" class="col-sm-12 opsta @foreach ($size->product->categories as $category) {{$category->name.' '}} @endforeach">
                                         <div class="product-wrapper clear border-bottom mb-30">
                                             <div class="product-img shop-product-img">
                                                 <a href="{{url('/single-product/'.$size->id)}}"><img src="{{asset($size->product->materials->first()->url)}}" width="150" height="150" alt="" /></a>
@@ -320,11 +317,8 @@
                                                 </div>
                                                 <div class="add-to-cart text-uppercase ptb-35 pull-left" style="right: 315px;bottom: 60px;">
                                                     <ul>
-                                                        @if(array_key_exists($size->id, $in_carts))
-                                                            <button type="button" class=" btn-danger" style="margin-left: 35px;" data-id="{{ $size->id }}" >Dodato</button>
-                                                        @else
-                                                            <button type="button" class="cartBtn" data-id="{{ $size->id }}" >Dodaj u korpu</button>
-                                                        @endif
+                                                        <button id="orderButton{{ $size->id }}" type="button" style="margin-left: 10px;" class="newcart" data-id="{{ $size->id }}"
+                                                        data-incart="@if(array_key_exists($size->id, $in_carts)){{'1'}} @else{{'0'}} @endif" >Dodaj u korpu</button>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -520,8 +514,8 @@
 <script src="{{ asset("/assets/js/libs/index/main.js")}}"></script>
 <!-- shop js -->
 <script src="{{ asset("/assets/js/shop.js")}}"></script>
-<!-- cart js -->
-<script src="{{ asset("/assets/js/cart.js")}}"></script>
+<!-- addcart js -->
+<script src="{{ asset("/assets/js/addcart.js")}}"></script>
 <!-- deletecart js -->
 <script src="{{ asset("/assets/js/cart-delete.js")}}"></script>
 <!-- deletecart2 js -->

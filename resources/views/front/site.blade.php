@@ -257,12 +257,7 @@
                             </div>
                             <div class="add-to-cart-area clear pt-35">
                                 <div class="add-to-cart text-uppercase">
-                                    <input type="hidden" id="key" @if(array_key_exists($size->id, $in_carts)) value="1" @else value="0" @endif >
-{{--                                    @if(array_key_exists($size->id, $in_carts))--}}
-{{--                                        <button type="button " class=" btn-danger" data-id="{{ $size->id }}" >Dodato</button>--}}
-{{--                                    @else--}}
-{{--                                        <button type="button" class="cartBtn" data-id="{{ $size->id }}" >Dodaj u korpu</button>--}}
-{{--                                    @endif--}}
+{{--                                    <input type="hidden" id="key" @if(array_key_exists($size->id, $in_carts)) value="1" @else value="0" @endif >--}}
                                     <button id="orderButton{{ $size->id }}" type="button" class="newcart" data-id="{{ $size->id }}" data-incart="@if(array_key_exists($size->id, $in_carts)){{'1'}} @else{{'0'}} @endif" >Dodaj u korpu</button>
                                 </div>
                             </div>
@@ -590,7 +585,7 @@
 <script src="{{ asset("/assets/js/libs/index/plugins.js")}}"></script>
 <!-- main js -->
 <script src="{{ asset("/assets/js/libs/index/main.js")}}"></script>
-<!-- cart js -->
+<!-- addcart js -->
 <script src="{{ asset("/assets/js/addcart.js")}}"></script>
 <!-- deletecart js -->
 <script src="{{ asset("/assets/js/cart-delete.js")}}"></script>
