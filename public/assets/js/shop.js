@@ -35,6 +35,15 @@ $(document).on("change", ".orderby", function() {
     }
 });
 
+$("#descending").on('click',function() {
+    if($( "#orderby option:selected" ).val() == "price"){
+        sortProductsPriceDescending();
+    }
+    else if($( "#orderby option:selected" ).val() == "name") {
+
+        sortProductsNameDescending();
+    }
+});
 
 function sortProductsPriceAscending() {
     var sortBox = $('.sortBox');
@@ -56,6 +65,14 @@ function sortProductsNameAscending() {
     var sortBox = $('.sortBox');
     sortBox.sort(function (a, b) {
         return $(a).data("name").toUpperCase().localeCompare($(b).data("name").toUpperCase());
+    });
+    $(".sortDiv1").append(sortBox);
+}
+
+function sortProductsNameDescending() {
+    var sortBox = $('.sortBox');
+    sortBox.sort(function (a, b) {
+        return $(b).data("name").toUpperCase().localeCompare($(a).data("name").toUpperCase());
     });
     $(".sortDiv1").append(sortBox);
 }

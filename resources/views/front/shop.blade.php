@@ -254,7 +254,7 @@
                                     <option value="name">Nazivu</option>
                                     <option value="price" >Ceni</option>
                                 </select>
-                                <button class="fa fa-arrow-up" id="descending" value="desc"></button>
+                                <div class="btn fa fa-arrow-up" id="descending" value="desc"></div>
                             </div>
                         </div>
                     </div>
