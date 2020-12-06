@@ -12,5 +12,5 @@ class Product_Categories extends Model
         'product_id', 'category_id'
     ];
 
-    protected $table="Product_Categories";
+    protected $table="product_categories";
 }

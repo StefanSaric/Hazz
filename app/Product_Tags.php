@@ -12,5 +12,5 @@ class Product_Tags extends Model
         'product_id', 'tag_id'
     ];
 
-    protected $table = 'Product_Tags';
+    protected $table = 'product_tags';
 }
