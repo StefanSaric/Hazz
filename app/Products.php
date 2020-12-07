@@ -19,7 +19,7 @@ class Products extends Model
 
     public function sizes()
     {
-        return $this->hasMany('App\Sizes','product_id','id');
+        return $this->hasMany('App\Sizes','product_id','id')->orderBy('sizes.id');
     }
 
     public function categories()
