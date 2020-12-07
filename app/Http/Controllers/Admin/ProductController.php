@@ -166,6 +166,7 @@ class ProductController extends Controller
 
         //editovanje sizova
         $sizes= $request->get('sizes');
+
         foreach ($sizes as $one_size) {
             $sizeExist = Sizes::where('product_id', $product->id)
                 ->where('quantity', $one_size["quantity"])
@@ -176,15 +177,13 @@ class ProductController extends Controller
                 ->first();
             if ((count($sizes)) == $product->sizes->count()) {
                 if ($sizeExist == null) {
-                    $size = Sizes::where('id', $one_size['id'])->delete();
-                    Sizes::create([
-                        'product_id' => $product->id,
-                        'quantity' => $one_size["quantity"],
-                        'unit' => $one_size["unit"],
-                        "stock" => $one_size["stock"],
-                        "price" => $one_size["price"],
-                        "old_price" => $one_size["old_price"]
-                    ]);
+                    $size = Sizes::find($one_size['id']);
+                    $size->quantity = $one_size["quantity"];
+                    $size->unit = $one_size["unit"];
+                    $size->stock = $one_size["stock"];
+                    $size->price = $one_size["price"];
+                    $size->old_price = $one_size["old_price"];
+                    $size->save();
                 }
             } elseif ((count($sizes)) > $product->sizes->count()) {
                 if ($sizeExist == null) {

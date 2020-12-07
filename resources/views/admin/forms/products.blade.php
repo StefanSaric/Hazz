@@ -50,6 +50,7 @@
                 <button type="button" class="glyphicon glyphicon-plus" id="sizeBtn" ></button>
                 <label class="control-label">Pakovanje:</label>
             </div>
+            <input type="hidden" id="numofsizes" name="numofsizes" @if(isset($product)) value="{{count($product->sizes)}}" @else value="0" @endif>
             @if(isset($product->sizes))
                 @foreach($product->sizes as $num=>$size)
                 <div class = "form-group">

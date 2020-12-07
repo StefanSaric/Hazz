@@ -1,4 +1,10 @@
-var counter = 1;
+var value = $('#numofsizes').val();
+if (value == 0) {
+    var counter = 1;
+}
+else{
+    var counter = value;
+}
 $(document).on('click', "#sizeBtn", function() {
     var div = $('#size-boxes')
     var html = `
