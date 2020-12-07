@@ -27,9 +27,12 @@ Route::post('postlogin', 'Auth\LoginController@postLogin');
 //Admin panel
 Route::group(['prefix' => 'admin', 'middleware' => 'role'], function () {
     Route::get('/','Admin\AdminController@index');
+    Route::resource('/users', 'Admin\UserController');
     Route::resource('/products', 'Admin\ProductController');
-    Route::get('/products/delete/{id}', 'Admin\ProductController@delete');
     Route::resource('/orders', 'Admin\OrdersController');
+    Route::resource('/users/edit', 'Admin\UserController@edit');
+    Route::get('/users/delete/{id}', 'Admin\UserController@delete');
+    Route::get('/products/delete/{id}', 'Admin\ProductController@delete');
     Route::get('/orders/details/{id}', 'Admin\OrdersController@details');
     Route::post('/orderstatus-close/{id}','Admin\OrdersController@statusdelivered');
     Route::post('/orderstatus-open/{id}','Admin\OrdersController@statusactive');

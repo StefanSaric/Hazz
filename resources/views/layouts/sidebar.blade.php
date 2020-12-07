@@ -32,17 +32,17 @@
             </li>
             <!--end /menu-item -->
             <!-- Menu UI -->
-{{--                <li>--}}
-{{--                    <a href="javascript:void(0);">--}}
-{{--                        <i class="fa fa-user fa-fw"></i><span class="title">Users</span> <span class="expand-sign">+</span>--}}
-{{--                    </a>--}}
-{{--                    <!--start submenu -->--}}
-{{--                    <ul>--}}
-{{--                        <li><a href="<?php echo url('admin\users'); ?>" <?php if($active == 'allUsers'){ echo "class='active'";}?> >All Users</a></li>--}}
-{{--                        <li><a href="<?php echo url('admin\users\create'); ?>" <?php if($active == 'addUser'){ echo "class='active'";}?> >Create User</a></li>--}}
-{{--                    </ul>--}}
-{{--                    <!--end /submenu -->--}}
-{{--                </li>--}}
+                <li>
+                    <a href="javascript:void(0);">
+                        <i class="fa fa-user fa-fw"></i><span class="title">Users</span> <span class="expand-sign">+</span>
+                    </a>
+                    <!--start submenu -->
+                    <ul>
+                        <li><a href="<?php echo url('admin\users'); ?>" <?php if($active == 'allUsers'){ echo "class='active'";}?> >All Users</a></li>
+                        <li><a href="<?php echo url('admin\users\create'); ?>" <?php if($active == 'addUser'){ echo "class='active'";}?> >Create User</a></li>
+                    </ul>
+                    <!--end /submenu -->
+                </li>
                 <li>
                     <a href="javascript:void(0);">
                         <i class="fa fa-user fa-fw"></i><span class="title">Products</span> <span class="expand-sign">+</span>
