@@ -35,7 +35,7 @@ class CartController extends Controller
 
     public function shop()
     {
-        $products = Sizes::with('product', 'product.materials','product.categories','product.tags','product.sizes')->orderBy('product_id')->get();
+        $products = Sizes::with('product', 'product.materials','product.categories','product.tags','product.sizes')->orderBy('product_id')->orderBy('id')->get();
         $in_carts = [];
         if(session()->get('cart') != null) {
             $in_carts = session()->get('cart');
@@ -50,7 +50,7 @@ class CartController extends Controller
 
     public function food()
     {
-        $products = Sizes::with('product', 'product.materials','product.categories','product.tags','product.sizes')->orderBy('product_id')->get();
+        $products = Sizes::with('product', 'product.materials','product.categories','product.tags','product.sizes')->orderBy('product_id')->orderBy('id')->get();
         $in_carts = [];
         if(session()->get('cart') != null) {
             $in_carts = session()->get('cart');
@@ -65,7 +65,7 @@ class CartController extends Controller
 
     public function cosmetics()
     {
-        $products = Sizes::with('product', 'product.materials','product.categories','product.tags','product.sizes')->orderBy('product_id')->get();
+        $products = Sizes::with('product', 'product.materials','product.categories','product.tags','product.sizes')->orderBy('product_id')->orderBy('id')->get();
         $in_carts = [];
         if(session()->get('cart') != null) {
             $in_carts = session()->get('cart');

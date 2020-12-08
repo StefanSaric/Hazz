@@ -302,7 +302,7 @@ class ProductController extends Controller
     public function page($id){
 
         $size = Sizes::find($id);
-        $products = Sizes::with('product', 'product.materials','product.categories','product.tags','product.sizes')->orderBy('product_id')->get();
+        $products = Sizes::with('product', 'product.materials','product.categories','product.tags','product.sizes')->orderBy('product_id')->orderBy('id')->get();
         $in_carts = [];
         if(session()->get('cart') != null) {
             $in_carts = session()->get('cart');

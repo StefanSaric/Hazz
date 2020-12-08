@@ -24,7 +24,7 @@ class HomeController extends Controller
     public function index()
     {
         //session()->forget('cart');
-        $products = Sizes::with('product', 'product.materials','product.categories','product.tags','product.sizes')->orderBy('product_id')->get();
+        $products = Sizes::with('product', 'product.materials','product.categories','product.tags','product.sizes')->orderBy('product_id')->orderBy('id')->get();
         $in_carts = [];
         if(session()->get('cart') != null) {
             $in_carts = session()->get('cart');
@@ -77,7 +77,7 @@ class HomeController extends Controller
 //                ++$cart[$request->id]["quantity"];
 //            }
 
-            
+
 
             session()->put('cart', $cart);
             session()->flash('success', 'Cart updated successfully');
