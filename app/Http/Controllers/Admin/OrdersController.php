@@ -71,7 +71,7 @@ class OrdersController extends Controller
 
     public function index(){
 
-        $orders = Order::all()->sortBy('status',false)->sortBy('update_at',false);
+        $orders = Order::orderBy('status')->orderBy('id','desc')->get();
 
         return view('admin.orders.allorders',['active' => 'allOrders', 'orders' => $orders]);
     }

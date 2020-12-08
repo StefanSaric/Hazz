@@ -215,14 +215,14 @@
                 </div>
             </div>
             <!-- banner-area start -->
-{{--            <div class="banner-area mtb-35">--}}
-{{--                <div class="single-banner home2-single-banner mb-30">--}}
-{{--                    <a href="#"><img src="img/banner/home2/1.jpg" alt="" /></a>--}}
-{{--                </div>--}}
-{{--                <div class="single-banner home2-single-banner">--}}
-{{--                    <a href="#"><img src="img/banner/home2/2.jpg" alt="" /></a>--}}
-{{--                </div>--}}
-{{--            </div>--}}
+            {{--            <div class="banner-area mtb-35">--}}
+            {{--                <div class="single-banner home2-single-banner mb-30">--}}
+            {{--                    <a href="#"><img src="img/banner/home2/1.jpg" alt="" /></a>--}}
+            {{--                </div>--}}
+            {{--                <div class="single-banner home2-single-banner">--}}
+            {{--                    <a href="#"><img src="img/banner/home2/2.jpg" alt="" /></a>--}}
+            {{--                </div>--}}
+            {{--            </div>--}}
 
         </div>
 
@@ -266,7 +266,7 @@
                             @foreach($products as $num=>$size)
                                 @if($size->product != null)
                                     <div data-price="{{ $size->price }}" data-name="{{ $size->product->name }}" id="element{{$num}}" @if($num > 5) style="display: none" @endif
-                                     class="col-xl-4 col-md-6 col-sm-6 sortBox opsta @foreach ($size->product->categories as $category) {{$category->name.' '}} @endforeach">
+                                    class="col-xl-4 col-md-6 col-sm-6 sortBox opsta @foreach ($size->product->categories as $category) {{$category->name.' '}} @endforeach">
                                         <div class="single-product mb-30">
                                             <div class="product-img">
                                                 <a href="{{url('/single-product/'.$size->id)}}"><img src="{{asset($size->product->materials->first()->url)}}"  alt="" /></a>
@@ -286,7 +286,7 @@
                                                 <div class="add-to-cart-area clear ptb-35">
                                                     <div class="add-to-cart text-uppercase">
                                                         <button id="orderButton{{ $size->id }}" type="button" class="newcart" data-id="{{ $size->id }}"
-                                                        data-incart="@if(array_key_exists($size->id, $in_carts)){{'1'}} @else{{'0'}} @endif" >Dodaj u korpu</button>
+                                                                data-incart="@if(array_key_exists($size->id, $in_carts)){{'1'}} @else{{'0'}} @endif" >Dodaj u korpu</button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -320,7 +320,7 @@
                                                 <div class="add-to-cart text-uppercase ptb-35 pull-left" style="right: 315px;bottom: 60px;">
                                                     <ul>
                                                         <button id="orderButton{{ $size->id }}" type="button" style="margin-left: 10px;" class="newcart" data-id="{{ $size->id }}"
-                                                        data-incart="@if(array_key_exists($size->id, $in_carts)){{'1'}} @else{{'0'}} @endif" >Dodaj u korpu</button>
+                                                                data-incart="@if(array_key_exists($size->id, $in_carts)){{'1'}} @else{{'0'}} @endif" >Dodaj u korpu</button>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -331,7 +331,7 @@
                         </div>
                     </div>
                 </div>
-            <!-- woocommerce-pagination-area -->
+                <!-- woocommerce-pagination-area -->
             </div>
         </div>
     </div>
