@@ -193,9 +193,9 @@
                 <div class="shop-categories-menu p-20">
                     <ul>
                         <li><strong>Kategorije:</strong></li>
-                        <li><a class="active-category" id="svi" >Svi <i class="opener-1 fa fa-angle-right pull-right"></i></a></li>
-                        <li><a class="active-category" id="prehrana" >Prehrana <i class="opener-1 fa fa-angle-right pull-right"></i></a></li>
-                        <li><a class="active-category" id="kozmetika" >Kozmetika <i class="opener-2 fa fa-angle-right pull-right"></i></a></li>
+                        <li><a class="active-category" id="svi" ><p class="active-category" id="svi">Svi <i class="opener-1 fa fa-angle-right pull-right"></i></p></a></li>
+                        <li><a class="active-category" id="prehrana" ><p class="active-category" id="prehrana">Prehrana <i class="opener-1 fa fa-angle-right pull-right"></i></p></a></li>
+                        <li><a class="active-category" id="kozmetika"><p class="active-category" id="kozmetika">Kozmetika <i class="opener-2 fa fa-angle-right pull-right"></i></p></a></li>
                     </ul>
                 </div>
             </div>
