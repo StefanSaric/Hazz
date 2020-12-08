@@ -57,6 +57,5 @@ Route::post('/sendemail','Admin\EmailController@send');
 
 //JavaScript
 Route::get('/addtocart/{id}', 'HomeController@addtocart');
-//Route::get('/updatecart/{id}', 'HomeController@updatecart');
 Route::get('/deletecart/{id}', 'HomeController@deletecart');
 Route::get('/shoporder', 'HomeController@shoporder');

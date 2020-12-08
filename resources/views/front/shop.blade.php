@@ -262,9 +262,11 @@
                 <div class="tab-content">
                     <div role="tabpanel" class="tab-pane active" id="tab1">
                         <div class="row sortDiv1">
+                            <input type="hidden" id="all_products" value="{{sizeof($products)}}">
                             @foreach($products as $num=>$size)
                                 @if($size->product != null)
-                                    <div data-price="{{ $size->price }}" data-name="{{ $size->product->name }}" class="col-xl-4 col-md-6 col-sm-6 sortBox opsta @foreach ($size->product->categories as $category) {{$category->name.' '}} @endforeach">
+                                    <div data-price="{{ $size->price }}" data-name="{{ $size->product->name }}" id="element{{$num}}" @if($num > 5) style="display: none" @endif
+                                     class="col-xl-4 col-md-6 col-sm-6 sortBox opsta @foreach ($size->product->categories as $category) {{$category->name.' '}} @endforeach">
                                         <div class="single-product mb-30">
                                             <div class="product-img">
                                                 <a href="{{url('/single-product/'.$size->id)}}"><img src="{{asset($size->product->materials->first()->url)}}"  alt="" /></a>
@@ -330,6 +332,7 @@
                     </div>
                 </div>
             <!-- woocommerce-pagination-area -->
+            </div>
         </div>
     </div>
 </div>
@@ -492,6 +495,8 @@
 <script src="{{ asset("/assets/js/libs/index/main.js")}}"></script>
 <!-- shop js -->
 <script src="{{ asset("/assets/js/shop.js")}}"></script>
+<!-- infinitiscroll js -->
+<script src="{{ asset("/assets/js/infinitiscroll.js")}}"></script>
 <!-- addcart js -->
 <script src="{{ asset("/assets/js/addcart.js")}}"></script>
 <!-- deletecart js -->
