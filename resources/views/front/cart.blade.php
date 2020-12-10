@@ -224,23 +224,15 @@
                                             <span class="amounte">{{$size->price}} RSD</span>
                                         </td>
                                         <td class="product-quantity" style="text-align: center">
-                                            <input type="number" min="1" max="{{$size->stock}}" name="quantity_{{ $size->id }}" id="quantity_{{ $size->id }}" class="quantity"
+                                            <input class="quantity" type="number" min="1" max="{{$size->stock}}" name="quantity_{{ $size->id }}" id="quantity_{{ $size->id }}"
                                                    value="{{ $carts[$size->id]["quantity"] }}">
                                         </td>
                                         <td class="product-subtotal" style="text-align: center">
-                                            <span class="sub-total">{{$size->price*$carts[$size->id]["quantity"]}}</span>
+                                            <span id="quantity{{ $size->id }}">{{$carts[$size->id]["quantity"]*$carts[$size->id]["price"]}}</span>
                                         </td>
                                     </tr>
                                     @endif
                                 @endforeach
-                                <tr>
-                                    <td colspan="7" class="actions clear">
-                                        <div class="floatright mb-10">
-                                            <button class="cart-Btn"  name="quantity_{{ $size->id }}" id="quantity_{{ $size->id }}" class="quantity"
-                                                    value="1" >Uredi Korpu</button>
-                                        </div>
-                                    </td>
-                                </tr>
                                 </tbody>
                             </table>
                         </div>
@@ -262,7 +254,7 @@
                         <table>
                             <tr>
                                 <td style="text-align: center"><strong>Ukupno</strong></td>
-                                <td style="text-align: center"><b>{{$total}} RSD</b></td>
+                                <td id="total" style="text-align: center"><b>{{$total}} RSD</b></td>
                             </tr>
                         </table>
                     </div>

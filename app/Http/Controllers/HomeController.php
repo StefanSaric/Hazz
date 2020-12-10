@@ -46,38 +46,23 @@ class HomeController extends Controller
             $size = Sizes::with('product', 'product.materials')->find($request->id);
 
             $cart = session()->get('cart');
-            //dd($cart);
-            if(!isset($cart[$request->id])){
+
+            if (!isset($cart[$request->id])) {
                 $cart[$request->id]["product_id"] = $size->product_id;
                 $cart[$request->id]["price"] = $size->price;
                 $cart[$request->id]["quantity"] = 0;
             }
-            if(!isset($cart[$request->id]["quantity"])){
+            if (!isset($cart[$request->id]["quantity"])) {
                 $cart[$request->id]["quantity"] = 0;
             }
-            if(isset($request->quantity)){
-                if(isset($request->action) && $request->action == 'add'){
+            if (isset($request->quantity)) {
+                if (isset($request->action) && $request->action == 'add') {
                     $cart[$request->id]["quantity"] += $request->quantity;
                 }
-                if(isset($request->action) && $request->action == 'overwrite'){
+                if (isset($request->action) && $request->action == 'overwrite') {
                     $cart[$request->id]["quantity"] = $request->quantity;
                 }
             }
-//            if ($request->quantity <> null) {
-//                $cart[$request->id]["quantity"] = $request->quantity;
-//            }
-//            elseif($request->quant != null) {
-//                $cart[$request->id]["quantity"] = $request->quant;
-//            }
-//            else{
-//                $cart[$request->id]["quantity"] = 1;
-//            }
-//
-//            if(isset($request->addquantity)){
-//                ++$cart[$request->id]["quantity"];
-//            }
-
-
 
             session()->put('cart', $cart);
             session()->flash('success', 'Cart updated successfully');
@@ -86,6 +71,7 @@ class HomeController extends Controller
             foreach ($cart as $one_cart) {
                 $total += $one_cart["price"] * $one_cart["quantity"];
             }
+            $size["subtotal"] = $cart[$request->id]["quantity"]*$cart[$request->id]["price"];
 
             $size["total"] = $total;
 
@@ -117,25 +103,5 @@ class HomeController extends Controller
         $size['id'] = $request->id;
 
         return $size;
-    }
-
-    public function shoporder(Request $request)
-    {
-        if($request->order == 'price') {
-            $sizes = DB::table('sizes')
-                ->select('*')
-                ->orderBy('price')
-                ->get();
-        }
-        elseif($request->order == 'name'){
-            $sizes = DB::table('sizes')
-                ->join('products', 'sizes.product_id', 'products.id')
-//                ->join('product_categories', 'products.id', 'product_categories.product_id')
-//                ->join('categories', 'product_categories.category_id', 'categories.id')
-                ->select('*')
-                ->orderBy('products.name')
-                ->get();
-        }
-        return json_encode($sizes);
     }
 }

@@ -11,7 +11,7 @@ $(document).on('click', ".delete-from-cart-2",  function(e) {
                 ele.parent().parent().remove();
                 $("#sizeof_cart1").html(response.sizeOf);
                 $("#sizeof_cart2").html(response.sizeOf);
-                $("#subtotal").html(response.total);
+                $("#total").html(response.total);
             }
         }
     });
