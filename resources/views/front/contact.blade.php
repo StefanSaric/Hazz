@@ -92,15 +92,15 @@
                     <div class="cart">
                         <div class="total-items pb-20 border-bottom mb-15">
                             <div class="sub-total clear">
-                                <strong>{{ sizeof($in_carts) }}</strong>
-                                <span>items</span>
+                                <strong id="sizeof_cart2">{{ sizeof($in_carts) }}</strong>
+                                <span>proizvoda</span>
                                 <span class="pull-right total">
-										<span>Cart Subtotal :</span>
-										<strong id="subtotal">{{$total}} RSD</strong>
+										<span>Ukupno :</span>
+										<strong id="total">{{$total}} RSD</strong>
 									</span>
                             </div>
                             <div class="organic-btn pt-20 text-center border-top">
-                                <a href="{{url('/checkout')}}">Go to Checkout</a>
+                                <a href="{{url('/checkout')}}">Idi na kasu</a>
                             </div>
                         </div>
                         <div class="cart-items clear mb-15" id="cart_div">
@@ -110,26 +110,26 @@
                                         <div class="cart-item-details text-center">
                                             <a href="{{url('/single-product/'.$size->id)}}">{{$size->product->name}}</a>
                                         </div><br>
-                                        <div class="cart-item-details text-center pull-left">
+                                        <div class="cart-item-details text-center">
                                             <div class="cart-img pull-left col-md-auto-12" >
                                                 <a href="{{url('/single-product/'.$size->id)}}">
                                                     <img src="{{asset($size->product->materials->first()->url)}}"  alt="" />
                                                 </a>
                                             </div>
-                                            <div class="cart-item-details clear pull-right">
+                                            <div class="cart-item-details clear pull-left">
                                                 <h6 style="padding-left: 30px;">Cena: {{$size->price}} RSD</h6>
                                                 <h6 style="padding-left: 30px;">Pakovanje: {{$size->quantity}} {{$size->unit}}</h6>
                                             </div>
                                         </div><br>
-                                        <div class="details-qty col-md-auto-12">
-                                            <a href="#" class="remove-from-cart"  data-id="{{ $size->id }}"><i class="fa fa-trash-o"  style="font-size:24px;padding-right: 20px;"></i></a>
+                                        <div class="details-qty col-md-auto-12 pull-right">
+                                            <a href="#" class="delete-from-cart"  data-id="{{ $size->id }}"><i class="fa fa-trash-o"  style="font-size:24px;padding-right: 20px;"></i></a>
                                         </div>
                                     </div>
                                 @endif
                             @endforeach
                         </div>
                         <div class="organic-btn pt-20 text-center border-top">
-                            <a href="{{url('/cart')}}">View and edit cart</a>
+                            <a href="{{url('/cart')}}">Pogledaj korpu</a>
                         </div>
                     </div>
                 </div>
@@ -368,6 +368,8 @@
 <script src="{{ asset("/assets/js/libs/index/plugins.js")}}"></script>
 <!-- main js -->
 <script src="{{ asset("/assets/js/libs/index/main.js")}}"></script>
+<!-- deletecart js -->
+<script src="{{ asset("/assets/js/cart-delete.js")}}"></script>
 
 <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyD1cZtqidvg0m-f8Hd3S6RHx1mY-omuLS4 "></script>
 <script>

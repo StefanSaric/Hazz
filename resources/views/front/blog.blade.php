@@ -93,14 +93,14 @@
                         <div class="total-items pb-20 border-bottom mb-15">
                             <div class="sub-total clear">
                                 <strong id="sizeof_cart2">{{ sizeof($in_carts) }}</strong>
-                                <span>items</span>
+                                <span>proizvoda</span>
                                 <span class="pull-right total">
-										<span>Cart Subtotal :</span>
-										<strong id="subtotal">{{$total}} RSD</strong>
-									</span>
+                                    <span>Ukupno :</span>
+                                        <strong id="total">{{$total}} RSD</strong>
+                                </span>
                             </div>
                             <div class="organic-btn pt-20 text-center border-top">
-                                <a href="{{url('/checkout')}}">Go to Checkout</a>
+                                <a href="{{url('/checkout')}}">Idi na kasu</a>
                             </div>
                         </div>
                         <div class="cart-items clear mb-15" id="cart_div">
@@ -129,7 +129,7 @@
                             @endforeach
                         </div>
                         <div class="organic-btn pt-20 text-center border-top">
-                            <a href="{{url('/cart')}}">View and edit cart</a>
+                            <a href="{{url('/cart')}}">Pogledaj Korpu</a>
                         </div>
                     </div>
                 </div>
@@ -746,8 +746,6 @@
 <script src="{{ asset("/assets/js/libs/index/plugins.js")}}"></script>
 <!-- main js -->
 <script src="{{ asset("/assets/js/libs/index/main.js")}}"></script>
-<!-- cart js -->
-<script src="{{ asset("/assets/js/cart.js")}}"></script>
 <!-- deletecart js -->
 <script src="{{ asset("/assets/js/cart-delete.js")}}"></script>
 </body>

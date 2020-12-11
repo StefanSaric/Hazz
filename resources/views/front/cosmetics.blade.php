@@ -101,7 +101,7 @@
                                 <span>proizvoda</span>
                                 <span class="pull-right total">
                                     <span>Ukupno :</span>
-                                        <strong id="subtotal">{{$total}} RSD</strong>
+                                        <strong id="total">{{$total}} RSD</strong>
                                 </span>
                             </div>
                             <div class="organic-btn pt-20 text-center border-top">

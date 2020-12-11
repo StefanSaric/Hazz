@@ -36,7 +36,7 @@ $(document).on('click', ".newcart",  function(e) {
                 `);
                     $("#sizeof_cart1").html(response.sizeOf);
                     $("#sizeof_cart2").html(response.sizeOf);
-                    $("#subtotal").html(response.total);
+                    $("#total").html(response.total);
                 }
                 $('#'+btnId).attr('data-incart', 1);
             }
@@ -50,13 +50,14 @@ $(document).on('click', ".newcart",  function(e) {
             method: "get",
             success: function (response) {
                 console.log(response);
-                if (response == "true") {
-                    $("#subtotal").html(response.total);
+                if (response != null) {
+                    $("#sizeof_cart1").html(response.sizeOf);
+                    $("#sizeof_cart2").html(response.sizeOf);
+                    $("#total").html(response.total);
                 }
             }
         });
     }
-
     ele.removeClass('newcart');
     ele.addClass('btn-danger');
     ele.text("Dodato");
