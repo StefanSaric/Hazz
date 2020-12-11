@@ -254,7 +254,7 @@
                         <table>
                             <tr>
                                 <td style="text-align: center"><strong>Ukupno</strong></td>
-                                <td id="total" style="text-align: center"><b>{{$total}} RSD</b></td>
+                                <td id="total2" style="text-align: center"><b>{{$total}} RSD</b></td>
                             </tr>
                         </table>
                     </div>

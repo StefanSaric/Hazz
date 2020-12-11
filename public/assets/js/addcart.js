@@ -79,27 +79,13 @@ $(document).on("keyup keydown change", ".quantity",function(event){
             console.log(response);
             if(response != null) {
                 $("#total").html(response.total + ' RSD');
+                $("#total2").html(response.total + ' RSD');
                 $("#quantity"+id).html(response.subtotal);
             }
         }
     });
 });
 
-$(document).on('click', ".remove-from-cart",  function(e) {
-    e.preventDefault();
-    var ele = $(this);
-    console.log(ele);
-    $.ajax({
-        url: base() + '/deletecart/' + ele.attr("data-id"),
-        method: "get",
-        success: function (response) {
-            console.log(response);
-            if(response != null) {
-                ele.parent().parent().parent().remove();
-            }
-        }
-    });
-});
 
 /* Get base url */
 function base()
