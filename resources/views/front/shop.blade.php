@@ -495,13 +495,11 @@
 <script src="{{ asset("/assets/js/libs/index/main.js")}}"></script>
 <!-- shop js -->
 <script src="{{ asset("/assets/js/shop.js")}}"></script>
-<!-- infinitiscroll js -->
-<script src="{{ asset("/assets/js/infinitiscroll.js")}}"></script>
 <!-- addcart js -->
 <script src="{{ asset("/assets/js/addcart.js")}}"></script>
 <!-- deletecart js -->
 <script src="{{ asset("/assets/js/cart-delete.js")}}"></script>
-<!-- deletecart2 js -->
-<script src="{{ asset("/assets/js/cart-delete2.js")}}"></script>
+<!-- infinitiscroll js -->
+<script src="{{ asset("/assets/js/infinitiscroll.js")}}"></script>
 </body>
 </html>

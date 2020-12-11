@@ -257,7 +257,6 @@
                             </div>
                             <div class="add-to-cart-area clear pt-35">
                                 <div class="add-to-cart text-uppercase">
-{{--                                    <input type="hidden" id="key" @if(array_key_exists($size->id, $in_carts)) value="1" @else value="0" @endif >--}}
                                     <button id="orderButton{{ $size->id }}" type="button" class="newcart" data-id="{{ $size->id }}" data-incart="@if(array_key_exists($size->id, $in_carts)){{'1'}} @else{{'0'}} @endif" >Dodaj u korpu</button>
                                 </div>
                             </div>
@@ -589,7 +588,5 @@
 <script src="{{ asset("/assets/js/addcart.js")}}"></script>
 <!-- deletecart js -->
 <script src="{{ asset("/assets/js/cart-delete.js")}}"></script>
-<!-- deletecart2 js -->
-<script src="{{ asset("/assets/js/cart-delete2.js")}}"></script>
 </body>
 </html>

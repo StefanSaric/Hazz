@@ -9,22 +9,30 @@ $('#sizeSelect').on('change', function(){
     window.location = baseUrl + '/single-product/' + id;
 });
 
-$(document).on('click', ".addcart",  function(e) {
+$(document).on('click', ".cartBtn-2",  function(e) {
     e.preventDefault();
     var ele = $(this);
-    console.log(ele);
-    $.ajax({
-        url: base() + '/addtocart/' + ele.attr("data-id") + '?action=add&quantity=1',
-        method: "get",
-        success: function (response) {
-            console.log(response);
-            if (response != null) {
+    var sizeID = $("#sizeID").val();
+    var quant = $("#quantity_"+sizeID).val();
+    var stock = $("#sizestock").val();
+    console.log(quant);
+    console.log(stock);
+    if(quant > stock){
+        alert('Trenutno ne postoji toliki broj proizvoda!');
+    }
+    else {
+        $.ajax({
+            url: base() + '/addtocart/' + ele.attr("data-id") + '?action=overwrite&quantity=' + quant,
+            method: "get",
+            success: function (response) {
                 console.log(response);
-                console.log(response.price, response.product);
-                ele.removeClass('cartBtn');
-                ele.addClass('btn-danger');
-                ele.text("Dodato");
-                $("#cart_div").append(`
+                if (response != null) {
+                    console.log(response);
+                    console.log(response.price, response.product);
+                    ele.removeClass('cartBtn');
+                    ele.addClass('btn-danger');
+                    ele.text("Dodato");
+                    $("#cart_div").append(`
                     <div class="cart-item ptb-30 border-bottom" style="margin-bottom: 0px;padding-top: 10px;padding-bottom: 50px;" >
                         <div class="cart-item-details text-center">
                             <a href="` + base() + `/single-product/` + ele.attr("data-id") + `">` + response.product.name + `</a>
@@ -41,14 +49,15 @@ $(document).on('click', ".addcart",  function(e) {
                             </div>
                         </div><br>
                         <div class="details-qty col-md-auto-12 pull-right">
-                            <a href="#" class="delete-from-cart" data-id= `+response.id +`><i class="fa fa-trash-o" style="font-size:24px;padding-right: 20px;"></i></a>
+                            <a href="#" class="delete-from-cart" data-id= ` + response.id + `><i class="fa fa-trash-o" style="font-size:24px;padding-right: 20px;"></i></a>
                         </div>
                     </div>
                 `);
-                $("#sizeof_cart1").html(response.sizeOf);
-                $("#sizeof_cart2").html(response.sizeOf);
-                $("#subtotal").html(response.total);
+                    $("#sizeof_cart1").html(response.sizeOf);
+                    $("#sizeof_cart2").html(response.sizeOf);
+                    $("#subtotal").html(response.total);
+                }
             }
-        }
-    });
+        });
+    }
 });

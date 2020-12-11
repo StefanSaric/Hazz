@@ -56,13 +56,48 @@ $(document).on('click', ".newcart",  function(e) {
             }
         });
     }
-    
+
     ele.removeClass('newcart');
     ele.addClass('btn-danger');
     ele.text("Dodato");
     setTimeout(function(){ele.removeClass('btn-danger');}, 1000);
     setTimeout(function(){ele.addClass('newcart');}, 1000);
     setTimeout(function(){ele.text("Dodaj u korpu");}, 1000);
+});
+
+
+$(document).on("keyup keydown change", ".quantity",function(event){
+    //code that's working like a charm
+    var quantity = $(this).val();
+    var id = $(this).attr('id').split("_").pop();
+    var url = base() + '/addtocart/' + id + "?action=overwrite&quantity=" + quantity;
+    $.ajax({
+        url: url,
+        method: "get",
+        success: function (response) {
+            console.log(response);
+            if(response != null) {
+                $("#total").html(response.total + ' RSD');
+                $("#quantity"+id).html(response.subtotal);
+            }
+        }
+    });
+});
+
+$(document).on('click', ".remove-from-cart",  function(e) {
+    e.preventDefault();
+    var ele = $(this);
+    console.log(ele);
+    $.ajax({
+        url: base() + '/deletecart/' + ele.attr("data-id"),
+        method: "get",
+        success: function (response) {
+            console.log(response);
+            if(response != null) {
+                ele.parent().parent().parent().remove();
+            }
+        }
+    });
 });
 
 /* Get base url */

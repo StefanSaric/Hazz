@@ -337,11 +337,7 @@
                                 </div>
                                 <div class="add-to-cart-area clear pt-35">
                                     <div class="add-to-cart text-uppercase">
-                                        @if(array_key_exists($one_product->id, $in_carts))
-                                            <button type="button " class=" btn-danger" data-id="{{ $one_product->id }}" >Dodato</button>
-                                        @else
-                                            <button type="button" class="addcart" data-id="{{ $one_product->id }}" >Dodaj u korpu</button>
-                                        @endif
+                                        <button id="orderButton{{ $one_product->id }}" type="button" class="newcart" data-id="{{ $one_product->id }}" data-incart="@if(array_key_exists($one_product->id, $in_carts)){{'1'}} @else{{'0'}} @endif" >Dodaj u korpu</button>
                                     </div>
                                 </div>
                             </div>
@@ -511,13 +507,11 @@
 <script src="{{ asset("/assets/js/libs/index/plugins.js")}}"></script>
 <!-- main js -->
 <script src="{{ asset("/assets/js/libs/index/main.js")}}"></script>
-<!-- cart2 js -->
-<script src="{{ asset("/assets/js/cart2.js")}}"></script>
-<!-- deletecart js -->
-<script src="{{ asset("/assets/js/cart-delete.js")}}"></script>
-<!-- deletecart2 js -->
-<script src="{{ asset("/assets/js/cart-delete2.js")}}"></script>
+<!-- addcart js -->
+<script src="{{ asset("/assets/js/addcart.js")}}"></script>
 <!-- single-product js -->
 <script src="{{ asset("/assets/js/single-product.js")}}"></script>
+<!-- deletecart js -->
+<script src="{{ asset("/assets/js/cart-delete.js")}}"></script>
 </body>
 </html>

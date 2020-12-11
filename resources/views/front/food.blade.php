@@ -414,9 +414,5 @@
 <script src="{{ asset("/assets/js/addcart.js")}}"></script>
 <!-- deletecart js -->
 <script src="{{ asset("/assets/js/cart-delete.js")}}"></script>
-<!-- single-product js -->
-<script src="{{ asset("/assets/js/single-product.js")}}"></script>
-<!-- deletecart2 js -->
-<script src="{{ asset("/assets/js/cart-delete2.js")}}"></script>
 </body>
 </html>
