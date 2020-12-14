@@ -29,8 +29,9 @@ class OrdersController extends Controller
             foreach($carts as $cart)
                 $total += $cart["price"]*$cart["quantity"];
         $order = Order::create([
-            'first_name' => $request->firstname, 'last_name' => $request->lastname, 'email' => $request->email, 'phone' => $request->phone,
-            'address' => $request->address, 'num_of_house' => $request->num, 'num_of_apartment' => $request->apartment, 'city' => $request->city, 'total' => $total]);
+            'first_name' => $request->firstname, 'last_name' => $request->lastname, 'email' => $request->email,
+            'phone' => $request->phone, 'address' => $request->address, 'num_of_house' => $request->num,
+            'num_of_apartment' => $request->apartment,'note' =>$request->note, 'city' => $request->city, 'total' => $total,]);
 
         foreach ($carts as $one_cart)
             $cart = Cart::create(['product_id' => $one_cart["product_id"], 'price' => $one_cart["price"], 'quantity' => $one_cart["quantity"], 'order_id' => $order->id]);
@@ -62,6 +63,7 @@ class OrdersController extends Controller
             'address' => $request->address,
             'num' => $request->num,
             'apartment' => $request->apartment,
+            'note' => $request->note,
         );
 
         Mail::to($request->email)->send(new ConfirmOrder($data));

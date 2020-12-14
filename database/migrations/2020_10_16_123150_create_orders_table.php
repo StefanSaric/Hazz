@@ -22,9 +22,10 @@ class CreateOrdersTable extends Migration
             $table->string('phone');
             $table->string('city');
             $table->string('address');
-            $table->integer('status')->default(0);
             $table->integer('num_of_house');
             $table->integer('num_of_apartment');
+            $table->text('note');
+            $table->integer('status')->default(0);
             $table->timestamps();
         });
     }

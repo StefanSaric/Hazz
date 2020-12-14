@@ -231,6 +231,8 @@
                                 <span class="form-row-last">
                                     <input type="text" name="apartment" id ="apartment" placeholder="Stan"  required/>
                                 </span>
+                                <span><b>Napomena</b></span>
+                                <textarea type="text" name="note" id ="note" class="form-control" cols="30" rows="5"></textarea>
                             </form>
                         </div>
                     </div>
@@ -263,10 +265,6 @@
                                 @endforeach
                                 </tbody>
                                 <tfoot>
-{{--                                <tr class="cart-subtotal">--}}
-{{--                                    <th>Cart Subtotal</th>--}}
-{{--                                    <td><span class="amount" >{{$total}} RSD</span></td>--}}
-{{--                                </tr>--}}
                                 <tr class="order-total">
                                     <th><strong>Ukupno</strong></th>
                                     <td><strong><span class="amount">{{$total}} RSD</span></strong>
@@ -276,12 +274,21 @@
                             </table>
                         </div>
                         <div class="payment-method mt-0">
+                            <div class="panel panel-default">
+                                <div class="panel-collapse collapse in show" role="tabpanel" aria-labelledby="headingOne">
+                                    <div class="panel-body payment-content">
+                                        Vaši lični podaci će se koristiti kao podrška za Vaše iskustvo na ovoj veb lokaciji, za upravljanje pristupom Vašem nalogu i za druge svrhe opisane na našoj strani politika privatnosti.
+                                    </div>
+                                </div>
+                                <div class="panel-heading" role="tab">
+                                    <div class="checkbox">
+                                        <input type="checkbox" id="checkbox"/>
+                                        <label>Pročitao/la sam i prihvatam uslove kupovine. </label>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="order-button-payment">
-                                @if($total <> 0)
-                                    <input type="submit" value="Potvrdi porudžbinu" />
-                                @else
-                                    <input type="submit" value="Potvrdi porudžbinu" disabled/>
-                                @endif
+                                <input type="submit" id="order"  value="Potvrdite porudžbinu" disabled/>
                             </div>
                         </div>
                     </div>
@@ -448,6 +455,8 @@
 <script src="{{ asset("/assets/js/libs/index/plugins.js")}}"></script>
 <!-- main js -->
 <script src="{{ asset("/assets/js/libs/index/main.js")}}"></script>
+<!-- checkout js -->
+<script src="{{ asset("/assets/js/checkout.js")}}"></script>
 <!-- deletecart js -->
 <script src="{{ asset("/assets/js/cart-delete.js")}}"></script>
 </body>
