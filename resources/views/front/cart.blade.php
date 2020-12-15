@@ -188,6 +188,11 @@
             @if(!empty($in_carts))
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="cart-table mb-50">
+                    <div class="removedcart" style="display: none">
+                        <p> Da li zelite da vratite uklonjeni element</p>
+                        <a href="{{url('/returncart')}}" id="returncart"></a>
+                        <p>u korpu?</p>
+                    </div>
                     <form action="#">
                         <div class="table-content table-responsive">
                             <table>
@@ -433,7 +438,7 @@
 <script src="{{ asset("/assets/js/libs/index/main.js")}}"></script>
 <!-- addcart js -->
 <script src="{{ asset("/assets/js/addcart.js")}}"></script>
-<!-- deletecart js -->
-<script src="{{ asset("/assets/js/cart-delete.js")}}"></script>
+<!-- delete-save-return-cart js -->
+<script src="{{ asset("/assets/js/delete-save-return-cart.js")}}"></script>
 </body>
 </html>

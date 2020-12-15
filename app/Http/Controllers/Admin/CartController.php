@@ -20,7 +20,6 @@ class CartController extends Controller
         }
         $total = 0;
         $carts = session()->get('cart');
-        //dd($carts);
         if($carts != null)
         foreach($carts as $cart)
             $total += $cart["price"]*$cart["quantity"];

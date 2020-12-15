@@ -84,24 +84,60 @@ class HomeController extends Controller
 
     public function deletecart(Request $request)
     {
-
         if($request->id) {
             $cart = session()->get('cart');
             if(isset($cart[$request->id])) {
+                $quant = $cart[$request->id]["quantity"];
                 unset($cart[$request->id]);
                 session()->put('cart', $cart);
             }
             session()->flash('success', 'Product removed successfully');
         }
         $cart = session()->get('cart');
+
         $total =0;
         foreach ($cart as $one_cart) {
             $total += $one_cart["price"] * $one_cart["quantity"];
         }
+        $size["quantity"] = $quant;
         $size["total"] = $total;
         $size["sizeOf"] = sizeof(session()->get('cart'));
         $size['id'] = $request->id;
 
         return $size;
+    }
+
+
+    public function savecart($id,$quantity)
+    {
+        $size = Sizes::with('product', 'product.materials')->find($id);
+
+        //cuvanje izbrisane kartice
+        $savedcart = session()->get('savedcart');
+        $savedcart['size_id'] = $size->id;
+        $savedcart['product_id'] = $size->product->id;
+        $savedcart['name'] = $size->product->name;
+        $savedcart['price'] = $size->price;
+        $savedcart['quantity'] = $quantity;
+
+        session()->put('savedcart', $savedcart);
+
+        return $savedcart;
+    }
+
+    public function returncart()
+    {
+        $cart = session()->get('cart');
+        $savedcart = session()->get('savedcart');
+
+        //vracanje izbrisane kartice
+        $cart[$savedcart['size_id']]["product_id"] = $savedcart['product_id'];
+        $cart[$savedcart['size_id']]["price"] = $savedcart['price'];
+        $cart[$savedcart['size_id']]["quantity"] = $savedcart['quantity'];
+
+        session()->put('cart', $cart);
+        session()->forget('savedcart');
+
+        return redirect('/cart');
     }
 }

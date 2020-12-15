@@ -58,3 +58,6 @@ Route::post('/sendemail','Admin\EmailController@send');
 //JavaScript
 Route::get('/addtocart/{id}', 'HomeController@addtocart');
 Route::get('/deletecart/{id}', 'HomeController@deletecart');
+Route::get('/savecart/{id}/{quantity}', 'HomeController@savecart');
+Route::get('/returncart', 'HomeController@returncart');
+
