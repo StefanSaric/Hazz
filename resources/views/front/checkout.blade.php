@@ -288,7 +288,11 @@
                                 </div>
                             </div>
                             <div class="order-button-payment">
-                                <input type="submit" id="order"  value="Potvrdite porudžbinu" disabled/>
+                                @if($total > 0)
+                                    <input type="submit" class="order" value="Potvrdite porudžbinu" disabled/>
+                                @else
+                                    <input type="submit" value="Potvrdite porudžbinu" disabled/>
+                                @endif
                             </div>
                         </div>
                     </div>
