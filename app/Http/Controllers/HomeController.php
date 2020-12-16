@@ -118,6 +118,7 @@ class HomeController extends Controller
         $savedcart['product_id'] = $size->product->id;
         $savedcart['name'] = $size->product->name;
         $savedcart['price'] = $size->price;
+        $savedcart['amount'] = $size->quantity.$size->unit;
         $savedcart['quantity'] = $quantity;
 
         session()->put('savedcart', $savedcart);

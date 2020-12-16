@@ -189,9 +189,9 @@
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="cart-table mb-50">
                     <div class="removedcart" style="display: none">
-                        <p> Da li zelite da vratite uklonjeni element</p>
-                        <a href="{{url('/returncart')}}" id="returncart"></a>
-                        <p>u korpu?</p>
+                        <p> Da li zelite da vratite uklonjeni element
+                        <u><a href="{{url('/returncart')}}" id="returncart"></a></u>
+                        u korpu?</p>
                     </div>
                     <form action="#">
                         <div class="table-content table-responsive">

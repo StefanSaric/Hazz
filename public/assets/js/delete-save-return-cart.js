@@ -28,8 +28,7 @@ function savedcart(id,quantity){
             console.log(response);
             if (response != null) {
                 $(".removedcart").show();
-                $('#returncart').html(response.name);
-
+                $('#returncart').html(response.name+' '+response.amount);
             }
         }
     })
