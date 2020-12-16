@@ -1,0 +1,1168 @@
+VELIKU VAŽNOST PRIDAJEMO I ZAŠTITI VAŠIH LIČNIH 
+PODATAKA 
+
+Za kompaniju i brend HAZZ nije važan samo kvalitet proizvoda koji Vam 
+pružamo. Veliku važnost pridajemo i zaštiti Vaših ličnih podataka. Zato 
+poštujemo Vašu privatnost i želimo da imate poverenje u nas kada se radi o 
+zaštiti ličnih podataka isto kao i kada je u pitanju Vaše zdravlje. Mi ćemo 
+Vas uvek transparentno obavestiti o tome zašto nam trebaju Vaši podaci i 
+koliko dugo ćemo ih čuvati. To Vam omogućava da se sami odlučite u koje 
+svrhe možemo da koristimo Vaše podatke. U cilju obezbeđivanja najveće 
+moguće sigurnosti, informacije se uvek prenose u enkriptovanom obliku. 
+Ukoliko ne želite da više obrađujemo Vaše podatke, molimo da nas o tome 
+obavestite putem elektronske pošte navedene pod tačkom 1.2. ovog 
+dokumenta. 
+SADRŽAJ: 
+
+1. Opšte informacije 
+1.1 Obrada ličnih podataka 
+1.2 Rukovalac podataka 
+1.3 Prava lica na koja se podaci odnose 
+1.4 Otkrivanje nadležnim organima 
+
+2. Prikupljanje i dalja obrada ličnih podataka prilikom posete našem 
+vebsajtu 
+2.1 Kolačići 
+2.1.1 Strogo neophodni kolačići (tip A) 
+2.1.2 Kolačići za funkcionalnost i performanse (tip B) 
+2.1.3 Kolačići zasnovani na saglasnosti (tip C) 
+2.1.4 Upravljanje i brisanje svih kolačića 
+2.2 Analitika internet stranica (Google Analytics) 
+2.2.1 Funkcije oglašavanja putem usluge Google Analytics 
+2.2.2 A/B testiranje 
+2.3 Dodaci („plugins“) za društvene mreže 
+2.4 Prijava putem društvenih mreža 
+2.5 YouTube Video 
+
+
+ 2.6 Internet oglašavanje 
+2.6.1 Google Ads (prethodno Google Adwords) 
+2.6.1.1 Google Ads konverzije 
+2.6.1.2 Google Ads remarketing 
+
+ 2.6.2 Google Remarketing 
+2.6.3 Campaign Manager (prethodno DoubleClick) 
+2.6.4 Adform 
+2.6.5 Facebook Custom Audiences (“Facebook Pixel”) 
+2.7 Google Tag Manager 
+
+ 
+
+3. Dodatno ponuđene usluge (online i offline) 
+3.1 Kontakt 
+3.2 Newsletter 
+3.3 Kampanje (npr. nagradne igre, ankete, uzorci proizvoda) 
+3.4 Profil prijave 
+3.5 Isporuke poštom 
+3.6 Ocene i recenzije 
+
+4. Prava lica čiji se podaci obrađuju 
+
+ ---
+
+
+OPŠTE INFORMACIJE 
+
+OPŠTE INFORMACIJE 
+
+Svrha ove Politike privatnosti je da Vam pruži informacije o obradi ličnih 
+podataka pri upotrebi naših internet stranica i povezanih usluga. 
+Ukoliko se ne slažete sa bilo kojom odredbom ove Politike privatnosti, 
+molimo Vas da odmah prestanete sa korišćenjem našeg vebsajta. Vaše dalje 
+korišćenje, odnosno pristupanje sadržajima ovog vebsajta smatraće se 
+prihvatanjem ove Politike privatnosti. 
+
+ 
+
+1.1. Obrada ličnih podataka 
+
+Lični podaci su, u skladu sa Zakonom o zaštiti podataka o ličnosti Republike 
+Srbije (u daljem tekstu: Zakon o ličnim podacima), sve informacije koje se 
+odnose na fizičko lice čiji je identitet na osnovu tih podataka određen ili 
+
+
+odrediv, npr. ime i prezime, adresa elektronske pošte, IP adresa, itd. 
+Informacije o prikupljanju i daljoj obradi Vaših ličnih podataka koje 
+preduzimamo s obzirom na Vašu posetu našem vebsajtu, njegovo dalje 
+korišćenje i dodatne usluge koje u vezi s tim pružamo, sadržane su u 
+odeljku 2. ove Politike privatnosti. 
+
+ 
+
+1.2. Rukovalac podataka 
+
+Odgovoran za obradu ličnih podataka u svojstvu rukovaoca podataka je: 
+
+HAZZ d.o.o. 
+Palmotićeva 23 
+11102 Beograd – Stari Grad 
+
+ 
+
+1.3. Prava lica na koja se podaci odnose 
+
+Kao lice na koje se odnose lični podaci koje obrađujemo, imate određena 
+prava u vezi sa tom obradom, pod uslovima i u slučajevima predviđenim 
+Zakonom o ličnim podacima, a kako je detaljno navedeno u odeljku 4. ove 
+Politike privatnosti. 
+
+ 
+
+1.4. Otkrivanje nadležnim organima 
+
+U slučaju zakonske obaveze, zadržavamo pravo otkrivanja podataka o Vama 
+nadležnim državnim organima. 
+Pravni osnov: Član 12. stav 1. tačka 3. Zakona o ličnim podacima. 
+
+ ---
+
+
+PRIKUPLJANJE I DALJA OBRADA 
+
+PRIKUPLJANJE I DALJA OBRADA LIČNIH PODATAKA 
+PRILIKOM POSETE NAŠEM VEBSAJTU 
+
+Prilikom posete i korišćenja našeg vebsajta isključivo u informativne svrhe, 
+odnosno ukoliko se ne registrujete ili nam Vaše lične podatke ne date na 
+neki drugi način, prikupljamo samo one Vaše lične podatke koje prenosi 
+Vaš internet pretraživač, a što je tehnički neophodno kako bismo mogli da 
+Vam prikažemo naš vebsajt i da obezbedimo stabilnost i sigurnost. 
+
+
+Prenosimo prikupljene podatke odgovarajućim odeljenjima i povezanim 
+društvima unutar naše kompanije i/ili spoljnim pružaocima usluga i drugim 
+licima sa kojima smo zaključili odgovarajuće ugovore (npr. hosting, 
+administratori sadržaja) za potrebe prikazivanja vebsajta i postavljanje 
+sadržaja. 
+
+ 
+
+
+2.1 Kolačići 
+
+Prilikom Vaše posete i korišćenja našeg vebsajta, na Vašem kompjuteru se 
+skladište kolačići ili druge tehnologije poput piksela (u daljem tekstu 
+"Kolačići"). Kolačići su male tekstualne datoteke koje Vaš internet 
+pretraživač pohranjuje na Vašem uređaju kako bi sačuvao određene 
+podatke ili slikovne podatke, poput piksela. Sledeći put kada posetite naš 
+vebsajt na istom uređaju, informacije sačuvane u Kolačićima kasnije će se 
+preneti ili na naš vebsajt ("Kolačići prve strane") ili na drugi vebsajt kojem 
+Kolačić pripada ("Kolačići treće strane"). 
+
+Kroz sačuvane i vraćene podatke, odgovarajuća internet stranica 
+prepoznaje da ste joj već pristupili i posetili je putem internet pretraživača 
+koji upotrebljavate na tom uređaju. Mi koristimo ove informacije kako 
+bismo mogli da dizajniramo i prikažemo vebsajt na optimalan način u 
+skladu s Vašim željama. U tom smislu samo je kolačić prepoznat na Vašem 
+uređaju. Osim toga, Vaši će lični podaci biti sačuvani samo uz Vašu izričitu 
+saglasnost ili ako je to nužno neophodno za korišćenje usluge koja Vam je 
+ponuđena i kojoj ste pristupili. 
+
+Ovaj vebsajt koristi sledeće vrste Kolačića, čiji su opseg i funkcionalnost 
+objašnjeni u nastavku: 
+
+• Strogo neophodni kolačići (tip A) 
+• Kolačići za funkcionalnost i performanse (tip B) 
+• Kolačići zasnovani na saglasnosti (npr. marketing) (tip C) 
+
+
+Dodatne informacije o vrstama Kolačića koje se koriste na ovom vebsajtu 
+nalaze se u daljem tekstu ove Politike privatnosti. 
+
+ 
+
+
+2.1.1 Strogo neophodni kolačići (tip A) 
+
+Strogo neophodni kolačići garantuju funkcionalnosti bez kojih ne možete 
+ispravno da koristite naš vebsajt. Ove kolačiće upotrebljavamo isključivo mi 
+i stoga su Kolačići prve strane. To znači da će sve informacije sačuvane u 
+ovim Kolačićima biti vraćene na naše internet stranice. 
+
+Ovi kolačići služe, na primer, da bi se obezbedilo da Vi kao prijavljen 
+korisnik uvek ostajete prijavljeni pri pristupanju različitim stranicama na 
+našem vebsajtu i da stoga nije potrebno da se ponovo prijavljujete sa 
+svojim podacima svaki put kada pristupate novoj stranici. 
+
+Upotreba strogo neophodnih kolačića na našim internet stranicama je 
+moguća bez vaše saglasnosti. Iz tog razloga, strogo neophodni kolačići ne 
+mogu se aktivirati ni deaktivirati pojedinačno. Međutim, možete deaktivirati 
+kolačiće u vašem internet pretraživaču u bilo koje vreme (vidi dole). 
+
+Pravni osnov: Član 12. stav 1. tačka 2. Zakona o ličnim podacima. 
+
+ 
+
+2.1.2 Kolačići za funkcionalnost i performanse (tip B) 
+
+Kolačići za funkcionalnost omogućavaju našem vebsajtu da sačuva već 
+dostavljene informacije (kao što su registrovano ime ili izbor jezika) te Vam 
+mogu ponuditi poboljšane i personalizovane funkcije na osnovu tih 
+informacija. Ovi kolačići prikupljaju i pohranjuju samo anonimne podatke 
+kako ne bi mogli da prate Vaša kretanja na drugim vebsajtovima. 
+
+Kolačići performansi prikupljaju informacije o tome kako se naše Internet 
+stranice upotrebljavaju kako bi se poboljšala njihova atraktivnost, sadržaj i 
+funkcionalnost. Ovi kolačići nam pomažu, na primer, kako bismo utvrdili 
+jesu li i koje stranice našeg vebsajta posećivane, te za koje su korisnici 
+sadržaja posebno zainteresovani. Posebno beležimo broj poseta vebsajtu, 
+broj posećenih stranica vebsajta, vreme provedeno na našem vebsajtu, 
+redosled posećenih stranica, koji su Vas pretraženi pojmovi doveli do nas, 
+zemlje, regije i, ako je primenjivo, grad iz kojeg se pristupa i udeo mobilnih 
+uređaja koji pristupaju našim internet stranicama. Takođe beležimo 
+kretanja, klikove i listanja pomoću kompjuterskog miša kako bismo 
+razumeli koja su područja našeg vebsajta od posebnog interesa za 
+korisnike. Zahvaljujući tome, možemo da prilagodimo sadržaj našeg 
+
+
+vebsajta specifično prema potrebama naših korisnika i da optimizujemo 
+našu ponudu. IP adresa Vašeg kompjutera prenesena iz tehničkih razloga 
+automatski postaje anonimna i ne dopušta da donosimo zaključke o 
+pojedinačnom korisniku. 
+
+Pravni osnov: Član 12. stav 1. tačka 6. Zakona o ličnim podacima. 
+
+ 
+
+2.1.3 Kolačići zasnovani na saglasnosti (tip C) 
+
+Kolačići koji nisu strogo neophodni (vrsta A) niti su u pitanju kolačići za 
+funkcionalnost ili performanse (vrsta B), koristiće se samo uz Vašu izričitu 
+saglasnost, npr. kolačići za oglašavanje. 
+
+Pritom, zadržavamo pravo korišćnja informacija koje smo dobili preko 
+kolačića putem anonimne analize ponašanja posetilaca našeg vebsajta kako 
+bismo prikazali određeno oglašavanje za neke od naših proizvoda na 
+našem vebsajtu. Verujemo da Vi kao korisnik imate koristi od toga, jer 
+prikazujemo oglašavanje ili sadržaj za koje smatramo da odgovaraju Vašim 
+interesovanjima na osnovu Vašeg ponašanja kod pretraživanja, tako da ćete 
+videti manje nasumično odabranih oglasa ili drugog sadržaja koji bi Vam 
+mogao biti manje zanimljiv. 
+
+Marketing kolačići dolaze od spoljnih kompanija za oglašavanje (kolačići 
+treće strane) i koriste se za prikupljanje informacija o internet stranicama 
+koje je korisnik posetio kako bi se stvorilo ciljano oglašavanje za korisnika. 
+
+Isključivanje kolačića koji se koriste za oglašavanje na mreži 
+
+Takođe možete upravljati mnogim kolačićima kompanija koji se koriste za 
+oglašavanje na mreži putem alata za izbor potrošača koji su izrađeni u 
+programima samoregulacije u mnogim zemljama, kao što su američki 
+program https://www.aboutads.info/choices/ ili EU 
+program http://www.youronlinechoices.com/uk/your-ad-choices. 
+
+U bilo kom trenutku možete povući Vaš pristanak za korišćenje kolačića koji 
+su zasnovani na saglasnosti (vrsta C) sa dejstvom za ubuduće. 
+
+Pravni osnov: Član 12. stav 1. tačka 1. Zakona o ličnim podacima. 
+
+ 
+
+2.1.4 Upravljanje i brisanje svih kolačića 
+
+
+Internet pretraživač možete da podesite tako da se kolačići uglavnom ne 
+mogu uskladištiti u Vašem uređaju i / ili će Vas svaki put pitati jeste li 
+saglasni da kolačići budu omogućeni. Takođe možete da u bilo kom 
+trenutku izbrišete ponovno omogućene kolačiće. Možete da saznate 
+detaljnije kako sve to funkcioniše putem opcije pomoći Vašeg internet 
+pretraživača. 
+
+Imajte na umu da potpuno deaktiviranje kolačića može dovesti do 
+funkcionalnih ograničenja našeg vebsajta. 
+
+ 
+
+2.2 Analitika internet stranica (Google Analytics) 
+
+Ovaj vebsajt koristi Google Analytics, servis kompanije Google („Google“) za 
+analizu internet stranica. Google Analytics upotrebljava specifičnu vrstu 
+kolačića koji se skladišti na Vašem kompjuteru i omogućava analizu Vašeg 
+korišćenja našeg vebsajta. Informacije o Vašem korišćenju ovih internet 
+stranica, a koje se generišu putem kolačića, obično se šalju na Google-ov 
+server u Sjedinjenim Američkim Državama i tamo se čuvaju. 
+Želeli bismo da naglasimo da je primena Google Analytics proširena na 
+ovom vebsajtu kako bi uključila i kod „gat._anonymizeIp();“ kako bi se 
+obezbedilo anonimno snimanje IP adresa (takozvano IP maskiranje). Zbog 
+anonimizacije IP adresa na ovom vebsajtu, Vašu IP adresu Google skraćuje 
+na teritoriji Evropske unije i država članica Evropske ekonomske zone. Samo 
+u izuzetnim slučajevima se cela IP adresa šalje na Google-ov server u 
+Sjedinjenim Američkim Državama i tamo se skraćuje. Google je obuhvaćen 
+EU-SAD sporazumom Štit privatnosti (Privacy Shield) 
+(https://www.privacyshield.gov/EU-US-Framework) 
+Google upotrebljava ove informacije u naše ime kako bi analizirao Vašu 
+upotrebu ovog vebsajta sa svrhom sastavljanja izveštaja o aktivnostima na 
+ovom vebsajtu i kako bi pružio dodatne usluge u vezi sa korišćenjem 
+internet stranica i interneta. Radi ostvarenja ove svrhe, Google može takođe 
+da prenese te informacije dole-navedenim trećim licima. IP adresa koju vaš 
+internet pretraživač šalje ne spaja se u kontekstu usluge Google Analytics-a 
+sa ostalim podacima Google-a. 
+Možete da onemogućite skladištenje kolačića određenim podešavanjem 
+pomoću softvera Vašeg internet pretraživača. Osim toga, možete 
+
+
+onemogućiti Google-u da snima podatke koji se odnose na Vašu upotrebu 
+vebsajta, koje je kolačić generisao (što uključuje i IP adresu) i da obrađuje 
+ove podatke, i to preuzimanjem i instaliranjem dodataka (plug-ins) internet 
+pretraživača koji su dostupni 
+na https://tools.google.com/dlpage/gaoptout?hl=en. 
+Podaci o trećim licima: Google Dublin, Google Ireland Ltd, Gordon House, 
+Barrow Street, Dablin 4, Irska, Fax: +353 (1) 436 1001. 
+Uslovi pružanja usluge Google Analytics: 
+https://www.google.com/analytics/terms/gb.html, Opšti pregled pravila o 
+bezbednosti i privatnosti Google Analytics: 
+https://support.google.com/analytics/answer/6004245?hl=en, kao i 
+Google-ova Pravila privatnosti: https://policies.google.com/privacy?hl=en. 
+Ovaj vebsajt koristi Google Analytics za analizu protoka posetilaca 
+nezavisno od vrste uređaja, i to na osnovu korisničkog identifikacionog 
+broja (ID). Možete da onemogućite praćenje Vašeg korišenja više uređaja 
+na Vašem Google nalogu u delu „Moje informacije“ („My information“), 
+„Lični podaci“ („Personal information“). 
+Upotrebljeni kolačići: tip B. Za dodatne informacije pogledajte Član 2.1, 
+2.1.1,2.1.2,2.1.3,2.1.4 koji su navedeni u ovoj politici privatnosti. 
+Trajanje kolačića: do 12 meseci (ovo se odnosi samo na kolačiće koji su 
+postavljeni na ovom vebsajtu). 
+Maksimalni rok čuvanja podataka: do 26 meseci. 
+Pravni osnov: Član 12. stav 1. tačka 6. Zakona o ličnim podacima. 
+
+ 
+
+2.2.1 Funkcije oglašavanja putem usluge Google Analytics 
+
+Ako ste saglasni sa upotrebom funkcija oglašavanja putem usluge Google 
+Analytics, ovaj vebsajt će, osim standardnih funkcija, koristiti proširene 
+funkcije usluge Google Analytics. Funkcije oglašavanja usluge Google 
+Analytics implementirane na ovoj web-lokaciji uključuju demografske 
+podatke usluge Google Analytics i izveštavanje o interesovanjima posetilaca 
+ovog vebsajta. 
+
+Zajedno koristimo kolačiće prve strane (npr. Kolačići Google Analytics-a) i 
+kolačiće treće strane (npr. DoubleClick kolačići) kako bismo u anonimnom i 
+agregatnom obliku ocenili demografske karakteristike i interesovanja 
+
+
+posetilaca našeg vebsajta. Koristimo ove informacije kako bismo poboljšali 
+naš vebsajt. 
+
+Možete da sprečite učešće u ovom postupku praćenja na različite načine: a) 
+podešavanjem softvera internet pretraživača u skladu sa tim; b) putem 
+postavki Google oglasa 
+na https://www.google.com/ads/preferences/?hl=hr; c) podešavanjem 
+Vaših postavki kolačića kliknite ovde. Imajte na umu da u tom slučaju 
+možda nećete moći da koristite sve funkcije ove ponude. 
+
+Maksimalni rok čuvanja podataka: do 26 meseci. 
+Pravni osnov: član 12. stav 1. tačka 1. Zakona o ličnim podacima. 
+
+ 
+
+2.2.2 A/B testiranje 
+
+Ovaj vebsajt takođe sprovodi analizu ponašanja korisnika putem tzv. A / B 
+testiranja. U zavisnosti od dodele Vašeg profila, možemo da Vam 
+pokažemo naše internet stranice donekle različitog sadržaja. To nam 
+omogućava analizu i redovno poboljšavanje naših usluga, kao i da ih 
+učinimo zanimljivijim za Vas kao korisnika. 
+Za potrebe ove analize, kolačići se skladište na Vašem kompjuteru. Tako 
+prikupljene informacije čuvaju se isključivo na serveru u Evropskoj uniji. 
+Skladištenje kolačića možete onemogućiti pravilnim podešavanjem pomoću 
+softvera internet pretraživača. 
+Pre sprovođenja analiza, IP adrese se dalje obrađuju u skraćenom obliku, 
+tako da ne postoji mogućnost direktnog ličnog kontakta. IP adresa koju Vaš 
+internet pretraživač prenosi nije spojena s drugim podacima koje smo 
+prikupili. 
+Podaci su dostupni od strane naših pružalaca analitičkih usluga sa sedištem 
+u EU. 
+Upotrebljeni kolačići: tip B. Za dodatne informacije pogledajte deo 
+2.1,2.1.1,2.1.2,2.1.3,2.1.4 ove politike privatnosti 
+Trajanje kolačića: do dve (2) godine (ovo se odnosi samo na kolačiće 
+postavljene na ovom vebsajtu). 
+Maksimalni rok čuvanja podataka: do 25 meseci. 
+Pravni osnov: Član 12. stav 1. tačka 6. Zakona o ličnim podacima. 
+
+
+ 
+
+2.3 Dodaci („plugins“) za društvene mreže 
+
+Dodaci za društvene mreže („pluginovi“) se upotrebljavaju na našim 
+internet stranicama, naročito Facebook dugme „Podeli“ ili „Podeli s 
+prijateljima“, pri čemu vebsajtom facebook.com upravlja Facebook Inc., 
+1601 S. California Ave, Palo Alto, CA 94304, SAD. Facebook Ireland Limited, 
+Hanover Reach, 5-7 Hanover Quay, Dablin 2, Irska, je odgovoran za 
+Facebook.com u Evropi. Ovi dodaci su obično označeni logotipima 
+Facebook-a. 
+Iz razloga vezanih za privatnost podataka, odlučili smo da našem vebsajtu 
+ne koristimo neposredne dodatke za društvene mreže. Umesto toga, 
+upotrebljavamo tzv. „Shariff“ rešenje. Pomoću Shariffa, u mogućnosti smo 
+da odredimo kada i da li će se uopšte podaci slati operatoru konkretne 
+društvene mreže. Iz tog razloga, nema automatskog prenosa podataka 
+društvenim mrežama kao što su Facebook, Google+, Twitter ili Pinterest 
+kada jednom pristupite našim internet stranicama. Podaci će se prenositi 
+društvenim mrežama jedino ako stvarno kliknete na određeno dugme 
+društvene mreže. U tom slučaju, Vaš internet pretraživač uspostavlja vezu sa 
+serverima konkretne društvene mreže. Klikom na konkretno dugme (npr. 
+„Prosledi dalje“, „Podeli“ ili „Podeli s prijateljima“) pristajete da Vaš internet 
+pretraživač stvori vezu sa serverima odgovarajućih društvenih mreža i da 
+prenosi podatke o korišćenju operatoru konkretne društvene mreže i 
+obrnuto. Mi nemamo nikakvu kontrolu nad prirodom i obimom podataka 
+koji tada prikupljaju društvene mreže. 
+Operatori društvenih mreža skladište podatke prikupljene o Vama u obliku 
+korisničkog profila i upotrebljavaju ih u svrhu oglašavanja, istraživanja 
+tržišta i/ili dizajniranja svojih internet stranica na osnovu potražnje. Takva 
+vrsta obrade sprovodi se naročito (takođe i za neprijavljene korisnike) za 
+prikazivanje oglašavanja na osnovu potražnje (tzv. „demand-fair“), kao i radi 
+informisanja ostalih korisnika društvene mreže o Vašim aktivnostima na 
+našim internet stranicama. Imate pravo da prigovorite stvaranju takvih 
+korisničkih profila, s tim da morate da kontaktirate pružaoce konkretnog 
+dodatka za društvene mreže kako biste ostvarili ovo pravo. 
+Pomoću tih dodataka, pružamo priliku interakcije s društvenim mrežama i 
+ostalim korisnicima, tako da možemo da poboljšamo našu ponudu i 
+
+
+učinimo je zanimljivijom za Vas kao našeg korisnika. Podaci se prenose bez 
+obzira na to da li imate nalog kod konkretnog pružaoca dodatka i jeste li 
+prijavljeni tamo. Ako ste prijavljeni kod konkretnog pružaoca dodatka, Vaši 
+podaci koje smo prikupili će biti prosleđeni direktno Vašem postojećem 
+nalogu kod pružaoca dodatka. Ako kliknete na dugme za aktivaciju i, na 
+primer, povežete se sa internet stranicom, pružalac dodatka takođe će 
+sačuvati ove informacije u Vašem korisničkom nalogu i podeliti ih javno s 
+Vašim kontaktima. Preporučujemo da se redovno odjavljujete nakon 
+upotrebe društvene mreže, naročito pre aktiviranja dugmeta, jer ćete na taj 
+način izbeći snimanje u svoj profil koji se nalazi kod pružaoca dodatka. 
+Za više informacija o svrsi i obimu prikupljanja podataka i njihove dalje 
+obrade od strane pružaoca dodatka, molimo da pogledate politike 
+privatnosti ovih pružalaca koji su navedeni ispod. Oni će Vam takođe pružiti 
+dodatne informacije o Vašim pravima u tom smislu i mogućnostima 
+podešavanja opcija kako biste zaštitili svoju privatnost. 
+
+a) Facebook Inc. 1601 S California Ave, Palo Alto, Kalifornija 94304, 
+SAD; 
+http://www.facebook.com/policy.php. 
+za više informacije o prikupljanju 
+podataka: http://www.facebook.com/help/186325668085084, 
+http://www.facebook.com/about/privacy/your-info-on-
+other#applications kao i http://www.facebook.com/about/privacy/your-
+info#everyoneinfo. 
+Facebook je obuhvaćen sporazumom EU-SAD Štit privatnosti (Privacy 
+Shield), https://www.privacyshield.gov/EU-US-Framework. 
+
+b) Google Inc. 1600 Amphitheater Parkway, Mountainview, Kalifornija 
+94043, SAD; 
+https://www.google.com/policies/privacy/partners/?hl=de. 
+Google je obuhvaćen sporazumom EU-SAD Štit privatnosti (Privacy 
+Shield), https://www.privacyshield.gov/EU-US-Framework. 
+
+ 
+
+2.4 Prijava putem društvenih mreža 
+
+Da biste se registrovali i prijavili na Vaš korisnički nalog, imate mogućnost 
+autentifikacije s postojećim profilom na jednoj od sledećih društvenih 
+
+
+mreža, Facebook ili Google+, kao i, na kraju, mogućnost registracije ili 
+prijavljivanja. 
+U tu svrhu, na stranici za registraciju ili stranici za prijavu pronaći ćete 
+odgovarajući simbol društvenih mreža koje naš vebsajt podržava. Pre 
+uspostavljanja veze s pružaocima usluge, potreban je Vaš pristanak na 
+postupak i prenos podataka opisan u nastavku: 
+Klikom na odgovarajući simbol otvara se novi prozor (tzv. aplikacija) u 
+kojem se morate prijaviti sa svojim podacima za prijavu na društvenoj 
+mreži. Nakon što se uspešno prijavite, društvena mreža će Vas obavestiti 
+koji će nam podaci biti prosleđeni za proveru autentičnosti kao deo 
+postupka registracije ili prijave. Ako se složite s ovim prenosom podataka, 
+polja koja su nam potrebna za registraciju popuniće se prenesenim 
+podacima. Informacije koje tražimo za registraciju ili prijavu su (i) Vaše ime i 
+prezime i (ii) Vaša adresa e-pošte. 
+Isključivo nakon Vašeg izričitog pristanka na korišćenje prenesenih i 
+traženih podataka, Vaši će podaci biti sačuvani i upotrebljeni za svrhe 
+navedene u ovoj Politici privatnosti. Ne postoji veza van procesa provere 
+autentičnosti između Vašeg korisničkog naloga kod nas i Vašeg naloga na 
+odgovarajućoj društvenoj mreži. 
+Da biste izvršili postupak provere autentičnosti za registraciju i prijavu, vaša 
+IP adresa prenosi se serverima odgovarajućih društvenih mreža. Nemamo 
+uticaj na svrhu i obim prikupljanja podataka i na njihovu dalju obradu na 
+tim serverima. Za dodatne informacije pročitajte podatke o zaštiti podataka 
+konkretnog pružaoca usluga: 
+
+a) Facebook Inc., 1601 S California Ave, Palo Alto, Kalifornija 94304, 
+SAD; 
+http://www.facebook.com/policy.php 
+više informacija o prikupljanju 
+podataka: http://www.facebook.com/help/186325668085084, 
+http://www.facebook.com/about/privacy/your-info-on-
+other#applications as well as 
+http://www.facebook.com/about/privacy/your-info#everyoneinfo 
+Facebook je obuhvaćen sporazumom EU-SAD Štit privatnosti (Privacy 
+Shield),, https://www.privacyshield.gov/EU-US-Framework. 
+
+
+b) Google Inc., 1600 Amphitheater Parkway, Mountainview, Kalifornija 
+94043, SAD; https://www.google.com/policies/privacy/partners/?hl=de. 
+Google je obuhvaćen sporazumom EU-SAD Štit privatnosti (Privacy 
+Shield), https://www.privacyshield.gov/EU-US-Framework. 
+
+Facebook Connect 
+
+Ako je na ovoj vebsajtu postavljen takozvani "Facebook Connect Button", 
+možete se prijaviti na naš vebsajt putem svojih Facebook korisničkih 
+podataka. Pored toga, Facebook Connect može automatski uključiti 
+informacije o Vašim aktivnostima na našem vebsajtu na Vaš Facebook 
+profil. U tom smislu, kada aktivirate to dugme, dobićete i priliku da date 
+svoju izričitu saglasnost za pristupanje Vašim Facebook korisničkim 
+podacima i za objavljivanje informacija i aktivnosti na Vašem Facebook 
+profilu. Korišćenje dodatnih podataka (npr. kontaktiranje putem vaše e-
+adrese) vrši se samo uz Vašu prethodnu izričitu saglasnost. Napominjemo 
+da Facebook dobija informacije o aplikaciji ili internet stranici putem usluge 
+Facebook Connect, uključujući i ono što radite. Da bi prilagodili postupak 
+povezivanja, u nekim će slučajevima Facebook možda primiti ograničenu 
+količinu informacija pre odobrenja aplikacije ili internet stranice. Svrha i 
+obim prikupljanja podataka, te dalja obrada i korišćenje podataka od strane 
+Facebooka, kao i Vaša prava u tom pogledu i opcije postavki za zaštitu Vaše 
+privatnosti sadržani su u pravilima o privatnosti kompanije Facebook na 
+adresi: 
+
+ Facebook Inc., 1601 S California Ave, Palo Alto, Kalifornija 94304, 
+SAD; http://www.facebook.com/policy.php više informacija o prikupljanju 
+podataka 
+http://www.facebook.com/help/186325668085084, http://www.facebook.com/about/privacy/your-info-on-other#applications kao i 
+http://www.facebook.com/about/privacy/your-info#everyoneinfo 
+Facebook je regulisan sporazumom EU-SAD Štit privatnosti (Privacy 
+Shield), https://www.privacyshield.gov/EU-US-Framework. 
+
+Informacije o privatnosti vezane uz analitiku stranice 
+Facebook Irska i administrator stranice zaključili su sporazum o utvrđivanju 
+svojih odgovornosti prema Opštoj uredbi o zaštiti podataka (GDPR). 
+Osnovu sporazuma možete pronaći ovde. Kontakt podatke administratora 
+
+
+stranice možete pronaći u našim Pravilima o privatnosti. 
+Uz pomoć analitike stranice prikupljamo statističke informacije i zbirne 
+podatke koji nam pomažu da razumemo kako ljudi reaguju na našu 
+stranicu, kako bismo njen sadržaj poboljšali ili procenili. To je naš legitimni 
+interes shodno članu 12. stav 1. tačka 6. Zakona o ličnim podacima. 
+
+ 
+
+2.5 YouTube Video 
+
+U naš vebsajt uključili smo YouTube videozapise koji su uskladišteni 
+na http://www.YouTube.com i mogu se gledati direktno s našeg vebsajta. 
+Sve je to uključeno u "prošireni način zaštite podataka", tj. nema podataka 
+o Vama kao korisniku koji će se preneti na YouTube ako ne kliknete na 
+videozapise da biste počeli da ih reprodukujete. Samo kada reprodukujete 
+videozapise, podaci koji se spominju u sledećem odeljku preneće se na 
+YouTube. Nemamo uticaj na ovaj prenos podataka. 
+
+Kada posetite naš vebsajt, YouTube prima informacije da ste pristupili 
+odgovarajućoj stranici u okviru našeg vebsajta. Pored toga, preneće se i 
+podaci navedeni u Delu 2 ove Politike privatnosti. To je nezavisno od toga 
+da li YouTube korisnički nalog postoji ili ne postoji. Ako ste prijavljeni na 
+Google, Vaši će podaci biti direktno povezani s Vašim nalogom. Ako ne 
+želite da budete povezani s Vašim profilom na YouTube-u, morate da se 
+odjavite pre aktiviranja dugmeta. YouTube skladišti Vaše podatke kao 
+korisničke profile i koristi ih u svrhu oglašavanja, istraživanja tržišta i / ili 
+dizajna internet stranica na zahtev. Takva procena odvija se posebno (čak i 
+za neprijavljene korisnike) kako bi omogućila oglašavanje zasnovano na 
+potražnji i informisala druge korisnike društvene mreže o Vašim 
+aktivnostima na našem vebsajtu. Imate pravo da sprečite stvaranje tih 
+korisničkih profila, s tim da morate da kontaktirate YouTube kako biste to 
+ostvarili. 
+
+Više informacija o svrsi i obimu prikupljanja i obrade podataka od strane 
+YouTube-a potražite u pravilima o privatnosti. Tu ćete takođe pronaći 
+dodatne informacije o svojim pravima i mogućnostima postavljanja opcija 
+kako biste zaštitili Vašu 
+privatnost: https://www.google.de/intl/de/policies/privacy; Google je 
+
+
+regulisan EU-SAD sporazumom Štit privatnosti (Privacy 
+Shield), https://www.privacyshield.gov/EU-US-Framework. 
+
+ 
+
+2.6 Internet oglašavanje 
+
+2.6.1 Google Ads (prethodno Google Adwords) 
+
+2.6.1.1 Google Ads konverzije 
+
+Koristimo Google Ads usluge kako bismo skrenuli pažnju na naše atraktivne 
+ponude uz pomoć materijala za oglašavanje (tzv. Google Ads) na spoljnim 
+vebsajtovima. U odnosu na podatke reklamnih kampanja, možemo da 
+odredimo koliko su uspešne pojedine mere oglašavanja. Hteli bismo da 
+Vam prikazujemo oglase koji su Vam interesantni, kako bismo naš vebsajt 
+učinili zanimljivijim, te kako bismo verodostojno izračunali troškove 
+oglašavanja. 
+Google dostavlja reklamne materijale putem takozvanih "pružalaca usluga 
+oglašavanja". U tu svrhu upotrebljavamo kolačiće pružalaca usluga 
+oglašavanja, pomoću kojih se mogu meriti određeni parametri za merenje 
+uspeha, kao što je umetanje oglasa ili broj klikova korisnika. Ako pristupite 
+našem vebsajtu preko Google oglasa, Google Ads pohranjuje kolačić na Vaš 
+uređaj. Ovi kolačići obično ističu nakon 30 dana i nisu namijenjeni da Vas 
+lično identifikuju. Za ovaj kolačić, jedinstvena identifikaciona oznaka 
+kolačića, broj pojavljivanja oglasa po položaju (učestalost), broj pojmova po 
+postavljanju oglasa (učestalost), poslednji pojam (bitan za konverziju nakon 
+pregleda), te informacije o isključivanju (oznaka da korisnik više ne želi da 
+bude kontaktiran), obično se skladište kao analitičke vrednosti. 
+Ovi kolačići omogućavaju Google-u da prepozna Internet pretraživač. Ako 
+korisnik poseti određene mesta Ads korisničke stranice, a kolačić pohranjen 
+na njegovom uređaju nije istekao, Google i korisnik mogu da prepoznaju da 
+je korisnik kliknuo oglas i preusmeriti ga na ovu stranicu. Svakom Ads 
+korisniku dodeljuje se drugi kolačić. Kolačići se stoga ne mogu pratiti 
+putem internet stranica Ads korisnika. Ne prikupljamo i ne obrađujemo bilo 
+koje lične podatke u gore navedenim merama oglašavanja. Od Google-a 
+primamo samo statističke procene. Na osnovu tih procena možemo da 
+prepoznamo koja je od mera oglašavanja posebno efikasna. Ne primamo 
+nikakve druge podatke od upotrebe reklamnog materijala; ne možemo da 
+
+
+identifikujemo korisnike na osnovu tih podataka. 
+Zbog upotrebe marketinških alata, pretraživač automatski pokreće direktnu 
+vezu s Google serverom. Nemamo uticaj na obim i dalju upotrebu podataka 
+koje Google prikuplja upotrebom ovog alata, te Vas obaveštavamo prema 
+našim saznanjima: integracijom Ads konverzije, Google prima podatke da 
+ste se pozvali na internet stranicu koja odgovara našoj ili ste kliknuli na naš 
+oglas. Ako ste registrovani za Google-ovu uslugu, Google može povezati 
+Vašu posetu s Vašim nalogom. Čak i ako niste registrovani na Google-u ili 
+se niste prijavili, moguće je da serveri mogu dobiti i sačuvati Vašu IP adresu. 
+
+ 
+
+2.6.1.2 Google Ads remarketing 
+
+Uz Google Ads uslugu koristimo funkciju remarketinga. Funkcija nam 
+omogućava da korisnicima naših internet stranica predstavimo oglase na 
+osnovu njihovih interesovanja na drugim web stranicama unutar Google-
+ove oglašavačke mreže (putem Google pretraživanja ili YouTube-a, tzv. 
+"Google ads" ili na drugim web stranicama). U tu svrhu analizira se 
+interakcija korisnika na našoj web stranici, npr. šta interesuje korisnika, kako 
+bi se korisnicima moglo prikazati ciljano oglašavanje čak i nakon posete 
+našoj web stranici na drugim stranicama. Da bi to bilo moguće, Google u 
+pretraživaču čuva broj korisnika koji posete određene Google-ove usluge ili 
+web stranice unutar Google Display mreže. Taj broj, poznatiji kao "kolačić", 
+koristi se za beleženje poseta korisnika. Broj se koristi za jedinstveno 
+prepoznavanje internet pretraživača na određenom uređaju, a ne za 
+prepoznavanje osobe; lični podaci se ne skladište. 
+
+Možete sprečiti učešće u ovom postupku praćenja na različite načine: a) 
+podešavanjem softvera pretraživača u skladu s tim, posebno blokiranjem 
+kolačića treće strane, nećete primati oglase od trećih pružalaca usluga; b) 
+isključivanjem kolačića za praćenje konverzije podešavanjem pretraživača 
+tako da su kolačići blokirani domenom 
+www.googleadservices.com, https://www.google.de/settings/ads, ova se 
+postavka briše kada izbrišete kolačiće; c) deaktiviranjm oglasa zasnovanih 
+na interesu pružalaca usluga koji su deo kampanje za samoregulaciju "O 
+oglasima" putem linka http://www.aboutads.info/choices, postavke koja se 
+briše kada izbrišete kolačiće; d) trajnim deaktiviranjem Firefoxa, Internet 
+
+
+Explorera ili Google Chrome-a u Vašim pretraživačima putem 
+linka http://www.google.com/settings/ads/plugin, e) podešavanjem 
+postavki kolačića u skladu s tim. Imajte na umu da u tom slučaju možda 
+nećete moći u celosti da koristite sve funkcije ove ponude. 
+
+Više informacija o svrsi i obimu prikupljanja i obrade podataka od strane 
+Google-a potražite u pravilima o privatnosti. Tu ćete takođe pronaći 
+dodatne informacije o Vašim pravima i mogućnostima podešavanja opcija 
+kako biste zaštitili Vašu privatnost: 
+
+https://www.google.de/intl/de/policies/privacy ;Google je regulisan 
+sporazumom EU-SAD Štit privatnosti (Privacy 
+Shield), https://www.privacyshield.gov/EU-US-Framework. Alternativno, naći 
+ćete i više informacija na internet stranici Inicijative za mrežno oglašavanje 
+(NAI) na adresi http://www.networkadvertising.org. 
+
+Upotrebljeni kolačići: tip C. Za dodatne informacije pogledajte deo 
+2.1,2.1.1,2.1.2,2.1.3,2.1.4 ove politike privatnosti 
+
+Trajanje kolačića: do jednog (1) meseca (ovo se odnosi samo na kolačiće 
+postavljene na ovom vebsajtu). 
+
+ 
+
+2.6.2 Google Remarketing 
+
+Nadalje, upotrebljavamo aplikaciju Google Remarketing kako bismo Vas 
+ponovo kontaktirali u periodu od 12 meseci. Uz ovu aplikaciju nakon posete 
+našem vebsajtu, naši se oglasi mogu prikazati kada nastavite da koristite 
+internet. To se vrši pomoću kolačića, koji se koriste za beleženje i procenu 
+Vašeg korisničkog ponašanja od strane Google-a prilikom poseta raznim 
+internet stranicama. Na taj način Google može utvrditi Vaše prethodne 
+posete našem vebsajtu. Prema Google-ovim vlastitim izjavama, Google ne 
+spaja podatke prikupljene u kontekstu remarketinga s Vašim ličnim 
+podacima koje Google može da skladišti. Prema Google-u, naročito se 
+pseudonimizacija koristi za remarketing. 
+Upotrebljeni kolačići: tip C. Za dodatne informacije pogledajte deo 
+2.1,2.1.1,2.1.2,2.1.3,2.1.4 ove politike privatnosti 
+Pravni osnov: Član 12. stav 1. tačka 1. Zakona o ličnim podacima. 
+
+ 
+
+
+2.6.3 Campaign Manager (prethodno DoubleClick) 
+
+Ovaj vebsajt takođe koristi Google-ov alat za online marketing Campaign 
+Manager. Campaign Manager upotrebljava kolačiće za prikaz oglasa koji su 
+bitni za korisnike, poboljšanje izveštavanja o sprovođenju kampanje ili 
+sprečavanje korisnika da više puta pregledaju iste oglase. Google koristi 
+identifikaciju kolačića kako bi se pratilo koji se oglasi prikazuju u kojem 
+pretraživaču i kako bi se sprečilo prikazivanje oglasa više od jednog puta. 
+Osim toga, Campaign Manager može upotrebljavati identifikaciju kolačića 
+za prikupljanje konverzija povezanih sa zahtevima za oglase. To je slučaj, na 
+primer, kada korisnik vidi Campaign Manager oglas i kasnije poseti internet 
+stranicu oglašivača s istim pretraživačem i tamo nešto kupuje. Prema 
+Google-u, Campaign Manager kolačići ne sadrže nikakve lične podatke. 
+
+Vaš pretraživač automatski uspostavlja direktnu vezu s Google-ovim 
+serverom nakon posete našoj Internet stranici. Nemamo uticaj na količinu i 
+dalju upotrebu podataka prikupljenih od strane Google-a upotrebom ovog 
+alata, te Vas stoga obaveštavamo prema našim saznanjima: integracijom 
+usluge Campaign Manager, Google prima informacije da ste se pozvali na 
+internet stranicu koja odgovara našoj ili ste kliknuli na naš oglas. Ako ste 
+registrovani za Google-ovu uslugu, Google može povezati Vašu posetu s 
+Vašim nalogom. Čak i ako niste registrovani na Google-u ili se niste prijavili, 
+moguće je da pružaoci usluga mogu dobiti i sačuvati Vašu IP adresu. 
+
+Pritom, Campaign Manager (DoubleClick Floodlight) kolačići omogućavaju 
+nam da proverimo da li preduzimate određene radnje na našim internet 
+stranicama nakon pregledavanja jednog od naših prikaza / video oglasa na 
+Google-u ili drugim platformama putem usluge Campaign Manager ili 
+klikom na jedan od njih (praćenje konverzija). Campaign Manager 
+upotrebljava taj kolačić za razumevanje sadržaja s kojim ste stupili u 
+interakciju na našim internet stranicama kako bismo Vam kasnije mogli 
+poslati ciljano oglašavanje. 
+
+Možete da sprečite učešće u ovom postupku praćenja na različite načine: a) 
+podešavanjem softvera pretraživača u skladu s tim, posebno blokiranjem 
+kolačića treće strane, nećete primati oglase od trećih pružalaca usluga; b) 
+isključivanjem kolačića za praćenje konverzije podešavanjem pretraživača 
+tako da su kolačići blokirani 
+
+
+domenom www.googleadservices.com, https://www.google.de/settings/ads
+, ova se postavka briše kada izbrišete kolačiće; c) deaktiviranjem oglasa 
+zasnovanih na interesu pružalaca usluga koji su deo kampanje za 
+samoregulaciju "O oglasima" putem 
+linka http://www.aboutads.info/choices, postavke koja se briše kada 
+izbrišete kolačiće; d) trajnim deaktiviranjem Firefoxa, Internet Explorera ili 
+Google Chrome-a u Vašim pretraživačima putem 
+linka http://www.google.com/settings/ads/plugin, ili e) podešavanjem Vaših 
+postavki kolačića (kliknite ovde). Imajte na umu da u tom slučaju možda 
+nećete moći u celosti da koristite sve funkcije ove ponude. 
+
+Osim toga, možete onemogućiti da Google prikuplja podatke koje generišu 
+kolačići, a odnose se na Vašu upotrebu internet stranica i obradu tih 
+podataka od strane Google-a preuzimanjem i instaliranjem dodatka 
+pretraživača koji je dostupan pod stavkom "Postavke ekrana", "Dodatak za 
+deaktiviranje Campaign Manager "na 
+adresi https://support.google.com/adsense/answer/142293?hl=en 
+
+Dodatne informacije o Campaign Manager-u od Google-a dostupne su na 
+adresi https://www.google.de/doubleclick and http://support.google.com/adsense/answer/2839090,kao i za obradu podataka generalno na Google-
+u: https://www.google.de/intl/de/policies/privacy; Alternativno, naći ćete i 
+više informacija na internet stranici Inicijative za mrežno oglašavanje (NAI) 
+na adresi http://www.networkadvertising.org. Google je regulisan EU-SAD 
+sporazumom Štit privatnosti (Privacy 
+Shield), https://www.privacyshield.gov/EU-US-Framework. 
+
+Upotrebljeni kolačići: tip B i tip C. Za dodatne informacije pogledajte deo 
+2.1,2.1.1,2.1.2,2.1.3,2.1.4 ove politike privatnosti 
+
+Pravni osnov: Član 12. stav 1. tačka 1. Zakona o ličnim podacima. 
+
+ 
+
+2.6.4 Adform 
+
+Ovaj vebsajt takođe koristi alat za online marketing Adform kompanije 
+Adform Nemačka GmbH. Adform upotrebljava kolačiće za prikazivanje 
+oglasa koji su relevantni za korisnike, poboljšanje izveštavanja o 
+sprovođenju kampanje ili sprečava prikazivanja istog oglasa više od 
+
+
+jednom. Adform koristi kolačiće kako bi se pratilo koji se oglasi prikazuju u 
+kojem pretraživaču i kako ih ne bi prikazivali više puta. Osim toga, Adform 
+može upotrebljavati kolačiće za prikupljanje konverzija povezanih sa 
+zahtevima za oglase. To je slučaj, na primer, kada korisnik vidi oglas 
+Adform, a kasnije poseti web stranicu oglašivača s istim pretraživačem i 
+nešto kupi. Prema Adformu, kolačići ne sadrže nikakve lične podatke, kao 
+što su adresa e-pošte, ime ili adrese. 
+
+Vaš pretraživač automatski uspostavlja direktnu vezu s Adform serverom 
+nakon što posetite našu web stranicu. Nemamo uticaj na količinu i dalju 
+upotrebu podataka prikupljenih putem Adforma i zato vas obaveštavamo 
+prema našim saznanjima: integracijom Adforma, Adform prima informacije 
+da ste se pozvali na internet stranicu koja odgovara našoj ili ste kliknuli na 
+naš oglas. 
+
+Osim toga, Adform kolačići omogućavaju nam da shvatimo jeste li izvršili 
+određene radnje na našim web-lokacijama nakon pregledavanja jednog od 
+naših prikaznih video-oglasa na Adformu ili drugim platformama putem 
+Adforma ili klikom na jedan (praćenje konverzije). Adform koristi ovaj 
+kolačić za razumevanje sadržaja s kojim ste bili u interakciji na našim web 
+stranicama kako bismo Vam kasnije mogli posvetiti ciljano oglašavanje. 
+
+Možete da sprečite svoje učešće u ovom postupku praćenja na različite 
+načine: a) podešavanjem softvera pretraživača u skladu sa tim, posebno 
+blokiranjem kolačića treće strane, nećete primati oglase od trećih pružalaca 
+usluga; b) deaktiviranjem kolačića iz Adforma putem pretraživača 
+na https://site.adform.com/privacy-center/platform-privacy/opt-out/ c) 
+podešavanjem postavki kolačića (kliknite ovde). Imajte na umu da u tom 
+slučaju možda nećete moći da koristite sve funkcije u celosti. Više 
+informacija o Adformu potražite na adresi https://site.adform.com/, a u vezi 
+sa zaštitom podataka na adresi Adform Germany 
+GmbH: https://site.adform.com/privacy-center/overview. 
+
+Upotrebljeni kolačići: tip C. Za dodatne informacije pogledajte deo 
+2.1,2.1.1,2.1.2,2.1.3,2.1.4 ove politike privatnosti. 
+Pravni osnov: Član 12. stav 1. tačka 1. Zakona o ličnim podacima. 
+
+ 
+
+
+2.6.5 Facebook Custom Audiences (“Facebook Pixel”) 
+
+Ovaj vebsajt takođe koristi funkciju remarketinga "Prilagođena publika" 
+kompanije Facebook Inc. ("Facebook") kako bismo Vas ponovo kontaktirali 
+u roku od 12 meseci. To korisnicima internet stranice omogućava da vide 
+oglase u skladu sa njihovim interesovanjima ("Facebook oglasi") kada 
+posećuju društvenu mrežu Facebook ili druge internet stranice. 
+
+Vaš pretraživač automatski uspostavlja direktnu vezu s Facebook serverom. 
+Nemamo uticaj na obim i dalju upotrebu podataka prikupljenih od strane 
+Facebook-a korišćenjem ovog alata i zato Vas obaveštavamo prema našim 
+saznanjima: integracijom Facebook Custom Audience, Facebook prima 
+informaciju da ste se pozvali na internet stranicu koja odgovara našoj ili ste 
+kliknuli na naš oglas. Ako ste registrovani za Facebook uslugu, Facebook 
+može povezati Vašu posetu sa Vašim nalogom. Čak i ako niste registrovani 
+na Facebook-u ili se niste prijavili, moguće je da pružalac usluga može 
+dobiti i sačuvati Vašu IP adresu i ostale podatke za identifikaciju. 
+
+Funkcija "Facebook Custom Audiences" može se deaktivirati u postavkama 
+kolačića [link] i za prijavljene korisnike na 
+adresi https://www.facebook.com/settings/?tab=ads#_. 
+
+Upotrebljeni kolačići: tip B i tip C. Za dodatne informacije pogledajte deo 
+2.1,2.1.1,2.1.2,2.1.3,2.1.4 ove politike privatnosti. 
+Pravni osnov: Član 12. stav 1. tačka 1. Zakona o ličnim podacima. 
+
+ : 
+
+2.7 Google Tag Manager 
+
+Ovaj vebsajt koristi Google Tag Manager. Ova usluga omogućava 
+upravljanje oznakama internet stranica putem interfejsa. Google Tag 
+Manager implementira samo oznake. To znači da se ne koriste kolačići i ne 
+prikupljaju lični podaci. Google Tag Manager pokreće druge oznake koje 
+pak po potrebi prikupljaju podatke. Međutim, Google Tag Manager ne 
+poseže za tim podacima. Ako je na nivou domena ili kolačića izvršena 
+deaktivacija, ona ostaje validna za sve oznake praćenja ukoliko je 
+implementirana s Google Tag Managerom. 
+
+ ---
+
+
+DODATNO USLUGE 
+
+
+DODATNO PONUĐENE USLUGE (ONLINE I OFFLINE) 
+
+Osim čisto informativne upotrebe našeg vebsajta, nudimo i različite usluge 
+radi čijeg pružanja obrađujemo Vaše lične podatke, kako je navedeno u 
+daljem tekstu ovog odeljka 3. ove Politike privatnosti. 
+
+Ukoliko u tom cilju angažujemo spoljne pružaoce usluga, njih biramo i 
+angažujemo pažljivo, oni su obavezni da postupaju u skladu sa našim 
+instrukcijama i redovno se proveravaju. Takođe, Vaše lične podatke 
+možemo da otkrijemo i trećim licima koji su naši partneri u organizovanju, 
+odnosno sprovođenju promocija, nagradnih igara i sličnih aktivnosti. 
+
+Imajući u vidu da navedena lica mogu imati i sedište van zemlje Vašeg 
+prebivališta, može doći i do iznošenja Vaših podataka iz zemlje Vašeg 
+prebivališta, uključujući i iznošenje u zemlje van Evropske ekonomske zone. 
+Dodatne informacije o tome slede u nastavku. 
+
+Iako je, kako je već navedeno u tački 1.2. ove Politike privatnosti, kompanija 
+Beiersdorf rukovalac podataka u pogledu obrade Vaših ličnih podataka koja 
+se vrši u vezi sa Vašim pristupom ovom vebsajtu i njegovim daljim 
+korišćenjem, ona nije nužno rukovalac podataka kada je u pitanju obrada 
+koju podrazumeva pružanje dole-opisanih usluga. U tom slučaju, rukovalac 
+podataka je već imenovan, npr. u podnožju / potpisu e-pošte ili kartice 
+kampanje, to lice je rukovalac podataka u skladu sa članom 4. stav 1. tačka 
+8. Zakona o ličnim podacima. 
+
+ 
+
+
+3.1 Kontakt 
+
+Kada nas kontaktirate ili komunicirate s nama, npr. putem e-maila ili putem 
+kontakt obrasca na našem vebsajtu, podaci koje navedete (Vaša adresa e-
+pošte, ako je primenjivo Vaše ime i Vaš telefonski broj i/ili lični podaci 
+navedeni tokom konkretne komunikacije) biće sačuvani i obrađeni s naše 
+strane kako bismo odgovorili na Vaša pitanja, zahteve ili u svrhu poslovne 
+korespondencije. Brišemo podatke koji se pojavljuju u ovom kontekstu 
+nakon što njihovo čuvanje više nije potrebno, osim ako postoje zakonske 
+obaveze zadržavanja ili se moraju poštovati određeni rokovi. 
+
+
+U slučaju upita potrošača putem internog alata za upravljanje potrošnjom, 
+lični podaci obično će se izbrisati nakon jedne godine. Izuzetno, podaci će 
+se čuvati duže ako su podaci potrebni za uspostavljanje, izvršavanje ili 
+odbranu pravnih zahteva. 
+
+Prilikom obrade podataka koji se pojavljuju tokom komunikacije, imamo 
+legitiman interes za obradu podataka u skladu sa zakonskim zahtevima, za 
+internu proveru ili u skladu sa odgovarajućim zahtevom za komunikaciju. 
+Kako bismo se borili protiv terorizma, zakon nas obavezuje da izvršimo 
+poređenje s popisima sankcija. Stoga obrađujemo Vaše podatke i da bismo 
+ispunili zakonske zahteve za poređenje sa navedenim popisima. Takođe, 
+obrađujemo Vaše podatke u Hazz kompaniji za prevenciju i istragu 
+prekršaja i drugih kažnjivih dela, procenu i kontrolu rizika, za internu 
+komunikaciju i u odgovarajuće administrativne svrhe. Možete se 
+suprotstaviti ovoj obradi, kako je navedeno u odeljku 4. ove Politike 
+privatnosti. 
+
+Prikupljene podatke prenosimo relevantnim internim odeljenima za obradu 
+i drugim povezanim društvima unutar grupe Beiersdorf ili spoljnim 
+pružaocima usluga, ugovornim obrađivačima (npr. hosting, pružaoci usluga 
+pozivnog centra) radi ostvarivanja relevantnih ciljeva. Platforma / pružaoci 
+usluga imaće pristup ličnim podacima iz trećih zemalja (zemlje izvan 
+Evropske ekonomske zone). Radi obezbeđivanja odgovarajuće zaštite Vaših 
+ličnih podataka, sa tim pružaocima usluga biće zaključene, ukoliko je 
+primenjivo, standardne ugovorne klauzule odobrene od strane srpskog 
+Poverenika za informacije od javnog značaja i zaštitu podataka o ličnosti i/ili 
+preduzete druge odgovarajuće mere kako bi se obezbedilo da konkretna 
+obrada Vaših ličnih podataka bude u skladu sa Zakonom o ličnim 
+podacima. 
+
+Pravni osnov: Član 12. stav 1. tačke 2. i 6. Zakona o ličnim podacima. 
+
+ 
+
+3.2 Newsletter 
+
+Newsletter sadrži vesti, ponude i dodatne informacije o odabranim 
+markama Hazz. Pretplatom na newsletter, u skladu s Vašim pristankom koji 
+je potreban u svakom pojedinačnom slučaju, primaćete personalizovane 
+
+
+informacije o proizvodima, uslugama ili predlozima za učestvovanje u 
+promocijama, kao što su takmičenja ili ispitivanja proizvoda, i to putem e-
+pošte ili oglašavanja na vlastitim kanalima ili kanalima trećih lica (npr. 
+putem društvenih medija). 
+
+Prijavom na newsletter primićete bilten prilagođen Vašim potrebama 
+(ukoliko je newsletter "personalizovan", „individualizovan“, „prilagođen“). 
+Analiziramo Vašu kupovinu i ponašanje prilikom klikanja na našim internet 
+stranicama ili u newsletteru kako bismo prikupili relevantne informacije.; 
+
+Bilten se obično šalje jednom mesečno ("redovno"). U pojedinačnim 
+slučajevima (npr. za posebne radnje) može se i nedeljno slati putem e-
+pošte. 
+
+Takođe upotrebljavamo mere za ponovni marketing kako bismo Vam 
+pokazali relevantno oglašavanje putem mreže. Dodatne informacije o tome, 
+naročito o odgovarajućim primaocima podataka, možete pronaći pod 
+tačkom 2.6. „Internet oglašavanje" ove Politike privatnosti. 
+
+Podaci će biti prosleđeni na našu platformu za upravljanje korisnicima i 
+njima će moći da pristupe i pružaoci usluga radi podrške i implementacije 
+newslettera. Platforma / hosting provideri imaće pristup ličnim podacima iz 
+trećih zemalja (zemlje van Evropske ekonomske zone). Radi obezbeđivanja 
+odgovarajuće zaštite Vaših ličnih podataka, sa tim pružaocima usluga biće 
+zaključene, ukoliko je primenjivo, standardne ugovorne klauzule odobrene 
+od strane srpskog Poverenika za informacije od javnog značaja i zaštitu 
+podataka o ličnosti i/ili preduzete druge odgovarajuće mere kako bi se 
+obezbedilo da konkretna obrada Vaših ličnih podataka bude u skladu sa 
+Zakonom o ličnim podacima. 
+
+Ti prikupljeni podaci automatski se brišu nakon 18 meseci ako lica na koja 
+se ti podaci odnose ne otvaraju Newsletter-e koji im se šalju u periodu od 
+najmanje 18 uzastopnih meseci. Ako više ne želite da primate newsletter, 
+možete da ga otkažete u bilo kom trenutku. Kliknite na link sadržan u 
+svakom newsletteru, a zatim ćete biti vođeni kroz postupak otkazivanja, ili 
+nam pošaljite informaciju o otkazu putem e-pošte. 
+
+Pravni osnov: Član 12. stav 1. tačka 1. Zakona o ličnim podacima. 
+
+ 
+
+
+3.3 Kampanje (npr. nagradne igre, ankete, uzorci proizvoda) 
+
+Kada učestvujete u nagradnim igrama, anketama ili sličnim kampanjama, 
+koristimo lične podatke koje nam date za sprovođenje kampanje. Dodatne 
+informacije o svrsi njihove obrade možete da pronađete u pravilima o 
+sporovođenju konkretne kampanje. 
+
+Prikupljene podatke prenosimo relevantnim internim odeljenjima za obradu 
+i drugim povezanim društvima unutar Hazz kompanije ili spoljnim 
+pružaocima usluga, ugovornim obrađivačima (npr. hosting, dostava) za 
+potrebe sprovođenja konkretne kampanje. Platforma / pružaoci usluga 
+imaće pristup ličnim podacima iz trećih zemalja (zemlje izvan Evropske 
+ekonomske zone). Radi obezbeđivanja odgovarajuće zaštite Vaših ličnih 
+podataka, sa tim pružaocima usluga biće zaključene, ukoliko je primenjivo, 
+standardne ugovorne klauzule odobrene od strane srpskog Poverenika za 
+informacije od javnog značaja i zaštitu podataka o ličnosti i/ili preduzete 
+druge odgovarajuće mere kako bi se obezbedilo da konkretna obrada Vaših 
+ličnih podataka bude u skladu sa Zakonom o ličnim podacima. 
+
+Vaši će podaci biti izbrisani nakon završne obrade kampanje (pogledajte 
+pravila i uslove učestvovanja u konkretnoj kampanji), osim ako je to u 
+sukobu sa zakonskim obavezama zadržavanja ili zakonskim ograničenjima. 
+
+Dostavljanje Vaših ličnih podataka je neophodno za izvršenje ugovora. 
+Niste obavezni da date svoje lične podatke. Ako Vaši podaci ne budu 
+navedeni, ne možete da učestvujete u kampanji. 
+Dodatne informacije mogu se pronaći u opštim pravilima i i uslovima 
+konkretne kampanje. 
+
+Pravni osnov: Član 12. stav 1. tačka 2. Zakona o ličnim podacima. 
+
+ 
+
+3.4 Profil prijave 
+
+Prijavom nudimo mogućnost pisanja ocena i recenzija, kreiranje omiljenih 
+lista, dobijanje newslettera, te da Vam ubuduće pružamo isključivo 
+personalizovani sadržaj na osnovu Vašeg ponašanja. Vaša saglasnost je 
+uslov za čuvanje Vaših podataka i njihovo korišćenje za potrebe istraživanja 
+tržišta i u reklamne svrhe. Tada Vam možemo poslati personalizovano 
+oglašavanje naših proizvoda, odnosno usluga. 
+
+
+Prikupljene podatke prenosimo relevantnim internim odeljenjima za obradu 
+i drugim povezanim društvima unutar grupe Beiersdorf ili spoljnim 
+pružaocima usluga, ugovornim obrađivačima (npr. hosting, baza podataka 
+o potrošačima, marketinškim agencijama, dobavljaču za pregled) za 
+potrebe istraživanja tržišta i oglašavanja. Platforma / pružaoci usluga imaće 
+pristup ličnim podacima iz trećih zemalja (zemlje izvan Evropske 
+ekonomske zone). Radi obezbeđivanja odgovarajuće zaštite Vaših ličnih 
+podataka, sa tim pružaocima usluga biće zaključene, ukoliko je primenjivo, 
+standardne ugovorne klauzule odobrene od strane srpskog Poverenika za 
+informacije od javnog značaja i zaštitu podataka o ličnosti i/ili preduzete 
+druge odgovarajuće mere kako bi se obezbedilo da konkretna obrada Vaših 
+ličnih podataka bude u skladu sa Zakonom o ličnim podacima. 
+
+Prikupljeni podaci se automatski brišu nakon 24 meseci neaktivnosti osim 
+ste pre toga povukli saglasnost za konkretnu obradu Vaših podataka. U 
+slučaju povlačenja saglasnosti, Vaši će podaci biti izbrisani nakon 
+povlačenja saglasnosti, osim ako to nije u skladu s pravnim obavezama 
+čuvanja podataka ili zakonskim ograničenjima ili ukoliko za konkretnu 
+obradu postoji drugi pravni osnov. Da biste povukli saglasnost, prijavite se 
+na Vaš korisnički nalog i dovršite postupak povlačenja saglasnosti ili nas o 
+povlačenju saglasnosti obavestite e-poštom. 
+
+Pravni osnov: Član 12. stav 1. tačka 1. Zakona o ličnim podacima. 
+
+ 
+
+3.5 Isporuke poštom 
+
+Kao odabrani kupac, poslovni partner, učesnik u testiranju proizvoda ili 
+potrošač, takođe ćete dobiti pojedinačne informacije o proizvodima, 
+ponude, novosti i uzorke proizvoda od nas putem pošte (pisma). 
+
+To je poseban oblik direktnog marketinga kojim se pojačava lojalnost 
+pružanjem ekskluzivnih informacija gore navedenim osobama. Vaša 
+prethodna saglasnost nam je neophodna za sprovođenja ovog marketinga. 
+
+Prenosimo prikupljene podatke relevantnim internim odeljenjima za obradu 
+i drugim povezanim društvima unutar Hazz kompanije ili spoljnim 
+pružaocima usluga (npr. pružaocima usluga za upravljanje kupcima / 
+potrošačima, marketinškim agencijama, pružaocima poštanskih usluga) za 
+
+
+potrebe ove vrste oglašavanja. Platforma / pružaoci usluga imaće pristup 
+ličnim podacima iz trećih zemalja (zemlje van Evropske ekonomske 
+zajednice). Radi obezbeđivanja odgovarajuće zaštite Vaših ličnih podataka, 
+sa tim pružaocima usluga biće zaključene, ukoliko je primenjivo, standardne 
+ugovorne klauzule odobrene od strane srpskog Poverenika za informacije 
+od javnog značaja i zaštitu podataka o ličnosti i/ili preduzete druge 
+odgovarajuće mere kako bi se obezbedilo da konkretna obrada Vaših ličnih 
+podataka bude u skladu sa Zakonom o ličnim podacima. 
+
+Prikupljeni podaci se automatski brišu nakon 24 meseci neaktivnosti osim 
+ste pre toga povukli saglasnost za konkretnu obradu Vaših podataka. U 
+slučaju povlačenja saglasnosti, Vaši će podaci biti izbrisani nakon 
+povlačenja saglasnosti, osim ako to nije u skladu s pravnim obavezama 
+čuvanja podataka ili zakonskim ograničenjima ili ukoliko za konkretnu 
+obradu postoji drugi pravni osnov. Da biste povukli saglasnost, prijavite se 
+na Vaš korisnički nalog i dovršite postupak povlačenja saglasnosti ili nas o 
+povlačenju saglasnosti obavestite e-poštom. 
+
+Pravni osnov: Član 12. stav 1. tačka 1. Zakona o ličnim podacima. 
+
+ 
+
+3.6 Ocene i recenzije 
+
+Registrovani korisnici našeg vebsajta imaju mogućnost da pošalju ocene i 
+recenzije o proizvodima, postupcima ili ostale načine vrednovanja u sklopu 
+ponude na internet stranicama prema uslovima korišćenja. Naša je 
+legitimna želja da korisnici slobodno daju svoje mišljenje o proizvodima. 
+
+Vaša ocena će se objaviti uz vaše korisničko ime. Preporučujemo da 
+upotrebite pseudonim umesto svog stvarnog imena. Ocene se ne 
+pregledavaju pre objave. Zadržavamo pravo da obrišemo komentare ako 
+treća lica imaju prigovor o nezakonitosti tih komentara. 
+Prosleđujemo podatke relevantnim internim odeljenjima u svrhu obrade, 
+kao i povezanim društvima unutar Beiersdorf grupe ili spoljnim pružaocima 
+usluga (npr. pružaoci usluge hosting-a, pružaoci usluge upravljanja 
+sadržaja) radi ostvarenja svrhe obrade (objava na internet stranicama). 
+
+Komentari se brišu u skladu s opštim uslovima koji važe za konkretan 
+loyalty program. 
+
+
+Pravni osnov: član 12. stav 1. tačka 6. Zakona o ličnim podacima. 
+
+ ---
+
+
+PRAVA LICA ČIJI SE PODACI OBRAĐUJU 
+
+PRAVA LICA ČIJI SE PODACI OBRAĐUJU 
+
+Kao lice na koje se odnose lični podaci koje obrađujemo, imate sledeća 
+prava u vezi sa tom obradom, pod uslovima i u slučajevima predviđenim 
+Zakonom o ličnim podacima: 
+
+• Pravo da zatražite informacije o obradi Vaših ličnih podataka; 
+• Pravo da pristupite Vašim ličnim podacima i pravo da tražite njihovu 
+kopiju; 
+• Pravo na ispravku, dopunu i brisanje Vaših ličnih podataka; 
+• Pravo na ograničenje njihove obrade; 
+• Pravo na prenosivost Vaših ličnih podataka; 
+• Pravo na podnošenje prigovora protiv obrade Vaših ličnih podataka 
+(ukoliko obradu zasnivamo na legitimnom interesu ili ukoliko obradu 
+vršimo za potrebe direktnog marketinga, uključujući i profilisanje u 
+tim slučajevima) i pravo na prekid njihove obrade; 
+• Pravo da se na Vas ne primenjuje odluka doneta, ukoliko je 
+primenjivo, isključivo na osnovu automatizovane obrade. 
+
+
+Nadalje, imate i pravo na pravna sredstva predviđena Zakonom o 
+ličnim podacima uključujući pravo na podnošenje pritužbe Povereniku 
+za informacije od javnog značaja i zaštitu podataka o ličnosti i pravo 
+na sudsku zaštitu. 
+
+Takođe, ukoliko Vaše lične podatke obrađujemo na osnovu Vaše 
+saglasnosti, imate pravo da tu saglasnost povučete u svakom trenutku, 
+s tim da to povlačenje ne utiče na zakonitost obrade koja je vršena pre 
+povlačenja. 
+
+Da biste ostvarili svoja gore-navedena prava (ukoliko su u konkretnom 
+slučaju primenjiva), kao i ukoliko imate bilo koje pitanje u vezi sa 
+ovom Politikom privatnosti, možete da nam se obratite korišćenjem 
+
+
+podataka za kontakt navedenih na samom početku ovog dokumenta 
+(odnosno pod tačkom 1.2.). 
+
+ 
+
+

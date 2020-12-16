@@ -141,4 +141,12 @@ class HomeController extends Controller
 
         return redirect('/cart');
     }
+
+    public function privacypolicy()
+    {
+        $file = 'assets/pdf/PrivacyPolicy.txt';
+        $filename = 'PrivacyPolicy.txt';
+
+        @readfile($file);
+    }
 }

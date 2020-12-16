@@ -277,7 +277,9 @@
                             <div class="panel panel-default">
                                 <div class="panel-collapse collapse in show" role="tabpanel" aria-labelledby="headingOne">
                                     <div class="panel-body payment-content">
-                                        Vaši lični podaci će se koristiti kao podrška za Vaše iskustvo na ovoj veb lokaciji, za upravljanje pristupom Vašem nalogu i za druge svrhe opisane na našoj strani politika privatnosti.
+                                        Vaši lični podaci će se koristiti kao podrška za Vaše iskustvo na ovoj veb lokaciji,
+                                        za upravljanje pristupom Vašem nalogu i za druge svrhe opisane na našoj strani
+                                        <u><a href="{{url('/privacypolicy')}}">politika privatnosti.</a></u>
                                     </div>
                                 </div>
                                 <div class="panel-heading" role="tab">

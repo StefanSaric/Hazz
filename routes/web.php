@@ -61,3 +61,7 @@ Route::get('/deletecart/{id}', 'HomeController@deletecart');
 Route::get('/savecart/{id}/{quantity}', 'HomeController@savecart');
 Route::get('/returncart', 'HomeController@returncart');
 
+
+//Privacy Policy
+Route::get('/privacypolicy', 'HomeController@privacypolicy');
+

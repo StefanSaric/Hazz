@@ -648,7 +648,7 @@
                             <ul>
                                 <li><a href="about.html">About us</a></li>
                                 <li><a href="#">Delivery Information</a></li>
-                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="{{url('/privacypolicy')}}">Privacy Policy</a></li>
                                 <li><a href="#">Terms & Conditions </a></li>
                             </ul>
                         </div>
