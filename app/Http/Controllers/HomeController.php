@@ -145,8 +145,7 @@ class HomeController extends Controller
     public function privacypolicy()
     {
         $file = 'assets/pdf/PrivacyPolicy.txt';
-        $filename = 'PrivacyPolicy.txt';
 
-        @readfile($file);
+        return response()->file($file);
     }
 }

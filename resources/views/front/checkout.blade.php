@@ -279,7 +279,7 @@
                                     <div class="panel-body payment-content">
                                         Vaši lični podaci će se koristiti kao podrška za Vaše iskustvo na ovoj veb lokaciji,
                                         za upravljanje pristupom Vašem nalogu i za druge svrhe opisane na našoj strani
-                                        <u><a href="{{url('/privacypolicy')}}">politika privatnosti.</a></u>
+                                        <u><a href="{{url('/privacypolicy')}}" target="_blank">politika privatnosti.</a></u>
                                     </div>
                                 </div>
                                 <div class="panel-heading" role="tab">
@@ -363,7 +363,7 @@
                             <ul>
                                 <li><a href="about.html">About us</a></li>
                                 <li><a href="#">Delivery Information</a></li>
-                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="{{url('/privacypolicy')}}" target="_blank">Privacy Policy</a></li>
                                 <li><a href="#">Terms & Conditions </a></li>
                             </ul>
                         </div>
