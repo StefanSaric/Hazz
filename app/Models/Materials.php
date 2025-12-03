@@ -1,13 +1,13 @@
 <?php
 
-namespace App;
+namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
 class Materials extends Model
 {
     protected $fillable = [
-        'product_id', 'ordernumber', 'url',
+        'product_id', 'order_number', 'url',
     ];
 
     public $timestamps = true;

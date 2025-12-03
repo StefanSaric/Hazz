@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Cart;
 use App\Http\Controllers\Controller;
-use App\Sizes;
+use App\Models\Cart;
+use App\Models\Sizes;
 
 class CartController extends Controller
 {

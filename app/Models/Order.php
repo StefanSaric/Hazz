@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -14,6 +14,6 @@ class Order extends Model
 
     public function cart()
     {
-        return $this->hasMany('App\Cart', 'order_id', 'id');
+        return $this->hasMany('App\Models\Cart', 'order_id', 'id');
     }
 }

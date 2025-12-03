@@ -3,8 +3,7 @@
 namespace App\Http\Controllers;
 
 // use Gloudemans\Shoppingcart\Facades\Cart;
-use App\Cart;
-use App\Sizes;
+use App\Models\Sizes;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller

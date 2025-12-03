@@ -2,12 +2,12 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Cart;
 use App\Http\Controllers\Controller;
 use App\Mail\ConfirmOrder;
 use App\Mail\OrderDelivered;
-use App\Order;
-use App\Sizes;
+use App\Models\Cart;
+use App\Models\Order;
+use App\Models\Sizes;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 

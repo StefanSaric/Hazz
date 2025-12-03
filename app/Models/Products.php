@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -14,17 +14,17 @@ class Products extends Model
 
     public function materials()
     {
-        return $this->hasMany('App\Materials', 'product_id', 'id')->orderBy('ordernumber', 'asc');
+        return $this->hasMany('App\Models\Materials', 'product_id', 'id')->orderBy('ordernumber', 'asc');
     }
 
     public function sizes()
     {
-        return $this->hasMany('App\Sizes', 'product_id', 'id')->orderBy('sizes.id');
+        return $this->hasMany('App\Models\Sizes', 'product_id', 'id')->orderBy('sizes.id');
     }
 
     public function categories()
     {
-        return $this->belongsToMany('App\Categories', 'product_categories', 'product_id', 'category_id');
+        return $this->belongsToMany('App\Models\Categories', 'product_categories', 'product_id', 'category_id');
     }
 
     public function hasCategory($categoryName)
@@ -40,6 +40,6 @@ class Products extends Model
 
     public function tags()
     {
-        return $this->belongsToMany('App\Tags', 'product_tags', 'product_id', 'tag_id');
+        return $this->belongsToMany('App\Models\Tags', 'product_tags', 'product_id', 'tag_id');
     }
 }

@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -14,6 +14,6 @@ class Sizes extends Model
 
     public function product()
     {
-        return $this->hasOne('App\Products', 'id', 'product_id')->where('show', 1);
+        return $this->hasOne('App\Models\Products', 'id', 'product_id')->where('show', 1);
     }
 }
