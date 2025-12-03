@@ -14,12 +14,13 @@ class UserController extends Controller
     {
 
         $users = User::all();
+
         return view('admin.users.allusers', ['active' => 'allUsers', 'users' => $users]);
     }
 
     public function create()
     {
-        return view('admin.users.create',['active' => 'addUser']);
+        return view('admin.users.create', ['active' => 'addUser']);
     }
 
     public function store(Request $request)
@@ -27,7 +28,7 @@ class UserController extends Controller
         $validator = Validator::make($request->all(), [
             'name' => 'required',
             'email' => ['required', 'unique:users'],
-            'password' => 'required'
+            'password' => 'required',
         ]);
         if ($validator->fails()) {
             return redirect()->back()
@@ -35,12 +36,13 @@ class UserController extends Controller
                 ->withInput($request->input());
         }
 
-        //setting encription for password
-        $request->merge(array('password' => bcrypt($request->input('password'))));
+        // setting encription for password
+        $request->merge(['password' => bcrypt($request->input('password'))]);
         $user = User::create($request->all());
         $user->save();
 
-        Session::flash('message', 'success_' . __('User is added!'));
+        Session::flash('message', 'success_'.__('User is added!'));
+
         return redirect('admin/users');
     }
 
@@ -55,7 +57,7 @@ class UserController extends Controller
     {
         $validator = Validator::make($request->all(), [
             'name' => 'required',
-            'email' => ['required', 'unique:users,email,' . $request->user_id],
+            'email' => ['required', 'unique:users,email,'.$request->user_id],
         ]);
         if ($validator->fails()) {
             return redirect()->back()
@@ -66,13 +68,14 @@ class UserController extends Controller
         $id = $request->user_id;
         $user = User::find($id);
         $user->update($request->except(['password']));
-        //changing password
+        // changing password
         if (isset($request->password) && $request->password != '') {
             $user->password = bcrypt($request->input('password'));
             $user->save();
         }
 
-        Session::flash('message', 'success_' . __('Official is edited!'));
+        Session::flash('message', 'success_'.__('Official is edited!'));
+
         return redirect('admin/users');
     }
 
@@ -81,7 +84,8 @@ class UserController extends Controller
         $user = User::find($id);
         $user->delete();
 
-        Session::flash('message', 'info_' . __('User is deleted!'));
+        Session::flash('message', 'info_'.__('User is deleted!'));
+
         return redirect('admin/users');
     }
 }

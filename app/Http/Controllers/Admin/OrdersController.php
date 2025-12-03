@@ -7,7 +7,6 @@ use App\Http\Controllers\Controller;
 use App\Mail\ConfirmOrder;
 use App\Mail\OrderDelivered;
 use App\Order;
-use App\Products;
 use App\Sizes;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
@@ -17,91 +16,98 @@ class OrdersController extends Controller
     public function create()
     {
         $orders = Order::all();
-        return view('front.cart',['orders' => $orders]);
+
+        return view('front.cart', ['orders' => $orders]);
     }
 
     public function store(Request $request)
     {
-        //dd($request->all());
+        // dd($request->all());
         $total = 0;
         $carts = session()->get('cart');
-        if($carts != null)
-            foreach($carts as $cart)
-                $total += $cart["price"]*$cart["quantity"];
+        if ($carts != null) {
+            foreach ($carts as $cart) {
+                $total += $cart['price'] * $cart['quantity'];
+            }
+        }
         $order = Order::create([
             'first_name' => $request->firstname, 'last_name' => $request->lastname, 'email' => $request->email,
             'phone' => $request->phone, 'address' => $request->address, 'num_of_house' => $request->num,
-            'num_of_apartment' => $request->apartment,'note' =>$request->note, 'city' => $request->city, 'total' => $total,]);
+            'num_of_apartment' => $request->apartment, 'note' => $request->note, 'city' => $request->city, 'total' => $total, ]);
 
-        foreach ($carts as $one_cart)
-            $cart = Cart::create(['product_id' => $one_cart["product_id"], 'price' => $one_cart["price"], 'quantity' => $one_cart["quantity"], 'order_id' => $order->id]);
+        foreach ($carts as $one_cart) {
+            $cart = Cart::create(['product_id' => $one_cart['product_id'], 'price' => $one_cart['price'], 'quantity' => $one_cart['quantity'], 'order_id' => $order->id]);
+        }
 
         $in_carts = [];
-        if(session()->get('cart') != null) {
+        if (session()->get('cart') != null) {
             $in_carts = session()->get('cart');
         }
-        foreach($in_carts as $key => $cart) {
+        foreach ($in_carts as $key => $cart) {
             $size = Sizes::where('id', $key)->first();
-            $left = $size->stock - $cart["quantity"];
+            $left = $size->stock - $cart['quantity'];
             if ($size != null) {
                 $size->update([
-                    'stock' => $left
+                    'stock' => $left,
                 ]);
             }
         }
         session()->forget('cart');
 
-
-        $data = array(
+        $data = [
             'order_id' => $order->id,
             'total' => $total,
             'firstname' => $request->firstname,
             'lastname' => $request->lastname,
-            'email'=> $request->email,
-            'phone'=> $request->phone,
+            'email' => $request->email,
+            'phone' => $request->phone,
             'city' => $request->city,
             'address' => $request->address,
             'num' => $request->num,
             'apartment' => $request->apartment,
             'note' => $request->note,
-        );
+        ];
 
         Mail::to($request->email)->send(new ConfirmOrder($data));
 
         return redirect('/');
     }
 
-    public function index(){
+    public function index()
+    {
 
-        $orders = Order::orderBy('status')->orderBy('id','desc')->get();
+        $orders = Order::orderBy('status')->orderBy('id', 'desc')->get();
 
-        return view('admin.orders.allorders',['active' => 'allOrders', 'orders' => $orders]);
+        return view('admin.orders.allorders', ['active' => 'allOrders', 'orders' => $orders]);
     }
 
-    public function details($id){
+    public function details($id)
+    {
 
-        $order = Order::with('cart','cart.product')->find($id);
+        $order = Order::with('cart', 'cart.product')->find($id);
 
-        return view('admin.orders.details',['active' => 'allOrders', 'order' => $order]);
+        return view('admin.orders.details', ['active' => 'allOrders', 'order' => $order]);
     }
 
-    public function statusdelivered($id){
+    public function statusdelivered($id)
+    {
 
         $order = Order::find($id);
         $order->status = 1;
         $order->save();
 
-        $data = array(
+        $data = [
             'order_id' => $order->id,
-            'email' => $order->email
-        );
+            'email' => $order->email,
+        ];
 
         Mail::to($order->email)->send(new OrderDelivered($data));
 
         return redirect('admin/orders');
     }
 
-    public function statusactive($id){
+    public function statusactive($id)
+    {
 
         $order = Order::find($id);
         $order->status = 0;

@@ -35,15 +35,17 @@ class LoginController extends Controller
 
         if (Auth::user() == null) {
             if (Auth::attempt(['email' => $request->input('email'), 'password' => $request->input('password')])) {
-                return redirect("/admin");
+                return redirect('/admin');
             }
         } else {
-            return redirect("/admin");
+            return redirect('/admin');
         }
+
         return redirect()->back();
     }
 
-    public function login() {
+    public function login()
+    {
         return view('login');
     }
 
@@ -51,6 +53,7 @@ class LoginController extends Controller
     {
         request()->session()->regenerate(true);
         request()->session()->flush();
+
         return redirect('login');
     }
 }
