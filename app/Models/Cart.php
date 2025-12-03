@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -14,6 +14,6 @@ class Cart extends Model
 
     public function product()
     {
-        return $this->hasOne('App\Sizes', 'product_id', 'product_id');
+        return $this->hasOne('App\Models\Sizes', 'product_id', 'product_id');
     }
 }

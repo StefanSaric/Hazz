@@ -16,7 +16,7 @@ class CreateMaterialsTable extends Migration
         Schema::create('materials', function (Blueprint $table) {
             $table->id();
             $table->integer('product_id');
-            $table->integer('ordernumber');
+            $table->integer('order_number');
             $table->string('url');
             $table->timestamps();
         });

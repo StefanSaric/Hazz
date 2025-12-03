@@ -2,14 +2,14 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Categories;
 use App\Http\Controllers\Controller;
-use App\Materials;
-use App\Product_Categories;
-use App\Product_Tags;
-use App\Products;
-use App\Sizes;
-use App\Tags;
+use App\Models\Categories;
+use App\Models\Materials;
+use App\Models\Product_Categories;
+use App\Models\Product_Tags;
+use App\Models\Products;
+use App\Models\Sizes;
+use App\Models\Tags;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use Intervention\Image\ImageManagerStatic as Image;

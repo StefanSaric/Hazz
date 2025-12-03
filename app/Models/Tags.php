@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -14,6 +14,6 @@ class Tags extends Model
 
     public function products()
     {
-        return $this->belongsToMany('App\Products', 'productTags');
+        return $this->belongsToMany('App\Models\Products', 'productTags');
     }
 }
